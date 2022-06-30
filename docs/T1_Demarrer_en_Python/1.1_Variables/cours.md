@@ -1,8 +1,3 @@
-!!! info "le notebook des exercices de ce cours est accessible avec le lien suivant :"
-	<a href="https://capytale2.ac-paris.fr/web/c/a04e-627244/mln" target="_blank">T1.1_Variables_Exercices</a>
-
-    [T1.1_Variables_Exercices](https://capytale2.ac-paris.fr/web/c/a04e-627244/mln){:target="_blank"}
-
 # 1.1 Variables
 
 ## A. Pourquoi des variables ?
@@ -264,16 +259,7 @@ Cette procédure d'**incrémentation** est très très classique, il faut la ma�
 
         On initialise une variable ```score``` à 100 et on l'augmente de 15.
 
-    === "Correction"
-        ```python
-        >>> score = 100
-        >>> score = score + 15
-        ```
-        ou bien
-        ```python
-        >>> score = 100
-        >>> score += 15
-        ```
+<iframe src="https://trinket.io/embed/python/ab0cffc085" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 
 !!! example "{{ exercice() }}"
@@ -282,16 +268,7 @@ Cette procédure d'**incrémentation** est très très classique, il faut la ma�
 
         On initialise une variable ```cellule``` à 1 et on la multiplie par 2.
 
-    === "Correction"
-        ```python
-        >>> cellule = 1
-        >>> cellule = cellule * 2
-        ```
-        ou bien
-        ```python
-        >>> cellule = 1
-        >>> cellule *= 2
-        ```
+<iframe src="https://trinket.io/embed/python/ab0cffc085" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
@@ -299,17 +276,7 @@ Cette procédure d'**incrémentation** est très très classique, il faut la ma�
 
         On initialise une variable ```capital``` à 1000 et on lui enlève 5%.
 
-    === "Correction"
-        ```python
-        >>> capital = 1000
-        >>> capital = capital - capital * 5/100
-        ```
-        ou bien
-        ```python
-        >>> capital = 1000
-        >>> capital *= 0.95
-        ```
-
+<iframe src="https://trinket.io/embed/python/ab0cffc085" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 #### B.3.3 L'échange de variables
 Après l'incrémentation, une autre technique de base reviendra fréquemment dans nos codes : **l'échange de variables**.
@@ -317,8 +284,8 @@ Après l'incrémentation, une autre technique de base reviendra fréquemment dan
 Imaginons les variables suivantes :
 
 ```python
->>> a = 3
->>> b = 5
+a = 3
+b = 5
 ```
 Le but est d'échanger les valeurs de ```a``` et de ```b```.
 
@@ -383,22 +350,11 @@ Vous pouvez vérifier maintenant que les valeurs de ```a``` et de ```b``` ont bi
         Une petite erreur s'est glissée à Poudlard :
         ```python
         >>> maisonHarry = "Serpentard"
-        >>> maisonMalfoy =  "Gryffondor"
+		>>> maisonMalfoy =  "Gryffondor"
         ```
         Corriger cette erreur, de deux manières différentes.
 
-    === "Correction"
-        ```python
-        >>> t = maisonHarry
-        >>> maisonHarry = maisonMalfoy
-        >>> maisonMalfoy = t
-        ```
-        ou plus rapidement :
-        ```python
-        >>> maisonHarry, maisonMalfoy = maisonMalfoy, maisonHarry
-        ```
-
-
+<iframe src="https://trinket.io/embed/python/ab0cffc085" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 ## C. Différents types de variables
 
@@ -521,9 +477,6 @@ if date == 1:
 !!! tip "Règle d'or :heart:" 
     On ne donne jamais un nom de variable au hasard, on le choisit pour qu'il soit **explicite**.
 
-
-![image](data/memevar1.jpg){: .center width=30%}
-
 Oui mais pour donner du sens, il faut souvent plusieurs mots...
 La longueur du nom de la variable n'est plus un problème depuis que la grande majorité des IDE proposent la complétion automatique. 
 Mais comment former ces longs mots ?
@@ -540,4 +493,3 @@ Mais comment former ces longs mots ?
 
 Sans surprise, en Python, nous utiliserons donc le ```snake_case```.
 
-![image](data/smart.jpg){: .center width=30%}
