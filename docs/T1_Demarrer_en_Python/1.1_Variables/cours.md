@@ -259,7 +259,9 @@ Cette procédure d'**incrémentation** est très très classique, il faut la ma�
 
         On initialise une variable ```score``` à 100 et on l'augmente de 15.
 
-<iframe src="https://trinket.io/embed/python/460142cd2f?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<iframe src="https://trinket.io/embed/python/460142cd2f?outputOnly=true&runOption=console&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 
 
 !!! example "{{ exercice() }}"
@@ -268,7 +270,9 @@ Cette procédure d'**incrémentation** est très très classique, il faut la ma�
 
         On initialise une variable ```cellule``` à 1 et on la multiplie par 2.
 
-<iframe src="https://trinket.io/embed/python/460142cd2f?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<iframe src="https://trinket.io/embed/python/460142cd2f?outputOnly=true&runOption=console&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 
 
 !!! example "{{ exercice() }}"
@@ -277,7 +281,9 @@ Cette procédure d'**incrémentation** est très très classique, il faut la ma�
 
         On initialise une variable ```capital``` à 1000 et on lui enlève 5%.
 
-<iframe src="https://trinket.io/embed/python/460142cd2f?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<iframe src="https://trinket.io/embed/python/460142cd2f?outputOnly=true&runOption=console&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 
 
 #### B.3.3 L'échange de variables
@@ -356,7 +362,10 @@ Vous pouvez vérifier maintenant que les valeurs de ```a``` et de ```b``` ont bi
         ```
         Corriger cette erreur, de deux manières différentes.
 
-<iframe src="https://trinket.io/embed/python/460142cd2f?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<iframe src="https://trinket.io/embed/python/460142cd2f?outputOnly=true&runOption=console&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
 
 
 ## C. Différents types de variables
