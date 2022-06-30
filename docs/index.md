@@ -1,7 +1,6 @@
 
 !!! abstract ":star: Actualités :star:"
     - Les Décodeuses du Numériques : [liste des présentations](./T6_Mini-projets/Décodeuses/){. target="_blank"}
-    - [Trophées NSI](https://trophees-nsi.fr/){. target="_blank"}
     - **Infos orientation :**
         - [Lien](https://www.geipi-polytech.org/){. target="_blank"} vers le site des 34 écoles d'ingénieurs **publiques** du groupe GEIPI
         - [Lien](data/sujet0_geipi.pdf){. target="_blank"} vers le sujet 0 de leur épreuve NSI.
