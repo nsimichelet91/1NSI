@@ -1,8 +1,8 @@
-Ceci est le dépôt correspondant au site [https://glassus.github.io/premiere_nsi/](https://glassus.github.io/premiere_nsi/).
+Ceci est le dépôt correspondant au site [https://jcdelage.github.io/1NSI/]>(https://jcdelage.github.io/1NSI/).
 
 
-gilles.lassus [at] ac-bordeaux.fr
+jean-christophe.delage [at] ac-versailles.fr
 
-Lycée François Mauriac / Bordeaux  
+Lycée Edmond Michelet / Arpajon 
 
-L'ensemble des documents disponibles est publié sous licence CC-BY-SA.
+L'ensemble des documents disponibles est publié sous licence CC-BY-SA.(site original de G.Lassus)
