@@ -1,4 +1,6 @@
 !!! info "le notebook des exercices de ce cours est accessible avec le lien suivant :"
+	<a href="https://capytale2.ac-paris.fr/web/c/a04e-627244/mln" target="_blank">T1.1_Variables_Exercices</a>
+
     [T1.1_Variables_Exercices](https://capytale2.ac-paris.fr/web/c/a04e-627244/mln){:target="_blank"}
 
 # 1.1 Variables
