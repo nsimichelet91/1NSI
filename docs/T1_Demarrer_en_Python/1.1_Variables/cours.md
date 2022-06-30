@@ -1,3 +1,6 @@
+!!! info "le notebook des exercices de ce cours est accessible avec le lien suivant :"
+    [T1.1_Variables_Exercices](https://capytale2.ac-paris.fr/web/c/a04e-627244/mln) 
+
 # 1.1 Variables
 
 ## A. Pourquoi des variables ?
@@ -19,8 +22,6 @@ La phrase précédente donnera donc lieu à la ligne Python suivante :
 ```python
 >>> a = 32
 ```
-
-<iframe src="https://capytale2.ac-paris.fr/basthon/notebook/?id=413618" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 !!! warning "Attention"
     Le symbole ```=``` ici utilisé n'a **rien à voir** avec le symbole = utilisé en mathématique. On dit qu'on a **affecté** à ```a``` la valeur 32, et il faut se représenter mentalement cette action par l'écriture ```a ← 32```.
