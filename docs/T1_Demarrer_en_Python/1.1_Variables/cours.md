@@ -19,6 +19,9 @@ La phrase précédente donnera donc lieu à la ligne Python suivante :
 ```python
 >>> a = 32
 ```
+
+<iframe src="https://trinket.io/embed/python/6275304147" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 !!! warning "Attention"
     Le symbole ```=``` ici utilisé n'a **rien à voir** avec le symbole = utilisé en mathématique. On dit qu'on a **affecté** à ```a``` la valeur 32, et il faut se représenter mentalement cette action par l'écriture ```a ← 32```.
 
