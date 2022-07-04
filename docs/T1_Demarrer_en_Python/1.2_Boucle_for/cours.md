@@ -1,9 +1,5 @@
 # 1.2 Boucle For
 
-![image](data/meme.png){: .center width=30%}
-
-
-
 ## 1. Les énumérables
 
 En mathématiques, on dit qu'un ensemble est *dénombrable* lorsqu'on peut associer à chaque élément de l'ensemble un nombre (traditionnellement 1, 2, 3 ...)
@@ -76,10 +72,6 @@ Dans cet exercice, la **variable de boucle** ```m``` est **muette** : elle n'app
 
 La variable ```m``` prend successivement les valeurs ```'N```, ```'A'```, ```'S'``` et ```'A'```, mais on ne le voit pas.
 
-![image](data/muettes.jpg){: .center width=40%}
-
-
-
 
 !!! warning "Comment éviter les erreurs classiques"
     Quand vous écrivez une boucle ```for```, veillez bien à :
@@ -150,12 +142,17 @@ Il y a mieux !
 !!! note "L'ensemble ```range```  :heart:"
     Le programme suivant :
     ```python linenums='1'
-    for i in range(5):
+    for i in range(10):
         print("We're up all night to get lucky")
     ```
     va donner ceci :
     ```python
     We're up all night to get lucky
+    We're up all night to get lucky
+    We're up all night to get lucky
+    We're up all night to get lucky
+    We're up all night to get lucky
+	We're up all night to get lucky
     We're up all night to get lucky
     We're up all night to get lucky
     We're up all night to get lucky
@@ -169,7 +166,7 @@ Là encore, le ```i``` est une variable muette.
 Si nous rendions la variable ```i``` moins muette ?
 
 ```python linenums='1'
-for i in range(5):
+for i in range(10):
     print(i, "We're up all night to get lucky")
 ```
 va donner ceci :
@@ -179,8 +176,13 @@ va donner ceci :
 2 We're up all night to get lucky
 3 We're up all night to get lucky
 4 We're up all night to get lucky
+5 We're up all night to get lucky
+6 We're up all night to get lucky
+7 We're up all night to get lucky
+8 We're up all night to get lucky
+9 We're up all night to get lucky
 ```
-```i``` prend donc successivement toutes les valeurs entières entre 0 et 4. Il y en a bien 5.
+```i``` prend donc successivement toutes les valeurs entières entre 0 et 9. Il y en a bien 10.
 
 ### 4.2 Utilisation minimale de l'objet ```range()```  
 
@@ -250,24 +252,28 @@ Il faut donc garder en tête que l'objet renvoyé par ```range()``` est un **it�
         On utilisera la syntaxe ```print(k, end = ' ')``` ) pour afficher les nombres horizontalement.
 
         A. ```0 1 2 3 4 5``` 
+		<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
         ??? note "Correction"
             ```python linenums='1'
             for k in range(6):
                 print(k, end = ' ')
             ```
         B. ```10 11 12 13 14 15 ``` 
+		<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
         ??? note "Correction"
             ```python linenums='1'
             for k in range(10,16):
                 print(k, end = ' ')
             ```
         C. ```3 6 9 12 ``` 
+		<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
         ??? note "Correction"
             ```python linenums='1'
             for k in range(3,13,3):
                 print(k, end = ' ')
             ```
         D. ```10 9 8 7 6 5 4 3 2 1 0  ``` 
+		<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
         ??? note "Correction"
             ```python linenums='1'
             for k in range(10,-1,-1):
@@ -322,6 +328,7 @@ Il est très souvent utile d'imbriquer une boucle dans une autre, notamment lors
         Mamie dit : « et une cuillère pour Fifi ! »
         Mamie dit : « et une cuillère pour Loulou ! »
         ```
+		<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
     === "Correction"
         ```python linenums='1'
         for perso1 in ["Papa", "Maman", "Mamie"]:
