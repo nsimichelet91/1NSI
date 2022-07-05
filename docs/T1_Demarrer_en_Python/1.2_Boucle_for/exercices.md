@@ -1,9 +1,10 @@
 # Exercices sur la boucle `for`
 
 !!! note "Travail à réaliser sur le notebook Capytale du lien suivant:"
-Les énoncés sont donnés sur cette page à titre indicatifs.
 
 [T1.2 Exos Boucle for](https://capytale2.ac-paris.fr/basthon/notebook/?id=627891){: target = "_blank"} 
+
+Les énoncés sont donnés sur cette page à titre indicatifs.
 
 {{ initexo(0) }}
 
@@ -86,14 +87,14 @@ Les énoncés sont donnés sur cette page à titre indicatifs.
     === "Énoncé"
         On souhaite calculer la somme des 1000 premiers nombres entiers naturels, c'est-à-dire:
 
-        $ 1+2+3+4+5+ \dots +999+1000 $
+        $1+2+3+4+5+\dots+999+1000$
 
         Écrire un programme avec une variable `somme` **accumulateur** (comme à l'exercice 3) qui contiendra la valeur souhaitée en fin de programme.
 
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
-        Calculer $ 1 \times 2 \times 3 \times \dots \times 99 \times 100 $.
+        Calculer $1\times2\times3\times\dots\times99\times100$.
 
 
       
