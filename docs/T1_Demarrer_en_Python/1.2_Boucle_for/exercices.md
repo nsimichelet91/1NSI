@@ -1,5 +1,8 @@
 # Exercices sur la boucle `for`
 
+!!! note "Travail à réaliser sur le notebook Capytale du lien suivant:"
+[T1.2 Exos Boucle for](https://capytale2.ac-paris.fr/basthon/notebook/?id=627891)  
+
 {{ initexo(0) }}
 
 !!! example "{{ exercice() }}"
