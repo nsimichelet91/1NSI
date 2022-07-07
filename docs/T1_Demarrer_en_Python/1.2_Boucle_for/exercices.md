@@ -4,7 +4,7 @@
 
 [T1.2 Exos Boucle for](https://capytale2.ac-paris.fr/basthon/notebook/?id=627891){: target = "_blank"} 
 
-Les énoncés sont donnés sur cette page à titre indicatifs.
+Les énoncés sont donnés sur cette page à titre indicatif.
 
 {{ initexo(0) }}
 

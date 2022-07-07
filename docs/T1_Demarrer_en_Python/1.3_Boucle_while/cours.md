@@ -6,8 +6,6 @@
 
 Avec donc le risque de rester infiniment bloqué à l'intérieur !  
 
-![image](data/danger.jpg){: .center width=40%}
-
 !!! note "Exemple fondateur n°1 :heart:"
     Le programme suivant :
     ```python linenums='1'
@@ -125,25 +123,20 @@ Voir le piège n°1 ...
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Trouver le plus petit nombre entier $n$ tel que $2^n$ soit supérieur à 1 milliard.
-    === "Correction"
-        ```python linenums='1'
-        n = 1
-        while 2**n < 10**9:
-            n = n + 1
-            print("trop petit")
-        print("trouvé : ",n)
-        ```
-
-
 
 
 ## 4. Quelques remarques
 ### 4.1 Lien entre ```while``` et ```for```
-![image](data/scooby.png){: .center width=40%}
 
 La boucle bornée ```for``` que nous avons étudiée est très pratique.
 
 Mais nous pourrions nous en passer : toutes les boucles ```for``` peuvent en fait être ré-écrites en utilisant ```while```. (alors que la réciproque est fausse)
+
+!!! note "ExerciceS 1 et 2 à réaliser sur le notebook Capytale du lien suivant:"
+
+[T1.3 Exos 1 et 2 Boucle while](https://capytale2.ac-paris.fr/web/c/6d60-628207/mln){: target = "_blank"} 
+
+Les énoncés sont donnés sur cette page à titre indicatif.
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
@@ -153,20 +146,9 @@ Mais nous pourrions nous en passer : toutes les boucles ```for``` peuvent en fai
             print("scooby-doo")
         ``` 
         Ré-écrire ce code en utilisant une boucle ```while```. 
-    === "Correction"
-        ```python linenums='1'
-        k = 0
-        while k < 5:
-            print("scooby-doo")
-            k = k + 1
-        ```
-
-
-
 
 
 ### 4.2 Les boucles infinies volontaires
-![image](data/anakin.jpg){: .center width=40%}
 
  
 La boucle infinie a été présentée comme un danger qu'il faut éviter. 
@@ -189,6 +171,12 @@ print("merci, j'étais bloqué dans une boucle infinie")
 - le début du code : ```while True``` est typique des boucles infinies volontaires. On aurait tout aussi bien pu écrire ```while 3 > 2``` (on rencontre même parfois des ```while 1```)
 - vous avez découvert l'expression ```break``` qui comme son nom l'indique permet de casser la boucle (cela marche pour ```while``` comme pour ```for```) et donc d'en sortir. Son emploi est controversé parmi les puristes de la programmation. Nous dirons juste que c'est une instruction bien pratique.
 
+!!! note "Exercice 3 à réaliser sur Capytale du lien suivant:"
+
+[T1.3 Exos 3 Boucle while](https://capytale2.ac-paris.fr/web/c/b876-628211/mln){: target = "_blank"} 
+
+L'énoncé est donné sur cette page à titre indicatif.
+
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Proposer un code qui choisit un nombre aléatoire entre 1 et 10, puis qui propose en boucle à l'utilisateur de le deviner, tant que celui-ci n'a pas trouvé.
@@ -201,20 +189,5 @@ print("merci, j'étais bloqué dans une boucle infinie")
         from random import randint
         a = randint(1,10)
         ```
-    === "Correction"
-        {{ correction(True,
-        "
-        ```python linenums='1'
-        from random import randint
 
-        mystere = randint(1, 10)
-
-        while True:
-            reponse = int(input('quel est le nombre mystère ? '))
-            if reponse == mystere:
-                break
-        print('bravo !')
-        ```
-        "
-        ) }}
         

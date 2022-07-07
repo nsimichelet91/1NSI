@@ -5,7 +5,7 @@
 
 [T1.2 Exos Boucle for p5](https://capytale2.ac-paris.fr/web/c/1b98-627734/mln){: target = "_blank"} 
 
-Les énoncés sont donnés sur cette page à titre indicatifs.
+Les énoncés sont donnés sur cette page à titre indicatif.
 ## 1. Présentation de Processing
 
 ![](data/processing3-logo.png){align=right} 
@@ -18,7 +18,7 @@ Nous l'utiliserons pour ajouter du graphisme à nos créations. Dans tous les ex
 ??? info "Documentation"
     - [Le site officiel (anglais)](https://processing.org/){:target="_blank"} 
     - [Un manuel d'utilisation (français)](https://fr.flossmanuals.net/processing/introduction/){:target="_blank"} 
-	- [documentation officielle de p5](https://p5.readthedocs.io/en/latest/tutorials/color.html){:target="_blank"} 
+	- [Documentation officielle de p5](https://p5.readthedocs.io/en/latest/tutorials/color.html){:target="_blank"} 
 
 
 ## 2. Les bases de Processing
