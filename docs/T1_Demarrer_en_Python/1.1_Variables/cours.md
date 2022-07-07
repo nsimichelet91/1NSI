@@ -224,7 +224,6 @@ En Python, cela s'écrira :
 
 Observée avec des yeux de mathématicien, la précédente instruction est une horreur.
 
-![image](data/memex.png){: .center width=30%}
 
 Vue avec des yeux d'informaticien, voilà comment est interprétée la commande
 ```python

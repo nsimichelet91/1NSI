@@ -1,9 +1,5 @@
 # 1.4 Instruction conditionnelle if
 
-![image](data/if_else_meme.jpeg){: .center width=50%}
-
-
-
 L'instruction conditionnelle `if` permet de soumettre l'exécution d'instructions à une condition donnée.
 Cette condition sera une expression booléenne, comme pour la boucle `while`.
 
@@ -34,9 +30,9 @@ Dans les exemples ci-dessous, changez la valeur affectée à la variable ```age`
 !!! abstract "**Syntaxe générale**"
     ```python linenums="1"
     if expression:
-        *instructions à effectuer si expression est vraie*
+        instructions à effectuer si expression est vraie
     else:
-        *instructions à effectuer sinon, c'est-à-dire si expression est fausse*
+        instructions à effectuer sinon, c'est-à-dire si expression est fausse
     ```
 
 ## 2. L'évaluation de la condition
@@ -115,24 +111,8 @@ True
 !!! example "Exercice"
     === "Énoncé"
         Compter le nombre de voyelles de la phrase ```'cet exercice est prodigieusement ennuyeux'``` 
-    === "Correction"
-        {{ correction(True,
-        "
-        ```python linenums='1'
-        phrase = 'cet exercice est prodigieusement ennuyeux'
 
-        voyelles = 'aeiouy'
-
-        compteur = 0
-
-        for lettre in phrase:
-            if lettre in voyelles:
-                compteur += 1
-                
-        print(compteur)
-        ```
-        "
-        ) }}
+<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 
 ## 3. Les cas multiples : utilisation de `elif` 
@@ -192,4 +172,4 @@ else:
 
 ![image](data/compute.png){: .center width=30%}
 
-Le site [https://compute-it.toxicode.fr/](https://compute-it.toxicode.fr/) vous demande d'exécuter mentalement les instructions affichées, à l'aide des touches directionnelles de votre clavier. Attention, c'est très addictif !
+Le site [https://compute-it.toxicode.fr/](https://compute-it.toxicode.fr/){: target = "_blank"}  vous demande d'exécuter mentalement les instructions affichées, à l'aide des touches directionnelles de votre clavier. Attention, c'est très addictif !
