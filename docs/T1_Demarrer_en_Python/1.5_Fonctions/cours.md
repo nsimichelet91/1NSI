@@ -1,8 +1,5 @@
 # 1.5 Fonctions
 
-![image](data/meme.jpg){: .center width=40%}
-
-
 La notion de fonction est essentielle en programmation.  
 Elle permet de construire des codes modulaires, plus faciles à lire et à modifier.  
 En Python, une fonction se crée avec le mot-clé `def`.
@@ -44,14 +41,14 @@ Dans ce cas d'utilisation, la fonction ```accueil``` n'est qu'un raccourci, une 
     ```python linenums='1'
     def chat_penible(n):
         for k in range(n):
-            print("meoww")
+            print("miaou")
     ```
 
 ```python
 >>> chat_penible(3)
-meoww
-meoww
-meoww
+miaou
+miaou
+miaou
 ```
 
 !!! voc "Vocabulaire :heart:"
@@ -208,7 +205,7 @@ def h(x):
 ```python linenums='1'
 def chat_penible(n):
     for k in range(n):
-        print("meoww")
+        print("miaou")
     return None
 ```
 
@@ -301,7 +298,6 @@ Quelles sont les règles régissant ces espaces de noms ? Les frontières entre 
 
     Une fonction qui ne respecte pas cette règle présente des _effets de bord_ : on peut peut-être arriver à les gérer sur un «petit» code, mais cela devient illusoire sur un code utilisant de multiples fonctions. 
 
-    ![](data/global_meme.jpg){: .center  width=40%} .
 
 
     En résumé :
@@ -327,8 +323,6 @@ Quelles sont les règles régissant ces espaces de noms ? Les frontières entre 
 
 ## 6. Documenter une fonction
 
-![image](data/documentation.jpeg){: .center width=40%}
-
 
 ### 6.1 Help !
 Si une fonction peut être assimilée à un outil, il est normal de se demander si cet outil possède un mode d'emploi.
@@ -350,7 +344,7 @@ print(...)
     flush: whether to forcibly flush the stream
 ```
 
-Pensez à utiliser cette fonction ```help()``` (en d'autres termes, [RTFM](https://fr.wikipedia.org/wiki/RTFM_(expression))) 
+Pensez à utiliser cette fonction ```help()``` (en d'autres termes, [RTFM](https://fr.wikipedia.org/wiki/RTFM_(expression))){: target = "_blank"}
 
 ### 6.2 Créer le mode d'emploi de ses propres fonctions : les docstrings
 
@@ -362,10 +356,10 @@ Il est possible, voire souhaitable (dès qu'on créé un code comportant plusieu
     ```python linenums='1'
     def chat_penible(n):
         """
-        Affiche n fois la chaine de caractères "meoww"
+        Affiche n fois la chaine de caractères "miaou"
         """
         for k in range(n):
-            print("meoww")
+            print("miaou")
     ```
 
     On peut donc maintenant demander de l'aide pour cette fonction :
@@ -375,17 +369,14 @@ Il est possible, voire souhaitable (dès qu'on créé un code comportant plusieu
     Help on function chat_penible in module __main__:
 
     chat_penible(n)
-        Affiche n fois la chaine de caractères "meoww"
+        Affiche n fois la chaine de caractères "miaou"
     ```
 
-Plus de renseignements sur les docstrings [ici](https://glassus.github.io/terminale_nsi/T2_Programmation/2.4_Pratiques_de_programmation/cours/#22-le-cas-particulier-des-docstrings)
+Plus de renseignements sur les docstrings [ici](https://glassus.github.io/terminale_nsi/T2_Programmation/2.4_Pratiques_de_programmation/cours/#22-le-cas-particulier-des-docstrings){: target = "_blank"}
 
 ## 7. Jeux de tests pour une fonction
 
-![image](data/tests.png){: .center width=40%}
-
-
-Les exercices de [cette feuille](../exercices/) sont (presque) tous livrés avec un *jeu de tests*. Il s'agit d'une fonction, souvent appelée ```test_nom_de_la fonction()```, qui va regrouper les différents tests qu'on pourrait faire en console pour vérifier que la fonction a le comportement désiré.
+Les exercices de [cette page](../exercices/) sont (presque) tous livrés avec un *jeu de tests*. Il s'agit d'une fonction, souvent appelée ```test_nom_de_la fonction()```, qui va regrouper les différents tests qu'on pourrait faire en console pour vérifier que la fonction a le comportement désiré.
 
 Ces tests reposent sur le mot-clé ```assert```, qui va lever une erreur lorsqu'il est suivi d'une expression évaluée à ```False``` :
 

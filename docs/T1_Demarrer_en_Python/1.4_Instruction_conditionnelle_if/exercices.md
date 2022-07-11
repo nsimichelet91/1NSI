@@ -1,5 +1,9 @@
 # Exercices
+!!! note "Travail à réaliser sur le notebook Capytale du lien suivant:"
 
+[T1.4 Exos if](https://capytale2.ac-paris.fr/web/c/1b98-627734/mln){: target = "_blank"} 
+
+Les énoncés sont donnés sur cette page à titre indicatif.
 {{ initexo(0) }}
 
 !!! example "{{ exercice() }}"
