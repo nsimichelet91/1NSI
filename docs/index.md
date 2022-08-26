@@ -23,6 +23,7 @@
 !!! abstract "Programme"
     Nous traiterons les différentes entrées du programme dans les chapitres suivants :
 
+
     === "T1 Démarrer en Python"
         **Thème 1 : Démarrer en Python**
 
