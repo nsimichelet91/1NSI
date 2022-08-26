@@ -1,6 +1,3 @@
-# Les outils que nous utiliserons pour programmer
- 
-
 # Thème 1 : Bases de Python
 
 1. [Variables](../1.1_Variables/cours/)

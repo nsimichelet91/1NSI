@@ -344,7 +344,7 @@ print(...)
     flush: whether to forcibly flush the stream
 ```
 
-Pensez à utiliser cette fonction ```help()``` (en d'autres termes, [RTFM](https://fr.wikipedia.org/wiki/RTFM_(expression))){: target = "_blank"}
+Pensez à utiliser cette fonction ```help()``` ... en d'autres termes, [RTFM](https://fr.wikipedia.org/wiki/RTFM_(expression)){: target = "_blank"}
 
 ### 6.2 Créer le mode d'emploi de ses propres fonctions : les docstrings
 
