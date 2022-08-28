@@ -1,4 +1,5 @@
 # 1.3 Boucle while
+
 !!! note "Travail à réaliser sur le notebook Capytale du lien suivant:"
 	[T1.3 Boucle while](https://capytale2.ac-paris.fr/web/c/6d60-628207/mln){: target = "_blank"} 
 	
@@ -171,8 +172,7 @@ print("merci, j'étais bloqué dans une boucle infinie")
 - vous avez découvert l'expression ```break``` qui comme son nom l'indique permet de casser la boucle (cela marche pour ```while``` comme pour ```for```) et donc d'en sortir. Son emploi est controversé parmi les puristes de la programmation. Nous dirons juste que c'est une instruction bien pratique.
 
 !!! note "Exercice 3 à réaliser sur Capytale du lien suivant:"
-
-[T1.3 Exos 3 Boucle while](https://capytale2.ac-paris.fr/web/c/b876-628211/mln){: target = "_blank"} 
+	[T1.3 Exos 3 Boucle while](https://capytale2.ac-paris.fr/web/c/b876-628211/mln){: target = "_blank"} 
 
 L'énoncé est donné sur cette page à titre indicatif.
 
