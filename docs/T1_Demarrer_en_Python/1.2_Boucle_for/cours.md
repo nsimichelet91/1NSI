@@ -1,5 +1,7 @@
 # 1.2 Boucle For
 
+!!! note "Voici le lien du notebook sur lequel vous devez faire les exercices"
+	[T1.2_Boucle_for](https://capytale2.ac-paris.fr/web/c/e22f-627891/mln){: target = "_blank"} 
 ## 1. Les énumérables
 
 En mathématiques, on dit qu'un ensemble est *dénombrable* lorsqu'on peut associer à chaque élément de l'ensemble un nombre (traditionnellement 1, 2, 3 ...)
@@ -60,14 +62,12 @@ Ici, il y a simplement un ```print(k)```, donc chaque lettre de ```"NSI"``` s'af
         for m in 'NASA':
             print("bonjour")
         ``` 
-    === "Correction"
-        ```python
-        bonjour
-        bonjour
-        bonjour
-        bonjour
-        ``` 
-
+	=== "Correction"
+		  ```bonjour
+		  bonjour
+		  bonjour
+		  bonjour```
+	
 Dans cet exercice, la **variable de boucle** ```m``` est **muette** : elle n'apparaît dans les instructions indentées sous le ```for```. 
 
 La variable ```m``` prend successivement les valeurs ```'N```, ```'A'```, ```'S'``` et ```'A'```, mais on ne le voit pas.
@@ -252,28 +252,28 @@ Il faut donc garder en tête que l'objet renvoyé par ```range()``` est un **it�
         On utilisera la syntaxe ```print(k, end = ' ')``` ) pour afficher les nombres horizontalement.
 
         A. ```0 1 2 3 4 5``` 
-		<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+		<!---<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>-->
         ??? note "Correction"
             ```python linenums='1'
             for k in range(6):
                 print(k, end = ' ')
             ```
         B. ```10 11 12 13 14 15 ``` 
-		<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+		<!---<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>-->
         ??? note "Correction"
             ```python linenums='1'
             for k in range(10,16):
                 print(k, end = ' ')
             ```
         C. ```3 6 9 12 ``` 
-		<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+		<!---<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>-->
         ??? note "Correction"
             ```python linenums='1'
             for k in range(3,13,3):
                 print(k, end = ' ')
             ```
         D. ```10 9 8 7 6 5 4 3 2 1 0  ``` 
-		<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+		<!---<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>-->
         ??? note "Correction"
             ```python linenums='1'
             for k in range(10,-1,-1):
@@ -328,7 +328,7 @@ Il est très souvent utile d'imbriquer une boucle dans une autre, notamment lors
         Mamie dit : « et une cuillère pour Fifi ! »
         Mamie dit : « et une cuillère pour Loulou ! »
         ```
-		<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+		<!---<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>-->
     === "Correction"
         ```python linenums='1'
         for perso1 in ["Papa", "Maman", "Mamie"]:
