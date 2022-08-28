@@ -2,4 +2,4 @@
 
 1. [Conseils généraux](../1_Conseils_generaux/cours/)
 2. [Capytale](../2_Capytale/cours/)
-3. 
+3. [IDE](../3_IDE/cours/)
