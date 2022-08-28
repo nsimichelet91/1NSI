@@ -1,6 +1,7 @@
-
+!!! note "Travail à réaliser sur le notebook Capytale du lien suivant:"
+	[T1.5 Fonctions](https://capytale2.ac-paris.fr/web/c/1d2f-631488/mln){: target = "_blank"}
+	
 {{initexo(0)}}
-
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Définissez une fonction `maxi(n1,n2)` qui renvoie le plus grand élément entre `n1` et `n2`.
@@ -215,8 +216,8 @@
         "
         ) }}       -->   
 
-!!! example "{{ exercice() }}" (en lien avec l'exercice précédent)
-    === "Énoncé"
+!!! example "{{ exercice() }}" 
+    === "Énoncé(en lien avec l'exercice précédent)"
         1. Écrire une fonction ```temps_de_vol(n)``` qui renvoie le nombre d'étapes pour arriver à 1, en partant de ```n```
         2. Écrire une fonction ```temps_max(nmax)``` qui affiche le plus grand temps de vol pour un nombre entre 1 et ```nmax```.
         3. Modifier cette fonction pour afficher aussi le nombre de départ donnant ce plus grand temps de vol.
