@@ -1,5 +1,7 @@
 # 1.4 Instruction conditionnelle if
-
+!!! note "Travail à réaliser sur le notebook Capytale du lien suivant:"
+	[T1.4 Inst_cond_if](https://capytale2.ac-paris.fr/web/c/ad53-631482/mln){: target = "_blank"} 
+	
 L'instruction conditionnelle `if` permet de soumettre l'exécution d'instructions à une condition donnée.
 Cette condition sera une expression booléenne, comme pour la boucle `while`.
 
@@ -112,8 +114,9 @@ True
     === "Énoncé"
         Compter le nombre de voyelles de la phrase ```'cet exercice est prodigieusement ennuyeux'``` 
 
+<!---
 <iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-
+-->
 
 ## 3. Les cas multiples : utilisation de `elif` 
 
