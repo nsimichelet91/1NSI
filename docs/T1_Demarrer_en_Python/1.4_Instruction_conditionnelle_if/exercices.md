@@ -8,7 +8,7 @@ Les énoncés sont donnés sur cette page à titre indicatif.
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Écrire un programme qui demande deux nombres et qui affiche le plus grand des deux.
-    <!--
+    <!---
 	=== "Correction"
         {{ correction(True,
         "
@@ -35,7 +35,7 @@ Les énoncés sont donnés sur cette page à titre indicatif.
 
         1. Écrire un programme qui demande la masse et la taille d'une personne, calcule son IMC et annonce si la personne est en état de maigreur.
         2. Modifier ensuite le programme pour qu'il annonce si la personne est en état de maigreur, en surpoids ou bien si son IMC est normal.
-    <!--
+    <!---
 	=== "Correction"
         {{ correction(True,
         "
@@ -65,7 +65,7 @@ Les énoncés sont donnés sur cette page à titre indicatif.
 
         Écrire un code qui joue au FizzBuzz jusqu'à 50.
 
-    <!--
+    <!---
 	=== "Correction"
         {{ correction(True,
         "
@@ -95,7 +95,7 @@ Les énoncés sont donnés sur cette page à titre indicatif.
 
         *Explication : la Terre faisant le tour du Soleil en [un peu plus que 365 jours](https://fr.vikidia.org/wiki/R%C3%A9volution_de_la_Terre_autour_du_Soleil), on s'est dit qu'on allait rajouter un jour tous les 4 ans, mais c'était trop, alors on a enlevé un jour tous les 100 ans, mais c'était plus assez, alors on a rajouté un jour tous les 400 ans, ce qui donne une approximation convenable.*
 
-    <!--
+    <!---
 	=== "Correction"
         {{ correction(True,
         """

@@ -4,7 +4,8 @@
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Définissez une fonction `maxi(n1,n2)` qui renvoie le plus grand élément entre `n1` et `n2`.
-
+		Testez votre fonction `maxi(n1,n2)` à l'aide d'une fonction `test_maxi()`
+<!---
     === "Tester sa fonction"
         Vous pouvez utiliser la fonction de tests ci-dessous :
         ```python linenums='1'
@@ -28,11 +29,13 @@
         "
         ) }}
 
-
+-->
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Définissez une **fonction** `decale(lettre)` qui décale de 3 rangs dans l'alphabet la lettre majuscule `lettre` passée en argument (après Z, on recommencera à A..)
-
+		
+		Testez votre fonction `decale(lettre)` à l'aide d'une fonction `test_decale()`
+		
         Aide : 
         ```python
         >>> ord('A')
@@ -41,7 +44,7 @@
         'A'
         ```
 
-
+<!---
     === "Tester sa fonction"
         Vous pouvez utiliser la fonction de tests ci-dessous :
         ```python linenums='1'
@@ -63,17 +66,19 @@
             return chr(rang_nouvelle_lettre)
         ```
         "
-        ) }}
+        ) }}-->  
 
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
-        Rajoutez un paramètre `n` à la fonction précédente pour pouvoir décaler la lettre de `n` rangs.
-
+        Définissez une fonction `decale_n(lettre, n)` en ajoutant un paramètre `n` à la fonction précédente pour pouvoir décaler la lettre de `n` rangs.
+		
+		Testez votre fonction `decale_n(lettre, n)` à l'aide d'une fonction `test_decale_n()`
+<!---
     === "Tester sa fonction"
         Vous pouvez utiliser la fonction de tests ci-dessous :
         ```python linenums='1'
-        def test_decale():
+        def test_decale_n():
             assert decale('A', 3) == 'D'
             assert decale('A', 5) == 'F'
             assert decale('Z', 1) == 'A'
@@ -95,14 +100,14 @@
 
         ```
         "
-        ) }}
+        ) }}-->  
 
 
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Utilisez la fonction précédente pour créer la fonction `decale_phrase(p, n)` qui décale toutes les lettres d'une phrase `p` de `n` rangs.
-
+<!---
     === "Correction"
         {{ correction(True,
         "
@@ -118,14 +123,14 @@
             return phrase_decalee
         ```
         "
-        ) }}
+        ) }}-->  
 
 
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Décodez la phrase `RT BTHHPVT CT RDCIXTCI GXTC S XCITGTHHPCI`.
-
+<!---
     === "Correction"
         {{ correction(True,
         "
@@ -174,7 +179,7 @@
 
         ```
         "
-        ) }}
+        ) }}-->  
 
 
 
@@ -187,7 +192,7 @@
 
         1. Écrire une fonction ```suivant(n)``` qui renvoie le successeur du nombre ```n```, suivant les règles énoncées ci-dessus.
         2. Écrire une fonction ```syracuse(n)``` qui affiche tous les termes de la suite de Syracuse jusqu'à (on l'espère !) 1.  
-
+<!---
     === "Correction"
         {{ correction(True,
         "
@@ -208,14 +213,14 @@
                 print(n)
         ``` 
         "
-        ) }}        
+        ) }}       -->   
 
-!!! example "{{ exercice() }}"
+!!! example "{{ exercice() }}" (en lien avec l'exercice précédent)
     === "Énoncé"
         1. Écrire une fonction ```temps_de_vol(n)``` qui renvoie le nombre d'étapes pour arriver à 1, en partant de ```n```
         2. Écrire une fonction ```temps_max(nmax)``` qui affiche le plus grand temps de vol pour un nombre entre 1 et ```nmax```.
         3. Modifier cette fonction pour afficher aussi le nombre de départ donnant ce plus grand temps de vol.
-
+<!---
     === "Correction"
         {{ correction(True,
         "
@@ -240,5 +245,5 @@
             print('le plus grand temps de vol vaut :', maximum)
         ``` 
         "
-        ) }}        
+        ) }}     -->   
        

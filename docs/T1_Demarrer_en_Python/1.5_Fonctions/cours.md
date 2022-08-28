@@ -1,5 +1,8 @@
 # 1.5 Fonctions
 
+!!! note "Travail à réaliser sur le notebook Capytale du lien suivant:"
+	[T1.5 Fonctions](https://capytale2.ac-paris.fr/web/c/1d2f-631488/mln){: target = "_blank"} 
+	
 La notion de fonction est essentielle en programmation.  
 Elle permet de construire des codes modulaires, plus faciles à lire et à modifier.  
 En Python, une fonction se crée avec le mot-clé `def`.
@@ -234,8 +237,8 @@ Quelles sont les règles régissant ces espaces de noms ? Les frontières entre 
 
 ![image](data/global_regles.png){: .center width=80%}
 
-
-!!! example "Exercice"
+{{ initexo(0) }}
+!!! example "{{ exercice() }}"
     === "Énoncé"
         On considère les 3 codes ci-dessous. Pour chacun, dire **sans l'exécuter** s'il est valide ou non. S'il ne l'est pas, identifier la règle (parmi celles énoncées ci-dessus) qui est bafouée.
 
@@ -312,7 +315,6 @@ Quelles sont les règles régissant ces espaces de noms ? Les frontières entre 
             score -= 300
 
     # BIEN
-    # -------- Attention le code ci-dessous est faux, il sera bientôt enlevé ------------------- 
     score = 0
     def ramasse_objet(objet, score):  # ma fonction veut modifier score ? 
         if objet == "champignon":     # -> ok, je mets score dans ses paramètres
@@ -411,7 +413,7 @@ AssertionError
 
 Il faut vérifier que les tests couvrent toutes les situations possibles, mais ce n'est pas toujours facile !
 
-!!! example "Exercice"
+!!! example "{{ exercice() }}"
     === "Énoncé"
         On considère (à nouveau !) le jeu du FizzBuzz. 
      
@@ -425,7 +427,8 @@ Il faut vérifier que les tests couvrent toutes les situations possibles, mais c
         
         1. Écrire la fonction ```test_fizzbuzz()``` qui testera la fonction ```fizzbuzz(n)```.
         2. Écrire la fonction ```fizzbuzz(n)```.
-
+	
+	<!---
     === "Correction"
         {{ correction(True,
         "
@@ -449,4 +452,4 @@ Il faut vérifier que les tests couvrent toutes les situations possibles, mais c
         ```
 
         "
-        ) }}
+        ) }}-->
