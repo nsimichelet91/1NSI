@@ -1,16 +1,16 @@
-# Conseils de travail
+# 1.Conseils de travail
 
 
 ## Conditions matérielles
 
 Il est conseillé de travailler avec 3 espaces:
 
-- l'écran de l'ordinateur partitionné avec les 2 premiers espaces: ce site et un IDE (Thonny par exemple);
+- l'écran de l'ordinateur partitionné avec les 2 premiers espaces: ce site et Capytale ou l'IDE avec lequel vous écrivez votre code ;
 
-![image](data/cap.png){: .center}
+![image](data/partage_ecran.jpg){: .center}
 
 !!! danger "C'est en codant qu'on apprend à coder"
-    **Tous** les exemples de code dans le cours doivent être **retapés** (résistez à l'envie du copier-coller) dans Thonny, soit en fenêtre de script, soit en console.
+    **Tous** les exemples de code dans le cours doivent être **retapés** (résistez à l'envie du copier-coller), soit en fenêtre de script, soit en console.
 
     Cela permet de :
 
@@ -25,44 +25,6 @@ Il est conseillé de travailler avec 3 espaces:
 
 ![image](data/cahier.jpeg){: .center width=50%}
 
-
-## Script ou console ???
-
-Thonny, comme la grande majorité des IDE Python, est composé de deux zones distinctes :
-
-- la zone de script
-- la console
-
-![image](data/thonny.png){: .center width=50%}
-
-La zone de script est **asynchrone**. Il ne se passera rien tant que vous n'aurez pas exécuté le script (par F5 par exemple).
-C'est donc l'endroit où on va rédiger son programme.
-
-La **console** est synchrone : elle répond dès que vous appuyez sur la touche Entrée. Elle sert donc aux petits tests rapides, ou bien tests post-exécution d'un code.
-
-!!! note "Utilisation classique du couple script / console"
-    1. On écrit son code dans la zone de script
-    2. On l'exécute.
-    3. On interroge la console pour connaître l'état des variables, pour utiliser les fonctions construites dans le script.
-
-Pour les extraits de code présents sur ce site :
-
-- tout le code qui est précédé d'une numérotation de ligne est à écrire en zone de script.
-
-Exemple :
-```python linenums='1'
-def accueil(n):
-   for k in range(n):
-       print("bonjour") 
-```
-
-- tout le code qui est précédé ```>>>``` est à taper en console.
-
-Exemple :
-```python
->>> accueil(5)
-```
-
 ## Dossiers, fichiers et versionning
 
 Cette année en NSI nous allons manipuler un certain nombre de fichiers. Il est important de les nommer et les classer de façon rigoureuse pour les retrouver rapidement et les partager.
@@ -70,7 +32,7 @@ Cette année en NSI nous allons manipuler un certain nombre de fichiers. Il est 
 
 !!! tip "Conseils"
     - Utilisez des dossiers pour classer vos fichiers. Il n'y en a jamais assez.
-    - Prenez l'habitude de faire plusieurs sauvegardes de vos documents (sur le réseau du lycée, sur l'ENT, sur clé USB).
+    - Prenez l'habitude de faire plusieurs sauvegardes de vos documents (notamment en utilisant le cloud).
     - Évitez dans les noms de fichiers et de dossiers **les espaces** (utilisez plutôt _ ) ainsi que **les caractères accentués** et les caractères spéciaux.
     - Un nom de fichier doit être parlant (un peu comme une variable en fait). On évitera de nommer ses codes Python `python1.py`, `python2.py`, `python3.py`, etc. Mais plutôt `1NSI_T4_tri_selection.py` par exemple pour un exercice de programmation sur le tri par selection au thème 4.
     - Lorsqu'on travaille sur un projet ou un programme conséquent, il peut être utile de conserver des archives du travail à plusieurs étapes de l'élaboration, plutôt que de ne conserver que la dernière version. À cet effet on pourra numéroter : `1NSI_projet_morpion_v1.py`, puis `1NSI_projet_morpion_v2.py`, `1NSI_projet_morpion_v3.py`, etc.
@@ -106,10 +68,10 @@ Utiliser le clavier est souvent bien plus pratique et surtout plus rapide qu'uti
         - `CTRL+A` pour sélectionner tout (All).
     
     === "IDE"
-        À chercher de suite lorsqu'on utilise un nouvel IDE, les raccourcis pour les actions suivantes (entre parenthèses ceux de Thonny):
+        À chercher de suite lorsqu'on utilise un nouvel IDE, les raccourcis pour les actions suivantes:
 
-        - exécuter le code (`F5`)
-        - commenter/décommenter une ligne (`CTRL+M`)
+        - exécuter le code
+        - commenter/décommenter une ligne
 
     === "Navigateur Web"
         - `CTRL+T` pour ouvrir un nouvel onglet;
