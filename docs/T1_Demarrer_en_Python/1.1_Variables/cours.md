@@ -1,5 +1,8 @@
 # 1.1 Variables
 
+!!! note "Voici le lien du notebook sur lequel vous devez faire les exercices"
+	[T1.1_variables_cours](https://capytale2.ac-paris.fr/web/c/4ead-631441/mln){: target = "_blank"} 
+
 ## A. Pourquoi des variables ?
 
 ### A.1 Introduction
@@ -260,9 +263,9 @@ Cette procédure d'**incrémentation** est très très classique, il faut la ma�
 
 
 
-
+<!---
 <iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-
+-->
 
 
 
@@ -275,9 +278,9 @@ Cette procédure d'**incrémentation** est très très classique, il faut la ma�
 
 
 
-
+<!---
 <iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-
+-->
 
 
 
@@ -290,9 +293,9 @@ Cette procédure d'**incrémentation** est très très classique, il faut la ma�
 
 
 
-
+<!---
 <iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-
+-->
 
 
 
@@ -375,9 +378,9 @@ Vous pouvez vérifier maintenant que les valeurs de ```a``` et de ```b``` ont bi
 
 
 
-
+<!---
 <iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-
+-->
 
 
 
