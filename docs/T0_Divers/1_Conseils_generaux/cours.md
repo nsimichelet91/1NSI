@@ -7,7 +7,7 @@ Il est conseillé de travailler avec 3 espaces:
 
 - l'écran de l'ordinateur partitionné avec les 2 premiers espaces: ce site et Capytale ou l'IDE avec lequel vous écrivez votre code ;
 
-![image](data/partage_ecran.jpg){: .center width=50%}
+![image](data/partage_ecran.JPG){: .center width=50%}
 
 !!! danger "C'est en codant qu'on apprend à coder"
     **Tous** les exemples de code dans le cours doivent être **retapés** (résistez à l'envie du copier-coller), soit en fenêtre de script, soit en console.
