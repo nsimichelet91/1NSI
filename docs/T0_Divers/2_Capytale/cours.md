@@ -1,4 +1,4 @@
-# 2.Utilisation du service Capytale
+# Utilisation du service Capytale
 
 Capytale est un service de partage d’activités de codage, je vous partagerai très souvent des liens pour vous rendre sur les activités appelées notebooks.  
 La connexion à Capytale se fait grâce à vos identifiants ENT(monlycee.net).  

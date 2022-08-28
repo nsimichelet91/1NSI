@@ -1,4 +1,4 @@
-# 1.Conseils de travail
+# Conseils de travail
 
 
 ## Conditions matérielles
