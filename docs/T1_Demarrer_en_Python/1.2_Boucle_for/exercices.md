@@ -1,7 +1,7 @@
 # Exercices sur la boucle `for`
 
 !!! note "Travail à réaliser sur le notebook Capytale du lien suivant:"
-[T1.2 Exos Boucle for](https://capytale2.ac-paris.fr/basthon/notebook/?id=627891){: target = "_blank"} 
+	[T1.2_Boucle_for](https://capytale2.ac-paris.fr/basthon/notebook/?id=627891){: target = "_blank"} 
 
 Les énoncés sont donnés sur cette page à titre indicatif.
 

@@ -1,5 +1,7 @@
-# 1.3 Boucle While
-
+# 1.3 Boucle while
+!!! note "Travail à réaliser sur le notebook Capytale du lien suivant:"
+	[T1.3 Boucle while](https://capytale2.ac-paris.fr/web/c/6d60-628207/mln){: target = "_blank"} 
+	
 ## 1. Premiers exemples
 
 À la différence essentielle des boucles `for`, dont on peut savoir à l'avance combien de fois elles vont être exécutées, les boucles `while` sont des boucles dont on ne sort que lorsqu'une condition n'est plus satisfaite. 
@@ -119,8 +121,6 @@ Voir le piège n°1 ...
 
     va écrire ```fini``` et s'arrêter.
 
-[T1.3 Exos 1 et 2 Boucle while](https://capytale2.ac-paris.fr/web/c/6d60-628207/mln){: target = "_blank"} 
-
 Les énoncés sont donnés sur cette page à titre indicatif.
 
 {{ initexo(0) }}
@@ -136,7 +136,6 @@ La boucle bornée ```for``` que nous avons étudiée est très pratique.
 
 Mais nous pourrions nous en passer : toutes les boucles ```for``` peuvent en fait être ré-écrites en utilisant ```while```. (alors que la réciproque est fausse)
 
-!!! note "ExerciceS 1 et 2 à réaliser sur le notebook Capytale du lien suivant:"
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
