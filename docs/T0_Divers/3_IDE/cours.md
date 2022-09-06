@@ -23,7 +23,7 @@ En ligne, sans aucune installation, vous pouvez utiliser [https://console.bastho
 ![](data/bast1.png)
 
 ou encore
-[https://trinket.io/python]{:target="_blank"}
+[https://trinket.io/python](https://trinket.io/python){:target="_blank"}
 
 ![](data/trinket.jpg)
 
