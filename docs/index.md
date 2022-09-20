@@ -1,6 +1,6 @@
 
 !!! abstract ":star: Actualités :star:"
-    - Bonne rentrée à tous !
+    - Première évaluation faite, on s'accroche quelque soit le résultat.
 
 
 
