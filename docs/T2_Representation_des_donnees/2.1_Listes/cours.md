@@ -4,7 +4,7 @@
 
 
 !!! note "Voici le lien du notebook sur lequel vous devez faire les exercices"
-	[T2.1_Les_listes](https://capytale2.ac-paris.fr/web/c/319f-680642/mln){: target = "_blank"}
+	[T2.1_Les_listes-Cours](https://capytale2.ac-paris.fr/web/c/2b7b-704259/mln){: target = "_blank"}
 
 
 Les listes font partie de ce qu'on appelle les *données composites* (nous verrons plus tard les *tuples* et les *dictionnaires*). Elles permettent de regrouper de manière structurée un **ensemble de valeurs** (et non plus une valeur unique).
