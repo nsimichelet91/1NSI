@@ -425,13 +425,23 @@ L'instruction `del`  (qui n'est pas une fonction) permet de supprimer un éléme
 ```
 
 
-<!---
+
 !!! example "{{ exercice() }}"
     === "Énoncé"
-        [Exercice 01.1](https://glassus.github.io/terminale_nsi/T6_6_Epreuve_pratique/cours/#exercice-011) de la BNS.
+        Ecrire une fonction ```supp_max(tab)``` qui supprime toutes les occurences de la valeur max présentes dans ```tab```.
+		```python
+		>>> tab = [12, 34, 2, 22, 43, 11]
+		>>> supp_max(tab)
+		>>> tab
+		[12, 34, 2, 22, 11]
+		>>> tab = [21, 43, 3, 22, 43, 23]
+		>>> supp_max(tab)
+		>>> tab
+		[21, 3, 22, 23]
+		```
     === "Correction"
         
--->
+
 
 ## 6. Construction d'une liste d'éléments identiques
 Il est souvent pratique d'initialiser une liste de taille donnée, souvent en la remplissant de 0.
