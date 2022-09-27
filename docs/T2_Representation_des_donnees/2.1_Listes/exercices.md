@@ -77,6 +77,7 @@
         ) }}
 -->
 
+
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Résolvez le pydéfi **Insaisissable matrice** proposé à [cette adresse](https://pydefis.callicode.fr/defis/AlgoMat/txt)        
