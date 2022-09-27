@@ -7,7 +7,7 @@
         Résolvez le **Pydéfi** proposé à [cette adresse](https://pydefis.callicode.fr/defis/Herculito04Sanglier/txt)
 
         Vous pouvez vous créer un compte pour valider vos résultats, ce site (géré par l'Académie de Poitiers) est **remarquable**. 
-    
+<!---
     === "Correction"
         (avec les valeurs de test)
         ```python linenums='1'
@@ -21,7 +21,7 @@
 
         print(total)
         ```
-        
+-->     
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
@@ -45,7 +45,9 @@
 
         - si le nombre est divisible par 7, afficher ```*```, sinon afficher une espace ``` ```
         - sur une même ligne, on affichera tous les symboles côte à côte, en rajoutant le paramètre ```end = ''``` à la fonction ```print```. (*exemple :* ```print('*', end = '')``` )
-        - on ira à la ligne à la fin de chaque ligne, par l'instruction ```print()```     
+        - on ira à la ligne à la fin de chaque ligne, par l'instruction ```print()```    
+
+<!---		
     === "Correction"
         {{ correction(True,
         "
@@ -73,12 +75,14 @@
         ```
         "
         ) }}
-
+-->
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
         Résolvez le pydéfi **Insaisissable matrice** proposé à [cette adresse](https://pydefis.callicode.fr/defis/AlgoMat/txt)        
-    === "Correction"
+    
+<!---
+	=== "Correction"
         {{ correction(True,
         "
         ```python linenums='1'
@@ -102,7 +106,7 @@
         ```
         "
         ) }}
-
+-->
 
 !!! example "{{ exercice() }}"
     === "Énoncé"
@@ -137,10 +141,11 @@
         ['12', '02', '2002']
         ``` 
 
-
+<!---
     === "Correction"
         {{ correction(True,
         "
         
         "
         ) }}
+-->
