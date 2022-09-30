@@ -307,20 +307,27 @@ Quelles sont les règles régissant ces espaces de noms ? Les frontières entre 
 
     ```python linenums='1'
     # PAS BIEN
-    score = 0
     def ramasse_objet(objet):
         if objet == "champignon":
             score += 20
         if objet == "banane":
             score -= 300
+		return score
+		
+	score = 0
+	score = ramasse_objet("banane")
+	
 
     # BIEN
-    score = 0
     def ramasse_objet(objet, score):  # ma fonction veut modifier score ? 
         if objet == "champignon":     # -> ok, je mets score dans ses paramètres
             score += 20
         if objet == "banane":
             score -= 300
+		return score
+		
+	score = 0
+	score = ramasse_objet("banane")
     ```
 
 ## 6. Documenter une fonction
@@ -373,12 +380,13 @@ Il est possible, voire souhaitable (dès qu'on créé un code comportant plusieu
     chat_penible(n)
         Affiche n fois la chaine de caractères "miaou"
     ```
-
+<!---
 Plus de renseignements sur les docstrings [ici](https://glassus.github.io/terminale_nsi/T2_Programmation/2.4_Pratiques_de_programmation/cours/#22-le-cas-particulier-des-docstrings){: target = "_blank"}
+-->
 
 ## 7. Jeux de tests pour une fonction
 
-Les exercices de [cette page](../exercices/) sont (presque) tous livrés avec un *jeu de tests*. Il s'agit d'une fonction, souvent appelée ```test_nom_de_la fonction()```, qui va regrouper les différents tests qu'on pourrait faire en console pour vérifier que la fonction a le comportement désiré.
+Les exercices de la page exercices sur les fonctions sont (presque) tous livrés avec un *jeu de tests*. Il s'agit d'une fonction, souvent appelée ```test_nom_de_la fonction()```, qui va regrouper les différents tests qu'on pourrait faire en console pour vérifier que la fonction a le comportement désiré.
 
 Ces tests reposent sur le mot-clé ```assert```, qui va lever une erreur lorsqu'il est suivi d'une expression évaluée à ```False``` :
 

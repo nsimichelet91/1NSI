@@ -6,7 +6,7 @@
     === "Énoncé"
         Définissez une fonction `maxi(n1,n2)` qui renvoie le plus grand élément entre `n1` et `n2`.
 		Testez votre fonction `maxi(n1,n2)` à l'aide d'une fonction `test_maxi()`
-<!---
+
     === "Tester sa fonction"
         Vous pouvez utiliser la fonction de tests ci-dessous :
         ```python linenums='1'
@@ -16,7 +16,7 @@
             assert maxi(7,7) == 7
             print("tests ok")
         ```
-
+<!---
     === "Correction"
         {{ correction(True,
         "
@@ -45,7 +45,7 @@
         'A'
         ```
 
-<!---
+
     === "Tester sa fonction"
         Vous pouvez utiliser la fonction de tests ci-dessous :
         ```python linenums='1'
@@ -54,7 +54,7 @@
             assert decale('Z') == 'C'
             print('tests ok !')
         ```
-
+<!---
 
     === "Correction"
         {{ correction(True,
@@ -75,7 +75,7 @@
         Définissez une fonction `decale_n(lettre, n)` en ajoutant un paramètre `n` à la fonction précédente pour pouvoir décaler la lettre de `n` rangs.
 		
 		Testez votre fonction `decale_n(lettre, n)` à l'aide d'une fonction `test_decale_n()`
-<!---
+
     === "Tester sa fonction"
         Vous pouvez utiliser la fonction de tests ci-dessous :
         ```python linenums='1'
@@ -86,7 +86,7 @@
             print('tests ok !')
         ```
 
-
+<!---
 
 
     === "Correction"
