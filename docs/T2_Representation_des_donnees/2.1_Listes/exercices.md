@@ -1,3 +1,5 @@
+!!! note "Travail à réaliser sur le notebook Capytale du lien suivant:"
+	[T2.1_les_listes_exercices](https://capytale2.ac-paris.fr/web/c/75d4-800427){: target = "_blank"} 
 
 {{initexo(0)}}
 !!! example "{{ exercice() }}"
