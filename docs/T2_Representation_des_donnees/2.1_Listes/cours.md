@@ -672,8 +672,6 @@ Ceci met en évidence que la métaphore du tiroir dont on se sert pour expliquer
 Pour en savoir plus sur les variables, vous pouvez revenir sur la [partie optionnelle](../../../T1_Demarrer_en_Python/1.1_Variables/cours/#b2-une-realite-bien-plus-complexe) du cours sur les variables.
 
 
-
-
 ### Mais alors, comment copier le contenu d'une liste vers une autre sans créer un clone ?
 
 !!! note "Exemple fondateur n°12 :heart:"
@@ -705,8 +703,6 @@ Pour en savoir plus sur les variables, vous pouvez revenir sur la [partie option
         "
         ) }}
 -->
-
-
 
 
 ## 9. Tableaux à plusieurs dimensions : listes de listes
@@ -802,9 +798,49 @@ La liste `a` est composée de 3 éléments qui sont eux-même des listes de 3 é
         ) }}
 -->
 
+!!! danger "copie d'une liste de listes (tableau à 2 dimensions ou matrice)"
+    Dans le cas d'une copie d'une liste de listes (matrice), les solutions précédentes (voir 8. Un phénomène inquiétant : la copie de liste) ne sont pas suffisantes.   
+	Il est alors nécessaire d'utilser la fonction ```deepcopy()``` du module ```copy````.
 
 
+!!! note "Exemple fondateur n°14 :heart:"
 
+    - Sans deepcopy()
+	
+    ```python linenums='1'
+    from copy import copy
+	
+	matrice = [1, 2, 3], [4, 5, 6], [7, 8, 9]]
+	copie_matrice = copy(matrice)
+    ```
+	>>> id(matrice)
+	14670304
+	>>> id(copie_matrice)
+	12835472
+	>>> id(matrice[0])
+	14772224
+	>>> id(copie_matrice[0])
+	14772224
 
+	Nous voyons ici ```matrice``` et ```matrice_copie``` sont bien 2 objets différents, leurs id le prouves.
+	Cependant les objets imbriqués ("les listes à l'intérieur") de la liste copiée font toujours référence aux objets imbriqués de la liste originale ```matrice```. Ils ont les mêmes id. 
+	
+	- Avec deepcopy()
+	
+    ```python linenums='1'
+    from copy import deepcopy
+	
+	matrice = [1, 2, 3], [4, 5, 6], [7, 8, 9]]
+	copie_matrice = deepcopy(matrice)
+    ```
+	>>> id(matrice)
+	14670304
+	>>> id(copie_matrice)
+	12835472
+	>>> id(matrice[0])
+	14772224
+	>>> id(copie_matrice[0])
+	13917624
 
-
+	Nous voyons ici ```matrice``` et ```matrice_copie``` sont bien 2 objets différents, leurs id le prouves.
+	Et cette fois les objets imbriqués de la liste copiée sont bien des objets différents que ceux de la liste originale ```matrice```. Ils n'ont les mêmes id.
