@@ -813,6 +813,7 @@ La liste `a` est composée de 3 éléments qui sont eux-même des listes de 3 é
 	matrice = [1, 2, 3], [4, 5, 6], [7, 8, 9]]
 	copie_matrice = copy(matrice)
     ```
+	```
 	>>> id(matrice)
 	14670304
 	>>> id(copie_matrice)
@@ -821,7 +822,8 @@ La liste `a` est composée de 3 éléments qui sont eux-même des listes de 3 é
 	14772224
 	>>> id(copie_matrice[0])
 	14772224
-
+	```
+	
 	Nous voyons ici ```matrice``` et ```matrice_copie``` sont bien 2 objets différents, leurs id le prouves.
 	Cependant les objets imbriqués ("les listes à l'intérieur") de la liste copiée font toujours référence aux objets imbriqués de la liste originale ```matrice```. Ils ont les mêmes id. 
 	
@@ -833,6 +835,7 @@ La liste `a` est composée de 3 éléments qui sont eux-même des listes de 3 é
 	matrice = [1, 2, 3], [4, 5, 6], [7, 8, 9]]
 	copie_matrice = deepcopy(matrice)
     ```
+	```
 	>>> id(matrice)
 	14670304
 	>>> id(copie_matrice)
@@ -841,6 +844,7 @@ La liste `a` est composée de 3 éléments qui sont eux-même des listes de 3 é
 	14772224
 	>>> id(copie_matrice[0])
 	13917624
-
+	```
+	
 	Nous voyons ici ```matrice``` et ```matrice_copie``` sont bien 2 objets différents, leurs id le prouves.
 	Et cette fois les objets imbriqués de la liste copiée sont bien des objets différents que ceux de la liste originale ```matrice```. Ils n'ont les mêmes id.
