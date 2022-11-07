@@ -1,11 +1,13 @@
 
 !!! abstract ":star: Actualités :star:"
     - Première évaluation faite, on s'accroche quelque soit le résultat.
+	- 6 semaines avant Noël on s'accroche et on redouble d'efforts.
 
 
 
 ## Thèmes en cours d'étude :
-- [Listes](T2_Representation_des_donnees/2.1_Listes/cours/)
+!!! note
+	- [Listes](T2_Representation_des_donnees/2.1_Listes/cours/)
  
 
 
