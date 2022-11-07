@@ -5,18 +5,17 @@
 
 
 ## Thèmes en cours d'étude :
--  [Variables](T1_Demarrer_en_Python/1.1_Variables/cours/)  
--  [Boucle ```for```](T1_Demarrer_en_Python/1.2_Boucle_for/cours/)  
--  [Boucle ```while```](T1_Demarrer_en_Python/1.3_Boucle_while/cours/)
--  [Instruction conditionnelle ```if```](T1_Demarrer_en_Python/1.4_Instruction_conditionnelle_if/cours/) 
-- [Fonctions](T1_Demarrer_en_Python/1.5_Fonctions/cours/)
+- [Listes](T2_Representation_des_donnees/2.1_Listes/cours/)
  
 
 
-<!---
-!!! note "*Anciens thèmes traités*"
-   --> 
 
+!!! note "*Anciens thèmes traités*"
+- [Variables](T1_Demarrer_en_Python/1.1_Variables/cours/)  
+- [Boucle ```for```](T1_Demarrer_en_Python/1.2_Boucle_for/cours/)  
+- [Boucle ```while```](T1_Demarrer_en_Python/1.3_Boucle_while/cours/)
+- [Instruction conditionnelle ```if```](T1_Demarrer_en_Python/1.4_Instruction_conditionnelle_if/cours/) 
+- [Fonctions](T1_Demarrer_en_Python/1.5_Fonctions/cours/)
 
 
 
