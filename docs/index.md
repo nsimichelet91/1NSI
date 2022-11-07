@@ -6,7 +6,7 @@
 
 
 ## Thèmes en cours d'étude :
-!!! note
+!!! note "*Thèmes en cours d'étude*"
 	- [Listes](T2_Representation_des_donnees/2.1_Listes/cours/)
  
 
@@ -21,7 +21,7 @@
 
 
 
-## Programme
+## Programme :
 !!! abstract "Programme"
     Nous traiterons les différentes entrées du programme dans les chapitres suivants :
 
