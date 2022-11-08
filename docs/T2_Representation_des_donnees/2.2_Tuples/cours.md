@@ -113,12 +113,12 @@ def division(a, b):
 (4,1)
 ```
 
-### 6. Exercices 
+## 6. Exercices 
 
 !!! note "Voici le lien du notebook sur lequel vous devez faire les exercices"
 	[T2.2_Les_tuples_exercices](https://capytale2.ac-paris.fr/web/c/c3d3-914041){: target = "_blank"}
 
-### 7. Questions et exercices sur listes et tuples
+## 7. Questions et exercices sur listes et tuples
 
 !!! note "Voici le lien du notebook sur lequel vous devez faire les exercices"
 	[Exercices listes et tuples](https://capytale2.ac-paris.fr/web/c/aa82-902594){: target = "_blank"}
