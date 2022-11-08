@@ -113,20 +113,13 @@ def division(a, b):
 (4,1)
 ```
 
-### 6. Exercice 
+### 6. Exercices 
 
-!!! abstract "Exercice"
-    === "Énoncé"
-        On considère deux points A et B d'un repère quelconque. Leurs coordonnées sont des tuples à deux éléments.
-        Écrire une fonction qui prend en argument les coordonnées de deux points et qui renvoie le milieu de ces deux points.
+!!! note "Voici le lien du notebook sur lequel vous devez faire les exercices"
+	[T2.2_Les_tuples_exercices](https://capytale2.ac-paris.fr/web/c/c3d3-914041){: target = "_blank"}
 
-        La fonction doit fonctionner de cette manière :
-        ```python
-        >>> C = (45, 12)
-        >>> D = (49, 32)
-        >>> milieu(C,D)
-        (47, 22)
-        ```
+### 7. Questions et exercices sur listes et tuples
 
-
+!!! note "Voici le lien du notebook sur lequel vous devez faire les exercices"
+	[Exercices listes et tuples](https://capytale2.ac-paris.fr/web/c/aa82-902594){: target = "_blank"}
 
