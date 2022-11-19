@@ -204,3 +204,29 @@ Nous allons résoudre ce problème grâce à :
 
         Quel est le **chiffre** qui revient le plus fréquemment dans cette liste ?
         
+## 4. Mutabilité et copie d'un dictionnaire
+Comme les tableaux et les matrices, les dictionnaires sont **mutables**. Il faut donc faire attention car passés en arguments à des fonctions, les muter à l'intérieur des fonctions provoque leur mutation également à l'extérieur des fonctions. 
+
+Si on souhaite générer une copie d'un dictionnaire `dico` pour ensuite muter la copie sans toucher à l'original, il est impératif d'utiliser la fonction `deepcopy` du module `copy` : `copie_dico = copy.deepcopy(dico)`.
+
+En effet, comme pour les tableaux, lorsqu'on utilise `copie_dico = dico` pour faire une copie, on risque de faire des erreurs : avec cette façon de copier les deux variables pointent vers le même objet en mémoire. Lorsqu'on mutera `copie_dico` on mutera donc à la fois `dico` sans s'en rendre compte, ce qui est dangereux ...
+
+!!! note "Exemple fondateur n°8 :heart:"
+    Vraie copie indépendante de l'original:
+    ```python
+    import copy
+
+	dico = {32:'Gers', 59:'Nord', 93:'Seine-Saint-Denis', 39:'Jurrât'}
+	copie = copy.deepcopy(dico)
+	copie[39] = 'Jura'
+
+	dico, copie
+    ```
+	Fausse copie pointant vers le même objet que l'original :
+	```python
+	dico = {32:'Gers', 59:'Nord', 93:'Seine-Saint-Denis', 39:'Jurrât'}
+	copie = dico
+	copie[39] = 'Jura'
+
+	dico, copie
+	```
