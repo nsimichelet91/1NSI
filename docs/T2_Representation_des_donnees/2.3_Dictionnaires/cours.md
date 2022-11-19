@@ -221,6 +221,8 @@ En effet, comme pour les tableaux, lorsqu'on utilise `copie_dico = dico` pour fa
 	copie[39] = 'Jura'
 
 	dico, copie
+	
+	({32: 'Gers', 59: 'Nord', 93: 'Seine-Saint-Denis', 39: 'Jurrât'}, {32: 'Gers', 59: 'Nord', 93: 'Seine-Saint-Denis', 39: 'Jura'})
     ```
 	Fausse copie pointant vers le même objet que l'original :
 	```python
@@ -229,4 +231,6 @@ En effet, comme pour les tableaux, lorsqu'on utilise `copie_dico = dico` pour fa
 	copie[39] = 'Jura'
 
 	dico, copie
+	
+	({32: 'Gers', 59: 'Nord', 93: 'Seine-Saint-Denis', 39: 'Jura'}, {32: 'Gers', 59: 'Nord', 93: 'Seine-Saint-Denis', 39: 'Jura'})
 	```
