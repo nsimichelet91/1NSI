@@ -139,8 +139,7 @@ On peut utiliser la fonction `int("nombre",base)`.
 ```
 
 
-## 3. Du binaire inattendu
-# Le message secret de Perseverance
+## 3. Du binaire inattend : Le message secret de Perseverance
 
 Lors de sa descente vers la planète Mars le 18/02/2021, le rover Perseverance de la Nasa a freiné sa chute grâce à un parachute qui a intrigué quelques internautes du forum Reddit.
 
