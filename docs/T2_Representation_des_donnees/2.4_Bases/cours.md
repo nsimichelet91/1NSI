@@ -134,7 +134,7 @@ Soit 6C3F(16) = 0110 1100 0011 1111(2)
 
 - Utiliser la méthode des divisions succesives par 16.  
 
-![image](data/div_16.jpg){: .center}
+![image](data/div16.png){: .center}
 
 
 ### 2.4 De l'hexadécimal vers le décimal :
