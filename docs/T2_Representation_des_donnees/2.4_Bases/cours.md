@@ -95,6 +95,35 @@ On a donc la correspondance :
 - E représente 14  
 - F représente 15 
 
+### 2.1 Convertir du binaire en Hexadécimal
+Il suffit tout simplement de réunir les bits par quartet (4) pour créer la base 16.  
+Attention à commencer par la droite !  
+*Exemple à convertir :* 1001101011  
+- En commençant par la gauche : 1001 1010 11??  
+	Il manque 2 bits pour terminer...  
+- En commençant par la droite : 0010 0110 1011  
+	Pas assez de bits pour arriver à 4 ?  
+
+Il suffit d'ajouter au besoin pour vous aider des 0 devant (ils sont non significatifs) !   
+Ainsi, le quartet de droite, le poids le plus faible:  
+1011 = 8 + 0 + 2 + 1 = 11 = B  
+0110 = 0 + 4 + 2 + 0 = 6 = 6  
+0010 = 0 + 0 + 2 + 0 = 2  
+Soit en hexadécimal la valeur 26B ; quand même plus aisée à communiquer !  
+
+Notez que l'on est passé par le décimal : c'est plus pratique  
+
+
+### 2.2 Convertir de Hexadécimal vers binaire :
+*Exemple avec 6C3F :*  
+F = 15 = 1111  
+3 = 0011  
+C = 12 = 1100  
+6 = 0110  
+
+Soit 6C3F(16) = 0110 1100 0011 1111(2)  
+Le 0 devant est optionnel
+
 
 ### 2.1 De l'hexadécimal vers le décimal :
 
@@ -102,7 +131,6 @@ On a donc la correspondance :
 |:---:|:---:|:---:|
 |$16^2$|$16^1$|$16^0$|
 | 1| D|2|
-
 
 
  $\rm{1D2}_{16}=1 \times 16^2+ 13 \times 16^1+2 \times 16^0=256+208+2=466_{10}$
