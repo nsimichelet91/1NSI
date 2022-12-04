@@ -98,34 +98,47 @@ On a donc la correspondance :
 ### 2.1 Convertir du binaire en Hexadécimal
 Il suffit tout simplement de réunir les bits par quartet (4) pour créer la base 16.  
 Attention à commencer par la droite !  
+
 *Exemple à convertir :* 1001101011  
+
 - En commençant par la gauche : 1001 1010 11??  
 	Il manque 2 bits pour terminer...  
+	
 - En commençant par la droite : 0010 0110 1011  
 	Pas assez de bits pour arriver à 4 ?  
 
 Il suffit d'ajouter au besoin pour vous aider des 0 devant (ils sont non significatifs) !   
 Ainsi, le quartet de droite, le poids le plus faible:  
+
 1011 = 8 + 0 + 2 + 1 = 11 = B  
 0110 = 0 + 4 + 2 + 0 = 6 = 6  
 0010 = 0 + 0 + 2 + 0 = 2  
+
 Soit en hexadécimal la valeur 26B ; quand même plus aisée à communiquer !  
 
-Notez que l'on est passé par le décimal : c'est plus pratique  
-
-
 ### 2.2 Convertir de Hexadécimal vers binaire :
+
 *Exemple avec 6C3F :*  
+
 F = 15 = 1111  
 3 = 0011  
 C = 12 = 1100  
 6 = 0110  
 
 Soit 6C3F(16) = 0110 1100 0011 1111(2)  
-Le 0 devant est optionnel
+
+### 2.3 Du décimal vers l'hexadécimal :
+
+2 solution sont possibles :
+
+- Passer par la base 2 : on convertit le nombre de la base 10 à la base 2 puis de la base 2 à la base 16 comme expliqué au 2.1.  
+
+- Utiliser la méthode des divisions succesives par 16.  
+
+![image](data/div_16.png){: .center}
 
 
-### 2.1 De l'hexadécimal vers le décimal :
+### 2.4 De l'hexadécimal vers le décimal :
 
 |256|16|1|
 |:---:|:---:|:---:|
