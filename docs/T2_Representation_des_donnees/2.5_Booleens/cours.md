@@ -33,16 +33,16 @@ algèbre de Boole) quelconques, `F` désignera FAUX et `V` désignera VRAI.
 ____________
 
 ### 2.1 Conjonction (AND)
-- symbole usuel : & (appelé _esperluette_ en français et _ampersand_ en anglais)
 - français : ET
 - anglais (et Python) : `and`
 - notation logique : $\wedge$
 - notation mathématique :  `.`
+- autre symbole : & (appelé _esperluette_ en français et _ampersand_ en anglais)  
 
 C'est l'opération définie par:
 
-* `x & F = F`
-* `x & V = x`
+* `x and F = F`
+* `x and V = x`
 
 Puisque l'algèbre de  Boole ne contient que deux éléments,  on peut étudier tous
 les cas possibles et les regrouper dans un tableau appelé **table de vérité**:
@@ -61,7 +61,7 @@ On représente souvent les opérateurs booléens à l'aide de portes logiques:
 ![](data/porte_et.png){: .center}
 
 
-Notation usuelle en électronique : $Q=A \wedge B$
+Notations usuelles : $Q=A \wedge B$ ou $Q=A . B$ ou $Q=A & B$ ou $Q=A and B$
 
 ![](data/and.png){: .center}
 
@@ -109,19 +109,16 @@ On appelle **évaluation paresseuse** le fait que l'interpréteur Python s'arrê
 
 ### 2.2 Disjonction (OR)
 
-- symbole usuel : | appelé _pipe_ en anglais
 - français : OU
 - anglais (et Python) : `or`
 - notation logique : $\vee$
 - notation mathématique :  $+$
+- autre symbôle : | appelé _pipe_ en anglais
 
 C'est l'opération définie par:
 
-
-C'est l'opération définie par:
-
-* `x | V = V`
-* `x | F = x`
+* `x or V = V`
+* `x or F = x`
 
 On en déduit la table suivante:
 
@@ -138,7 +135,7 @@ On en déduit la table suivante:
 
 ![](data/porte_ou.png){: .center}
 
-Notation usuelle en électronique : $Q=A \vee B$
+Notations usuelles : $Q=A \vee B$ ou $Q=A + B$ ou $Q=A | B$ ou $Q=A or B$  
 
 ![](data/or.png){: .center}
 
@@ -167,28 +164,28 @@ Pouvez-vous prévoir le résultat du code ci-dessous ?
 
 ### 2.3  Négation (NOT)
 
-- symbole usuel : ~
 - français : NON
 - anglais (et Python) : `not`
 - notation logique :  $\neg$
 - notation mathématique :  $\overline{x}$
+- symbole usuel : ~  
 
 C'est l'opération définie par:
 
-* `~V = F`
-* `~F = V`
+* `not V = F`
+* `not F = V`
 
 On en déduit la table suivante:
 
 !!! abstract "Table de vérité de NOT :heart:"
-    |`x`| `~x` |
+    |`x`| `\overline{x}` |
     |:--:|:----:|
     |F|V|
     |V|F|
 
 ![](data/porte_non.png){: .center}
 
-Notation usuelle en électronique : $Q=\neg A$
+Notations usuelles  : $Q=\neg A$ ou $Q=\overline{A}$ ou $Q = ~ A $ ou $Q=not A$
 
 ![](data/no.png){: .center}
 
