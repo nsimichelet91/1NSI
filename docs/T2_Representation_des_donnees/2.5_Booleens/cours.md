@@ -228,7 +228,7 @@ False
 
 !!! abstract "Table de vérité de XOR :heart:"
     |`x`| `y` | `x ^ y`|
-    |:--:|:----:|:--:|
+    |:--:|:----:|:--:|:--:|
     |F|F| F|
     |F|V|V|
     |V|F|V|
@@ -248,15 +248,15 @@ Mais en refaisant un XOR du message chiffré avec la clé $y$, on retrouve donc 
 
 ### 3.2 Fonction Non Et (NAND)
 
-`x ↑ y = ~(x & y)`
+`not(x and y)`
 
 !!! abstract "Table de vérité de NAND :heart:"
-    |`x`| `y` | `x ↑ y`|
-    |:--:|:----:|:--:|
-    |F|F| V|
-    |F|V|V|
-    |V|F|V|
-    |V|V|F|
+    |`x`| `y` | `x and y` | `not(x and y)`|
+    |:--:|:----:|:--:|:--:|
+    |F|F|F|V|
+    |F|V|F|V|
+    |V|F|F|V|
+    |V|V|V|F|
 
 
 
@@ -265,15 +265,15 @@ Mais en refaisant un XOR du message chiffré avec la clé $y$, on retrouve donc 
 ### 3.3 Fonction Non Ou (NOR)
 
 
-`x ↓ y = ~(x & y)`
+`not(x or y)`
 
 !!! abstract "Table de vérité de NOR :heart:"
-    |`x`| `y` | `x ↓ y`|
-    |:--:|:----:|:--:|
-    |F|F| V|
-    |F|V|F|
-    |V|F|F|
-    |V|V|F|
+    |`x`| `y` | `x + y`| `not(x + y)`|
+    |:--:|:----:|:--:|:--:|
+    |F|F|F|V|
+    |F|V|V|F|
+    |V|F|V|F|
+    |V|V|V|F|
 
 
 
