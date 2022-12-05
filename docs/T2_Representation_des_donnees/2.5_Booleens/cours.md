@@ -212,11 +212,10 @@ False
 
 ### 2.4 Exercice 1
 
+*Exemple de circuit :*
+![](data/ex_circuit.png){: .center}
 
 1. Ouvrir le [simulateur de circuits](http://dept-info.labri.fr/ENSEIGNEMENT/archi/circuits/blank-teacher.html){. target="_blank"} et créer pour chaque opération AND, OR, NOT un circuit électrique illustrant ses propriétés.
-
-Exemple (inintéressant) de circuit :
-![](data/ex_circuit.png){: .center}
 
 2. Utiliser successivement les circuits XOR, NAND et NOR et établir pour chacun leur table de vérité.
 
@@ -225,7 +224,7 @@ Exemple (inintéressant) de circuit :
 ### 3.1 Disjonction exclusive XOR
 (en français OU EXCLUSIF)
 
-`x ^ y = (x & ~y) | (~x & y)`
+`x ^ y = (x and not y) | (not x and y)`
 
 !!! abstract "Table de vérité de XOR :heart:"
     |`x`| `y` | `x ^ y`|
@@ -242,9 +241,9 @@ Exemple (inintéressant) de circuit :
 ![](data/xor.png){: .center}
 
 Le XOR joue un rôle fondamental en cryptographie car il possède une propriété très intéressante : 
-$(x\wedge y)\wedge y=x$
+$(x ^ y)^y=x$
 
-Si $x$ est un message et $y$ une clé de chiffrage, alors $x\wedge y$ est le message chiffré. 
+Si $x$ est un message et $y$ une clé de chiffrage, alors $x^y$ est le message chiffré. 
 Mais en refaisant un XOR du message chiffré avec la clé $y$, on retrouve donc le message $x$ initial.
 
 ### 3.2 Fonction Non Et (NAND)
