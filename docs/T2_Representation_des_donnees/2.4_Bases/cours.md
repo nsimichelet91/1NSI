@@ -129,12 +129,13 @@ Soit 6C3F(16) = 0110 1100 0011 1111(2)
 
 ### 2.3 Du décimal vers l'hexadécimal :
 
-2 solution sont possibles :
+2 solution sont possibles :  
+
 - Passer par la base 2 : on convertit le nombre de la base 10 à la base 2 puis de la base 2 à la base 16 comme expliqué au 2.1.  
 
 - Utiliser la méthode des divisions succesives par 16.  
 
-![image](data/div16.png){: .center}
+![image](data/div16.PNG){: .center}
 
 
 ### 2.4 De l'hexadécimal vers le décimal :
