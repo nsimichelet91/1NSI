@@ -132,26 +132,32 @@ Soit 6C3F(16) = 0110 1100 0011 1111(2)
 2 solution sont possibles :  
 
 - Passer par la base 2 : on convertit le nombre de la base 10 à la base 2 puis de la base 2 à la base 16 comme expliqué au 2.1.  
-
-- Utiliser la méthode des divisions succesives par 16.  
+- Utiliser la méthode des divisions succesives par 16.   
 
 ![image](data/div16.PNG){: .center}
 
 
 ### 2.4 De l'hexadécimal vers le décimal :
 
+Encore une fois plusieurs méthodes sont possibles :  
+
 |256|16|1|
 |:---:|:---:|:---:|
 |$16^2$|$16^1$|$16^0$|
 | 1| D|2|
 
+ $\rm{1D2}_{16}=1 \times 16^2+ 13 \times 16^1+2 \times 16^0=256+208+2=466_{10}$  
 
- $\rm{1D2}_{16}=1 \times 16^2+ 13 \times 16^1+2 \times 16^0=256+208+2=466_{10}$
+Il est aussi possible de passer par le binaire :  
+1 = 0001  
+D = 13 = 1101  
+2 = 0010  
+
+$0001 1101 0010 = 1 \times 2^8 + 1 \times 2^7 + 1 \times 2^6 + 1 \times 2^4 + 1 \times 2^1 =256+128+64+16+2=466_{10}$  
+
+Le nombre hexadécimal `1D2` correspond donc au nombre décimal 466.
  
- Le nombre hexadécimal `1D2` correspond donc au nombre décimal 466.
- 
- 
- En pratique, l'hexadécimal est surtout utilisé pour sa capacité à représenter la valeur de n'importe quel octet sur 2 chiffres ("chiffres" étant à prendre au sens large = chiffres ou lettres !).
+En pratique, l'hexadécimal est surtout utilisé pour sa capacité à représenter la valeur de n'importe quel octet sur 2 chiffres ("chiffres" étant à prendre au sens large = chiffres ou lettres !).
  
 
 !!! example "Exercice 3"
