@@ -55,14 +55,13 @@ les cas possibles et les regrouper dans un tableau appelé **table de vérité**
     |V|F|F|
     |V|V|V|
 
+Notations usuelles: $Q=A \wedge B$ ; $Q=A . B$ ; $Q=A&B$ ; $Q=A and B$
 
 On représente souvent les opérateurs booléens à l'aide de portes logiques:
 
+Symbole européen (norme ISO): 
 ![](data/porte_et.png){: .center}
-
-
-Notations usuelles : $Q=A \wedge B$ ou $Q=A . B$ ou $Q=A & B$ ou $Q=A and B$
-
+Symbole américain (norme ANSI):
 ![](data/and.png){: .center}
 
 
@@ -113,7 +112,7 @@ On appelle **évaluation paresseuse** le fait que l'interpréteur Python s'arrê
 - anglais (et Python) : `or`
 - notation logique : $\vee$
 - notation mathématique :  $+$
-- autre symbôle : | appelé _pipe_ en anglais
+- autre symbole : | appelé _pipe_ en anglais
 
 C'est l'opération définie par:
 
@@ -131,12 +130,11 @@ On en déduit la table suivante:
     |V|F|V|
     |V|V|V|
 
+Notations usuelles: $Q=A \vee B$ ; $Q=A + B$ ; $Q=A | B$ ; $Q=A or B$  
 
-
+Symbole européen (norme ISO):  
 ![](data/porte_ou.png){: .center}
-
-Notations usuelles : $Q=A \vee B$ ou $Q=A + B$ ou $Q=A | B$ ou $Q=A or B$  
-
+Symbole américain (norme ANSI):
 ![](data/or.png){: .center}
 
 
@@ -168,7 +166,7 @@ Pouvez-vous prévoir le résultat du code ci-dessous ?
 - anglais (et Python) : `not`
 - notation logique :  $\neg$
 - notation mathématique :  $\overline{x}$
-- symbole usuel : ~  
+- autre symbole  : ~  
 
 C'est l'opération définie par:
 
@@ -183,10 +181,11 @@ On en déduit la table suivante:
     |F|V|
     |V|F|
 
+Notations usuelles  : $Q=\neg A$ ; $Q=\overline{A}$ ; $Q = ~ A $ ; $Q=not A$
+
+Symbole européen (norme ISO): 
 ![](data/porte_non.png){: .center}
-
-Notations usuelles  : $Q=\neg A$ ou $Q=\overline{A}$ ou $Q = ~ A $ ou $Q=not A$
-
+Symbole américain (norme ANSI):
 ![](data/no.png){: .center}
 
 #### Exemples en Python
@@ -201,12 +200,7 @@ False
 
 ### 2.4 Exercice 1
 
-Comprendre ce mème :
-![image](data/drake.webp){: .center width=50%}
 
-
-
-### 2.5 Exercice 2
 1. Ouvrir le [simulateur de circuits](http://dept-info.labri.fr/ENSEIGNEMENT/archi/circuits/blank-teacher.html){. target="_blank"} et créer pour chaque opération AND, OR, NOT un circuit électrique illustrant ses propriétés.
 
 Exemple (inintéressant) de circuit :
