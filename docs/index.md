@@ -1,13 +1,14 @@
 
 !!! abstract ":star: Actualités :star:"
-    - Première évaluation faite, on s'accroche quelque soit le résultat.
-	- 6 semaines avant Noël on s'accroche et on redouble d'efforts.
+	C'est bientôt Noël, vous croyez plus au père Noël ? Non !
+	Alors au travail !!!
 
 
 
 ## Thèmes en cours d'étude :
 !!! note "*Thèmes en cours d'étude*"
-	- [Listes](T2_Representation_des_donnees/2.1_Listes/cours/)
+	- [Dictionnaires](./T2_Representation_des_donnees/2.3_Dictionnaires/cours/)
+	- [Bases](./T2_Representation_des_donnees/2.4_Bases/cours/)
  
 
 
@@ -18,6 +19,8 @@
 	- [Boucle ```while```](T1_Demarrer_en_Python/1.3_Boucle_while/cours/)
 	- [Instruction conditionnelle ```if```](T1_Demarrer_en_Python/1.4_Instruction_conditionnelle_if/cours/) 
 	- [Fonctions](T1_Demarrer_en_Python/1.5_Fonctions/cours/)
+	- [Listes](T2_Representation_des_donnees/2.1_Listes/cours/)
+	- [Tuples](T2_Representation_des_donnees/2.2_Tuples/cours/)
 
 
 
