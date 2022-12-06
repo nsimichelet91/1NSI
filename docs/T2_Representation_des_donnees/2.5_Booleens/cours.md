@@ -186,7 +186,7 @@ C'est l'opération définie par:
 On en déduit la table suivante:
 
 !!! abstract "Table de vérité de NOT :heart:"
-    |`x`| `\overline{x}` |
+    |`x`| `not x` |
     |:--:|:----:|
     |F|V|
     |V|F|
