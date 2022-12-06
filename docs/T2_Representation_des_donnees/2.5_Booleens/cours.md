@@ -55,7 +55,8 @@ les cas possibles et les regrouper dans un tableau appelé **table de vérité**
     |V|F|F|
     |V|V|V|
 
-Notations usuelles: 
+Notations usuelles:  
+
 * $Q=A . B$  
 * $Q=A \wedge B$  
 * $Q=A&B$  
@@ -134,7 +135,8 @@ On en déduit la table suivante:
     |V|F|V|
     |V|V|V|
 
-Notations usuelles: 
+Notations usuelles:  
+
 * $Q=A + B$   
 * $Q=A \vee B$  
 * $Q=A or B$   
@@ -189,7 +191,8 @@ On en déduit la table suivante:
     |F|V|
     |V|F|
 
-Notations usuelles  : 
+Notations usuelles:  
+
 * $Q=\overline{A}$  
 * $Q=\neg A$  
 * $Q=not A$  
