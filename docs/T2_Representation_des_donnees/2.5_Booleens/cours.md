@@ -230,9 +230,9 @@ False
 `x ^ y = (x and not y) | (not x and y)`
 
 !!! abstract "Table de vérité de XOR :heart:"
-    |`x`| `y` | `x ^ y`|
-    |:--:|:----:|:--:|:--:|
-    |F|F| F|
+    |`x`| `y` |`x ^ y`|
+    |:--:|:----:|:--:|
+    |F|F|F|
     |F|V|V|
     |V|F|V|
     |V|V|F|
