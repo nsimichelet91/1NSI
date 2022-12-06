@@ -1,7 +1,7 @@
 
 !!! abstract ":star: Actualités :star:"
-	C'est bientôt Noël, vous croyez plus au père Noël ? Non !
-	Alors au travail !!!
+	C'est bientôt Noël, vous croyez encore au père Noël ? Non !
+	Alors au travail ;)
 
 
 
