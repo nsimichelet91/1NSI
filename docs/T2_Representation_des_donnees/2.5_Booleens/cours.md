@@ -244,10 +244,10 @@ False
 ![](data/xor.png){: .center}
 
 Le XOR joue un rôle fondamental en cryptographie car il possède une propriété très intéressante : 
-$(x ^ y)^y=x$
+`(x ^ y)^y=x`
 
-Si $x$ est un message et $y$ une clé de chiffrage, alors $x^y$ est le message chiffré. 
-Mais en refaisant un XOR du message chiffré avec la clé $y$, on retrouve donc le message $x$ initial.
+Si `x` est un message et `y` une clé de chiffrage, alors `x^y` est le message chiffré. 
+Mais en refaisant un XOR du message chiffré avec la clé `y`, on retrouve donc le message `x` initial.
 
 ### 3.2 Fonction Non Et (NAND)
 
