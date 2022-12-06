@@ -56,10 +56,10 @@ les cas possibles et les regrouper dans un tableau appelé **table de vérité**
     |V|V|V|
 
 Notations usuelles: 
-- $Q=A . B$
-- $Q=A \wedge B$
-- $Q=A&B$
-- $Q=A and B$
+* $Q=A . B$  
+* $Q=A \wedge B$  
+* $Q=A&B$  
+* $Q=A and B$  
 
 On représente souvent les opérateurs booléens à l'aide de portes logiques:
 
@@ -135,10 +135,10 @@ On en déduit la table suivante:
     |V|V|V|
 
 Notations usuelles: 
-- $Q=A + B$
-- $Q=A \vee B$
-- $Q=A or B$  
-- $Q=A | B$
+* $Q=A + B$   
+* $Q=A \vee B$  
+* $Q=A or B$   
+* $Q=A | B$  
 
 Symbole européen (norme ISO):  
 ![](data/porte_ou.png){: .center}
@@ -190,10 +190,10 @@ On en déduit la table suivante:
     |V|F|
 
 Notations usuelles  : 
-- $Q=\overline{A}$
-- $Q=\neg A$
-- $Q=not A$
-- $Q = ~ A $
+* $Q=\overline{A}$  
+* $Q=\neg A$  
+* $Q=not A$  
+* $Q = ~ A $  
 
 Symbole européen (norme ISO): 
 ![](data/porte_non.png){: .center}
