@@ -129,7 +129,7 @@ Soit 6C3F(16) = 0110 1100 0011 1111(2)
 
 ### 2.3 Du décimal vers l'hexadécimal :
 
-2 solution sont possibles :  
+2 solutions sont possibles :  
 
 - Passer par la base 2 : on convertit le nombre de la base 10 à la base 2 puis de la base 2 à la base 16 comme expliqué au 2.1.  
 - Utiliser la méthode des divisions succesives par 16.   
@@ -162,9 +162,9 @@ En pratique, l'hexadécimal est surtout utilisé pour sa capacité à représent
 
 !!! example "Exercice 3"
     === "Énoncé"
-        1. Donner la valeur des octets `FF`, `3A`, `B2`.
-        2. Expliquer pourquoi la couleur RGB (138,255,51) a pour code html `#8AFF33`.
-        3. Quelle est la couleur `html` du blanc ?
+        1. Donner les valeurs décimales des octets `FF`, `3A`, `B2`.
+        2. Expliquer pourquoi la couleur RGB (138, 255, 51) a pour code html `#8AFF33`.
+        3. Quel est le code hexadécimal du blanc (code couleur `html`) ?
 
 ###  2.2 En python :
  

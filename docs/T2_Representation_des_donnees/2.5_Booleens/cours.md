@@ -377,42 +377,12 @@ Pour comprendre ces résultats, il faut travailler en binaire. Voici les mêmes 
 
 
 ### Exercice 5 : préparation du pydéfi
-Objectif : chiffrer (= crypter) le mot "BONJOUR" avec la clé (de même taille) "MAURIAC".  
+Objectif : chiffrer (= crypter) le mot "BONJOUR" avec la clé (de même taille) "LEMONDE".  
 
 Protocole de chiffrage : XOR entre le code ASCII des lettres de même position.
 
-<!-- 
 
-```python 
-msg = "BONJOUR"
-cle = "MAURIAC"
-
-def crypte_lettre(lm, lc):
-    a = ord(lm)
-    b = ord(lc)
-    c = a^b
-    lettre = chr(c)
-
-    return lettre
-
-def crypte_mot(mot1, mot2):
-    mot3 = ""
-    for i in range(len(mot1)):
-        car = crypte_lettre(mot1[i],mot2[i])
-        mot3 = mot3 + car
-    return mot3
-
-crypte_mot(msg, cle)
-```
-
-
-
-
-    '\x0f\x0e\x1b\x18\x06\x14\x11'
-
--->
-
-### Exercice
+### Exercice 6 : pydéfi
 
 
 !!! capytale "À faire sur Capytale : [Lien](https://capytale2.ac-paris.fr/web/c/56a9-503615)"
