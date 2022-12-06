@@ -196,7 +196,7 @@ Notations usuelles:
 * $Q=\overline{A}$  
 * $Q=\neg A$  
 * $Q=not A$  
-* $Q = ~ A $  
+* $Q=$ ~$A$  
 
 Symbole européen (norme ISO): 
 ![](data/porte_non.png){: .center}
