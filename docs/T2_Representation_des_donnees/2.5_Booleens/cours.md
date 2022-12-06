@@ -59,7 +59,7 @@ Notations usuelles:
 
 * $Q=A . B$  
 * $Q=A \wedge B$  
-* $Q=A&B$  
+* $Q=A`&`B$  
 * $Q=A and B$  
 
 On représente souvent les opérateurs booléens à l'aide de portes logiques:
