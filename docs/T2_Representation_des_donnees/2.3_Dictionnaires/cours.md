@@ -2,6 +2,9 @@
 
 ![image](data/BO.png){: .center}
 
+!!! note "Voici le lien du notebook sur lequel vous devez faire les exercices"
+	[T2.3_Les_dictionnaires](https://capytale2.ac-paris.fr/web/c/2c75-1089954){: target = "_blank"}  
+	
 # 1. Les dictionnaires : premiers exemples
 
 Une liste est un ensemble d'éléments accessibles par leur **indice**. Cet indice est en quelque sorte la «place» de l'élément dans la liste.
