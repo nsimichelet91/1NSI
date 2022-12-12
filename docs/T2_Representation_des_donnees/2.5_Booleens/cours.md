@@ -374,7 +374,8 @@ Pour comprendre ces résultats, il faut travailler en binaire. Voici les mêmes 
 
 ```
 
-
+!!! note "Voici le lien du notebook sur lequel vous devez faire les exercices"
+	[T2.5_Booléens](https://capytale2.ac-paris.fr/web/c/6aab-1078970){: target = "_blank"}  
 
 ### Exercice 5 : préparation du pydéfi
 Objectif : chiffrer (= crypter) le mot "BONJOUR" avec la clé (de même taille) "LEMONDE".  
@@ -385,24 +386,16 @@ Protocole de chiffrage : XOR entre le code ASCII des lettres de même position.
 ### Exercice 6 : pydéfi
 
 
-!!! capytale "À faire sur Capytale : [Lien](https://capytale2.ac-paris.fr/web/c/56a9-503615)"
+!!! capytale "À faire sur Capytale : [Lien](https://capytale2.ac-paris.fr/web/c/6aab-1078970)"
     Résolvez le pydéfi [la clé endommagée](https://callicode.fr/pydefis/MasqueJetable/txt){. target="_blank"}
             
 
-
-<!-- 
-
-*solution :*
-
-[lien](https://gist.github.com/glassus/7aef2c4cbed5097e1857ecc851b7b740)
-
--->
 
 ### Complément : propriétés des opérateurs logiques
 
 Les propriétés suivantes sont facilement démontrables à l'aide de tables de vérités: *(source : G.Connan)*
 
-![](data/lois.png){: .center}
+![](data/proprietes.jpg){: .center}
 
 Toutes ces lois sont aisément compréhensibles si on les transpose en mathématiques : 
 
