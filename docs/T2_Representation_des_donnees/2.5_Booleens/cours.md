@@ -396,9 +396,3 @@ Protocole de chiffrage : XOR entre le code ASCII des lettres de même position.
 Les propriétés suivantes sont facilement démontrables à l'aide de tables de vérités: *(source : G.Connan)*
 
 ![](data/proprietes.jpg){: .center}
-
-Toutes ces lois sont aisément compréhensibles si on les transpose en mathématiques : 
-
-- & équivaut à $\times$
-- $|$ équivaut à $+$
-- $\neg$ équivaut à $-$
