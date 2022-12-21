@@ -266,6 +266,7 @@ Mais en refaisant un XOR du message chiffré avec la clé `y`, on retrouve donc 
 
 
 ![](data/porte_nand.png){: .center}
+![](data/NAND_ansi.png){: .center}
 
 ### 3.3 Fonction Non Ou (NOR)
 
@@ -283,6 +284,8 @@ Mais en refaisant un XOR du message chiffré avec la clé `y`, on retrouve donc 
 
 
 ![](data/porte_nor.png){: .center}
+![](data/NOR_ansi.png){: .center}
+
 
 Il est temps de se reposer un peu et d'admirer cette vidéo :
 ![](data/watergates.gif){: .center}
