@@ -241,9 +241,9 @@ Un [corrigé](https://dept-info.labri.fr/ENSEIGNEMENT/archi/circuits/blank-teach
     |V|V|F|
 
 
-
+Symbole européen (norme ISO): 
 ![](data/porte_xor.png){: .center}
-
+Symbole américain (norme ANSI):
 ![](data/xor.png){: .center}
 
 Le XOR joue un rôle fondamental en cryptographie car il possède une propriété très intéressante : 
@@ -266,7 +266,9 @@ Mais en refaisant un XOR du message chiffré avec la clé `y`, on retrouve donc 
 
 
 
+Symbole européen (norme ISO): 
 ![](data/porte_nand.png){: .center}
+Symbole américain (norme ANSI):
 ![](data/NAND_ansi.png){: .center}
 
 ### 3.3 Fonction Non Ou (NOR)
@@ -284,7 +286,9 @@ Mais en refaisant un XOR du message chiffré avec la clé `y`, on retrouve donc 
 
 
 
+Symbole européen (norme ISO): 
 ![](data/porte_nor.png){: .center}
+Symbole américain (norme ANSI):
 ![](data/NOR_ansi.png){: .center}
 
 
