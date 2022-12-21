@@ -269,7 +269,7 @@ Mais en refaisant un XOR du message chiffré avec la clé `y`, on retrouve donc 
 Symbole européen (norme ISO): 
 ![](data/porte_nand.png){: .center}
 Symbole américain (norme ANSI):
-![](data/NAND_ansi.png){: .center}
+![](data/NAND_ANSI.png){: .center}
 
 ### 3.3 Fonction Non Ou (NOR)
 
@@ -289,7 +289,7 @@ Symbole américain (norme ANSI):
 Symbole européen (norme ISO): 
 ![](data/porte_nor.png){: .center}
 Symbole américain (norme ANSI):
-![](data/NOR_ansi.png){: .center}
+![](data/NOR_ANSI.png){: .center}
 
 
 Il est temps de se reposer un peu et d'admirer cette vidéo :
