@@ -1,5 +1,9 @@
 # Énigme
 
+!!! note "Voici le lien du notebook sur lequel vous devez résoudre l'énigme"
+	[T2.5_Enigme](https://capytale2.ac-paris.fr/web/c/9d2d-1149747){: target = "_blank"}  
+	
+	
 ## 1. À la recherche du personnage mystère
 
 Vous avez trouvé une image bien étrange :
