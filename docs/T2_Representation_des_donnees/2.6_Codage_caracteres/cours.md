@@ -8,7 +8,7 @@ Tout pour comprendre et Ã©viter les erreurs d'encodage
 
 ## 1. Au commencement était l'ASCII
 pour *American Standard Code for Information Interchange*, créé en 1960 aux États-Unis.
-![](data/ascii.png){: .center}
+![](data/ASCII_001_127.PNG){: .center}
 
 En ASCII, 127 *«points de code»* (nombres associés aux caractères) sont disponibles. Les caractères sont donc codés sur **7 bits**.
 
@@ -22,22 +22,14 @@ En ASCII, 127 *«points de code»* (nombres associés aux caractères) sont disp
         - la fonction `split(" ")` permet de décomposer une chaine de caractères en une liste, en se servant de l'espace `" "` comme caractère séparateur.
         - `int("1101100",2)` permet de récupérer facilement la valeur en base 10 du nombre binaire `1101100`.
 
-    === "Correction"
-        ```python
-        msg = "1101100 1100101 1110011 100000 1001110 1010011 1001001 100000 1100011 100111 1100101 1110011 1110100 100000 1101100 1100101 1110011 100000 1101101 1100101 1101001 1101100 1101100 1100101 1110101 1110010 1110011"
-        msg = msg.split(' ')
-        s = ""
-        for k in msg :
-            s += chr(int(k,2))
-        print(s)
-        ```
-
-
 ## 2. Et le reste du monde ?
 Lorsque d'autres personnes que des americains ou des anglais ont voulu s'échanger des données faisant intervenir du texte, certains caractères (é, è, à, ñ, Ø, Ö, β, 漢...) étaient manquants. Les 127 caractères de l'ASCII étaient largement insuffisants. 
 Il a donc été décidé de passer à... 256 caractères ! Il suffisait pour cela de coder les caractères non plus sur 7 bits mais sur 8 bits.
 
-Ainsi naquît, après de nombreuses modifications successives (la dernière en date rajoutant par exemple le symbole €), la célèbre table **ISO 8859-15**, dite aussi **Latin-9** :
+Ainsi naquît, après de nombreuses modifications successives :  
+- L'ASCII étendu : 
+![](data/ASCII_128_255.PNG){: .center}
+- et la dernière en date rajoutant par exemple le symbole €, la célèbre table **ISO 8859-15**, dite aussi **Latin-9** :
 ![](data/iso-latin.png){: .center}
 
 ### Utilisation :
