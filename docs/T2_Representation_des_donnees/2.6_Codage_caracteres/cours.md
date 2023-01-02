@@ -26,10 +26,7 @@ En ASCII, 127 *«points de code»* (nombres associés aux caractères) sont disp
 Lorsque d'autres personnes que des americains ou des anglais ont voulu s'échanger des données faisant intervenir du texte, certains caractères (é, è, à, ñ, Ø, Ö, β, 漢...) étaient manquants. Les 127 caractères de l'ASCII étaient largement insuffisants. 
 Il a donc été décidé de passer à... 256 caractères ! Il suffisait pour cela de coder les caractères non plus sur 7 bits mais sur 8 bits.
 
-Ainsi naquît, après de nombreuses modifications successives :  
-- L'ASCII étendu : 
-![](data/ASCII_128_255.PNG){: .center}
-- et la dernière en date rajoutant par exemple le symbole €, la célèbre table **ISO 8859-15**, dite aussi **Latin-9** :
+Ainsi naquît, après de nombreuses modifications successives (la dernière en date rajoutant par exemple le symbole €), la célèbre table **ISO 8859-15**, dite aussi **Latin-9** :
 ![](data/iso-latin.png){: .center}
 
 ### Utilisation :
@@ -116,5 +113,6 @@ Le principe fondateur de l'UTF-8 est qu'il est **adaptatif** : les caracères le
 ## Utilisation grandissante de l'encodage UTF-8 
 La majorité des sites internet utilisent maintenant l'UTF-8, tout comme les systèmes d'exploitation récents.
 ![](data/graph_comparaison.png){: .center}
+![](data/graph_comparaison_2.png){: .center}
 
 
