@@ -163,7 +163,7 @@ Lorsqu'on demande à Python l'heure qu'il est, par la fonction ```time()``` du m
 ```
 
 Il nous renvoie le nombre de secondes écoulées depuis le 1er janvier 1970 à 00h00. On appelle cela l'heure POSIX ou l'heure UNIX [l'heure UNIX](https://fr.wikipedia.org/wiki/Heure_Unix){. target="_blank"}.
-Au 29 mai 2022, il s'en donc écoulé environ 1,6 milliards.
+Au 29 mai 2022, il s'en est donc écoulé environ 1,6 milliards.
 
 Dans beaucoup de systèmes informatiques, ce nombre de secondes est codé par **un entier signé sur 32 bits**.
 Le nombre maximum de secondes qui peut être représenté est donc ```01111111 11111111 11111111 11111111``` 
