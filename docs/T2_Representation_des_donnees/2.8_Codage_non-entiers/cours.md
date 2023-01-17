@@ -15,17 +15,8 @@ Le principe est l'extension du système déjà rencontré pour les nombres entie
 
 ## 1. Tentatives de conversion 
 
-### 1.1 Théorème de décomposition en puissances de 2
-Tout commence bien, avec un résultat mathématique rassurant : **tous** les nombres réels peuvent s'écrire comme une somme de puissances de 2 (puissances positives et négatives). 
 
-!!! abstract "Théorème"
-    Pour tout réel $x \in \mathbb{R}^+$, il existe $p \in \mathbb{N}$ et $(a_p,a_{p-1},...,a_0,a_{-1},a_{-2},...)$ tels que $x = \sum_{i=0}^pa_i2^i+\sum_{i=1}^{+\infty}a_{-i}2^{-i}$
-
-
-
-Écrire un nombre en binaire revient à calculer les coefficients $a_k$ (ils sont égaux à 0 ou 1). Il y en a un nombre fini pour la partie entière, mais un nombre potentiellement infini pour la partie décimale. 
-
-###  1.2 Méthode de conversion
+###  1.1 Méthode de conversion
 Considérons le nombre $3,6875$. Il se décompose en une partie entière (3) et une partie décimale ($0,6875$).
 
 - **partie entière :** $3=11_2$ 
@@ -43,31 +34,13 @@ Donc $3,6875=11,1011_2$
 !!! abstract "Exercice 1"
     === "Énoncé"
         Donner l'écriture binaire de 20,875.
-    === "Correction"
-        - partie entière : $20 = 10100_2$
-        - partie décimale :
-            - $0,875 \times 2 = \textbf{1},75$  
-            - $0,75 \times 2 = \textbf{1},5$
-            - $0,5 \times 2  = \textbf{1}$
- 
-        Donc $20,875=10100,111_2$
 
 
 
 !!! abstract "Exercice 2"
     === "Énoncé"
         Donner l'écriture binaire de 0,2.
-    === "Correction"
-        - partie entière : $0 = 0_2$
-        - partie décimale :
-            - $0,2 \times 2 = \textbf{0},4$  
-            - $0,4 \times 2 = \textbf{0},8$
-            - $0,8 \times 2  = \textbf{1},6$
-            - $0,6 \times 2  = \textbf{1},2$
-            - $0,2 \times 2 = \textbf{0},4$ 
-            - *et cela continue...*
- 
-        Le nombre 0,2 n'admet pas d'écriture binaire **finie**.
+
 
 
 ### Conclusion 
