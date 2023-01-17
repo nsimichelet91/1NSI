@@ -8,4 +8,3 @@
 6. [Codage des caractères](../2.6_Codage_caracteres/cours/)
 7. [Codage des entiers](../2.7_Codage_entiers/cours/)
 8. [Codage des non-entiers](../2.8_Codage_non-entiers/cours/)
-9. [Chaînes de caractères](../2.9_Chaines_caracteres/cours/)
