@@ -188,4 +188,6 @@ Ce nombre représente un peu plus de 2 milliards de secondes... En les comptant 
 
 Vous pourrez lire sur la page Wikipedia citée plus haut plus d'informations sur ce problème.
 
+### Un calculateur pour vérifier ses résultats et s'entraîner
+
 <div><a href="https://planetcalc.com/748/" data-lang="fr" data-code="" data-colors="#263238,#435863,#090c0d,#fa7014,#fb9b5a,#c25004" data-v="4176">PLANETCALC, Binaire, inverse et compléments</a><script src="https://embed.planetcalc.com/widget.js?v=4176"></script></div>
