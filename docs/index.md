@@ -6,9 +6,8 @@
 
 ## Thèmes en cours d'étude :
 !!! note "*Thèmes en cours d'étude*"
-	- [Dictionnaires](./T2_Representation_des_donnees/2.3_Dictionnaires/cours/)
-	- [Bases](./T2_Representation_des_donnees/2.4_Bases/cours/)
- 
+	- [Codage des entiers](./T2_Representation_des_donnees/2.7_Codage_entiers/cours/)
+	- [Codage des non-entiers](./T2_Representation_des_donnees/2.8_Codage_non-entiers/cours/)
 
 
 
@@ -20,7 +19,10 @@
 	- [Fonctions](T1_Demarrer_en_Python/1.5_Fonctions/cours/)
 	- [Listes](T2_Representation_des_donnees/2.1_Listes/cours/)
 	- [Tuples](T2_Representation_des_donnees/2.2_Tuples/cours/)
-
+	- [Dictionnaires](./T2_Representation_des_donnees/2.3_Dictionnaires/cours/)
+	- [Bases](./T2_Representation_des_donnees/2.4_Bases/cours/)
+	- [Booléens](./T2_Representation_des_donnees/2.5_Booleens/cours/)
+	- [Codage des caractères](./T2_Representation_des_donnees/2.6_Codage_caracteres/cours/)
 
 
 ## Programme :
@@ -49,7 +51,6 @@
         - 2.6 [Codage des caractères](./T2_Representation_des_donnees/2.6_Codage_caracteres/cours/)
         - 2.7 [Codage des entiers](./T2_Representation_des_donnees/2.7_Codage_entiers/cours/)
         - 2.8 [Codage des non-entiers](./T2_Representation_des_donnees/2.8_Codage_non-entiers/cours/)
-        - 2.9 [Chaînes de caractères](./T2_Representation_des_donnees/2.9_Chaines_caracteres/cours/)
 
     === "T3 Architecture matérielle"
         **Thème 3 : Architecture matérielle**
