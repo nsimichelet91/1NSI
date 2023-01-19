@@ -89,23 +89,23 @@ Le nombre $-3$ s'écrit donc `11111101`.
 
 Comment, à partir du nombre `00000011`, aurait-on pu le trouver directement (sans raisonner de proche en proche) ?
 
-On peut remarquer qu'en inversant chaque bit du nombre de départ `00000011`, on obtient `11111100`, qui appelé le **complément à 2** du nombre `00000011`.
+On peut remarquer qu'en inversant chaque bit du nombre de départ `00000011`, on obtient `11111100`, qui appelé le **complément à 1** du nombre `00000011`.
 
-Il ne reste donc plus qu'à ajouter `1` à ce nombre `11111100` pour obtenir le nombre cherché, `11111101`
+Il ne reste donc plus qu'à ajouter `1` à ce nombre `11111100` pour faire le complément à 2 et obtenir le nombre cherché, `11111101`
 
 :warning:  ce nombre `11111101` représente 253 en codage non signé. Il est donc nécessaire, lorsqu'on représente un nombre, de savoir si les nombres manipulés seront des entiers naturels (*non signés*) ou bien relatifs (*signés*).
-
-!!! note "Remarque"
-	On remarque que $-3$ correspond à l'entier non-signé $256 - abs(-3) = 256 - 3 = 253$ .
-	De manière générale un entier négatif $x$ est représenté sur $n$ bits par $2^n - |x|$
 
 
 
 ### 2.3 Conclusion : écriture l'opposé d'un nombre positif
 
-!!! note "Écriture de l'opposé d'un nombre positif :heart:"
-    - On prend le complément à 2 de chaque bit du nombre de départ
+!!! note "Écriture de l'opposé d'un nombre positif, complément à 2 :heart:"
+    - On prend le complément à 1 de chaque bit du nombre de départ
     - On ajoute 1 au nombre obtenu.
+	
+!!! note "Remarque"
+    Cette opération correspond au calcul de $2^n − |x|$, où $n$ est la longueur de la représentation et $|x|$ la valeur absolue du nombre à coder.
+	Pour notre exemple sur une représentation à 8 bits : $2^8 - |-3| = 256 - 3 = 253$.
 
 !!! abstract "Exercice"
     === "Énoncé"
@@ -121,7 +121,7 @@ Considérons le nombre `11101101`, codé en binaire signé. À quel nombre relat
 
 1. On observe son bit de poids fort : ici 1, donc ce nombre est négatif. Si ce bit est égal à 0, le nombre codé est positif, il suffit d'opérer une conversion binaire classique.
 2. Comme ce nombre est négatif, il va falloir inverser le protocole précédent. On commence donc par **enlever 1** au nombre proposé. On trouve `11101100`.
-3. On prend ensuite le complément à 2 de chaque bit. On trouve `00010011`.
+3. On prend ensuite le complément à 1 de chaque bit. On trouve `00010011`.
 4. On convertit en base 10 le nombre obtenu, qui était donc 19.
 5. Le nombre initial était donc $-19$.
 
@@ -132,8 +132,18 @@ Considérons le nombre `11101101`, codé en binaire signé. À quel nombre relat
         3. Quel est le plus petit nombre ?
         4. Au total, combien de nombres différents peuvent être écrits en binaire signé ?
 
+!!! note "Astuce"
+    Pour transformer de tête un nombre binaire en son complément à deux, on parcourt le nombre de droite à gauche en laissant inchangés les bits jusqu'au premier 1 (compris), puis on inverse tous les bits suivants. Prenons comme exemple le nombre $20$ : $00010100$.
+	1. On garde la partie à droite telle quelle : $00010100$
+	2. On inverse la partie de gauche après le premier un : $11101100$
+	3. Et voici $-20$ : $11101100$
+	
+	En appliquant une deuxième fois cette astuce, on retrouve le nombre de départ.
 
+	:warning: Cas particuliers : 
+	sur $n$ bits $100...00 = -2^(n-1)$ avec n = 8, 16, 32 ou 64.
 
+	Par exemple : $10000000 = -128$
 
 ## 4. Le codage des entiers, une source intarissable d'erreurs...
 
