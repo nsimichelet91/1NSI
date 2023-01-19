@@ -112,10 +112,6 @@ Il ne reste donc plus qu'à ajouter `1` à ce nombre `11111100` pour faire le co
         Donner l'écriture binaire sur un octet du nombre $-13$.
 
 
-
-
-
-
 ## 3. Travail inverse : passage du binaire signé au nombre relatif
 Considérons le nombre `11101101`, codé en binaire signé. À quel nombre relatif correspond-il ?
 
@@ -191,3 +187,5 @@ Ce nombre représente un peu plus de 2 milliards de secondes... En les comptant 
 À la seconde d'après, la represéntation binaire du temps sera ```10000000 00000000 00000000 00000000```, qui sera interprété comme le nombre **négatif** −2147483648, et qui ramènera donc les horloges au 13 décembre 1901...
 
 Vous pourrez lire sur la page Wikipedia citée plus haut plus d'informations sur ce problème.
+
+<div><a href="https://planetcalc.com/748/" data-lang="fr" data-code="" data-colors="#263238,#435863,#090c0d,#fa7014,#fb9b5a,#c25004" data-v="4176">PLANETCALC, Binaire, inverse et compléments</a><script src="https://embed.planetcalc.com/widget.js?v=4176"></script></div>
