@@ -135,9 +135,9 @@ Considérons le nombre `11101101`, codé en binaire signé. À quel nombre relat
 !!! note "Astuce"
     Pour transformer de tête un nombre binaire en son complément à deux, on parcourt le nombre de droite à gauche en laissant inchangés les bits jusqu'au premier 1 (compris), puis on inverse tous les bits suivants.  
 	Prenons comme exemple le nombre $20$ : $00010100$.  
-	1. On garde la partie à droite telle quelle : $00010100$
-	2. On inverse la partie de gauche après le premier un : $11101100$
-	3. Et voici $-20$ : $11101100$
+		1. On garde la partie à droite telle quelle : $00010100$
+		2. On inverse la partie de gauche après le premier un : $11101100$
+		3. Et voici $-20$ : $11101100$
 	
 	En appliquant une deuxième fois cette astuce, on retrouve le nombre de départ.
 
