@@ -95,8 +95,8 @@ Il ne reste donc plus qu'à ajouter `1` à ce nombre `11111100` pour obtenir le 
 
 :warning:  ce nombre `11111101` représente 253 en codage non signé. Il est donc nécessaire, lorsqu'on représente un nombre, de savoir si les nombres manipulés seront des entiers naturels (*non signés*) ou bien relatifs (*signés*).
 
-!!! note ""
-	On remarque que $-3$ correspond à l'entier non-signé $256 - |-3| = 256 - 3 = 253$ .
+!!! note "Remarque"
+	On remarque que $-3$ correspond à l'entier non-signé $256 - abs(-3) = 256 - 3 = 253$ .
 	De manière générale un entier négatif $x$ est représenté sur $n$ bits par $2^n - |x|$
 
 
