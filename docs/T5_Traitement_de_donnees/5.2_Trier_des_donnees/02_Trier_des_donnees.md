@@ -17,18 +17,18 @@ f.close()
 ```
 
 ### Créer une fonction filtre
-L'objectif est de créer une fonction `joueursEquipe(equipe)` qui renvoie une liste contentant tous les joueurs de l'équipe `equipe`. 
+L'objectif est de créer une fonction `joueurs_equipe(equipe)` qui renvoie une liste contentant tous les joueurs de l'équipe `equipe`. 
 Le paramètre `equipe` sera donnée sous forme de chaîne de caractères. 
 La valeur renvoyée sera de type liste.
 
 
 ```python
-def joueursEquipe(equipe):
+def joueurs_equipe(equipe):
     ret = []
     
-    for k in joueurs :
-        if k['Equipe'] == equipe :
-            ret.append(k)
+    for joeur in joueurs :
+        if joueur['Equipe'] == equipe :
+            ret.append(joueur)
     
     return ret
 
@@ -38,7 +38,7 @@ Exemple d'utilisation :
 
 
 ```python
-len(joueursEquipe("Bordeaux"))
+len(joueurs_equipe("Bordeaux"))
 ```
 
 
@@ -48,10 +48,18 @@ len(joueursEquipe("Bordeaux"))
 
 
 
-Définir de la même manière une fonction `joueursPoste(poste)`.
+Définir de la même manière une fonction `joueurs_poste(poste)`.
 
 
 ```python
+def joueurs_poste(equipe):
+    ret = []
+    
+    for joueur in joueurs :
+        if joueur['Poste'] == poste :
+            ret.append(joueur)
+    
+    return ret
 
 ```
 
@@ -172,21 +180,21 @@ triSimpsons
 
 
 ```python
-def taillePlayer(player) :
-    return int(player['Taille'])
+def taille_joueur(joueur) :
+    return int(joueur['Taille'])
 ```
 
 
 ```python
-joueurs_taille_croissant = sorted(joueurs, key = taillePlayer)
+joueurs_taille_croissant = sorted(joueurs, key = taille_joueur)
 print(joueurs_taille_croissant)
 ```
 
 
 ```python
-def IMC(player):
-    masse = int(player['Poids'])
-    taille_m = int(player['Taille']) / 100
+def IMC(joueur):
+    masse = int(joueur['Poids'])
+    taille_m = int(joueur['Taille']) / 100
     return masse / taille_m**2
     
 ```
@@ -205,18 +213,18 @@ IMC(joueurs[0])
 
 
 ```python
-joueursUBB = [k for k in joueurs if k['Equipe'] == 'Bordeaux']
+joueurs_UBB = [joueur for joueur in joueurs if joueur['Equipe'] == 'Bordeaux']
 ```
 
 
 ```python
-joueursUBB_tri = sorted(joueursUBB, key = IMC)
+joueurs_UBB_tri = sorted(joueurs_UBB, key = IMC)
 ```
 
 
 ```python
-for k in joueursUBB_tri:
-    print(k['Nom'], IMC(k))
+for joueur in joueurs_UBB_tri:
+    print(joueur['Nom'], IMC(joueur))
 ```
 
     Yann LESGOURGUES 23.450918219051392
@@ -261,12 +269,12 @@ for k in joueursUBB_tri:
 ## Recherche des joueurs de profil  physique similaire
 
 ### Distance entre deux joueurs
-Construire une fonction `distance(joueur1,joueur2)` qui renvoie la somme des carrés des différences de tailles et de poids entre les joueurs `joueur1` et `joueur2` : 
+Construire une fonction `distance(joueur1, joueur2)` qui renvoie la somme des carrés des différences de tailles et de poids entre les joueurs `joueur1` et `joueur2` : 
 $$ d = (p_1-p_2)^2 + (t_1-t_2)^2$$
 
 
 ```python
-def distance(joueur1,joueur2):
+def distance(joueur1, joueur2):
     p1 = int(joueur1['Poids'])
     p2 = int(joueur2['Poids'])
     t1 = int(joueur1['Taille'])
@@ -280,9 +288,9 @@ Retrouvons d'abord le numéro de Baptiste Serin dans notre classement de joueurs
 
 
 ```python
-for k in range(len(joueurs)) :
-    if joueurs[k]['Nom'] == 'Baptiste SERIN' :
-        print(k)
+for i in range(len(joueurs)) :
+    if joueurs[i]['Nom'] == 'Baptiste SERIN' :
+        print(i)
 ```
 
     530
@@ -309,13 +317,13 @@ Nous pouvons maintenant classer les joueurs suivant leur distance morphologique 
 
 
 ```python
-def distanceSerin(joueur2):
-    return distance(joueurs[530],joueur2)
+def distance_Serin(joueur2):
+    return distance(joueurs[530], joueur2)
 ```
 
 
 ```python
-distanceSerin(joueurs[530])
+distance_Serin(joueurs[530])
 ```
 
 
@@ -327,7 +335,7 @@ distanceSerin(joueurs[530])
 
 
 ```python
-joueurs_VS_Serin = sorted(joueurs, key = distanceSerin)
+joueurs_VS_Serin = sorted(joueurs, key = distance_Serin)
 ```
 
 
@@ -335,7 +343,3 @@ joueurs_VS_Serin = sorted(joueurs, key = distanceSerin)
 joueurs_VS_Serin
 ```
 
-
-```python
-
-```
