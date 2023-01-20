@@ -185,8 +185,7 @@ joueurs_UBB_tri = sorted(joueurs_UBB, key = IMC)
 
 ```python
 for joueur in joueurs_UBB_tri:
-    print(joueur['Nom'], IMC(joueur))
-	
+    print(joueur['Nom'], IMC(joueur))	
 >>> Yann LESGOURGUES 23.450918219051392
     Nicolas PLAZY 24.049343594386603
     Matthieu JALIBERT 24.382716049382715
@@ -251,8 +250,7 @@ Retrouvons d'abord le numéro de Baptiste Serin dans notre classement de joueurs
 ```python
 for i in range(len(joueurs)) :
     if joueurs[i]['Nom'] == 'Baptiste SERIN' :
-        print(i)
-		
+        print(i)	
 >>> 530
 ```
 
