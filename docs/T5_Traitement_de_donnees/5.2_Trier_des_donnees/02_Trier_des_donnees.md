@@ -31,7 +31,6 @@ def joueurs_equipe(equipe):
             ret.append(joueur)
     
     return ret
-
 ```
 
 Exemple d'utilisation :
@@ -39,14 +38,8 @@ Exemple d'utilisation :
 
 ```python
 len(joueurs_equipe("Bordeaux"))
+>>> 37
 ```
-
-
-
-
-    37
-
-
 
 Définir de la même manière une fonction `joueurs_poste(poste)`.
 
@@ -73,9 +66,9 @@ La fonction `sorted(liste)` est efficace sur les listes : elle renvoie une nouve
 mylist = [4,2,8,6]
 mynewlist = sorted(mylist)
 print(mynewlist)
+>>> [2, 4, 6, 8]
 ```
 
-    [2, 4, 6, 8]
 
 
 Mais comment trier un dictionnaire ? 
@@ -120,63 +113,41 @@ def age(personnage):
 
 ```python
 age(Simpsons[0])
+>>> 10
 ```
 
-
-
-
-    10
-
-
-
 La création de cette fonction `age()` va nous permettre de spécifier une clé de tri, par le paramètre `key` :
-
 
 ```python
 triSimpsons = sorted(Simpsons, key = age)
 ```
 
-
 ```python
 triSimpsons
-```
-
-
-
-
-    [{'Prenom': 'Maggie', 'age estimé': '1'},
+>>> [{'Prenom': 'Maggie', 'age estimé': '1'},
      {'Prenom': 'Lisa', 'age estimé': '8'},
      {'Prenom': 'Bart', 'age estimé': '10'},
      {'Prenom': 'Marge', 'age estimé': '37'},
      {'Prenom': 'Homer', 'age estimé': '38'}]
-
-
-
+```
 
 ```python
 triSimpsons = sorted(Simpsons, key = age, reverse = True)
 ```
 
-
 ```python
 triSimpsons
-```
-
-
-
-
-    [{'Prenom': 'Homer', 'age estimé': '38'},
+>>> [{'Prenom': 'Homer', 'age estimé': '38'},
      {'Prenom': 'Marge', 'age estimé': '37'},
      {'Prenom': 'Bart', 'age estimé': '10'},
      {'Prenom': 'Lisa', 'age estimé': '8'},
      {'Prenom': 'Maggie', 'age estimé': '1'}]
-
-
+```
 
 ## Exercice 
 1. Trier les joueurs du top14 par taille.
 2. Trier les joueurs de Bordeaux par taille.
-3. Trier les joueurs de Bordeaux suivant leur Indice de Masse Corporelle ([IMC](https://fr.wikipedia.org/wiki/Indice_de_masse_corporelle) )
+3. Trier les joueurs de Bordeaux suivant leur Indice de Masse Corporelle ([IMC](https://fr.wikipedia.org/wiki/Indice_de_masse_corporelle))
 
 
 ```python
@@ -199,35 +170,24 @@ def IMC(joueur):
     
 ```
 
-
 ```python
 IMC(joueurs[0])
+>>> 36.42987249544626
 ```
-
-
-
-
-    36.42987249544626
-
-
-
 
 ```python
 joueurs_UBB = [joueur for joueur in joueurs if joueur['Equipe'] == 'Bordeaux']
 ```
 
-
 ```python
 joueurs_UBB_tri = sorted(joueurs_UBB, key = IMC)
 ```
 
-
 ```python
 for joueur in joueurs_UBB_tri:
     print(joueur['Nom'], IMC(joueur))
-```
-
-    Yann LESGOURGUES 23.450918219051392
+	
+>>> Yann LESGOURGUES 23.450918219051392
     Nicolas PLAZY 24.049343594386603
     Matthieu JALIBERT 24.382716049382715
     Blair CONNOR 24.48565200513601
@@ -264,6 +224,7 @@ for joueur in joueurs_UBB_tri:
     Jefferson POIROT 35.713195567900854
     Vadim COBILAS 36.41975308641975
     Thierry PAÏVA 36.92107750472589
+```
 
 
 ## Recherche des joueurs de profil  physique similaire
@@ -291,47 +252,31 @@ Retrouvons d'abord le numéro de Baptiste Serin dans notre classement de joueurs
 for i in range(len(joueurs)) :
     if joueurs[i]['Nom'] == 'Baptiste SERIN' :
         print(i)
+		
+>>> 530
 ```
-
-    530
-
-
 
 ```python
 joueurs[530]
-```
-
-
-
-
-    {'Equipe': 'Toulon',
+>>> {'Equipe': 'Toulon',
      'Nom': 'Baptiste SERIN',
      'Poste': 'Mêlée',
      'Date de naissance': '20/06/1994',
      'Taille': '180',
-     'Poids': '79'}
-
-
+     'Poids': '79'} 
+```
 
 Nous pouvons maintenant classer les joueurs suivant leur distance morphologique à Baptiste  SERIN :
-
 
 ```python
 def distance_Serin(joueur2):
     return distance(joueurs[530], joueur2)
 ```
 
-
 ```python
 distance_Serin(joueurs[530])
+>>> 0
 ```
-
-
-
-
-    0
-
-
 
 
 ```python
