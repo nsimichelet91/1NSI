@@ -1,4 +1,4 @@
-# 5.2 Trier des données
+# 5.2 Trier et fusionner des données
 
 ![image](data/BO.png){: .center}
 
@@ -30,7 +30,7 @@ La valeur renvoyée sera de type liste.
         lst_joueurs = []
         for joueur in joueurs :
             if joueur['Equipe'] == equipe :
-                lst_joueurs.append(j)
+                lst_joueurs.append(joueur)
         
         return lst_joueurs
 
@@ -247,12 +247,12 @@ $$ d = (p_1-p_2)^2 + (t_1-t_2)^2$$
 
 ??? tip "réponse"
     ```python
-    def distance(joueur1,joueur2):
-        p1 = int(joueur1['Poids'])
-        p2 = int(joueur2['Poids'])
-        t1 = int(joueur1['Taille'])
-        t2 = int(joueur2['Taille'])
-        return (p1-p2)**2+(t1-t2)**2
+	def distance(joueur1,joueur2):
+		p1 = int(joueur1['Poids'])
+		p2 = int(joueur2['Poids'])
+		t1 = int(joueur1['Taille'])
+		t2 = int(joueur2['Taille'])
+		return (p1 - p2)**2 + (t1 - t2)**2
     ```
 
 ### 3.2 Distance des joueurs avec Baptiste Serin
@@ -297,3 +297,52 @@ Nous pouvons maintenant classer les joueurs suivant leur distance morphologique 
 >>> joueurs_VS_Serin
 ```
 
+## 4. Fusionner des données (fusion de tables)
+
+Nous disposons de deux tables : une table avec les scores de joueurs à un jeu en ligne et une table avec les dates de leur dernière connexion et leurs mots de passe :
+
+![image](score.png){: .center}
+![image](connexion.png){: .center}
+
+On cherche à fusionner les deux tables, c'est à dire à n'en faire qu'une seule qui réunit les informations des deux tables.
+
+Pour cela, il y a une précondition à vérifier concernant le champ `Id` (identifiant) qui est le descripteur commun aux deux tables :
+
+**Deux adolescents différents ne peuvent avoir le même champ `Id` (logique : c'est leur numéro d'identifiant)**
+
+L'algorithme de fusion présenté ici est l'algorithme naïf en langage naturel :
+
+```python
+table_fusion = []
+Pour chaque dico_score de table_scores :
+	Pour chaque dico_connex de table_connexions :
+		Si dico_score['Id'] == dico_connex['Id']:
+			Faire une copie de dico_ado
+			Ajouter les champs 'LST_CNX' et 'MDP' à la copie de dico_ado
+			Ajouter la copie de dico_ado à table_fusion
+```
+ce qui donne en python :
+
+```python
+import copy
+
+table_fusion = []
+
+for ado in table_scores:
+    for connex in table_connexions:
+        if connex['Id'] == ado['Id']:
+            ado_copie = copy.deepcopy(ado)
+            ado_copie['LST_CNX'] = connex['LST_CNX']
+            ado_copie['MDP'] = connex['MDP']
+            table_fusion.append(ado_copie)
+            break
+            
+afficher(table_fusion)
+```
+![image](fusion.png){: .center}
+
+***Point de vigilance :***
+
+Si la table des connexions contenait **toutes** les connexions des joueurs et **pas seulement leur dernière** connexion, un même `'Id'` pourrait être présent plusieurs fois dans la table des connexions. Dans ce cas l'algorithme fonctionne encore à condition de supprimer la ligne `break` : on se force ainsi - pour chaque identifiant - à parcourir toute la table des connexions au lieu de s'arrêter dès qu'on trouve la première connexion correspondant à l'identifiant.
+
+Remarque : Ici chaque 'Id' de la table des scores est présent dans la table des connexions (ce qui est logique car il faut s'être connecté pour jouer et obtenir un score). Néanmoins, si certains scores n'avaient pas été présents dans la table des connexions, l'algorithme aurait tout de même fonctionné.
