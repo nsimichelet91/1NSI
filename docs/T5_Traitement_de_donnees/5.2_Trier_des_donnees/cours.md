@@ -20,24 +20,44 @@ f.close()
 ```
 
 ## 1. Créer une fonction filtre
-L'objectif est de créer une fonction `joueursEquipe(equipe)` qui renvoie une liste contentant tous les joueurs de l'équipe `equipe`. 
+L'objectif est de créer une fonction `joueurs_equipe(equipe)` qui renvoie une liste contentant tous les joueurs de l'équipe `equipe`. 
 Le paramètre `equipe` sera donnée sous forme de chaîne de caractères. 
 La valeur renvoyée sera de type liste.
 
 ??? tip "réponse"
     ```python
-    def joueursEquipe(equipe):
+    def joueurs_equipe(equipe):
         lst_joueurs = []
-        for j in joueurs :
-            if j['Equipe'] == equipe :
+        for joueur in joueurs :
+            if joueur['Equipe'] == equipe :
                 lst_joueurs.append(j)
         
         return lst_joueurs
 
     ```
 
+Exemple d'utilisation :
 
-Définir de la même manière une fonction `joueursPoste(poste)`.
+
+```python
+len(joueurs_equipe("Bordeaux"))
+>>> 37
+```
+
+Définir de la même manière une fonction `joueurs_poste(poste)`.
+
+
+```python
+def joueurs_poste(equipe):
+    lst_joueurs = []
+    
+    for joueur in joueurs :
+        if joueur['Poste'] == poste :
+            ret.append(joueur)
+    
+    return lst_joueurs
+
+```
 
 
 ## 2. Utilisation d'une fonction de tri
@@ -147,9 +167,9 @@ On peut aussi inverser l'ordre de tri :
         Trier les joueurs du top14 par taille.
     === "Correction"
         ```python
-        >>> def taillePlayer(player) :
-                return int(player['Taille'])
-        >>> joueurs_taille_croissant = sorted(joueurs, key = taillePlayer)
+        >>> def taille_joueur(joueur) :
+				return int(joueur['Taille'])
+        >>> joueurs_taille_croissant = sorted(joueurs, key = taille_joueur)
         ```
 
 !!! abstract "Exercice 2"
@@ -166,16 +186,54 @@ On peut aussi inverser l'ordre de tri :
         Trier les joueurs de Bordeaux suivant leur Indice de Masse Corporelle ([IMC](https://fr.wikipedia.org/wiki/Indice_de_masse_corporelle) )
     === "Correction"
         ```python
-        >>> def IMC(player):
-                masse = int(player['Poids'])
-                taille_m = int(player['Taille']) / 100
-                return masse / taille_m**2
-        >>> joueursUBB = [k for k in joueurs if k['Equipe'] == 'Bordeaux']
+        >>> def IMC(joueur):
+				masse = int(joueur['Poids'])
+				taille_m = int(joueur['Taille']) / 100
+				return masse / taille_m**2
+        >>> joueurs_UBB = [joueur for joueur in joueurs if joueur['Equipe'] == 'Bordeaux']
         >>> joueursUBB_tri = sorted(joueursUBB, key = IMC)
+		>>> for joueur in joueurs_UBB_tri:
+				print(joueur['Nom'], IMC(joueur))
+			Yann LESGOURGUES 23.450918219051392
+			Nicolas PLAZY 24.049343594386603
+			Matthieu JALIBERT 24.382716049382715
+			Blair CONNOR 24.48565200513601
+			Geoffrey CROS 24.835646457268076
+			Maxime LUCU 25.2162533116282
+			Jean-Baptiste DUBIÉ 25.94548395958609
+			Romain BUROS 26.023048986244955
+			Santiago CORDERO 26.493025631204315
+			Alexandre ROUMAT 26.527905315784103
+			Cameron WOKI 26.81174510620575
+			Lucas MÉRET 26.82742078020452
+			Nans DUCUING 27.471688898385274
+			Ulupano SEUTENI 27.757487216946675
+			Clément MAYNADIER 28.59675712774171
+			Cyril CAZEAUX 28.823589429650035
+			Alexandre FLANQUART 28.835063437139564
+			Semi RADRADRA 28.85921231326392
+			Scott HIGGINBOTHAM 28.928336620644316
+			Ben BOTICA 29.352354500694357
+			Béka GORGADZE 29.394473838918284
+			Mahamadou DIABY 29.708012675418743
+			Masalosalo TUTAIA 30.036524413687044
+			Jandré MARAIS 30.09896949290889
+			Kane DOUGLAS 30.144103519262817
+			Seta TAMANIVALU 30.794210688390585
+			Rémi LAMERAT 31.01370510396975
+			Marco TAULEIGNE 31.523258682601902
+			Afa AMOSA 32.028367983070716
+			Laurent DELBOULBÈS 32.35554470254266
+			Adrien PÉLISSIÉ 33.576508653582
+			Lasha TABIDZE 34.18553688823959
+			Lekso KAULASHVILI 34.31610855329005
+			Peni RAVAI 34.76990504017531
+			Jefferson POIROT 35.713195567900854
+			Vadim COBILAS 36.41975308641975
+			Thierry PAÏVA 36.92107750472589
+		
+			
         ```
-
-
-
 
 ## 3. Recherche des joueurs de profil physique similaire
 
@@ -196,50 +254,57 @@ $$ d = (p_1-p_2)^2 + (t_1-t_2)^2$$
 
 ### 3.2 Distance des joueurs avec Baptiste Serin
 
+### Distance entre deux joueurs
+Construire une fonction `distance(joueur1, joueur2)` qui renvoie la somme des carrés des différences de tailles et de poids entre les joueurs `joueur1` et `joueur2` : 
+$$ d = (p_1-p_2)^2 + (t_1-t_2)^2$$
+
+
+```python
+def distance(joueur1, joueur2):
+    p1 = int(joueur1['Poids'])
+    p2 = int(joueur2['Poids'])
+    t1 = int(joueur1['Taille'])
+    t2 = int(joueur2['Taille'])
+    return (p1-p2)**2+(t1-t2)**2
+```
+
+### Distance des joueurs avec Baptiste Serin
+
 Retrouvons d'abord le numéro de Baptiste Serin dans notre classement de joueurs :
 
 
 ```python
->>>  for k in range(len(joueurs)) :
-        if joueurs[k]['Nom'] == 'Baptiste SERIN' :
-            print(k)
-530
+>>> for i in range(len(joueurs)) :
+		if joueurs[i]['Nom'] == 'Baptiste SERIN' :
+			print(i)	
+	530
 ```
-
-
-
-
 
 ```python
 >>> joueurs[530]
-    {'Equipe': 'Toulon',
+	{'Equipe': 'Toulon',
      'Nom': 'Baptiste SERIN',
      'Poste': 'Mêlée',
      'Date de naissance': '20/06/1994',
      'Taille': '180',
-     'Poids': '79'}
+     'Poids': '79'} 
 ```
-
-
-
 
 Nous pouvons maintenant classer les joueurs suivant leur distance morphologique à Baptiste  SERIN :
 
+```python
+>>> def distance_Serin(joueur2):
+		return distance(joueurs[530], joueur2)
+```
 
 ```python
->>> def distanceSerin(joueur2):
-        return distance(joueurs[530],joueur2)
+>>> distance_Serin(joueurs[530])
+	0
 ```
 
 
 ```python
->>> distanceSerin(joueurs[530])
- 0
-```
-
-
-```python
->>> joueurs_VS_Serin = sorted(joueurs, key = distanceSerin)
+>>> joueurs_VS_Serin = sorted(joueurs, key = distance_Serin)
 ```
 
 
