@@ -53,7 +53,7 @@ def joueurs_poste(equipe):
     
     for joueur in joueurs :
         if joueur['Poste'] == poste :
-            ret.append(joueur)
+            lst_joueurs.append(joueur)
     
     return lst_joueurs
 
@@ -107,10 +107,10 @@ Ici, plusieurs clés peuvent être des critères de tri : la taille, le poids.
 
 ```python
 >>> Simpsons = [{"Prenom" : "Bart", "age estimé": "10"},
-           {"Prenom" : "Lisa", "age estimé": "8"},
-           {"Prenom" : "Maggie", "age estimé": "1"},
-           {"Prenom" : "Homer", "age estimé": "38"},
-           {"Prenom" : "Marge", "age estimé": "37"}]
+			   {"Prenom" : "Lisa", "age estimé": "8"},
+			   {"Prenom" : "Maggie", "age estimé": "1"},
+			   {"Prenom" : "Homer", "age estimé": "38"},
+			   {"Prenom" : "Marge", "age estimé": "37"}]
 ```
 
 
@@ -169,6 +169,7 @@ On peut aussi inverser l'ordre de tri :
         ```python
         def taille_joueur(joueur) :
 			return int(joueur['Taille'])
+			
         >>> joueurs_taille_croissant = sorted(joueurs, key = taille_joueur)
         ```
 
@@ -193,7 +194,7 @@ On peut aussi inverser l'ordre de tri :
 			return masse / taille_m**2
 			
         >>> joueurs_UBB = [joueur for joueur in joueurs if joueur['Equipe'] == 'Bordeaux']
-        >>> joueursUBB_tri = sorted(joueursUBB, key = IMC)
+        >>> joueurs_UBB_tri = sorted(joueurs_UBB, key = IMC)
 		>>> for joueur in joueurs_UBB_tri:
 				print(joueur['Nom'], IMC(joueur))
 			Yann LESGOURGUES 23.450918219051392
@@ -255,22 +256,6 @@ $$ d = (p_1-p_2)^2 + (t_1-t_2)^2$$
     ```
 
 ### 3.2 Distance des joueurs avec Baptiste Serin
-
-### Distance entre deux joueurs
-Construire une fonction `distance(joueur1, joueur2)` qui renvoie la somme des carrés des différences de tailles et de poids entre les joueurs `joueur1` et `joueur2` : 
-$$ d = (p_1-p_2)^2 + (t_1-t_2)^2$$
-
-
-```python
-def distance(joueur1, joueur2):
-    p1 = int(joueur1['Poids'])
-    p2 = int(joueur2['Poids'])
-    t1 = int(joueur1['Taille'])
-    t2 = int(joueur2['Taille'])
-    return (p1-p2)**2+(t1-t2)**2
-```
-
-### Distance des joueurs avec Baptiste Serin
 
 Retrouvons d'abord le numéro de Baptiste Serin dans notre classement de joueurs :
 
