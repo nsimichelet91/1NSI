@@ -40,8 +40,8 @@ Exemple d'utilisation :
 
 
 ```python
-len(joueurs_equipe("Bordeaux"))
->>> 37
+>>> len(joueurs_equipe("Bordeaux"))
+	37
 ```
 
 Définir de la même manière une fonction `joueurs_poste(poste)`.
@@ -74,7 +74,7 @@ La fonction `sorted(liste)` est efficace sur les listes : elle renvoie une nouve
 >>> mylist = [4,2,8,6]
 >>> mynewlist = sorted(mylist)
 >>> print(mynewlist)
-  [2, 4, 6, 8]
+	[2, 4, 6, 8]
 ```
 
   
