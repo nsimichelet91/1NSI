@@ -115,8 +115,8 @@ Ici, plusieurs clés peuvent être des critères de tri : la taille, le poids.
 
 
 ```python
->>> def age(personnage):
-        return int(personnage["age estimé"])
+def age(personnage):
+	return int(personnage["age estimé"])
 ```
 
 
@@ -167,8 +167,8 @@ On peut aussi inverser l'ordre de tri :
         Trier les joueurs du top14 par taille.
     === "Correction"
         ```python
-        >>> def taille_joueur(joueur) :
-				return int(joueur['Taille'])
+        def taille_joueur(joueur) :
+			return int(joueur['Taille'])
         >>> joueurs_taille_croissant = sorted(joueurs, key = taille_joueur)
         ```
 
@@ -177,19 +177,21 @@ On peut aussi inverser l'ordre de tri :
         Trier les joueurs du top14 par poids.
     === "Correction"
         ```python
-        >>> def poidsPlayer(player) :
-                return int(player['Poids'])
-        >>> joueurs_poids_croissant = sorted(joueurs, key = poidsPlayer)
+        def poids_joueur(joueur) :
+            return int(joueur['Poids'])
+			
+        >>> joueurs_poids_croissant = sorted(joueurs, key = poids_joueur)
         ```
 !!! abstract "Exercice 3"
     === "Énoncé"
         Trier les joueurs de Bordeaux suivant leur Indice de Masse Corporelle ([IMC](https://fr.wikipedia.org/wiki/Indice_de_masse_corporelle) )
     === "Correction"
         ```python
-        >>> def IMC(joueur):
-				masse = int(joueur['Poids'])
-				taille_m = int(joueur['Taille']) / 100
-				return masse / taille_m**2
+        def IMC(joueur):
+			masse = int(joueur['Poids'])
+			taille_m = int(joueur['Taille']) / 100
+			return masse / taille_m**2
+			
         >>> joueurs_UBB = [joueur for joueur in joueurs if joueur['Equipe'] == 'Bordeaux']
         >>> joueursUBB_tri = sorted(joueursUBB, key = IMC)
 		>>> for joueur in joueurs_UBB_tri:
@@ -302,11 +304,9 @@ Nous pouvons maintenant classer les joueurs suivant leur distance morphologique 
 	0
 ```
 
-
 ```python
 >>> joueurs_VS_Serin = sorted(joueurs, key = distance_Serin)
 ```
-
 
 ```python
 >>> joueurs_VS_Serin
