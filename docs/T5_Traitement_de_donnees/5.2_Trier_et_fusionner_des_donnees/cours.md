@@ -300,7 +300,18 @@ Nous pouvons maintenant classer les joueurs suivant leur distance morphologique 
 >>> joueurs_VS_Serin
 ```
 
-## 4. Fusionner des données (fusion de tables)
+## 4. Exercices
+
+!!! note "Voici les liens des notebooks des exercices"
+	- [T5.1_csv_codes_pays](https://capytale2.ac-paris.fr/web/c/b507-1257301){: target = "_blank"}  
+	- [T5.1_csv_aéroports](https://capytale2.ac-paris.fr/web/c/94f1-1257415){: target = "_blank"}   
+	- [T5.1_csv_noms](https://capytale2.ac-paris.fr/web/c/81f4-510801){: target = "_blank"}   
+	- [T5.1_csv_Titanic](https://capytale2.ac-paris.fr/web/c/681d-1257931){: target = "_blank"}   
+
+
+
+
+## 5. Fusionner des données (fusion de tables)
 
 Nous disposons de deux tables : une table avec les scores de joueurs à un jeu en ligne et une table avec les dates de leur dernière connexion et leurs mots de passe :  
 
@@ -353,7 +364,7 @@ Si la table des connexions contenait **toutes** les connexions des joueurs et **
 
 *Remarque :* Ici chaque 'Id' de la table des scores est présent dans la table des connexions (ce qui est logique car il faut s'être connecté pour jouer et obtenir un score). Néanmoins, si certains scores n'avaient pas été présents dans la table des connexions, l'algorithme aurait tout de même fonctionné.
 
-### 5. Exercices
+## 6. Exercices
 
 !!! note "Voici les liens des notebooks des exercices"
 	- [T5.2_csv_tri_fusion_achats](https://capytale2.ac-paris.fr/web/c/1389-1257970){: target = "_blank"}    
