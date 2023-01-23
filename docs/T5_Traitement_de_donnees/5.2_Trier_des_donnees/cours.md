@@ -299,10 +299,13 @@ Nous pouvons maintenant classer les joueurs suivant leur distance morphologique 
 
 ## 4. Fusionner des données (fusion de tables)
 
-Nous disposons de deux tables : une table avec les scores de joueurs à un jeu en ligne et une table avec les dates de leur dernière connexion et leurs mots de passe :
+Nous disposons de deux tables : une table avec les scores de joueurs à un jeu en ligne et une table avec les dates de leur dernière connexion et leurs mots de passe :  
 
-![image](data/score.PNG){: .center}
-![image](data/connexion.PNG){: .center}
+Table des scores :  
+![image](data/score.PNG){: .center}  
+
+Table des connexions :
+![image](data/connexion.PNG){: .center}  
 
 On cherche à fusionner les deux tables, c'est à dire à n'en faire qu'une seule qui réunit les informations des deux tables.
 
