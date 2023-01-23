@@ -8,6 +8,8 @@
 !!! note "*Thèmes en cours d'étude*"
 	- [Codage des entiers](./T2_Representation_des_donnees/2.7_Codage_entiers/cours/)
 	- [Codage des non-entiers](./T2_Representation_des_donnees/2.8_Codage_non-entiers/cours/)
+	- [Manipulation de fichiers csv](./T5_Traitement_de_donnees/5.1_Manipulation_csv/cours/)
+    - [Trier et fusionner des données](./T5_Traitement_de_donnees/5.2_Trier_et_fusionner_des_donnees/cours/)
 
 
 
@@ -76,7 +78,7 @@
         **Thème 5 : Traitement de données**
 
         - 5.1 [Manipulation de fichiers csv](./T5_Traitement_de_donnees/5.1_Manipulation_csv/cours/)
-        - 5.2 [Trier des données](./T5_Traitement_de_donnees/5.2_Trier_des_donnees/cours/)
+        - 5.2 [Trier et fusionner des données](./T5_Traitement_de_donnees/5.2_Trier_et_fusionner_des_donnees/cours/)
         - 5.3 [Utilisation du module Pandas](./T5_Traitement_de_donnees/5.3_Pandas/cours/)
 
     === "T6 IHM sur le web"
