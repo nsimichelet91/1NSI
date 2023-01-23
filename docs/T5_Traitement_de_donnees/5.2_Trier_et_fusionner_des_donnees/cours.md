@@ -305,10 +305,10 @@ Nous pouvons maintenant classer les joueurs suivant leur distance morphologique 
 Nous disposons de deux tables : une table avec les scores de joueurs à un jeu en ligne et une table avec les dates de leur dernière connexion et leurs mots de passe :  
 
 Table des scores :  
-![image](data/score.PNG){: .center}  
+![image](data/score.png){: .center}  
 
 Table des connexions :
-![image](data/connexion.PNG){: .center}  
+![image](data/connexion.png){: .center}  
 
 On cherche à fusionner les deux tables, c'est à dire à n'en faire qu'une seule qui réunit les informations des deux tables.
 
@@ -345,7 +345,7 @@ for ado in table_scores:
             
 afficher(table_fusion)
 ```
-![image](data/fusion.PNG){: .center}
+![image](data/fusion.png){: .center}
 
 ***Point de vigilance :***
 
