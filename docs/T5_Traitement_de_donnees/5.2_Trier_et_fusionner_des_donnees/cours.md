@@ -1,7 +1,10 @@
 # 5.2 Trier et fusionner des données
 
-![image](data/BO.png){: .center}
+![image](data/BO.png){: .center}  
 
+
+!!! note "Voici le lien du notebook sur lequel vous devez faire les exercices"
+	[T5.2_csv_tri_fusion_cours](https://capytale2.ac-paris.fr/web/c/e3f8-1259933){: target = "_blank"}  
 
 
 Nous reprenons notre fichier de joueurs de rugby du Top14. 

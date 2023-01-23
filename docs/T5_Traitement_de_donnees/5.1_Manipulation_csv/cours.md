@@ -1,6 +1,9 @@
 # 5.1 Manipulation de fichiers csv
 
-![image](data/BO.png){: .center}
+![image](data/BO.png){: .center}  
+
+!!! note "Voici le lien du notebook du cours"
+	[T5.1_csv_cours](https://capytale2.ac-paris.fr/web/c/5786-1254685){: target = "_blank"}  
 
 
 Les fichiers CSV (pour Comma Separated Values) sont des fichiers-texte (ils ne contiennent aucune mise en forme) utilisés pour stocker des données, séparées par des virgules (ou des points-virgules, ou des espaces...). Il n'y a pas de norme officielle du CSV.  
@@ -290,4 +293,8 @@ plt.show()
 
     ![png](01_Manipulation_csv_files/01_Manipulation_csv_38_0.png){: .center}
 
+### 5. Exercices
 
+!!! note "Voici les liens des notebooks des exercices"
+	[T5.1_csv_cours](https://capytale2.ac-paris.fr/web/c/5786-1254685){: target = "_blank"} 
+	
