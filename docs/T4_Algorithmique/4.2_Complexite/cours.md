@@ -156,7 +156,7 @@ temps pour n = 200 : 0.0014693737030029297
 **Interprétation :**  
 Doubler la taille du paramètre d'entrée a eu pour effet de **quadrupler** le temps d'exécution. Cela semble indiquer que la complexité de cette fonction est **quadratique**, car $2^2=4$.  
 
-En observant l'algorithme, nous pouvons confirmer cette supposition : le nombre d'opérations des deux boucles ```for``` est égal à ```n^2```.
+En observant l'algorithme, nous pouvons confirmer cette supposition : le nombre d'opérations des deux boucles ```for``` est égal à $n^2$.
 
 
 ## 3. Complexité constante
