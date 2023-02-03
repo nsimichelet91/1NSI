@@ -305,7 +305,7 @@ Nous pouvons maintenant classer les joueurs suivant leur distance morphologique 
 !!! note "Voici les liens des notebooks des exercices"
 	- [T5.1_csv_codes_pays](https://capytale2.ac-paris.fr/web/c/b507-1257301){: target = "_blank"}  
 	- [T5.1_csv_aéroports](https://capytale2.ac-paris.fr/web/c/94f1-1257415){: target = "_blank"}   
-	- [T5.1_csv_noms](https://capytale2.ac-paris.fr/web/c/81f4-510801){: target = "_blank"}   
+	- [T5.1_csv_noms](https://capytale2.ac-paris.fr/web/c/930e-1257794){: target = "_blank"}   
 	- [T5.1_csv_Titanic](https://capytale2.ac-paris.fr/web/c/681d-1257931){: target = "_blank"}   
 
 

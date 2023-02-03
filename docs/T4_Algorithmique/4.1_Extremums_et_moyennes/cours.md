@@ -2,6 +2,9 @@
 
 ![image](data/BO.png){: .center}
 
+!!! note "Voici le lien du notebook associé."
+	[T4.1_Extremums et moyenne](https://capytale2.ac-paris.fr/web/c/c7d9-1332504){: target = "_blank"}  
+
 ## 1. Algorithme de recherche de maximum
 
 !!! note "Recherche de maximum :heart:"
