@@ -105,7 +105,7 @@ Dans le cas (rare, mais il faut l'envisager) où la liste est déjà triée, on 
 - dans le pire des cas (liste triée dans l'ordre décroissant) : complexité **quadratique**
 
 
-### 2.4 Preuve de l'algorithme
+## 3. Preuve de l'algorithme
 
 !!! note "Qu’est ce qu’une preuve d’un algorithme ?"
 	   
@@ -118,7 +118,7 @@ Dans le cas (rare, mais il faut l'envisager) où la liste est déjà triée, on 
 	**Correction :** Il s’agît ici de prouver que l’algorithme fait bien ce qu’on lui demande. Pour cela, on va chercher un **invariant de boucle**. C’est une propriété qui est vérifiée avant l’entrée dans la boucle, qui est vérifiée à chaque itération de la boucle et qui amène au résultat escompté à la sortie de la boucle.
 
 
-### 2.5 Preuve de la terminaison de l'algorithme
+### 3.1 Preuve de la terminaison de l'algorithme
 
 
 Est-on sûr que notre algorithme va s'arrêter ?  
@@ -139,7 +139,7 @@ Nous avonc donc prouvé la **terminaison** de l'algorithme.
     C'est une notion théorique (ici illustrée de manière simple par la valeur `j`) qui permet de prouver *la bonne sortie d'une boucle* et donc la terminaison d'un algorithme.
 
 
-### 2.6 Preuve de la correction de l'algorithme
+### 3.2 Preuve de la correction de l'algorithme
 
 Nous verrons la correction de l'algorithme de tri par insertion dans un autre cours.
 
