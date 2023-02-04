@@ -46,26 +46,26 @@ Observez l'animation ci-dessous et comparer avec la version initiale.
 
 ### 1.2 Codage de l'algorithme
 
-!!! note "Tri par insertion (version optimisée) :heart:"
+!!! note "Tri par insertion :heart:"
     ```python
-    def tri_insertion2(lst) :
-        '''trie en place la liste lst donnée en paramètre'''
-        
-		for i in range(1, len(lst)):                  # (1)
-            a_inserer = lst[i]                        # (2)
-                                                      
-            while i > 0 and lst[i-1] > a_inserer  :   # (3)
-                lst[i] = lst[i-1]                     # (4)
-                i -= 1                                # (5)
-            lst[i] = a_inserer                        # (6)
+    def tri_insertion(liste) :
+        '''trie sur place la liste liste donnée en paramètre'''
+        for i in range(1, len(liste)):               # (1)
+            cle = liste[i]                     # (2)
+            j = i                               # (3)
+            while j > 0 and liste[j-1] > cle :  # (4)
+                liste[j] = liste[j-1]              # (5)
+                j -= 1                            # (6)
+            liste[j] = cle                 # (7)
     ```
 
     1. On démarre à la deuxième valeur.
-    2. On stocke dans une variable ```a_inserer ``` notre valeur de travail
-    3. Tant qu'on trouve une valeur supérieure à notre valeur de travail et qu'on n'est pas revenu au début de la liste.
-    4. On décale cette valeur de un rang vers la droite.
-    5. On décrémente l'indice pour passer à la valeur de gauche suivante.
-    6. On s'est arrêté quand la valeur n'était pas supérieure ou que l'on ne peut plus se décaler sur la gauche: on **insère** notre valeur de travail juste à droite de notre position d'arrêt.
+    2. On stocke dans une variable ```cle``` notre valeur à insérer.
+    3. On stoke la position initiale de la clé dans la variable ```j```.
+    4. Tant que la valeur située à gauche est supérieure à la valeur à insérer et qu'on n'a pas atteint la première valeur de la liste.
+    5. On décale cette valeur de un rang vers la droite.
+    6. On décrémente ```j``` afin de se positionner sur la valeur à gauche de notre valeur actuelle.
+    7. On est sorti de la boucle ```while``` quand la valeur n'était pas supérieure ou que ```j``` a pris la valeur zéro (on ne peut plus se décaler): on **insère** notre valeur à insérer à la position d'indice ```j```.
 
 
 *Application :*
@@ -73,24 +73,25 @@ Observez l'animation ci-dessous et comparer avec la version initiale.
 
 ```python
 >>> ma_liste = [7, 5, 2, 8, 1, 4]
->>> tri_insertion2(maliste)
+>>> tri_insertion(ma_liste)
 >>> ma_liste
 [1, 2, 4, 5, 7, 8]
 ```
 
-## 3. Complexité de l'algorithme
+## 2. Complexité de l'algorithme
 
-### 3.1  Étude expérimentale
+### 2.1  Étude expérimentale
 
-A l'aide du [cours sur la complexité](../../4.2_Complexite/cours/) et proposer sur le notebook, des mesures expérimentales pour déterminer la complexité du tri par insertion.
+A l'aide du [cours sur la complexité](../../4.2_Complexite/cours/) proposer sur le notebook associé, des mesures expérimentales pour déterminer la complexité du tri par insertion.
 
 
-### 3.2 Démonstration
+### 2.2 Démonstration
 Dénombrons le nombre d'opérations dans le pire des cas, pour une liste de taille $n$.
 
 - boucle `for` : elle s'exécute $n-1$ fois.
-- boucle `while` : dans le pire des cas, elle exécute d'abord 1 opération, puis 2, puis 3... jusqu'à $n-1$. Or 
+- boucle `while` : dans le pire des cas, elle exécute d'abord 1 opération, puis 2, puis 3... jusqu'à $n-1$.
 
+On a donc : 
 $$1+2+3+\dots+n-1=\dfrac{n \times (n-1)}{2}$$
 
 Le terme de plus haut degré de l'expression $\dfrac{n \times (n-1)}{2}$ est de degré 2 : le nombre d'opérations effectuées est donc proportionnel au **carré** de la taille des données d'entrée.  
@@ -98,53 +99,48 @@ Ceci démontre que le tri par insertion est de complexité **quadratique**.
 
 Dans le cas (rare, mais il faut l'envisager) où la liste est déjà triée, on ne rentre jamais dans la boucle `while` : le nombre d'opérations est dans ce cas égal à $n-1$, ce qui caractérise une complexité linéaire.
 
-### 3.3 Résumé de la complexité 
+### 2.3 Résumé de la complexité 
 
 - dans le meilleur des cas (liste déjà triée) : complexité **linéaire**
 - dans le pire des cas (liste triée dans l'ordre décroissant) : complexité **quadratique**
 
-### 3.4 Preuve de la terminaison de l'algorithme
 
+### 2.4 Preuve de l'algorithme
+
+!!! note "Qu’est ce qu’une preuve d’un algorithme ?"
+	   
+	*Définition* : Réaliser la preuve d’un algorithme, c’est :  
+	- Prouver qu’il se termine : On parle de terminaison.  
+	- Prouver qu’il fait bien ce que l’on attend de lui : On parle de correction.  
+	
+	**Terminaison :** Il s’agit de vérifier ici que les calculs effectués par l’algorithme s’arrêtent bien. Notamment, lorsqu’une boucle conditionnelle est effectuée par l’algorithme, il est primordial de vérifier que l’on sort bien de cette boucle. On parle aussi de **variants de boucle**.  
+	
+	**Correction :** Il s’agît ici de prouver que l’algorithme fait bien ce qu’on lui demande. Pour cela, on va chercher un **invariant de boucle**. C’est une propriété qui est vérifiée avant l’entrée dans la boucle, qui est vérifiée à chaque itération de la boucle et qui amène au résultat escompté à la sortie de la boucle.
+
+
+### 2.5 Preuve de la terminaison de l'algorithme
 
 
 Est-on sûr que notre algorithme va s'arrêter ?  
 Le programme est constitué d'une boucle `while` imbriquée dans une boucle `for`. Seule la boucle `while` peut provoquer une non-terminaison de l'algorithme. Observons donc ses conditions de sortie : 
 
 ```python
- while  i > 0 and lst[i-1] > a_inserer :
+ while  j > 0 and liste[j - 1] > cle :
 ```
 
-La condition `lst[i-1] > a_inserer` ne peut pas être rendue fausse avec certitude. 
-Par contre, la condition `i > 0` sera fausse dès que la variable `i` deviendra égale à 0. Or la ligne 
-`i -= 1` nous assure que la variable `i` diminuera à chaque tour de boucle. La condition  `i > 0` deviendra alors forcément fausse au bout d'un certain temps.
+La condition `liste[j - 1] > cle` ne peut pas être rendue fausse avec certitude. 
+Par contre, la condition `j > 0` sera fausse dès que la variable `j` deviendra négative. Or la ligne 
+`j = j - 1` nous assure que la variable `j` diminuera à chaque tour de boucle. La condition  `j > 0` deviendra alors forcément fausse au bout d'un certain temps.
 
 Nous avonc donc prouvé la **terminaison** de l'algorithme.
 
 !!! aide "Vocabulaire"
-    On dit que la valeur `i` est un **variant de boucle**.  
-    C'est une notion théorique (ici illustrée de manière simple par la valeur `i`) qui permet de prouver *la bonne sortie d'une boucle* et donc la terminaison d'un algorithme.
+    On dit que la valeur `j` est un **variant de boucle**.  
+    C'est une notion théorique (ici illustrée de manière simple par la valeur `j`) qui permet de prouver *la bonne sortie d'une boucle* et donc la terminaison d'un algorithme.
 
 
-### 3.5 Preuve de la correction de l'algorithme
-Les preuves de correction sont des preuves théoriques. La preuve ici s'appuie sur le concept mathématique de **récurrence**. 
-Principe du raisonnement par récurrence : 
-une propriété $P(n)$ est vraie si :
+### 2.6 Preuve de la correction de l'algorithme
 
-- $P(0)$ (par exemple) est vraie
-- Pour tout entier naturel $n$, si $P(n)$ est vraie alors $P(n+1)$ est vraie.
-
-Ici, la propriété serait : « Quand $i$ varie entre 1 et `longueur(liste) - 1`, la sous-liste de longueur $i$ est triée dans l'ordre croissant.»
-
-!!! aide "Vocabulaire"
-    On appelle cette propriété un **invariant de boucle**.  
-    *Invariant* siginifie qu'elle reste vraie pour chaque boucle.
-
-- Quand $i$ vaut 1, on place le minimum de la liste en lst[0], la sous-liste lst[0] est donc triée.
-- Si la sous-liste de $i$ éléments est triée, l'algorithme rajoute en dernière position de la liste le minimum de la sous-liste restante, dont tous les éléments sont supérieurs au maximum de la sous-liste de $i$ éléments. La sous-liste de $i+1$ éléments est donc aussi triée.
+Nous verrons la correction de l'algorithme de tri par insertion dans un autre cours.
 
 
-
----
-## Bibliographie
-- Wikipedia, https://en.wikipedia.org/wiki/Sorting_algorithm
----
