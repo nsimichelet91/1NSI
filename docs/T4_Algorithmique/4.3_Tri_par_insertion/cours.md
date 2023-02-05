@@ -63,9 +63,9 @@ Observez l'animation ci-dessous et comparer avec la version initiale.
     2. On stocke dans une variable ```cle``` notre valeur à insérer.
     3. On stoke la position initiale de la clé dans la variable ```j```.
     4. Tant que la valeur située à gauche est supérieure à la valeur à insérer et qu'on n'a pas atteint la première valeur de la liste.
-    5. On décale cette valeur de un rang vers la droite.
+    5. On décale cette valeur d'un rang vers la droite.
     6. On décrémente ```j``` afin de se positionner sur la valeur à gauche de notre valeur actuelle.
-    7. On est sorti de la boucle ```while``` quand la valeur n'était pas supérieure ou que ```j``` a pris la valeur zéro (on ne peut plus se décaler): on **insère** notre valeur à insérer à la position d'indice ```j```.
+    7. On est sorti de la boucle ```while``` quand la valeur n'était plus supérieure ou que ```j``` a atteint la valeur zéro (on ne peut plus se décaler): on **insère** ```cle```(notre valeur à insérer) à la position d'indice ```j```.
 
 
 *Application :*
@@ -129,8 +129,7 @@ Le programme est constitué d'une boucle `while` imbriquée dans une boucle `for
 ```
 
 La condition `liste[j - 1] > cle` ne peut pas être rendue fausse avec certitude. 
-Par contre, la condition `j > 0` sera fausse dès que la variable `j` deviendra négative. Or la ligne 
-`j = j - 1` nous assure que la variable `j` diminuera à chaque tour de boucle. La condition  `j > 0` deviendra alors forcément fausse au bout d'un certain temps.
+Par contre, la condition `j > 0` sera fausse dès que la variable `j` sera égale à zéro. Or la ligne `j = j - 1` nous assure que la variable `j` diminuera à chaque tour de boucle. La condition  `j > 0` deviendra alors forcément fausse au bout d'un certain temps.
 
 Nous avonc donc prouvé la **terminaison** de l'algorithme.
 
