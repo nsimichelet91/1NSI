@@ -5,7 +5,7 @@
 ![image](data/color_bars.svg){: .center width=30%}
 
 !!! note "Voici le lien du notebook associé."
-	[T4.3_Tri_par_insertion](https://capytale2.ac-paris.fr/web/c/c7d9-1332504){: target = "_blank"}  
+	[T4.3_Tri_par_insertion](https://capytale2.ac-paris.fr/web/c/f5f5-1342560){: target = "_blank"}  
 	
 ## 0. Préambule
 Pourquoi étudier des algorithmes de tri ?  
