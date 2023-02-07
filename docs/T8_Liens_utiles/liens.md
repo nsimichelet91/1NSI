@@ -30,5 +30,7 @@ Au cas où vous vous ennuieriez...
 - [CodinGame](https://www.codingame.com/start){:target="_blank"} 
 
 
-??? abstract "source"
+??? abstract "sources"
+	- site de [G.Lassus](https://glassus.github.io/premiere_nsi/)
     - site de [Cédric Gouygou](https://cgouygou.github.io/1NSI/)
+	- et bien d'autres ...
