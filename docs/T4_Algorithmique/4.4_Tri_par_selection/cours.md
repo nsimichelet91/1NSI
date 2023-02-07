@@ -41,41 +41,12 @@ Voici le fonctionnement de l'algorithme :
  
 ## 4. Complexité de l'algorithme
 
-### 4.1 Mesure du temps d'exécution
+### 4.1  Étude expérimentale
+
+A l'aide du [cours sur la complexité](../../4.2_Complexite/cours/) proposer sur le notebook associé, des mesures expérimentales pour déterminer la complexité du tri par insertion.
 
 Nous allons fabriquer deux listes de taille 100 et 200 :
 Pour le tri par sélection, il n'y a pas cas plus défavorable comme dans le tri par insertion (cas de la liste triée dans l'ordre insère de celui recherché). Il faut pour chaque valeur du tableau, parcourir toutes les valeurs non triées.
-
-
-```python
-import random
-
-lst_a = [random.randint(0, 100) for i in range(100)]
-
-lst_b = [random.randint(0, 100) for i in range(200)]
-```
-
-
-La mesure du temps moyen de tri pour ces deux listes donne le résultat ci-dessous (avec le module ```timeit``` sous Jupyter Notebook)
-
-```python
-%timeit tri_selection(lst_a)
-
-    632 µs ± 14.3 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
-```
-
-
-```python
-%timeit tri_selection(lst_b)
-
-    2.35 ms ± 35.9 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
-```
-
-En comparant les temps de tri des listes `lst_a` et `lst_b`, que pouvez-vous supposer sur la complexité du tri par sélection ?
-
-<!--
-Une liste à trier 2 fois plus longue prend 4 fois plus de temps : l'algorithme semble de complexité **quadratique**.
--->
 
 
 ### 4.2. Calcul du nombre d'opérations
