@@ -3,7 +3,7 @@
 ![image](data/BO.png){: .center}
 
 !!! note "Voici le lien du notebook associé."
-	[T4.4_Tri_par_sélection](https://capytale2.ac-paris.fr/web/c/f5f5-1342560){: target = "_blank"}  
+	[T4.4_Tri_par_sélection](https://capytale2.ac-paris.fr/web/c/640c-1345631){: target = "_blank"}  
 	
 ## 1. Animation
 Considérons la liste `[5, 4, 2, 1]`  
