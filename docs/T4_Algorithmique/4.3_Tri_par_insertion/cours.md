@@ -16,9 +16,9 @@ En Python, on utilise la fonction `sort()` :
 
 
 ```python
->>> tab = [4, 8, 1, 2, 6]
->>> tab.sort()
->>> tab
+>>> liste = [4, 8, 1, 2, 6]
+>>> liste.sort()
+>>> liste
 [1, 2, 4, 6, 8]
 
 ```
@@ -43,6 +43,7 @@ Observez l'animation ci-dessous et comparer avec la version initiale.
 - On traite successivement toutes les valeurs à trier, en commençant par celle en deuxième position.
 - On va décaler vers la droite toutes les valeurs situées à gauche et supérieures à notre valeur de travail.
 - On **insère** ensuite directement à sa position «la plus à gauche possible» notre valeur de travail. 
+
 
 ### 1.2 Codage de l'algorithme
 
@@ -70,6 +71,9 @@ Observez l'animation ci-dessous et comparer avec la version initiale.
 
 *Application :*
 
+<iframe width="800" height="500" frameborder="0"
+        src="https://pythontutor.com/visualize.html#code=from%20tutor%20import%20tutor%0A%0Adef%20tri_insertion%28liste%29%20%3A%0A%20%20%20%20'''trie%20sur%20place%20la%20liste%20liste%20donn%C3%A9e%20en%20param%C3%A8tre'''%0A%20%20%20%20%0A%20%20%20%20for%20i%20in%20range%281,%20len%28liste%29%29%3A%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20cle%20%3D%20liste%5Bi%5D%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20j%20%3D%20i%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20while%20j%20%3E%200%20and%20liste%5Bj-1%5D%20%3E%20cle%20%3A%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20liste%5Bj%5D%20%3D%20liste%5Bj-1%5D%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20j%20-%3D%201%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20liste%5Bj%5D%20%3D%20cle%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0Ama_liste%20%3D%20%5B7,%205,%202,%208,%201,%204%5D%0Atri_insertion%28ma_liste%29%0A%0Atutor%28%29&cumulative=false&heapPrimitives=nevernest&mode=edit&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false">
+</iframe>
 
 ```python
 >>> ma_liste = [7, 5, 2, 8, 1, 4]

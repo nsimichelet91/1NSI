@@ -2,7 +2,9 @@
 
 ![image](data/BO.png){: .center}
 
-
+!!! note "Voici le lien du notebook associé."
+	[T4.4_Tri_par_sélection](https://capytale2.ac-paris.fr/web/c/f5f5-1342560){: target = "_blank"}  
+	
 ## 1. Animation
 Considérons la liste `[5, 4, 2, 1]`  
 Voici le fonctionnement de l'algorithme :  
@@ -14,25 +16,22 @@ Voici le fonctionnement de l'algorithme :
     Le travail se fait essentiellement sur les **indices**.
     
     - du premier élément jusqu'à l'avant-dernier :
-        - on considère que cet élément est l'élément minimum, on stocke donc son indice dans une variable *indice du minimum*.
-        - on parcourt les éléments suivants, et si on repère un élémént plus petit que notre mininum on met à jour notre *indice du minimum*.
+        - on considère que cet élément est l'élément minimum, on stocke donc son indice dans une variable `indice_min`.
+        - on parcourt les éléments suivants, et si on repère un élément plus petit que notre mininum on met à jour notre `indice_min`.
         - une fois le parcours fini, on échange l'élément de travail avec l'élément minimum qui a été trouvé.
  
-
-
-
 
 ## 3. Implémentation de l'algorithme
 
 !!! abstract "Tri par sélection :heart: "
     ```python
-    def tri_selection(lst) :
-        for k in range(len(lst)-1):
-            indice_min = k
-            for i in range(k+1, len(lst)) :
-                if lst[i] < lst[indice_min]:
-                    indice_min = i
-            lst[k], lst[indice_min] = lst[indice_min], lst[k]
+    def tri_selection(liste) :
+        for i in range(len(liste) - 1):
+            indice_min = i
+            for j in range(i + 1, len(liste)) :
+                if liste[j] < liste[indice_min]:
+                    indice_min = j
+            liste[j], liste[indice_min] = liste[indice_min], liste[j]
     ```
 
 *Vérification :*
@@ -44,22 +43,21 @@ Voici le fonctionnement de l'algorithme :
 [1, 2, 4, 5, 7, 8]
 ```
 
-    
-
-
+ 
 ## 4. Complexité de l'algorithme
-
 
 ### 4.1 Mesure du temps d'exécution
 
 Nous allons fabriquer deux listes de taille 100 et 200 :
-
+Pour le tri par sélection, il n'y a pas cas plus défavorable comme dans le tri par insertion (cas de la liste triée dans l'ordre insère de celui recherché). Il faut pour chaque valeur du tableau, parcourir toutes les valeurs non triées.
 
 
 ```python
-lst_a = [k for k in range(100,0,-1)] #on se place dans le pire des cas : une liste triée dans l'ordre décroissant
+import random
 
-lst_b = [k for k in range(200,0,-1)] #on se place dans le pire des cas : une liste triée dans l'ordre décroissant
+lst_a = [random.randint(0, 100) for i in range(100)]
+
+lst_b = [random.randint(0, 100) for i in range(200)]
 ```
 
 
