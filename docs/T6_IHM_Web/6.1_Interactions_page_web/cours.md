@@ -59,7 +59,7 @@ Vous pouvez contempler [ici](https://exemplehtmlpur--g-lassus.repl.co){:target="
     === "Énoncé"
       - Créez un dossier contenant un fichier ```mapage.html```.
       - Créez une page contenant une image et un lien vers le site du lycée.
-      - Vous pouvez utiliser le logicile Geany, installé sur notre Debian.
+      - Vous pouvez utiliser le logiciel Notepad++, installé sur vos pc.
       - Vous pouvez aussi utiliser un éditeur en ligne avec rendu instantané, du type [https://www.w3schools.com/tryit/](https://www.w3schools.com/tryit/)
        
 
@@ -120,13 +120,6 @@ Vous pouvez contempler à l'adresse [https://exemplehtmlcss--g-lassus.repl.co](h
 
 ##### Exercice 2
 Reprenez votre page de l'exercice 1 et rajoutez une feuille de style.
-
-##### Exercice 3
-- Allez sur le site [http://sudouest.fr](http://sudouest.fr){:target="_blank"}, et affichez l'inspecteur d'élement de votre navigateur (généralement accessible en appuyant sur ```F12``` )
-- Modifiez le plus possible les attributs de style de la page.
-
-
-
 
 
 ### 2. Quand le client peut agir sur sa page : exemple avec JavaScript
