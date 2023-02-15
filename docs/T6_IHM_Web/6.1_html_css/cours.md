@@ -254,7 +254,7 @@ On utilisera au minimum cette arborescence.
 		
 		<a href="../page1.html"> Aller vers la page1 </a>
 		
-		
+		[![Smiley pour tuto HTML](img/icon_smiley.png)](https://nsimichelet91.github.io/1NSI)
 		
 		<a href="https://nsimichelet91.github.io/1NSI" title="Site 1NSI du lycée"> 1NSI </a>
 <br>
