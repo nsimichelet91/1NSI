@@ -84,7 +84,7 @@
     === "T6 IHM sur le web"
         **Thème 6 : IHM sur le web**
 		
-		- 6.1 [HTML-CSS](./T6_IHM_Web/6.1_html_css/cours/)
+		- 6.1 [HTML-CSS](./T6_IHM_Web/6.1_HTML_CSS/cours/)
         - 6.2 [Interactions sur une page web](./T6_IHM_Web/6.2_Interactions_page_web/cours/)
         - 6.3 [Protocole HTTP : étude du chargement d'une page web](./T6_IHM_Web/6.3_Protocole_HTTP/cours/)
         - 6.4 [Requêtes GET, POST et formulaires](./T6_IHM_Web/6.4_Get_Post_Formulaires/cours/)
