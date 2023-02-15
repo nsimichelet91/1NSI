@@ -32,12 +32,12 @@ On peut associer des attibuts aux balises.
 		* L'attribut `class` permet d'associer des propriétés d'affichage au sein de la feuille de style,  
 		* L'attribut `src` (source) définit le chemin d'accès au fichier image,  
 		* L'attribut `alt` définit le texte à afficher si l'image n'est pas trouvée.  
-<br>
+
 ### Intérêt des pages HTML
 Les pages HTML sont interprétées par des navigateurs.  
 Ce qui en fait un format universel.  
-Afin de s'adapter à toutes les tailles d'écran les pages web doivent-être **Responsive Web Design**.
-<br>
+Afin de s'adapter à toutes les tailles d'écran les pages web doivent-être **Responsive Web Design**.  
+
 
 ### Les éditeurs de texte
  
