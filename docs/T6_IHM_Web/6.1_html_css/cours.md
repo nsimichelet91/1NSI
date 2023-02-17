@@ -1,4 +1,4 @@
-# 6.1 Les langages HTML5 et CCS3
+# 6.1 Les langages HTML5 et CCS
 
 ## Présentation
 Les langages HTML et CSS sont des **langages syntaxiques de description**, par opposition aux langages de programmation que sont Python, Java, C ,...   
