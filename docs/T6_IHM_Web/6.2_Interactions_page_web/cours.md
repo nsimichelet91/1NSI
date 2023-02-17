@@ -1,4 +1,4 @@
-# 6.1 Pages web et interactions
+# 6.2 Pages web et interactions
 
 ![image](data/BO.png){: .center}
 
