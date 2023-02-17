@@ -6,10 +6,10 @@
 
 ## Thèmes en cours d'étude :
 !!! note "*Thèmes en cours d'étude*"
-	- [Codage des entiers](./T2_Representation_des_donnees/2.7_Codage_entiers/cours/)
-	- [Codage des non-entiers](./T2_Representation_des_donnees/2.8_Codage_non-entiers/cours/)
-	- [Manipulation de fichiers csv](./T5_Traitement_de_donnees/5.1_Manipulation_csv/cours/)
-    - [Trier et fusionner des données](./T5_Traitement_de_donnees/5.2_Trier_et_fusionner_des_donnees/cours/)
+    - [Dichotomie](./T4_Algorithmique/4.5_Dichotomie/cours/)
+	- [HTML-CSS](./T6_IHM_Web/6.1_HTML_CSS/cours/)
+    - [Interactions sur une page web](./T6_IHM_Web/6.2_Interactions_page_web/cours/)
+
 
 
 
@@ -25,7 +25,14 @@
 	- [Bases](./T2_Representation_des_donnees/2.4_Bases/cours/)
 	- [Booléens](./T2_Representation_des_donnees/2.5_Booleens/cours/)
 	- [Codage des caractères](./T2_Representation_des_donnees/2.6_Codage_caracteres/cours/)
-
+	- [Codage des entiers](./T2_Representation_des_donnees/2.7_Codage_entiers/cours/)
+	- [Codage des non-entiers](./T2_Representation_des_donnees/2.8_Codage_non-entiers/cours/)
+	- [Manipulation de fichiers csv](./T5_Traitement_de_donnees/5.1_Manipulation_csv/cours/)
+    - [Trier et fusionner des données](./T5_Traitement_de_donnees/5.2_Trier_et_fusionner_des_donnees/cours/)
+	- [Extremums et moyennes](./T4_Algorithmique/4.1_Extremums_et_moyennes/cours/)
+	- [Complexité](./T4_Algorithmique/4.2_Complexite/cours/)
+	- [Tri par insertion](./T4_Algorithmique/4.3_Tri_par_insertion/cours/)
+	- [Tri par sélection](./T4_Algorithmique/4.4_Tri_par_selection/cours/)
 
 ## Programme :
 !!! abstract "Programme"
