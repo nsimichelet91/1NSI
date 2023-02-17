@@ -4,4 +4,4 @@ jean-christophe.delage [at] ac-versailles.fr
 
 Lycée Edmond Michelet / Arpajon 
 
-L'ensemble des documents disponibles est publié sous licence CC-BY-SA.
+L'ensemble des documents disponibles est publié sous licence CC-Zero.
