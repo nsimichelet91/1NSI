@@ -1,6 +1,6 @@
 
 !!! abstract ":star: Actualités :star:"
-	BONNE ANNEE ! 
+	BONNE VACANCES !
 
 
 
