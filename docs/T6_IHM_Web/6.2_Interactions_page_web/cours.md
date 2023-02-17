@@ -2,10 +2,7 @@
 
 ![image](data/BO.png){: .center}
 
-
-
 ![image](data/meme.jpg){: .center}
-
 
 
 ### 1. Le cas le plus simple : la même page pour tout le monde
@@ -18,108 +15,6 @@ Exemple de page statique côté serveur et côté utilisateur :
 
 - cette [merveille](http://glassus1.free.fr/interesting.html){:target="_blank"} de page web.
 - plus complète, mais tout aussi statique : cette page [Wikipedia](https://fr.wikipedia.org/wiki/John_Horton_Conway){:target="_blank"} consacrée à John Conway.
-
-#### 1.1 HTML pur
-
-Lorsque le client demande au serveur le contenu d'une page web, celui-ci lui renvoie, dans le cas le plus simple, une simple page html.  
-HTML est un langage dit « à balises ».  Ce n'est pas à proprement parler un langage de programmation, mais plutôt un langage de description de contenu. 
-Il a été inventé en 1992 par [Tim Berners-Lee](https://fr.wikipedia.org/wiki/Tim_Berners-Lee){:target="_blank"}. La version actuellement utilisée est le ```html5```.
-
-**Exemple de page web minimale**
-
-```html
-<!DOCTYPE html>
-<html lang='fr'>
-    <head>
-        <meta charset="utf-8">
-        <title>Un titre très original</title>
-    </head>
-
-    <body>
-        <p>Ceci est le texte introductif de ma page.</p>
-        <p>
-           <h1>  Ceci est un titre de niveau 1 </h1>
-           Mais sans rien d'intéressant.
-           <h2>  Ceci est un titre de niveau 2 </h2>
-              <ul>
-                  <li> le début d'une liste indentée </li>
-                  <li> la suite ... </li>
-              </ul>  
-        Pour apprendre le fonctionnement des balises, voir <a href="https://developer.mozilla.org/fr/docs/Apprendre/HTML/Introduction_%C3%A0_HTML/Getting_started"> ici</a> par exemple !
-        </p>
-    </body>
-</html>
-
-```
-
-Vous pouvez contempler [ici](https://exemplehtmlpur--g-lassus.repl.co){:target="_blank"} le rendu de cette magnifique page.
-
-{{ initexo(0)}}
-!!! example "{{ exercice() }}"
-    === "Énoncé"
-      - Créez un dossier contenant un fichier ```mapage.html```.
-      - Créez une page contenant une image et un lien vers le site du lycée.
-      - Vous pouvez utiliser le logiciel Notepad++, installé sur vos pc.
-      - Vous pouvez aussi utiliser un éditeur en ligne avec rendu instantané, du type [https://www.w3schools.com/tryit/](https://www.w3schools.com/tryit/)
-       
-
-
-
-
-
-
-#### 1.2 HTML + CSS
-
-L'acronyme CSS signifie _Cascading Style Sheets_. L'idée est de regrouper dans un seul fichier toutes les informations relatives à la mise en forme des éléments de la page html. 
-De manière très simplifiée, on peut dire que le fichier ```html``` s'occupe _du fond_ tandis que le fichier ```css``` s'occupe de la _forme_.
-
-Le fichier CSS (souvent nommé ```style.css```) doit être référencé au début du fichier ```html``` , au sein de la balise ```<head>```.
-
-**Exemple minimal de couple html / css** :
-
-- fichier ```index.html``` : 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>page test</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-    <body>
-         <p>
-           <h1>  Ceci est un titre de niveau 1 </h1>
-           Mais sans rien d'intéressant.
-           <h2>  Ceci est un titre de niveau 2 </h2>
-        </p>
-    </body>
-</html>
-```
-
-- fichier ```style.css``` :
-
-```css
-html {
-    font-size: 15px;
-    font-family:  sans-serif;
-    background-color: lightgray; 
-  }
-
-h1 {
-	color: red;
-}
-```
-
-Vous pouvez contempler à l'adresse [https://exemplehtmlcss--g-lassus.repl.co](https://exemplehtmlcss--g-lassus.repl.co){:target="_blank"} le nouveau rendu de cette encore plus magnifique page.
-
-**En savoir plus** 
-
-- le cours d'OpenClassrooms : [https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3){:target="_blank"}
-
-
-
-##### Exercice 2
-Reprenez votre page de l'exercice 1 et rajoutez une feuille de style.
 
 
 ### 2. Quand le client peut agir sur sa page : exemple avec JavaScript
