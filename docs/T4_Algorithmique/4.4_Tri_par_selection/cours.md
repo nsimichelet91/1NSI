@@ -53,7 +53,7 @@ Pour le tri par sélection, il n'y a pas cas plus défavorable comme dans le tri
 Dénombrons le nombre d'opérations, pour une liste de taille $n$.
 
 - boucle `for` : elle s'exécute $n-1$ fois.
-- deuxième boucle `for` imbriquée : elle exécute d'abord 1 opération, puis 2, puis 3... jusqu'à $n-1$. 
+- deuxième boucle `for` imbriquée : elle exécute d'abord $n-1$ opérations, ..., puis 3, puis 2, puis 1. 
 
 On a donc :
 $n-1+\dots+3+2+1=\dfrac{n \times (n-1)}{2}$
