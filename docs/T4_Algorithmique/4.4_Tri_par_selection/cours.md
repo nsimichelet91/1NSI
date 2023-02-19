@@ -56,7 +56,7 @@ Dénombrons le nombre d'opérations, pour une liste de taille $n$.
 - deuxième boucle `for` imbriquée : elle exécute d'abord 1 opération, puis 2, puis 3... jusqu'à $n-1$. 
 
 On a donc :
-$1+2+3+\dots+n-1=\dfrac{n \times (n-1)}{2}$
+$n-1+\dots+3+2+1=\dfrac{n \times (n-1)}{2}$
 
 Le terme de plus haut degré de l'expression $\dfrac{n \times (n-1)}{2}$ est de degré 2 : le nombre d'opérations effectuées est donc proportionnel au **carré** de la taille des données d'entrée.  
 Ceci démontre que le tri par sélection est de complexité **quadratique**.
