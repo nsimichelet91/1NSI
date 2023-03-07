@@ -167,7 +167,7 @@ None
 
 ### 2.5 Terminaison de l'algorithme
 Est-on sûr que l'algorithme va se terminer ?  
-La boucle `while` qui est utilisée doit nous inciter à la prudence (voir [cours](https://github.com/glassus/nsi/blob/master/Premiere/Theme01_Bases_de_Python/02_Boucle_while/boucles_while.ipynb) sur la boucle While).  
+La boucle `while` qui est utilisée doit nous inciter à la prudence (voir [cours](https://nsimichelet91.github.io/1NSI/T1_Demarrer_en_Python/1.3_Boucle_while/cours/) sur la boucle While).  
 Il y a en effet le risque de rentrer dans une boucle infinie.  
 Pourquoi n'est-ce pas le cas ?
 
@@ -182,7 +182,7 @@ Au démarrage de la boucle, on a :
 
 ```python
     indice_debut = 0
-    indice_fin = len(L) - 1
+    indice_fin = len(lst) - 1
 ```
 
 Ceci qui nous assure donc de bien rentrer dans la boucle. 
@@ -214,8 +214,6 @@ Il y a donc 3 étapes avant de trouver la valeur cherchée.
 
         2. Pouvez-vous deviner le nombre d'étapes nécessaires pour une liste de 4096 termes ?
         3. Pour une liste de $2^n$ termes, quel est le nombre d'étapes ?
-    === "Correction"
-         
 
 **Conclusion :** 
 
@@ -223,10 +221,10 @@ C'est le nombre de puissances de 2 que contient le nombre $N$ de termes de la li
 
 Ce nombre s'appelle le *logarithme de base 2* et se note $\log_2(N)$.
 
- On dit que l'algorithme de dichotomie a une **vitesse logarithmique**. On rencontrera parfois la notation $O(\log_2(n))$.
+ On dit que l'algorithme de dichotomie a une **vitesse logarithmique**. On le note $O(\log_2(n))$.
 
 !!! note "Complexité de la dichotomie :heart: :heart: :heart:"
-    La recherche dichotomique se fait avec une **complexité logarithmique**.
+    La recherche dichotomique a une **complexité logarithmique**.
 
 
 Cette complexité est bien meilleure qu'une complexité linéaire. Le nombre d'opérations à effectuer est très peu sensible à la taille des données d'entrée, ce qui en fait un algorithme très efficace.
