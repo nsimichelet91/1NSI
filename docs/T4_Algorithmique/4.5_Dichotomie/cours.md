@@ -118,13 +118,12 @@ Nous allons donc travailler avec trois variables :
 
 - `indice_debut` (en bleu sur le schéma)
 - `indice_fin` (en bleu sur le schéma)
-- `indice_central`, qui est égale à `(indice_debut + indice_fin) // 2` (en rouge sur le schéma)  
+- `indice_milieu`, qui est égale à `(indice_debut + indice_fin) // 2` (en rouge sur le schéma)  
 
 Dans l'illustration suivante, la valeur recherchée est 14.
 ![image](data/fig4.png){: .center}
 
 Nous allons faire *se rapprocher* les indices `indice_debut` et `indice_fin` **tant que** `indice_debut <= indice_fin`
-
 
 !!! note "Recherche dichotomique dans une liste triée :heart: :heart: :heart:"
     ```python
@@ -132,16 +131,14 @@ Nous allons faire *se rapprocher* les indices `indice_debut` et `indice_fin` **t
         indice_debut = 0
         indice_fin = len(lst) - 1
         while indice_debut <= indice_fin :
-            indice_centre = (indice_debut + indice_fin) // 2     
-            valeur_centrale = lst[indice_centre]            
-            if valeur_centrale == val :          
-                return indice_centre
-            if valeur_centrale < val :             
-                indice_debut = indice_centre + 1
+            indice_milieu = (indice_debut + indice_fin) // 2                
+            if lst[indice_milieu] == val :          
+                return indice_milieu
+            if lst[indice_milieu] < val :             
+                indice_debut = indice_milieu + 1
             else :
-                indice_fin = indice_centre - 1
-        return None
-            
+                indice_fin = indice_milieu - 1
+        return None          
     ```
 
 **Utilisation**
