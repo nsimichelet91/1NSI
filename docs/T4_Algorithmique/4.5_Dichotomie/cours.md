@@ -79,29 +79,14 @@ C'est la méthode la plus intuitive : on essaie toutes les valeurs (par exemple,
 
 !!! abstract "Exercice 1"
     === "Énoncé"
-        Écrire un code permettant d'afficher l'indice de la valeur `14` dans la liste `lst = [2, 3, 6, 7, 11, 14, 18, 19, 24]`.
-    === "Correction"
-        ```python linenums='1'
-        lst = [2, 3, 6, 7, 11, 14, 18, 19, 24]
-        for k in range(len(lst)):
-            if lst[k] ==  14 :
-                return k
-        return "non trouvé"
-        ```
+        Écrire un code permettant d'afficher l'indice de la valeur `14` dans la liste `lst = [2, 3, 6, 7, 11, 14, 18, 19, 24]`.  
+		Proposez un jeu de tests.
 
 
 !!! abstract "Exercice 2"
     === "Énoncé"
-        Écrire une fonction `trouve(lst, val)` qui renvoie l'indice d'une valeur `val` dans une liste `lst `. Si la valeur `val` n'est pas trouvée, on renverra `"non trouvé"`.
-    === "Correction"
-        ```python linenums='1'
-        def trouve(val, lst) :
-            for k in range(len(lst)) :
-                if lst[k] == val:
-                    return k
-            return "non trouvé"
-
-        ```
+        Écrire une fonction `trouve(lst, val)` qui renvoie l'indice d'une valeur `val` dans une liste `lst `. Si la valeur `val` n'est pas trouvée, on renverra `"non trouvé"`.  
+		Proposez un jeu de tests.
 
 
 ### 1.3 Complexité de la méthode naïve
@@ -121,42 +106,22 @@ La méthode naïve n'utilise pas le fait que la liste est triée, on aurait pu a
     Si je choisis un nombre entre 1 et 100, quelle est la stratégie optimale pour deviner ce nombre le plus vite possible ?  
     (à chaque étape, une indication (trop grand, trop petit) permet d'affiner la proposition suivante)
 
-**Réponse attendue :** la meilleure stratégie est de *couper en deux* à chaque fois l'intervalle d'étude. On démarre de 50, puis 75 ou 25, etc.
+**Réponse attendue :**  
+La stratégie optimale est de diviser en deux à chaque étape l'intervalle d'étude. On démarre de 50, puis 75 ou 25, etc. On appelle cela une méthode par **dichotomie**, du grec ancien διχοτομία, dikhotomia (« division en deux parties »).
 
+La méthode de dichotomie fait partie des méthodes dites *«diviser pour régner»*. 
 
-:star: :star: Il convient toute fois de remettre en question cette méthode qui paraît *naturellement* optimale : si je propose 90 comme nombre de départ, j'ai certes moins de chance que le nombre soit entre 90 et 100, mais s'il l'est, j'ai gagné un gros avantage car mon nouvel intervalle est très réduit.
-
-??? tip "Notion d'espérance probabiliste"
-    Déterminer si un risque vaut la peine d'être pris passe par la compréhension de la notion d'**espérance probabiliste**.
-    Exemple : "On lance un dé, s'il tombe sur le 6 vous recevez 8 euros, sinon vous me donnez 1 euro. Voulez-vous jouer ?"
-
-    $E(X) = 8 \times \frac{1}{6} + (-1) \times \frac{5}{6} = \frac{8}{6}-\frac{5}{6}=\frac12$
-
-    *En moyenne*, on gagnera 50 centimes par partie, il faut donc jouer.
-
-
-Le graphique ci-dessous représente le nombre de coups moyens (sur 10 000 parties simulées)
-
-![image](data/fig1.png){: .center width=40%}
-
-**Interprétations et remarques** 
-
-- si le choix se porte *toujours* sur le nombre situé à la moitié de l'intervalle (0.5), le nombre de coups moyen avant la victoire (sur 10 000 parties) est environ 6.
-- si le choix se porte *toujours* sur le nombre situé à 90 % de l'intervalle (0.9), le nombre de coups moyen avant la victoire (sur 10 000 parties) est environ 11.
-- l'asymétrie de la courbe (qui devrait être symétrique) est due aux arrondis par défaut dans le cas de nombres non entiers.
-
-#### Conclusion générale de l'activité d'introduction
-La stratégie optimale est de diviser en deux à chaque étape l'intervalle d'étude. On appelle cela une méthode par **dichotomie**, du grec ancien διχοτομία, dikhotomia (« division en deux parties »).
-
-
+Extrait de [Wikipedia](https://fr.wikipedia.org/wiki/Diviser_pour_r%C3%A9gner_(informatique)) :
 
 ### 2.2 Algorithme de recherche dichotomique
 
 !!! note "Dichotomie, déroulement intuitif"
     - on se place *au milieu* de la liste.
-    - on regarde si la valeur sur laquelle on est placée est inférieure ou supérieure à la valeur cherchée.
+	- on regarde si la valeur sur laquelle on est placée est égale à la valeur cherchée.
+		- si c'est le cas on a trouvé.
+		- sinon on regarde si la valeur sur laquelle on est placée est inférieure ou supérieure à la valeur cherchée.
     - on ne considère maintenant que la bonne moitié de la liste qui nous intéresse.
-    - on continue jusqu'à trouver la valeur cherchée (ou pas)
+    - on continue jusqu'à trouver la valeur cherchée (ou pas).
 
 <!--
 ### 2.3 Illustration
