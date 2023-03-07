@@ -8,6 +8,8 @@
 
 «recherche dichotomique» se dit en anglais *binary search*.
 
+!!! note "Voici le lien du notebook associé."
+	[T4.5_Recherche_dichotomique](https://capytale2.ac-paris.fr/web/c/9ad0-1429769){: target = "_blank"}  
 
 ##  1. Introduction : recherche d'une valeur dans une liste
 
