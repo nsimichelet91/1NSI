@@ -76,7 +76,7 @@ La stratégie optimale est de diviser en deux à chaque étape l'intervalle d'é
 
 La méthode de dichotomie fait partie des méthodes dites *«diviser pour régner»*. 
 
-Wikipedia](https://fr.wikipedia.org/wiki/Diviser_pour_r%C3%A9gner_(informatique))
+[Wikipedia](https://fr.wikipedia.org/wiki/Diviser_pour_r%C3%A9gner_(informatique))
 
 ### 2.2 Algorithme de recherche dichotomique
 
@@ -239,7 +239,7 @@ Cette complexité est bien meilleure qu'une complexité linéaire. Le nombre d'o
 # cette ligne de code permet de transformer le contenu du fichier input_centmille.txt
 # en une liste L de 100 000 valeurs.
 
-L = open("data/input_centmille.txt",'r').read().split('\n')
+L = [i for i in range(100000)]
 
 ```
 
