@@ -136,7 +136,7 @@ Nous allons faire *se rapprocher* les indices `indice_debut` et `indice_fin` **t
             indice_milieu = (indice_debut + indice_fin) // 2                
             if lst[indice_milieu] == val :          
                 return indice_milieu
-            if lst[indice_milieu] < val :             
+            elif lst[indice_milieu] < val :             
                 indice_debut = indice_milieu + 1
             else :
                 indice_fin = indice_milieu - 1
