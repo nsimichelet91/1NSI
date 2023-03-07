@@ -151,7 +151,8 @@ Nous allons faire *se rapprocher* les indices `indice_debut` et `indice_fin` **t
 0
 >>> recherche_dichotomique(mylist, 24)
 8
->>> recherche_dichotomique(mylist, 2022)
+>>> recherche_dichotomique(mylist, 1977)
+None
 >>> 
 ```
 
