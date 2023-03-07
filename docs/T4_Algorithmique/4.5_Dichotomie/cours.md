@@ -118,7 +118,9 @@ Nous allons donc travailler avec trois variables :
 
 - `indice_debut` (en bleu sur le schéma)
 - `indice_fin` (en bleu sur le schéma)
-- `indice_central`, qui est égale à `(indice_debut + indice_fin) // 2` (en rouge sur le schéma)
+- `indice_central`, qui est égale à `(indice_debut + indice_fin) // 2` (en rouge sur le schéma)  
+
+Dans l'illustration suivante, la valeur recherchée est 14.
 ![image](data/fig4.png){: .center}
 
 Nous allons faire *se rapprocher* les indices `indice_debut` et `indice_fin` **tant que** `indice_debut <= indice_fin`
