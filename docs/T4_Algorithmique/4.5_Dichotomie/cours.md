@@ -9,7 +9,7 @@
 «recherche dichotomique» se dit en anglais *binary search*.
 
 !!! note "Voici le lien du notebook associé."
-	[T4.5_Recherche_dichotomique](https://capytale2.ac-paris.fr/web/c/9ad0-1429769){: target = "_blank"}  
+	[T4.5_Recherche_dichotomique](https://capytale2.ac-paris.fr/web/c/3a93-1435130){: target = "_blank"}  
 
 ##  1. Introduction : recherche d'une valeur dans une liste
 
@@ -238,77 +238,66 @@ Cette complexité est bien meilleure qu'une complexité linéaire. Le nombre d'o
 
 
 ```python
-# cette ligne de code permet de transformer le contenu du fichier input_centmille.txt
-# en une liste L de 100 000 valeurs.
-
 L = [i for i in range(100000)]
-
 ```
 
-Mesurons le temps nécessaire pour trouver l'indice de la dernière valeur de la liste (qui est 299474) avec la méthode de balayage (méthode 1) :
+Mesurons le temps nécessaire pour trouver l'indice de la dernière valeur de la liste (qui est 99999) avec la méthode de balayage (méthode 1) :
 
 
 ```python
-%timeit trouve(L, 299474)
+from timeit import timeit
+
+timeit("trouve(L,99999)", globals=globals(), number= 100)
 ```
 
-    4.43 ms ± 86.1 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+    1.7849999999998545
 
 
-Mesurons le temps nécessaire pour trouver l'indice de la dernière valeur de la liste (qui est 299474) avec la méthode par dichotomie (méthode 2) :
+Mesurons le temps nécessaire pour trouver l'indice de la dernière valeur de la liste (qui est 99999) avec la méthode par dichotomie (méthode 2) :
 
 
 ```python
-%timeit trouve_dicho(L, 299474)
+timeit("recherche_dichotomique(L,99999)", globals=globals(), number= 100)
 ```
 
-    3.21 µs ± 19.6 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+    0.0010000000002037268
 
 
-**Comparaison des deux méthodes :** l'algorithme dichotomique est bien plus rapide que l'algorithme de balayage (la différence d'ordre de grandeur est de $10^3$, qui correspond bien à l'ordre de grandeur de $\frac{n}{\log(n)}$ lorsque $n$ vaut $10^5$).
+**Comparaison des deux méthodes :** l'algorithme dichotomique est bien plus rapide que l'algorithme de balayage (la différence d'ordre de grandeur est de $10^3$, qui correspond bien à l'ordre de grandeur de $\frac{n}{\log_{2}(n)}$ lorsque $n$ vaut $10^5$).
 
 #### Avec une liste contenant 1 000 000 valeurs (soit 10 fois plus que la liste précédente)
 
 
 ```python
-# ce code permet de transformer le contenu du fichier million.txt en une liste L de 1 000 000 valeurs.
-f = open("data/input_million.txt",'r')
-l = f.readlines()
-L = []
-for k in l :
-    L.append(int(k[:-1]))
+L = [i for i in range(1000000)]
 ```
 
-Mesurons le temps nécessaire pour trouver l'indice de la dernière valeur de la liste (qui est 2999306) avec la méthode de balayage (méthode 1) :
+Mesurons le temps nécessaire pour trouver l'indice de la dernière valeur de la liste (qui est 999999) avec la méthode de balayage (méthode 1) :
 
 
 ```python
-%timeit trouve(L, 2999306)
+timeit("trouve(L,999999)", globals=globals(), number= 100)
 ```
 
-    46.9 ms ± 615 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
+    15.88000000000011
 
 
-Mesurons le temps nécessaire pour trouver l'indice de la dernière valeur de la liste (qui est 2999306) avec la méthode par dichotomie (méthode 2) :
+Mesurons le temps nécessaire pour trouver l'indice de la dernière valeur de la liste (qui est 999999) avec la méthode par dichotomie (méthode 2) :
 
 
 ```python
-%timeit trouve_dicho(L, 2999306)
+timeit("recherche_dichotomique(L,999999)", globals=globals(), number= 100)
 ```
 
-    3.04 µs ± 39.4 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+    0.001999999999497959
 
 
-**Comparaison des deux méthodes :** l'algorithme dichotomique est toujours bien plus rapide que l'algorithme de balayage (la différence d'ordre de grandeur est de $10^4$, qui correspond bien à l'ordre de grandeur de $\frac{n}{\log(n)}$ lorsque $n$ vaut $10^6$).
+**Comparaison des deux méthodes :** l'algorithme dichotomique est toujours bien plus rapide que l'algorithme de balayage (la différence d'ordre de grandeur est de $10^4$, qui correspond bien à l'ordre de grandeur de $\frac{n}{\log_{2}(n)}$ lorsque $n$ vaut $10^6$).
 
 ### Influence de la taille de la liste sur la vitesse de chaque méthode :
 - méthode 1: la recherche dans une liste 10 fois plus grand prend environ 10 fois plus de temps : la vitesse de l'algorithme est bien proportionnelle à la taille $n$ de la liste. $ \frac{10^6}{10^5} = 10$
-- méthode 2: la recherche dans une liste 10 fois plus grand prend environ 1,2 fois plus de temps : la vitesse de l'algorithme est bien proportionnelle au **logarithme** de la taille $n$ de la liste.  $\frac{\log(1000000)}{\log(100000)} \approx 1,2$
+- méthode 2: la recherche dans une liste 10 fois plus grand prend environ 1,2 fois plus de temps : la vitesse de l'algorithme est bien proportionnelle au **logarithme** de la taille $n$ de la liste.  $\frac{\log_{2}(1000000)}{\log_{2}(100000)} \approx 1,2$
 
 
-**Remarque :** Il ne faut toutefois pas oublier que la méthode dichotomique, bien plus rapide, nécessite que la liste ait été auparavant triée. Ce qui rajoute du temps de calcul ! (cf [tri par insertion](https://github.com/glassus/nsi/blob/master/Premiere/Theme05_Algorithmique/03_Tri_par_insertion.ipynb) ou [tri par sélection](https://github.com/glassus/nsi/blob/master/Premiere/Theme05_Algorithmique/04_Tri_par_selection.ipynb) )
+**Remarque :** Il ne faut toutefois pas oublier que la méthode dichotomique, bien plus rapide, nécessite que la liste ait été auparavant triée. Ce qui rajoute du temps de calcul ! (cf [tri par insertion](https://nsimichelet91.github.io/1NSI/T4_Algorithmique/4.3_Tri_par_insertion/cours/) ou [tri par sélection](https://nsimichelet91.github.io/1NSI/T4_Algorithmique/4.4_Tri_par_selection/cours/) )
 
-
-```python
-
-```
