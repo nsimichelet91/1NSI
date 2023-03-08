@@ -1,6 +1,6 @@
 # 4.5 Recherche dichotomique
 
-*ou comment rechercher efficacement dans une liste triée ?*
+***ou comment rechercher efficacement dans une liste triée ?***
 
 ![image](data/BO.png){: .center}
 
@@ -295,7 +295,7 @@ timeit("recherche_dichotomique(L,999999)", globals=globals(), number= 100)
 **Comparaison des deux méthodes :** l'algorithme dichotomique est toujours bien plus rapide que l'algorithme de balayage (la différence d'ordre de grandeur est de $10^4$, qui correspond bien à l'ordre de grandeur de $\frac{n}{\log_{2}(n)}$ lorsque $n$ vaut $10^6$).
 
 ### Influence de la taille de la liste sur la vitesse de chaque méthode :
-- méthode 1: la recherche dans une liste 10 fois plus grand prend environ 10 fois plus de temps : la vitesse de l'algorithme est bien proportionnelle à la taille $n$ de la liste. $ \frac{10^6}{10^5} = 10$
+- méthode 1: la recherche dans une liste 10 fois plus grand prend environ 10 fois plus de temps : la vitesse de l'algorithme est bien proportionnelle à la taille $n$ de la liste. $\frac{10^6}{10^5} = 10$
 - méthode 2: la recherche dans une liste 10 fois plus grand prend environ 1,2 fois plus de temps : la vitesse de l'algorithme est bien proportionnelle au **logarithme** de la taille $n$ de la liste.  $\frac{\log_{2}(1000000)}{\log_{2}(100000)} \approx 1,2$
 
 
