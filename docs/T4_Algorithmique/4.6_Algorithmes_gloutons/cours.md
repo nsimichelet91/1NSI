@@ -7,6 +7,8 @@ en anglais : _greedy algorithms_
 
 ![](data/greedy.png){: .center}
 
+!!! note "Voici le lien du notebook associé."
+	[T4.6_Algorithmes_Gloutons](...){: target = "_blank"} 
 
 !!! abstract "Définition :heart:"
     Un algorithme est qualifié de **glouton** si le problème qu'il essaie de résoudre est décomposé en une succession de problèmes identiques pour lesquels l'algorithme va chercher une solution optimale.  
@@ -31,7 +33,7 @@ Formulé autrement :
 ![](data/pluscourt1b.png){: .center}
 
 
-La philosophie de l'algorithme glouton implique qu'à chaque étape, vous allez vous diriger vers le point le plus proche. 
+La philosophie de l'algorithme glouton implique qu'à chaque étape, vous allez vous diriger vers le point le plus proche n'ayant pas encore été atteint. 
 
 Quel est alors le parcours final ?
 
@@ -72,13 +74,13 @@ Dans cette situation, l'algorithme glouton nous amène à la solution optimale.
 
 Un algorithme glouton est une méthode rapide et souvent efficace, mais qui ne garantit pas l'optimalité de la solution trouvée.
 
-**La succession de meilleurs choix LOCAUX va nous amener à une *bonne* solution GLOBALE, mais ne nous garantit pas d'arriver à la solution optimale.**
+:star: :star: :star:**La succession de meilleurs choix LOCAUX va nous amener à une *bonne* solution GLOBALE, mais ne nous garantit pas d'arriver à la solution optimale.**:star: :star: :star:
 
 ##  2. Le problème du rendu de monnaie
 
 Nous allons travailler avec des pièces (ou billets) de 1, 2, 5, 10, 20, 50, 100, 200 euros.
 
-L'objectif est de créer un programme renvoyant, pour une somme ```somme_a_rendre``` entrée en paramètre, la combinaison utilisant un **minimum** de pièces ou de billets pour fabriquer la somme ```somme_a_rendre```. 
+L'objectif est de créer un programme renvoyant, pour une somme ```somme_a_rendre``` entrée en paramètre, la combinaison (sous forme de liste) utilisant un **minimum** de pièces ou de billets pour fabriquer la somme ```somme_a_rendre```. 
 
 Par exemple, lorsque vous payez avec 20 € un objet coûtant 11 €, vous préférez qu'on vous rende vos 9 € de monnaie par $$ 9 = 5 + 2+2$$ plutôt que par $$ 9=2+2+2+1+1+1$$
 
@@ -91,21 +93,22 @@ La résolution de ce problème peut se faire de manière gloutonne : à chaque �
     def rendu(somme_a_rendre):
         pieces = [200, 100, 50, 20, 10, 5, 2, 1]
         i =  0   # (1) 
-        solution = []
+        solution = []   # (2)
         while somme_a_rendre > 0:
-            if pieces[i] <= somme_a_rendre : # (2) 
-                solution.append(pieces[i])   # (3) 
-                somme_a_rendre = somme_a_rendre - pieces[i] # (4)
+            if pieces[i] <= somme_a_rendre : # (3) 
+                solution.append(pieces[i])   # (4) 
+                somme_a_rendre = somme_a_rendre - pieces[i] # (5)
             else :
-                i += 1   # (5) 
+                i += 1   # (6) 
         return solution
     ```
 
     1. On part du 1er indice -> la plus grande pièce
-    2. Est-ce que la pièce peut être rendue ?
-    3. On garde la pièce dans la liste `solution`
-    4. On met à jour la somme à rendre.
-    5. La pièce était trop grosse, on avance dans la liste.
+	2. Initialisation de la liste contenant la combinaison
+    3. Est-ce que la pièce d'indice i peut être rendue ?
+    4. On ajoute la pièce dans la liste `solution`
+    5. On met à jour la somme à rendre.
+    6. La pièce était trop grosse, on avance dans la liste.
 
 
 
@@ -126,23 +129,6 @@ Utilisation : `rendu(13)` doit renvoyer `[10, 2, 1]`
 Imaginons qu'il n'y ait plus de pièces de 10 et 5 euros. 
 Faites fonctionner votre algorithme pour la somme de 63 euros.
 
-<!-- 
-```python
-pieces  = [1, 2, 20, 50, 100, 200]
-
-def rendu(somme_a_rendre):
-    i =  len(pieces) - 1
-    solution = []
-    while somme_a_rendre > 0:
-        if pieces[i] <= somme_a_rendre :
-            solution.append(pieces[i])
-            somme_a_rendre = somme_a_rendre - pieces[i]
-        else :
-            i -= 1
-    return solution
-```
--->
-
 ```python
 >>> rendu(63)
    [50, 2, 2, 2, 2, 2, 2, 1]
@@ -151,7 +137,7 @@ def rendu(somme_a_rendre):
 Damned ! Mais ce n'est pas une solution optimale !  
 `[20, 20, 20, 2, 1]` serait bien mieux.
 
-**Moralité** : Lors d'un rendu de monnaie, l'algorithme glouton n'est optimal que _sous certaines conditions_, ce qui est un peu décevant. Un système de monnaie qui rend l'algorithme glouton est dit **canonique**. Il est difficile de caractériser mathématiquement si un système de monnaie est canonique ou pas.
+**Moralité** : Lors d'un rendu de monnaie, l'algorithme glouton n'est optimal que _sous certaines conditions_, ce qui est un peu décevant. Un système de monnaie qui rend l'algorithme glouton optimal est dit **canonique**.
 
 ## 3. Le problème du sac à dos _(Knapsack Problem)_
 
@@ -167,14 +153,14 @@ Actuellement :
 
 *   On sait trouver LA meilleure solution, mais en explorant toutes les combinaisons une par une. Cette méthode par **force brute** est inapplicable si beaucoup d'objets sont en jeu.
 *   On sait facilement trouver une _bonne_ solution, mais pas forcément la meilleure, par exemple en adoptant une stratégie gloutonne.
-* On ne sait pas trouver facilement (en temps polynomial) la meilleure solution. Si vous y arrivez, [1 Million de $](https://www.claymath.org/millennium-problems/p-vs-np-problem){. target="_blank"} sont pour vous.
+* On ne sait pas trouver facilement (en temps polynomial) la meilleure solution. Si vous y arrivez, [1 Million de $](https://interstices.info/p-np-un-probleme-a-un-million-de-dollars/){. target="_blank"} sont pour vous.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AgtOCNCejQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 ### 3.1 Petite aide technique avant de commencer
 
-Supposons qu'on dispose d'une liste  `mylist = [["A",3], ["B",2], ["C",8]]`. 
+Supposons qu'on dispose d'une liste  `mylist = [("A", 3), ("B", 2), ("C", 8)]`. 
 
 Comment classer les éléments de cette liste par leur deuxième élément ???
 
@@ -186,7 +172,7 @@ Nous allons procéder en 2 temps :
 
 
 ```python
->>> mylist = [["A",3], ["B",2], ["C",8]]
+>>> mylist = [("A", 3), ("B", 2), ("C", 8)]
 >>> def le_deuxieme(k) :
     return k[1]
 
@@ -195,12 +181,10 @@ Nous allons procéder en 2 temps :
   'Lisa'
 >>> mynewlist = sorted(mylist, key = le_deuxieme, reverse = True)
 >>> mynewlist
-[['C', 8], ['A', 3], ['B', 2]]
+[('C', 8), ('A', 3), ('B', 2)]
+
 
 ```
-
-
-
 
 ### 3.2 Retour sur le problème du sac à dos
 On considère un sac de 40 kg et les objets suivants :
@@ -220,7 +204,7 @@ Quels objets faut-il prendre ?
 
 
 ```python
->>> objets = [["A", 13, 700], ["B", 12, 500], ["C", 8, 200], ["D", 10, 300], ["E", 14, 600], ["F", 18, 800]]
+>>> obj =[("A", 13, 700), ("B", 12, 500), ("C", 8, 200), ("D", 10, 300),("E", 14, 600),("F", 18, 800)]
 >>> poids_max = 40
 >>> def ratio(objet):
         # renvoie le rapport prix/poids d'un objet
@@ -228,12 +212,7 @@ Quels objets faut-il prendre ?
 
 >>> objets_tries = sorted(objets, key = ratio, reverse = True)
 >>> objets_tries
-     [['A', 13, 700],
-     ['F', 18, 800],
-     ['E', 14, 600],
-     ['B', 12, 500],
-     ['D', 10, 300],
-     ['C', 8, 200]]
+     [('A', 13, 700), ('F', 18, 800), ('E', 14, 600), ('B', 12, 500), ('D', 10, 300), ('C', 8, 200)]
 ```
 
 
@@ -274,7 +253,7 @@ Il faut donc choisir la combinaison A, F, C. Elle est bien valide (poids 39) et 
 **Question** (toujours la même) :  
 
 L'algorithme glouton nous a-t-il donné la solution **optimale** ?  
-Nous allons pour cela avoir recours à la force brute pour tester toutes les combinaisons possibles.
+Nous allons pour cela avoir recours à la **force brute** pour tester toutes les combinaisons possibles.
 
 ### 3.3 Force brute 
 
@@ -285,7 +264,7 @@ Cette liste est de taille $2^n$, où $n$ est le nombre d'objets. C'est cela qui 
 
 
 ```python
-objets  = [["A", 13, 700], ["B", 12, 500], ["C", 8, 200], ["D", 10, 300], ["E", 14, 600], ["F", 18, 800]]
+objets =[("A", 13, 700), ("B", 12, 500), ("C", 8, 200), ("D", 10, 300),("E", 14, 600),("F", 18, 800)]
 poids_max = 40
 ```
 
@@ -304,70 +283,7 @@ La liste `combinaisons` contient bien les 64 mots possibles ($2^6=64$) :
 
 ```python
 >>> combinaisons
-    ['000000',
-     '000001',
-     '000010',
-     '000011',
-     '000100',
-     '000101',
-     '000110',
-     '000111',
-     '001000',
-     '001001',
-     '001010',
-     '001011',
-     '001100',
-     '001101',
-     '001110',
-     '001111',
-     '010000',
-     '010001',
-     '010010',
-     '010011',
-     '010100',
-     '010101',
-     '010110',
-     '010111',
-     '011000',
-     '011001',
-     '011010',
-     '011011',
-     '011100',
-     '011101',
-     '011110',
-     '011111',
-     '100000',
-     '100001',
-     '100010',
-     '100011',
-     '100100',
-     '100101',
-     '100110',
-     '100111',
-     '101000',
-     '101001',
-     '101010',
-     '101011',
-     '101100',
-     '101101',
-     '101110',
-     '101111',
-     '110000',
-     '110001',
-     '110010',
-     '110011',
-     '110100',
-     '110101',
-     '110110',
-     '110111',
-     '111000',
-     '111001',
-     '111010',
-     '111011',
-     '111100',
-     '111101',
-     '111110',
-     '111111']
+    ['000000', '000001', '000010', '000011', '000100', '000101', '000110', '000111', '001000', '001001', '001010', '001011', '001100', '001101', '001110', '001111', '010000', '010001', '010010', '010011', '010100', '010101', '010110', '010111', '011000', '011001', '011010', '011011', '011100', '011101', '011110', '011111', '100000', '100001', '100010', '100011', '100100', '100101', '100110', '100111', '101000', '101001', '101010', '101011', '101100', '101101', '101110', '101111', '110000', '110001', '110010', '110011', '110100', '110101', '110110', '110111', '111000', '111001', '111010', '111011', '111100', '111101', '111110', '111111']
 
 ```
 
@@ -375,6 +291,7 @@ La liste `combinaisons` contient bien les 64 mots possibles ($2^6=64$) :
 ```python linenums='1'
 valeurs = [] 
 poids = []
+
 for comb in combinaisons :
     poids_comb = 0
     valeur = 0
