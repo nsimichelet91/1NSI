@@ -1,12 +1,11 @@
 
 !!! abstract ":star: Actualités :star:"
-	BONNE VACANCES !
-
-
 
 ## Thèmes en cours d'étude :
 !!! note "*Thèmes en cours d'étude*"
-    - [Dichotomie](./T4_Algorithmique/4.5_Dichotomie/cours/)
+
+    - [Recherche dichotomique](./T4_Algorithmique/4.5_Dichotomie/cours/)
+	- [Algorithmes gloutons](./T4_Algorithmique/4.6_Algorithmes_gloutons/cours/)
 	- [HTML-CSS](./T6_IHM_Web/6.1_HTML5_CSS3/cours/)
     - [Interactions sur une page web](./T6_IHM_Web/6.2_Interactions_page_web/cours/)
 
@@ -77,7 +76,7 @@
         - 4.2 [Complexité](./T4_Algorithmique/4.2_Complexite/cours/)
         - 4.3 [Tri par insertion](./T4_Algorithmique/4.3_Tri_par_insertion/cours/)
         - 4.4 [Tri par sélection](./T4_Algorithmique/4.4_Tri_par_selection/cours/)
-        - 4.5 [Dichotomie](./T4_Algorithmique/4.5_Dichotomie/cours/)
+        - 4.5 [Recherche dichotomique](./T4_Algorithmique/4.5_Dichotomie/cours/)
         - 4.6 [Algorithmes gloutons](./T4_Algorithmique/4.6_Algorithmes_gloutons/cours/)
         - 4.7 [Algorithme KNN](./T4_Algorithmique/4.7_Algorithme_KNN/cours/)
 
