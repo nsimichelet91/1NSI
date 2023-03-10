@@ -8,7 +8,7 @@ en anglais : _greedy algorithms_
 ![](data/greedy.png){: .center}
 
 !!! note "Voici le lien du notebook associé."
-	[T4.6_Algorithmes_Gloutons](...){: target = "_blank"} 
+	[T4.6_Algorithmes_Gloutons](https://capytale2.ac-paris.fr/web/c/972f-1449032){: target = "_blank"} 
 
 !!! abstract "Définition :heart:"
     Un algorithme est qualifié de **glouton** si le problème qu'il essaie de résoudre est décomposé en une succession de problèmes identiques pour lesquels l'algorithme va chercher une solution optimale.  
@@ -274,7 +274,7 @@ poids_max = 40
 combinaisons = []
 for i in range(2**len(objets)):
     k = bin(i)[2:]
-    s = '0'*(len(objets)-len(k)) + k
+    s = '0' * (len(objets)-len(k)) + k
     combinaisons.append(s)
 ```
 
