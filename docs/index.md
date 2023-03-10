@@ -1,5 +1,5 @@
 
-!!! abstract ":star: Actualités :star:"
+<!--!!! abstract ":star: Actualités :star:"-->
 
 ## Thèmes en cours d'étude :
 !!! note "*Thèmes en cours d'étude*"
