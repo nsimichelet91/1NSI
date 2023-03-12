@@ -1,5 +1,6 @@
 
-<!--!!! abstract ":star: Actualités :star:"-->
+!!! abstract ":star: Actualités :star:"
+	- [QCM](https://genumsi.inria.fr/qcm.php?h=f949b3ac561ba1cfa8e29d5f5af448c8)
 
 ## Thèmes en cours d'étude :
 !!! note "*Thèmes en cours d'étude*"
