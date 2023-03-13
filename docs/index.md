@@ -64,11 +64,11 @@
     === "T3 Architecture matérielle"
         **Thème 3 : Architecture matérielle**
 
-        - 3.1 [Microbit](./T3_Architecture_materielle/3.1_Microbit/cours/)
-        - 3.2 [Architecture Von Neumann](./T3_Architecture_materielle/3.2_Architecture_Von_Neumann/cours/)
-        - 3.3 [Architecture réseau](./T3_Architecture_materielle/3.3_Architecture_reseau/cours/)
-        - 3.4 [Protocoles de communication dans un réseau](./T3_Architecture_materielle/3.4_Protocoles_de_communication/cours/)
-        - 3.5 [Découverte des commandes Linux](./T3_Architecture_materielle/3.5_Decouverte_des_commandes_Linux/cours/)
+        - 3.1 [Architecture réseau](./T3_Architecture_materielle/3.1_Architecture_reseau/cours/)
+        - 3.2 [Protocoles de communication dans un réseau](./T3_Architecture_materielle/3.2_Protocoles_de_communication/cours/)
+        - 3.3 [Découverte des commandes Linux](./T3_Architecture_materielle/3.3_Decouverte_des_commandes_Linux/cours/)
+        - 3.4 [Microbit](./T3_Architecture_materielle/3.4_Microbit/cours/)
+        - 3.5 [Architecture Von Neumann](./T3_Architecture_materielle/3.5_Architecture_Von_Neumann/cours/)
 
     === "T4 Algorithmique"
         **Thème 4 : Algorithmique**

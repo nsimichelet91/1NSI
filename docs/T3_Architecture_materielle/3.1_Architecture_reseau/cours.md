@@ -1,4 +1,4 @@
-# 3.3 Architecture d'un réseau
+# 3.1 Architecture d'un réseau
 
 ![image](data/BO.png){: .center}
 
