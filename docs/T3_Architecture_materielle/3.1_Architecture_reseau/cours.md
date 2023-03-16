@@ -4,7 +4,7 @@
 
 Ce cours a pour but de présenter la constitution classique d'un réseau, et les équipements associés. La partie relative aux protocoles utilisés lors des échanges entre deux machines est détaillée dans le cours sur les protocoles de communication.
 
-### 1. Premier réseau local
+## 1. Premier réseau local
 
 > [lien](https://www.lernsoftware-filius.de/downloads/Setup/filius_1.9.0_all.deb) de téléchargement de Filius sous Linux
 
@@ -19,7 +19,7 @@ Testons le ```ping``` de la machine ```192.168.0.1```  vers la machine ```192.16
 
 
 
-#### 1.1. La carte réseau et son adresse MAC
+### 1.1. La carte réseau et son adresse MAC
 Chaque ordinateur sur le réseau dispose d'une adresse MAC, qui une valeur **unique** attribuée à sa carte réseau (Ethernet, Wifi, 4G, 5G, ...) lors de sa fabrication en usine.
 
 Cette adresse est codée sur 48 bits, présentés sous la forme de 6 octets en hexadécimal. Exemple : ```fc:aa:14:75:45:a5```
@@ -27,17 +27,17 @@ Cette adresse est codée sur 48 bits, présentés sous la forme de 6 octets en h
 Les trois premiers octets correspondent au code du fabricant.
 Un site comme https://www.macvendorlookup.com/ vous permet de retrouver le fabricant d'une adresse MAC quelconque.
 
-#### 1.2. Switch, hub, quelle différence ?
+### 1.2. Switch, hub, quelle différence ?
 
 - Au sein d'un **hub Ethernet** (de moins en moins vendus), il n'y a **aucune analyse** des données qui transitent : il s'agit simplement d'un dédoublement des fils de cuivre (tout comme une multiprise électrique). L'intégralité des messages est donc envoyée à l'intégralité des ordinateurs du réseau, même s'ils ne sont pas concernés.
 
 ![](data/hub.png){: .center}
 
-- Au sein d'un **switch Ethernet** , une analyse est effectuée sur la trame qui est à distribuer (voir [ici](https://github.com/glassus/nsi/blob/master/Premiere/Theme04_Architecture_materielle/04_Protocoles_de_communication.md)). Lors d'un branchement d'un nouvel ordinateur sur le switch, celui-ci récupère son adresse MAC, ce qui lui permet de **trier** les messages et de ne les distribuer qu'au bon destinataire.
+- Au sein d'un **switch Ethernet** , une analyse est effectuée sur la trame qui est à distribuer (voir [ici](https://nsimichelet91.github.io/1NSI/T3_Architecture_materielle/3.2_Protocoles_de_communication/cours/). Lors d'un branchement d'un nouvel ordinateur sur le switch, celui-ci récupère son adresse MAC, ce qui lui permet de **trier** les messages et de ne les distribuer qu'au bon destinataire.
 
 ![](data/switch.png){: .center}
 
-### 2. Un deuxième sous-réseau
+## 2. Un deuxième sous-réseau
 
 Rajoutons un deuxième sous-réseau de la manière suivante (penser à bien renommer les switchs).
 
@@ -64,19 +64,19 @@ Temporairement, renommons la machine ```192.168.1.2``` en ```192.168.0.33```. Te
 
 **Intuition** : la notion de sous-réseau n'est pas *topologique* («il suffit de relier les ordinateurs entre eux») mais obéit à des règles numériques.
 
-#### 2.1. Notion de masque de sous-réseau
+### 2.1. Notion de masque de sous-réseau
 
 Dans Filius, lors de l'attribution de l'adresse IP à une machine, une ligne nous permet de spécifier le **masque de sous-réseau** (appelé simplement « Masque » dans Filius). C'est ce masque qui va permettre de déterminer si une machine appartient à un sous-réseau ou non, en fonction de son adresse IP.
 
 ![](data/f4.png){: .center}
 
-##### 2.1.1 Explication basique
+#### 2.1.1 Explication basique
 - Si le masque est ```255.255.255.0```, toutes les machines partageant les mêmes **trois** premiers nombres de leur adresse IP appartiendront au même sous-réseau. Comme ceci est le réglage par défaut de Filius, cela explique pourquoi  ```192.168.0.33``` et ```192.168.0.1``` sont sur le même sous-réseau, et pourquoi  ```192.168.1.2``` et ```192.168.0.1``` ne sont pas sur le même sous-réseau.
 
 Dans cette configuration, 256 machines peuvent donc appartenir au même sous-réseau (ce n'est pas tout à fait le cas car des adresses finissant par 0 ou par 255 sont réservées).
 
 - Si le masque est ```255.255.0.0```, toutes les machines partageant les mêmes **deux** premiers nombres de leur adresse IP appartiendront au même sous-réseau.  
-Dans cette configuration, 65536 machines peuvent être dans le même sous-réseau. (car 256^2=65536)
+Dans cette configuration, 65536 machines peuvent être dans le même sous-réseau. (car $256^2=65536$)
 
 
 **Exercice**
@@ -90,7 +90,7 @@ Dans cette configuration, 65536 machines peuvent être dans le même sous-résea
     Cela marche. Les deux machines appartiennent maintenant au même sous-réseau.
 
 
-##### 2.1.2 Explication avancée
+#### 2.1.2 Explication avancée
 
 Lorsqu'une machine A veut envoyer un message à une machine B, elle doit déterminer si cette machine :
 
@@ -101,7 +101,7 @@ Quelle opération permet de distinguer cette appartenance à un même sous-rése
 
 Appelons ```IP_A``` et ```IP_B``` les adresses IP respectives des machines A et B.  
 Appelons ```M``` le masque de sous-réseau.  
-Nommons ```&``` l'opérateur de conjonction entre nombres binaires (voir [ici](https://github.com/glassus/nsi/blob/master/Premiere/Theme03_Representation_des_donnees/05_Operateurs_booleens.ipynb)): 
+Nommons ```&``` l'opérateur de conjonction entre nombres binaires (voir [ici](https://nsimichelet91.github.io/1NSI/T2_Representation_des_donnees/2.5_Booleens/cours/): 
 
 **Propriété :** A et B appartiennent au même sous-réseau ⇔ ```IP_A & M = IP_B & M```
 
@@ -117,16 +117,17 @@ rappel des règles de calcul :
 
 - pour tout octet ```x```, ```x & 255 = x```  et ```x & 0 = 0```.
 - ```129 & 248``` s'écrit en binaire ```10000001 & 11111000``` qui vaut ```10000000```, soit ```128``` en décimal.
+- ```135 & 248``` s'écrit en binaire ```10000111 & 11111000``` qui vaut ```10000000```, soit ```128``` en décimal.
 
-Conclusion : les machines A et B sont sous le même sous-réseau, mais pas la machine C.
+**Conclusion : les machines A et B sont sous le même sous-réseau, mais pas la machine C.**
 
-##### 2.1.3 Cohérence entre les deux explications
+#### 2.1.3 Cohérence entre les deux explications
 Lorsqu'un masque de sous-réseau est égal à ```255.255.255.0```, l'opération de conjonction ```&``` avec chaque IP ne laissera intacts que les 3 premiers octets, le dernier sera égal à 0. Donc si deux adresses s'écrivent ```A.B.C.X``` et   ```A.B.C.Y```, elles appartiendront forcément au même sous-réseau (typiquement, c'est le cas de ```192.168.0.33``` et ```192.168.0.1```).
 
-#### 2.2 Écriture des masques de sous-réseau : notation CIDR
+### 2.2 Écriture des masques de sous-réseau : notation CIDR
 
 D'après ce qui précède, 2 informations sont nécessaires pour déterminer le sous-réseau auquel appartient une machine : son IP et le masque de sous-réseau. 
-Une convention de notation permet d'écrire simplement ces deux renseignements : la notation CIDR.
+Une convention de notation permet d'écrire simplement ces deux renseignements : la notation **CIDR**.
 
 **Exemple** : Une machine d'IP ```192.168.0.33``` avec un masque de sous-réseau ```255.255.255.0``` sera désignée par ```192.168.0.33 / 24``` en notation CIDR.
 
@@ -138,7 +139,7 @@ Ou encore, un suffixe ```/ 21``` donnera un masque de ```11111111.11111111.11111
 
 
 
-### 3. Un vrai réseau contenant deux sous-réseaux distincts : la nécessité d'un routeur
+## 3. Un vrai réseau contenant deux sous-réseaux distincts : la nécessité d'un routeur
 
 Notre solution initiale (relier les deux switchs par un cable pour unifier les deux sous-réseaux) n'est pas viable à l'échelle d'un réseau planétaire.
 
@@ -146,20 +147,20 @@ Pour que les machines de deux réseaux différents puissent être connectées, o
 
 ![](data/routeur.png){: .center}
 
-#### 3.1 Principe de fonctionnement
+### 3.1 Principe de fonctionnement
 Imaginons que la machine ```192.168.0.1 / 24``` veuille communiquer avec la machine  ```172.16.52.3 / 24```.  
 L'observation du masque de sous-réseau de la machine ```192.168.0.1 / 24``` nous apprend qu'elle ne peut communiquer qu'avec les adresses de la forme ```192.168.0.X / 24```, où ```X``` est un nombre entre 0 et 255. 
 
 Les 3 étapes du **routage** :
 
-- Lorsque qu'une machine A veut envoyer un message à une machine B, elle va tout d'abord vérifier si cette machine appartient à son réseau local. si c'est le cas, le message est envoyé par l'intermédiaire du switch qui relie les deux machines.
+- Lorsque qu'une machine A veut envoyer un message à une machine B, elle va tout d'abord vérifier si cette machine appartient à son réseau local. Si c'est le cas, le message est envoyé par l'intermédiaire du switch qui relie les deux machines.
 - Si la machine B n'est pas trouvée sur le réseau local de la machine A, le message va être acheminé vers le routeur, par l'intermédiaire de son adresse de passerelle (qui est bien une adresse appartenant au sous-réseau de A).
 - De là, le routeur va regarder si la machine B appartient au deuxième sous-réseau auquel il est connecté. Si c'est le cas, le message est distribué, sinon, le routeur va donner le message à un autre routeur auquel il est connecté et va le charger de distribuer ce message : c'est le procédé (complexe) de [routage](https://openclassrooms.com/fr/courses/857447-apprenez-le-fonctionnement-des-reseaux-tcp-ip/854659-le-routage), qui sera vu en classe de Terminale.
 
 Dans notre exemple, l'adresse ```172.16.52.3``` n'est pas dans le sous-réseau de ```192.168.0.1```. Le message va donc transiter par le routeur.  
 ![](data/routeur2.png){: .center} 
 
-#### 3.2 Illustration avec Filius
+### 3.2 Illustration avec Filius
 
 - Rajoutons un routeur entre le SwitchA et le SwitchB.
 ![](data/f5.png){: .center}
@@ -202,19 +203,19 @@ Chez vous, la box de votre opérateur joue simultanément le rôle de switch et 
 L'image ci-dessous présente le résultat de la commande ```ipconfig``` sous Windows. On y retrouve l'adresse IP locale ```192.168.9.103```, le masque de sous-réseau ```255.255.255.0``` et l'adresse de la passerelle ```192.168.9.1```.  
 ![](data/imgpasserelle.jpg){: .center}
 
-#### 3.3 Annexe : rajout d'un serveur DNS
+### 3.3 Annexe : rajout d'un serveur DNS
 
-##### 3.3.1 Rajout d'un serveur web
+#### 3.3.1 Rajout d'un serveur web
 - Connectons un ordinateur au SwitchB, sur l'adresse ```192.168.1.30``` et installons dessus un Serveur web et démarrons-le. 
 ![](data/serveurweb.png){: .center}
 
 - Sur la machine ```192.168.0.1```, rajoutons un Navigateur Web. En tapant dans la barre d'adresse l'adresse IP du Serveur web, la page d'accueil de Filius s'affiche.  
 ![](data/nav1.png){: .center}
 
-Lors d'une utilisation classique d'un navigateur web, c'est une url mémorisable qui s'affiche, et non une adresse IP : on retient en effet plus facilement `https://www.google.com/` que `http://216.58.213.131`, qui renvoient pourtant à la même adresse. 
+Lors d'une utilisation classique d'un navigateur web, c'est une url mémorisable qui s'affiche, et non une adresse IP : on retient en effet plus facilement `https://www.google.com/` que `http://142.250.178.131`, qui renvoient pourtant à la même adresse (en tout cas au moment de l'écriture de ce cours). 
 La machine qui assure ce rôle d'annuaire entre les serveurs web et leur adresse IP s'appelle un **serveur DNS**. Pour pouvoir indexer la totalité des sites internet, son rôle est structuré de manière hiérarchique. Vous trouverez des détails [ici](https://openclassrooms.com/fr/courses/857447-apprenez-le-fonctionnement-des-reseaux-tcp-ip/857163-le-service-dns)
 
-##### 3.3.1 Rajout d'un serveur DNS
+#### 3.3.1 Rajout d'un serveur DNS
 
 - Rajoutons un serveur DNS minimal, qui n'aura dans son annuaire d'un seul site. Il faut pour cela raccorder une nouvelle machine (mais une machine déjà sur le réseau aurait très bien pu jouer ce rôle), et installer dessus un serveur DNS.  
 ![](data/dns.png){: .center} 

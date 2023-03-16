@@ -1,4 +1,4 @@
-# 3.1 Microbit
+# 3.4 Microbit
 
 ![image](data/BO.png){: .center}
 

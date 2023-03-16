@@ -1,4 +1,4 @@
-# 3.2 Architecture Von Neumann
+# 3.5 Architecture Von Neumann
 
 ![image](data/BO.png){: .center}
 

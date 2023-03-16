@@ -1,4 +1,4 @@
-# 3.4 Protocoles de communication dans un réseau
+# 3.2 Protocoles de communication dans un réseau
 
 ![image](data/BO.png){: .center}
 
