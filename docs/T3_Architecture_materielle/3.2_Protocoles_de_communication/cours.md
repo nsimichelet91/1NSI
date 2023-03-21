@@ -2,6 +2,8 @@
 
 ![image](data/BO.png){: .center}
 
+<iframe src="https://www.youtube.com/embed/aX3z3JoVEdE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+
 ## I. Modèle OSI, modèle Internet
 
 
