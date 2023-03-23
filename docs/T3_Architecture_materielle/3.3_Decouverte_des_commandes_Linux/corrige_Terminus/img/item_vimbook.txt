@@ -1,0 +1,7 @@
+composer: luffah
+original design: Emma Tolley & Shawn Conrad
+license: mit
+date: 2017
+sources: vim official logo
+comment:
+ * artist note *
