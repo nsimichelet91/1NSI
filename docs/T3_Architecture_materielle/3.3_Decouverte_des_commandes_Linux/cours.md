@@ -21,7 +21,6 @@ Laissez-vous guider par le jeu, mais attention !
 - Sur une (plusieurs) copies doubles en mode paysage, établir un plan du jeu **au fur et à mesure** que vous avancez dans votre quête. Par exemple :
 
 ![image](data/term_2.png){: .center}
-
 ![image](data/item_trolls.png){: .center}
 
 <!--
