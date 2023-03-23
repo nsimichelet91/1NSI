@@ -27,7 +27,17 @@ Au cas où vous vous ennuieriez...
 
 - [France-IOI](http://www.france-ioi.org/){:target="_blank"} 
 - [CheckIO](https://checkio.org/){:target="_blank"} 
-- [CodinGame](https://www.codingame.com/start){:target="_blank"} 
+- [CodinGame](https://www.codingame.com/start){:target="_blank"}  
+
+
+Avec des vidéos :  
+
+- [1. Introduction](https://www.youtube.com/playlist?list=PL2CXLryTKuwwoPO9s_fd5a4eRoWgHhrKT) (vous pouvez ignorer la 1ère vidéo)
+- [2. Notions de base pour écrire son premier programme](https://www.youtube.com/playlist?list=PL2CXLryTKuwwlCGfgpApOTmMn7_dbtwWa)
+- [2. Notions de base pour écrire son premier programme](https://www.youtube.com/playlist?list=PL2CXLryTKuwwlCGfgpApOTmMn7_dbtwWa)
+- [3. Renforcement des notions de base, références partagées](https://www.youtube.com/playlist?list=PL2CXLryTKuwyOT6o3EEHL2ZUJS70o_NbT)
+- [4. Fonctions et portée des variables](https://www.youtube.com/playlist?list=PL2CXLryTKuwwhivE1UO4Jg5DhU-ALAoXc)
+- [4. Fonctions et portée des variables](https://www.youtube.com/playlist?list=PL2CXLryTKuwwhivE1UO4Jg5DhU-ALAoXc)
 
 
 ??? abstract "sources"
