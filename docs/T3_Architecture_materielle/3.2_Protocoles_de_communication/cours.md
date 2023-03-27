@@ -6,8 +6,6 @@
 
 ## I. Modèle OSI, modèle Internet
 
-
-
 Les bits transmis d'un ordinateur à un autre contiennent, en plus des données _utiles_ (le mot «bonjour» dans un email), une multitude de données (tout aussi utiles) qui vont aider à l'acheminement de ces bits au bon endroit, puis au bon ordinateur, puis au bon logiciel. 
 Les différents protocoles qui régissent cette transmission sont regroupés dans ce qui est appelé un **modèle**. Deux modèles synthétisent ces protocoles :
 
@@ -279,7 +277,19 @@ Le protocole a bien détecté le doublon du sous-message M1... mais que se passe
 ### 6. Conclusion
 Le protocole du bit alterné a longtemps été utilisé au sein de la couche 2 du modèle OSI (distribution des trames Ethernet). Simple et léger, il peut toutefois être facilement mis en défaut, ce qui explique qu'il ait été remplacé par des protocoles plus performants.
 
+#### Des vidéos pour vous aider à comprendre
 
+- Comprendre les modèles OSI et TCP/IP  
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/26jazyc7VNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+- Comprendre le NAT / PAT en 7 minutes  
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jq3SLuhIyPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+- Ports et protocoles : comprendre l'essentiel en 5 minutes  
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YSl6bordSh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
 </br>
 

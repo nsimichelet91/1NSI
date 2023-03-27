@@ -135,8 +135,9 @@ Le suffixe ```/ 24``` signifie que le masque de sous-réseau commence par  24 bi
 Autrement dit, ce masque vaut ```11111111.11111111.11111111.00000000``` , soit ```255.255.255.0```.  
 De la même manière, le suffixe ```/ 16``` donnera un masque de ```11111111.11111111.00000000.00000000``` , soit ```255.255.0.0```.  
 Ou encore, un suffixe ```/ 21``` donnera un masque de ```11111111.11111111.11111000.00000000``` , soit ```255.255.248.0```. 
+### 2.2 Exercices
 
-
+[Exercices](https://nsimichelet91.github.io/1NSI/T3_Architecture_materielle/3.1_Architecture_reseau/data/Fiche-CalculReseaux.pdf)
 
 
 ## 3. Un vrai réseau contenant deux sous-réseaux distincts : la nécessité d'un routeur
@@ -230,12 +231,23 @@ La machine qui assure ce rôle d'annuaire entre les serveurs web et leur adresse
 
 
 
+#### Des vidéos pour vous aider à comprendre
 
+- PAN, LAN, MAN, WAN : l'essentiel en 4 minutes  
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/c0Xj09s5hYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+- Adresses IP : comprendre l'essentiel en 7 minutes  
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Oc7Ts8tVjyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
+- Réseaux : adresse IP et masques de sous-réseaux  
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RnpSaDSSjR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+
+- Comprendre le DNS en 5 minutes   
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qzWdzAvfBoo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 
