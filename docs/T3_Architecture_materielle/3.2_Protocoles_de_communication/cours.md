@@ -291,6 +291,10 @@ Le protocole du bit alterné a longtemps été utilisé au sein de la couche 2 d
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YSl6bordSh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
+- Protocole de bit alterné  
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OCyNI27hUEI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 </br>
 
 ---
