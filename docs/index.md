@@ -1,12 +1,14 @@
-
+<!---
 !!! abstract ":star: Actualités :star:"
-	- [QCM](https://genumsi.inria.fr/qcm.php?h=f949b3ac561ba1cfa8e29d5f5af448c8)
+	- ...
+--->
 
 ## Thèmes en cours d'étude :
 !!! note "*Thèmes en cours d'étude*"
 
-    - [Recherche dichotomique](./T4_Algorithmique/4.5_Dichotomie/cours/)
-	- [Algorithmes gloutons](./T4_Algorithmique/4.6_Algorithmes_gloutons/cours/)
+	- [Architecture réseau](./T3_Architecture_materielle/3.1_Architecture_reseau/cours/)
+	- [Protocoles de communication dans un réseau](./T3_Architecture_materielle/3.2_Protocoles_de_communication/cours/)
+	- [Découverte des commandes Linux](./T3_Architecture_materielle/3.3_Decouverte_des_commandes_Linux/cours/)
 	- [HTML-CSS](./T6_IHM_Web/6.1_HTML5_CSS3/cours/)
     - [Interactions sur une page web](./T6_IHM_Web/6.2_Interactions_page_web/cours/)
 
@@ -33,6 +35,8 @@
 	- [Complexité](./T4_Algorithmique/4.2_Complexite/cours/)
 	- [Tri par insertion](./T4_Algorithmique/4.3_Tri_par_insertion/cours/)
 	- [Tri par sélection](./T4_Algorithmique/4.4_Tri_par_selection/cours/)
+	- [Recherche dichotomique](./T4_Algorithmique/4.5_Dichotomie/cours/)
+	- [Algorithmes gloutons](./T4_Algorithmique/4.6_Algorithmes_gloutons/cours/)
 
 ## Programme :
 !!! abstract "Programme"
