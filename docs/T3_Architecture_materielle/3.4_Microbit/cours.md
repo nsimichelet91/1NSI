@@ -26,7 +26,7 @@ La carte micro:bit dispose des [spécificités techniques](https://microbit.org/
 
 ### 1.1 À distance ? Pas de micro:bit ? le simulateur est là !
 
-Rendez-vous sur la page [https://microbit.davidselosse.com)
+Rendez-vous sur la page [https://microbit.davidselosse.com]
 
 Effacez le code existant et collez-le code ci-dessous :
 
