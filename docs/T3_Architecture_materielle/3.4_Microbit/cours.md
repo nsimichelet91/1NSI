@@ -26,7 +26,7 @@ La carte micro:bit dispose des [spécificités techniques](https://microbit.org/
 
 ### 1.1 À distance ? Pas de micro:bit ? le simulateur est là !
 
-Rendez-vous sur la page [https://create.withcode.uk/](https://create.withcode.uk/)
+Rendez-vous sur la page [https://microbit.davidselosse.com)
 
 Effacez le code existant et collez-le code ci-dessous :
 
@@ -48,7 +48,7 @@ Pour éviter des erreurs, fermez la fenêtre de droite (le simulateur) à chaque
 ### 1.2 Avec une micro:bit réelle
 
 1. Branchez la carte sur un port USB. Un lecteur MICROBIT apparait dans les périphériques USB.
-2. Rendez-vous sur l'adresse  [https://create.withcode.uk/](https://create.withcode.uk/)
+2. Rendez-vous sur l'adresse  [https://microbit.davidselosse.com](https://microbit.davidselosse.com)
 3. Modifiez le code présent puis cliquez sur la flèche verte.
 4. Vous pouvez télécharger le fichier .hex en cliquant sur Download HEX.
 5. Transférez (par copier-coller, ou "envoyer vers") ce fichier .hex dans votre lecteur micro:bit.
@@ -75,12 +75,6 @@ display.scroll("NSI")
 La première ligne de ce programme importe la bibliothèque de fonctions micro:bit. La deuxième ligne fait défiler un message à l’écran. Cela n'arrive qu'une seule fois.
 
 
-La vitesse de défilement peut être ralentie ou accélérée à l'aide du paramètre `delay`. L'unité est la milliseconde.
-
-
-```python
-from microbit import *
-display.scroll("mauriac", delay=20)
 ```
 
 #### 2.1.2 Afficher une "image" `display.show(image)`
@@ -268,15 +262,7 @@ while True:
         ![](data/exo1.webp){: .center}
 
     === "Correction"
-        ```python
-        from microbit import *
-        display.clear()
-        while True:
-            if button_a.was_pressed():
-                display.show(Image.SAD)
-            if button_b.was_pressed():
-                display.show(Image.HAPPY)
-        ```
+
 
 
 !!! example "Exercice 2"
