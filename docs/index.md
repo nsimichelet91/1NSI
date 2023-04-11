@@ -9,6 +9,7 @@
 	- [Architecture réseau](./T3_Architecture_materielle/3.1_Architecture_reseau/cours/)
 	- [Protocoles de communication dans un réseau](./T3_Architecture_materielle/3.2_Protocoles_de_communication/cours/)
 	- [Découverte des commandes Linux](./T3_Architecture_materielle/3.3_Decouverte_des_commandes_Linux/cours/)
+	- [Microbit](./T3_Architecture_materielle/3.4_Microbit/cours/)
 	- [HTML-CSS](./T6_IHM_Web/6.1_HTML5_CSS3/cours/)
     - [Interactions sur une page web](./T6_IHM_Web/6.2_Interactions_page_web/cours/)
 
