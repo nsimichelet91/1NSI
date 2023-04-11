@@ -71,11 +71,8 @@ from microbit import *
 display.scroll("NSI")
 ```
 
-
 La première ligne de ce programme importe la bibliothèque de fonctions micro:bit. La deuxième ligne fait défiler un message à l’écran. Cela n'arrive qu'une seule fois.
 
-
-```
 
 #### 2.1.2 Afficher une "image" `display.show(image)`
 Exécuter le programme suivant:
