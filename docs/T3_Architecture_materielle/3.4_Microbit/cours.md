@@ -9,7 +9,7 @@
 
 **BBC micro:bit** est une carte à [microcontrôleur](https://fr.wikipedia.org/wiki/Microcontr%C3%B4leur) conçue en 2015 au Royaume-Uni pour développer l'apprentissage de l'algorithmique et de la programmation.
 
-![](data/microbit1.png){: .center}
+![](data/simulateur.png){: .center}
 
 
 La carte micro:bit dispose des [spécificités techniques](https://microbit.org/fr/guide/features/)  suivantes :
