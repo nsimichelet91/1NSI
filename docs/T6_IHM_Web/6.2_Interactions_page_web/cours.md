@@ -451,7 +451,7 @@ Copier l'exemple ci-dessous dans un fichier HTML pour le tester.
 				<div style="background-color:lightgreen; padding:15px">
 					<form id="formulaire" action="https://nsimichelet91.githubio/1NSI" target="_blank" method="POST"> 
 						Input de type texte : <input id="saisie" type="text" name="saisie" placeholder="Saisir un texte"><br>
-						<img src="../img/smiley.png" onClick="validation_formulaire()" style="margin:10px;"/>
+						<img src="../img/icon_smiley.png" onClick="validation_formulaire()" style="margin:10px;"/>
 					</form>
 					<script>
 						function validation_formulaire() {
