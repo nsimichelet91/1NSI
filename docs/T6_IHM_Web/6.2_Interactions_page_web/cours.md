@@ -212,7 +212,7 @@ Quelques exemples de détection d'évènements.
 	| Evenements | Description | Exemple d'utilisation |
 	| :---- | :----- | :----- |
 	| `onclick` | Le clic de la souris sur un élément | `:::html <h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h1> ` |
-	| `ondblclick` | Le double-clic de la souris sur un élément | `:::html <h1 onclick="this.innerHTML = 'Ooops! Ooops!'">Click on this text!</h1> ` |
+	| `ondblclick` | Le double-clic de la souris sur un élément | `:::html <h1 ondblclick="this.innerHTML = 'Ooops! Ooops!'">Click on this text!</h1> ` |
 	| `onmouseover` | Le survol de la souris sur un élément | `:::html <div onmouseover="this.style.backgroundColor = 'lightblue'">`|
 	| `onmouseout` | La sortie de la souris d'un élément | `:::html <div onmouseout="this.style.backgroundColor = 'yellow'">`|
 	| `onmousedown` | Le maintien du clic appuyé sur un élément | `:::html <div onmousedown="this.style.color = 'white'">` |
