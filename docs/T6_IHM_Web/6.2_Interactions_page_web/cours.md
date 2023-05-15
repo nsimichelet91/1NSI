@@ -376,7 +376,7 @@ les données envoyées par le formulaire.
 	**Rendu dans le navigateur**	
 		<html >	
 				<div style="background-color:lightgreen; padding:15px">
-					<form action="https://nsimichelet91.github.io/1NSI" target="_blank" method="POST">
+					<form action="https://nsimichelet91.github.io/1NSI/" target="_blank" method="POST">
 						<p>Input de type texte : <input type="text" name="saisie" placeholder="Saisir un texte"></p>
 						<input type="submit" value="Validation">
 					</form>
@@ -398,7 +398,7 @@ les données envoyées par le formulaire.
 					<title>Les formulaires en Javascript</title>	
 				</head>								
 				<body>	
-					<form action="https://nsimichelet91.github.io/1NSI" target="_blank" method="POST">
+					<form action="https://nsimichelet91.github.io/1NSI/" target="_blank" method="POST">
 						<p>Input de type texte : <input type="text" name="saisie" placeholder="Saisir un texte"></p>
 						<input type="button" value="Validation" onClick="this.form.submit()">
 					</form>
@@ -408,7 +408,7 @@ les données envoyées par le formulaire.
 	**Rendu dans le navigateur**
 		<html>
 				<div style="background-color:lightgreen; padding:15px">
-					<form action="https://nsimichelet91.github.io/1NSI" target="_blank" method="POST">
+					<form action="https://nsimichelet91.github.io/1NSI/" target="_blank" method="POST">
 							<p>Input de type texte : <input type="text" name="saisie" placeholder="Saisir un texte"></p>
 							<input type="button" value="Validation" onClick="this.form.submit()">
 					</form>
@@ -431,7 +431,7 @@ Copier l'exemple ci-dessous dans un fichier HTML pour le tester.
 					<title>Les formulaires en Javascript</title>	
 				</head>								
 				<body>	
-					<form id="formulaire" action="https://nsimichelet91.github.io/1NSI" target="_blank" method="POST">
+					<form id="formulaire" action="https://nsimichelet91.github.io/1NSI/" target="_blank" method="POST">
 						Input de type texte : <input id="saisie" type="text" name="saisie" placeholder="Saisir un texte"><br>
 						<img src="./img/smiley.jpg" onClick="validation_formulaire()"/>
 					</form>
@@ -449,7 +449,7 @@ Copier l'exemple ci-dessous dans un fichier HTML pour le tester.
 	**Rendu dans le navigateur**
 		<html>
 				<div style="background-color:lightgreen; padding:15px">
-					<form id="formulaire" action="https://nsimichelet91.github.io/1NSI" target="_blank" method="POST"> 
+					<form id="formulaire" action="https://nsimichelet91.github.io/1NSI/" target="_blank" method="POST"> 
 						Input de type texte : <input id="saisie" type="text" name="saisie" placeholder="Saisir un texte"><br>
 						<img src="../img/icon_smiley.png" onClick="validation_formulaire()" style="margin:10px;"/>
 					</form>
@@ -489,7 +489,7 @@ Copier l'exemple ci-dessous dans un fichier HTML pour le tester.
 				<title>Les formulaires en Javascript</title>    
 			</head>                             
 			<body onload="auLancement()">   
-				<form id="formulaire" action="https://nsimichelet91.github.io/1NSI" target="_blank" method="POST">
+				<form id="formulaire" action="https://nsimichelet91.github.io/1NSI/" target="_blank" method="POST">
 					<table id="table">
 						<tr><td id="0,0"> X </td> <td id="0,1"> O </td> <td id="0,2"> O </td> </tr>
 						<tr><td id="1,0"> O </td> <td id="1,1"> X </td> <td id="1,2"> X </td> </tr>
@@ -523,7 +523,7 @@ Copier l'exemple ci-dessous dans un fichier HTML pour le tester.
 	=== "Rendu de la page (elle n'est pas réactive sur le site)"
 		<html>
 					<div style="background-color:lightgreen; padding:15px">   
-						<form id="formulaire" action="https://nsimichelet91.github.io/1NSI" target="_blank" method="POST">
+						<form id="formulaire" action="https://nsimichelet91.github.io/1NSI/" target="_blank" method="POST">
 							<table id="table">
 								<tr><td id="0,0"> X </td> <td id="0,1"> O </td> <td id="0,2"> O </td> </tr>
 								<tr><td id="1,0"> O </td> <td id="1,1"> X </td> <td id="1,2"> X </td> </tr>
