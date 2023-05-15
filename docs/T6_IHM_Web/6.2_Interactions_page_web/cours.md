@@ -56,7 +56,7 @@ Le **DOM** est une interface de programmation HTML qui définit :
 					<img src="./img/js100.png"  class="imagesflottantes" alt="Logo JavaScript" />	
 					<p class="important">Bonjour et bienvenue sur mon site !</p>					
 					<p>Pour le moment, mon site est un peu vide.</p>
-					<p><a href="https://nsimichelet91.github.io/1NSI">cours de 1NSI</a></p>
+					<p><a href="https://nsimichelet91.github.io/1NSI/">cours de 1NSI</a></p>
 					<script src="exemple.js"></script>
 				</div>
 			</body>								
@@ -131,9 +131,9 @@ De manière générale, on préfère l'utilisation de `let` ou `const` à l'util
 <tr><td>
 ``` Python
 	if blue:
-		blue = false
+		blue = False
 	else:
-		blue = true
+		blue = True
 ```
 </td><td>
 ``` js
@@ -366,7 +366,7 @@ les données envoyées par le formulaire.
 					<title>Les formulaires en Javascript</title>	
 				</head>								
 				<body>	
-					<form action= "https://nsimichelet91.github.io/1NSI" target="_blank" method="POST">
+					<form action= "https://nsimichelet91.github.io/1NSI/" target="_blank" method="POST">
 						<p>Input de type texte : <input type="text" name="saisie" placeholder="Saisir un texte"></p>
 						<input type="submit" value="Validation">
 					</form>
