@@ -3,7 +3,7 @@
 
 ## 1. Introduction et première dataframe
 
-Le module `csv` utilisé précédemment se contente de lire les données structurées. Il ne fait aucun effort particulier pour analyser les données. Nous nous en sommes aperçus lorsqu'il a fallu convertir par `int()` toutes les valeurs numériques, qui étaient interprétées comme des chaînes de caractères.  
+Le module `csv` utilisé précédemment se contente de lire les données structurées. Il ne fait aucun effort particulier pour analyser les données. Nous nous en sommes aperçus lorsqu'il a fallu convertir par `int()` toutes les valeurs numériques qui étaient interprétées comme des chaînes de caractères.  
 La bibliothèque [pandas](https://pandas.pydata.org/){. target="_blank"}  est par contre spécialement conçue pour l'analyse des données (*data analysis*) : elle est donc naturellement bien plus performante.
 
 
@@ -307,12 +307,6 @@ Le principe du filtrage va être de créer une nouvelle *dataframe* ne contenant
 !!! example "{{ exercice() }}"
     Créer une dataframe ```grands``` qui contient tous les joueurs mesurant plus de 2 mètres (inclus).
 
-        
-    ??? tip "Correction "
-        ```python
-        >>> grands = df[df['Taille'] >= 200]
-        ```
-    
 
 Pour effectuer des opérations sur les booléens, on utilisera le symbole ```&``` pour le ET et ```|``` pour le OU.
 
@@ -320,66 +314,14 @@ Pour effectuer des opérations sur les booléens, on utilisera le symbole ```&``
 !!! example "{{ exercice() }}"
      Créer une dataframe ```grands_et_gros``` qui contient tous les joueurs mesurant plus de 2 mètres (inclus) et pesant plus de 120 kg (inclus).
 
-       
-    ??? tip "Correction"
-        ```python
-        >>> grands_gros = df[(df['Taille'] >= 200) & (df['Poids'] >= 120)]
-        ```
-
-        Autre solution, en utilisant la datadframe ```grands``` de l'exercice 1 :
-        ```python
-        >>> grands_gros = grands[grands['Poids'] >= 120]
-        ```
-    
-
 !!! example "{{ exercice() }}"
     Trouver en une seule ligne le joueur le plus léger du Top14.
-
-      
-    ??? tip "Correction"
-        ```python
-        >>> df[df['Poids'] == min(df['Poids'])]
-               Equipe             Nom  Poste Date de naissance  Taille  Poids
-        491  Racing92  Teddy IRIBAREN  Mêlée        25/09/1990     170     70
-        ```
-
-        ou bien
-        ```python
-        >>> df.sort_values(by='Poids', ascending=True).head(1)
-        ```
-    
-
+        
 !!! example "{{ exercice() }}"
     Tracer le nuage de point poids-taille comme précédemment, mais en marquant d'un point bleu les 2èmes ligne et d'un point rouge les piliers.
 
-        
-    ??? tip "Correction"
-        ```python linenums='1'
-        import pandas as pd
-        import matplotlib.pyplot as plt
-
-        df = pd.read_csv('top14.csv', encoding = 'utf-8') 
-
-        X = df['Poids']
-        Y = df['Taille']
-        plt.plot(X, Y, 'ro')
-
-
-        X = df[df['Poste'] == '2ème ligne']['Poids']
-        Y = df[df['Poste'] == '2ème ligne']['Taille']
-        plt.plot(X, Y, 'bo')
-
-
-        X = df[df['Poste'] == 'Pilier']['Poids']
-        Y = df[df['Poste'] == 'Pilier']['Taille']
-        plt.plot(X, Y, 'go')
-        ```
-
-        ![image](data/ex4.png){: .center}
+![image](data/ex4.png){: .center}
      
-
-
-
 ## 5. Modification de la structure : rajout d'une colonne
 
 Afin de pouvoir trier les joueurs suivant de nouveaux critères, nous allons rajouter un champ pour chaque joueur.
@@ -411,25 +353,9 @@ del df['Poids après les vacances']
 
 
 !!! example "{{ exercice() }}"
-    **Q1.** Créer une colonne contenant l'IMC de chaque joueur.
-
-    {# 
-    ??? tip "Correction Q1"
-        ```python
-        >>> df['IMC'] = df['Poids'] / (df['Taille']/100)**2
-        ```
-    #}
-
-
+    **Q1.** Créer une colonne contenant l'IMC de chaque joueur. (IMC = Poids / (Taille/100)**2)
     **Q2.** Créer une nouvelle dataframe contenant tous les joueurs du Top14 classés par ordre d'IMC croissant.
     
-    {#
-    ??? tip "Correction Q2"
-        ```python
-        >>> df_imc = df.sort_values(by='IMC', ascending = True)
-        ```
-    #}
-
 ## 6. Retour sur le KNN
 
 Comme dans [ce cours](https://nsimichelet91.github.io/1NSI/T4_Algorithmique/4.7_Algorithme_KNN/cours/){. target="_blank"}, nous allons construire une fonction  ```conseil_poste``` recevant en paramètres :
