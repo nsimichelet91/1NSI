@@ -216,24 +216,7 @@ L'interprétation numérique permet à `pandas` d'analyser automatiquement les d
     Name: Taille, dtype: float64
     ```
 
-
 On voit donc que les principaux indicateurs statistiques sont proposés. 
-
-D'ailleurs, on peut très facilement tracer des boites à moustaches avec la fonction `boxplot()`.
-
-
-```python
-graph_taille = df.boxplot("Taille")
-graph_taille.plot()
-plt.show()
-```
-
-
-![image](data/bam.png){: .center}
-
-
-
-
 
 Pour les données non-numériques, la commande `describe()` n'est que peu d'utilité. Elle renseigne toutefois la valeur la plus fréquente (en statistiques, le *mode* ou *valeur modale*) grâce à ```describe().top```.
 
