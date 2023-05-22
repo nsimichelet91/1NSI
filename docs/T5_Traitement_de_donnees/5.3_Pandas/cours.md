@@ -432,7 +432,7 @@ del df['Poids après les vacances']
 
 ## 6. Retour sur le KNN
 
-Comme dans [ce cours](https://glassus.github.io/premiere_nsi/T4_Algorithmique/4.7_Algorithme_KNN/cours/){. target="_blank"}, nous allons construire une fonction  ```conseil_poste``` recevant en paramètres :
+Comme dans [ce cours](https://nsimichelet91.github.io/1NSI/T4_Algorithmique/4.7_Algorithme_KNN/cours/){. target="_blank"}, nous allons construire une fonction  ```conseil_poste``` recevant en paramètres :
 
 - ```df``` : la dataframe contenant nos données
 - ```poids```  : le poids du joueur X
@@ -445,7 +445,7 @@ Il est maintenant possible de coder cette fonction beaucoup plus simplement (mai
 
 Il va nous suffir de :
 
-- créer une nouvelle colonne contenant la [distance](https://glassus.github.io/premiere_nsi/T4_Algorithmique/4.7_Algorithme_KNN/cours/#2-fonction-distance-morphologique){. target="_blank"}  de chaque joueur avec le joueur X.
+- créer une nouvelle colonne contenant la [distance](https://nsimichelet91.github.io/1NSI/T4_Algorithmique/4.7_Algorithme_KNN/cours/#2-fonction-distance-morphologique){. target="_blank"}  de chaque joueur avec le joueur X.
 - classer la dataframe suivant cette nouvelle colonne.
 - ne garder que les ```k``` premiers éléments.
 - renvoyer le poste le plus fréquent parmi ces ```k``` premiers élements.
