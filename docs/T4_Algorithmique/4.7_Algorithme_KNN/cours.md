@@ -14,7 +14,9 @@
 
     ![](data/picKNN.png){: .center}
 
-https://capytale2.ac-paris.fr/web/c/94a6-1682854
+
+!!! note "Voici le lien du notebook sur lequel vous devez faire les exercices"
+	[T4.7_KNN](https://capytale2.ac-paris.fr/web/c/94a6-1682854){: target = "_blank"} 
 
 ## 1. Objectif 
 Nous allons reprendre le jeu de données sur les joueurs du Top14 utilisé [dans le cours «Trier et fusionner des données»](https://nsimichelet91.github.io/1NSI/T5_Traitement_de_donnees/5.2_Trier_et_fusionner_des_donnees/cours/){. target="_blank"}
