@@ -3,7 +3,7 @@
 
 ## Conditions matérielles
 
-Il est conseillé de travailler avec 3 espaces:
+Il est conseillé de travailler avec 3 espaces :
 
 - l'écran de l'ordinateur partitionné avec les 2 premiers espaces: ce site et Capytale ou l'IDE avec lequel vous écrivez votre code ;
 
