@@ -1,6 +1,8 @@
 # 5.3 Utilisation du module Pandas
 
-
+!!! note "Voici le lien du notebook sur lequel vous devez faire les exercices"
+	[T5_cours_pandas](https://capytale2.ac-paris.fr/web/c/b3af-1681480){: target = "_blank"} 
+    
 ## 1. Introduction et première dataframe
 
 Le module `csv` utilisé précédemment se contente de lire les données structurées. Il ne fait aucun effort particulier pour analyser les données. Nous nous en sommes aperçus lorsqu'il a fallu convertir par `int()` toutes les valeurs numériques qui étaient interprétées comme des chaînes de caractères.  
