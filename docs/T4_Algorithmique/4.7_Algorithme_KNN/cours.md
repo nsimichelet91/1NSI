@@ -15,7 +15,7 @@
     ![](data/picKNN.png){: .center}
 
 ## 1. Objectif 
-Nous allons reprendre le jeu de données sur les joueurs du Top14 utilisé [dans le cours «Trier des données»](https://nsimichelet91.github.io/1NSI/T5_Traitement_de_donnees/5.2_Trier_des_donnees/cours/){. target="_blank"}
+Nous allons reprendre le jeu de données sur les joueurs du Top14 utilisé [dans le cours «Trier et fusionner des données»](https://nsimichelet91.github.io/1NSI/T5_Traitement_de_donnees/5.2_Trier_et_fusionner_des_donnees/cours/){. target="_blank"}
 
 Nous souhaitons pouvoir répondre à cette question :
 
@@ -67,7 +67,7 @@ Comment mesurer la différence physique entre deux joueurs de rugby ?
 
 ## 3. Classement des joueurs suivant leur proximité morphologique
 
-De la même manière qu'on avait [classé les joueurs suivant leur IMC](https://nsimichelet91.github.io/1NSI/T5_Traitement_de_donnees/5.2_Trier_des_donnees/cours/#22-un-exemple-de-tri-de-dictionnaire){. target="_blank"}, on peut les classer suivant leur proximité morphologique avec le joueur X.
+De la même manière qu'on avait [classé les joueurs suivant leur IMC](https://nsimichelet91.github.io/1NSI/T5_Traitement_de_donnees/5.2_Trier_et_fusionner_des_donnees/cours/#22-un-exemple-de-tri-de-dictionnaire){. target="_blank"}, on peut les classer suivant leur proximité morphologique avec le joueur X.
 
 ### 3.1 Fonction ```second```
 
