@@ -7,9 +7,9 @@
 !!! note "*Thèmes en cours d'étude*"
 
 	- [Protocole HTTP : étude du chargement d'une page web](./T6_IHM_Web/6.3_Protocole_HTTP/cours/)
-        - [Requêtes GET, POST et formulaires](./T6_IHM_Web/6.4_Get_Post_Formulaires/cours/)
-        - [Algorithme KNN](./T4_Algorithmique/4.7_Algorithme_KNN/cours/)
-        - [Utilisation du module Pandas](./T5_Traitement_de_donnees/5.3_Pandas/cours/)
+	- [Requêtes GET, POST et formulaires](./T6_IHM_Web/6.4_Get_Post_Formulaires/cours/)
+	- [Algorithme KNN](./T4_Algorithmique/4.7_Algorithme_KNN/cours/)
+	- [Utilisation du module Pandas](./T5_Traitement_de_donnees/5.3_Pandas/cours/)
 
 
 !!! note "*Anciens thèmes traités*"
