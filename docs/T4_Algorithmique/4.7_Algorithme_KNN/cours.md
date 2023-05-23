@@ -58,17 +58,6 @@ Comment mesurer la différence physique entre deux joueurs de rugby ?
     445
     ```
 
-    
-    ??? tip "Correction"
-        ```python linenums='1'
-        def distance(poids, taille, player):
-            p = int(player['Poids'])
-            t = int(player['Taille'])
-            return (poids-p)**2 + (taille-t)**2
-        ```      
-    
-
-
 ## 3. Classement des joueurs suivant leur proximité morphologique
 
 De la même manière qu'on avait [classé les joueurs suivant leur IMC](https://nsimichelet91.github.io/1NSI/T5_Traitement_de_donnees/5.2_Trier_et_fusionner_des_donnees/cours/#22-un-exemple-de-tri-de-dictionnaire){. target="_blank"}, on peut les classer suivant leur proximité morphologique avec le joueur X.
@@ -89,14 +78,6 @@ De la même manière qu'on avait [classé les joueurs suivant leur IMC](https://
     13
     ```
 
-    
-    ??? tip "Correction"
-        ```python linenums='1'
-        def second(cpl):
-            return cpl[1]
-        ```      
-    
-
 
 ### 3.2 Classement des k plus proches joueurs
 
@@ -116,17 +97,6 @@ De la même manière qu'on avait [classé les joueurs suivant leur IMC](https://
     ```
 
     
-    ??? tip "Correction"
-        ```python linenums='1'
-        def classement_k_joueurs(poids, taille, k):
-            couples = []
-            for player in joueurs:
-                couples.append((player, distance(poids, taille, player)))
-            couples_tries = sorted(couples, key=second)
-            joueurs_classes = [couple[0] for couple in couples_tries]
-            return joueurs_classes[:k]
-        ```         
-    
 
 ## 4. Recherche du poste le plus représenté
 
@@ -145,19 +115,6 @@ De la même manière qu'on avait [classé les joueurs suivant leur IMC](https://
     {'Pilier': 110, 'Talonneur': 50, '2ème ligne': 74, '3ème ligne': 111, 'Mêlée': 42, 'Ouverture': 38, 'Centre': 71, 'Ailier': 64, 'Arrière': 35}
     ```
 
-    
-    ??? tip "Correction"
-        ```python linenums='1'
-        def occurence(joueurs):
-            occ = {}
-            for player in joueurs:
-                if player['Poste'] in occ:
-                    occ[player['Poste']] += 1
-                else:
-                    occ[player['Poste']] = 1
-            return occ
-        ```      
-    
 
 ### 4.2 Tri d'un dictionnaire
 
@@ -175,18 +132,7 @@ De la même manière qu'on avait [classé les joueurs suivant leur IMC](https://
     'mercredi'
     ```
 
-    
-    ??? tip "Correction"
-        ```python linenums='1'
-        def cle_max(d):
-            maxi = 0
-            for key in d:
-                if d[key] > maxi:
-                    maxi = d[key]
-                    key_max = key
-            return key_max
-        ```      
-    
+   
 
 ### 4.3 Fonction ```conseil_poste```
 
@@ -208,15 +154,5 @@ De la même manière qu'on avait [classé les joueurs suivant leur IMC](https://
     '2ème ligne'
     ```
 
-    
-    ??? tip "Correction"
-        ```python linenums='1'
-        def conseil_poste(poids, taille, k):
-            joueurs_classes = classement_k_joueurs(poids, taille, k)
-            dico = occurence(joueurs_classes)
-            poste_conseille = cle_max(dico)
-            return poste_conseille
-        ```  
-    
 
 Faire varier les différents paramètres pour observer leur rôle respectif.
