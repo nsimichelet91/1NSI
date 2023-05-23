@@ -6,14 +6,10 @@
 ## Thèmes en cours d'étude :
 !!! note "*Thèmes en cours d'étude*"
 
-	- [Architecture réseau](./T3_Architecture_materielle/3.1_Architecture_reseau/cours/)
-	- [Protocoles de communication dans un réseau](./T3_Architecture_materielle/3.2_Protocoles_de_communication/cours/)
-	- [Découverte des commandes Linux](./T3_Architecture_materielle/3.3_Decouverte_des_commandes_Linux/cours/)
-	- [Microbit](./T3_Architecture_materielle/3.4_Microbit/cours/)
-	- [HTML-CSS](./T6_IHM_Web/6.1_HTML5_CSS3/cours/)
-    - [Interactions sur une page web](./T6_IHM_Web/6.2_Interactions_page_web/cours/)
-
-
+	- [Protocole HTTP : étude du chargement d'une page web](./T6_IHM_Web/6.3_Protocole_HTTP/cours/)
+        - [Requêtes GET, POST et formulaires](./T6_IHM_Web/6.4_Get_Post_Formulaires/cours/)
+        - [Algorithme KNN](./T4_Algorithmique/4.7_Algorithme_KNN/cours/)
+        - [Utilisation du module Pandas](./T5_Traitement_de_donnees/5.3_Pandas/cours/)
 
 
 !!! note "*Anciens thèmes traités*"
@@ -31,13 +27,19 @@
 	- [Codage des entiers](./T2_Representation_des_donnees/2.7_Codage_entiers/cours/)
 	- [Codage des non-entiers](./T2_Representation_des_donnees/2.8_Codage_non-entiers/cours/)
 	- [Manipulation de fichiers csv](./T5_Traitement_de_donnees/5.1_Manipulation_csv/cours/)
-    - [Trier et fusionner des données](./T5_Traitement_de_donnees/5.2_Trier_et_fusionner_des_donnees/cours/)
+    	- [Trier et fusionner des données](./T5_Traitement_de_donnees/5.2_Trier_et_fusionner_des_donnees/cours/)
 	- [Extremums et moyennes](./T4_Algorithmique/4.1_Extremums_et_moyennes/cours/)
 	- [Complexité](./T4_Algorithmique/4.2_Complexite/cours/)
 	- [Tri par insertion](./T4_Algorithmique/4.3_Tri_par_insertion/cours/)
 	- [Tri par sélection](./T4_Algorithmique/4.4_Tri_par_selection/cours/)
 	- [Recherche dichotomique](./T4_Algorithmique/4.5_Dichotomie/cours/)
 	- [Algorithmes gloutons](./T4_Algorithmique/4.6_Algorithmes_gloutons/cours/)
+	- [Architecture réseau](./T3_Architecture_materielle/3.1_Architecture_reseau/cours/)
+	- [Protocoles de communication dans un réseau](./T3_Architecture_materielle/3.2_Protocoles_de_communication/cours/)
+	- [Découverte des commandes Linux](./T3_Architecture_materielle/3.3_Decouverte_des_commandes_Linux/cours/)
+	- [Microbit](./T3_Architecture_materielle/3.4_Microbit/cours/)
+	- [HTML-CSS](./T6_IHM_Web/6.1_HTML5_CSS3/cours/)
+    	- [Interactions sur une page web](./T6_IHM_Web/6.2_Interactions_page_web/cours/)
 
 ## Programme :
 !!! abstract "Programme"
@@ -96,7 +98,7 @@
     === "T6 IHM sur le web"
         **Thème 6 : IHM sur le web**
 		
-		- 6.1 [HTML-CSS](./T6_IHM_Web/6.1_HTML5_CSS3/cours/)
+	- 6.1 [HTML-CSS](./T6_IHM_Web/6.1_HTML5_CSS3/cours/)
         - 6.2 [Interactions sur une page web](./T6_IHM_Web/6.2_Interactions_page_web/cours/)
         - 6.3 [Protocole HTTP : étude du chargement d'une page web](./T6_IHM_Web/6.3_Protocole_HTTP/cours/)
         - 6.4 [Requêtes GET, POST et formulaires](./T6_IHM_Web/6.4_Get_Post_Formulaires/cours/)
