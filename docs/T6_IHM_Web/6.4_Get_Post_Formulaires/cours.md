@@ -43,7 +43,7 @@ Les paramètres passés au serveur par la méthode GET sont transmis **dans l'ur
 
 ![](data/get1.png){: .center}
 
-Évidemment, c'est une méthode catastrophique pour la transmission des mots de passe. Par contre, c'est une méthode efficace pour accéder directement à une page particulière : ainsi l'url [https://www.google.fr/search?q=bordeaux](https://www.google.fr/search?q=bordeaux){:target="_blank"} nous amènera directement au résultat de la recherche Google sur le mot-clé «bordeaux».
+Évidemment, c'est une méthode catastrophique pour la transmission des mots de passe. Par contre, c'est une méthode efficace pour accéder directement à une page particulière : ainsi l'url [https://www.google.fr/search?q=arpajon](https://www.google.fr/search?q=arpajon){:target="_blank"} nous amènera directement au résultat de la recherche Google sur le mot-clé «arpajon».
 
 
 ### 1.2. La méthode POST
