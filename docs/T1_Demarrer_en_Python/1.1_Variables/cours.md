@@ -1,4 +1,4 @@
-# 1.1 Variables
+# 1.1 Variables 
 
 !!! note "Voici le lien du notebook sur lequel vous devez faire les exercices"
 	[T1.1_variables_cours](https://capytale2.ac-paris.fr/web/c/4ead-631441/mln){: target = "_blank"} 
