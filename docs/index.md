@@ -1,11 +1,6 @@
 
 !!! abstract ":star: Actualités :star:"
-<<<<<<< HEAD
-	- Bonne rentrée à tous ! 
-=======
 	- Bonne rentrée ! 
- 	- Au boulot !
->>>>>>> 9acb8a965e775ad983154de06aa5a79fd050fcda
 
 
 ## Thèmes en cours d'étude :
