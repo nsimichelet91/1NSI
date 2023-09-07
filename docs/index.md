@@ -1,6 +1,7 @@
 
 !!! abstract ":star: Actualités :star:"
 	- Bonne rentrée ! 
+ 	- Au boulot !
 
 
 ## Thèmes en cours d'étude :
