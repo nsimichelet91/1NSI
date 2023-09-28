@@ -1,6 +1,5 @@
 
 !!! abstract ":star: Actualités :star:"
-	- Bonne rentrée ! 
 
 
 ## Thèmes en cours d'étude :
@@ -9,6 +8,8 @@
 	- Accueil, présentation de la spécialité et du site
 	- [Conseils et outils](./T0_Divers/sommaire/)
 	- [Variables](./T1_Demarrer_en_Python/1.1_Variables/cours/)
+	- [Boucle For](./T1_Demarrer_en_Python/1.2_Boucle_for/cours/)
+ 	- [Boucle While](./T1_Demarrer_en_Python/1.3_Boucle_while/cours/)
 
 
 
