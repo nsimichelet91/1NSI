@@ -327,7 +327,7 @@ Quelles sont les règles régissant ces espaces de noms ? Les frontières entre 
 		return score
 		
 	score = 0
-	score = ramasse_objet("banane")
+	score = ramasse_objet("banane", score)
     ```
 
 ## 6. Documenter une fonction
