@@ -1,0 +1,140 @@
+
+
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+	width : 30px;
+	height: 30px;
+	text-align : center;
+}
+
+th {
+	background-color : #ccc;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav li {
+	display : inline-block;
+	background-color : grey;
+	width : 120px;
+	text-align : center;
+	padding : 15px;
+	border-radius : 10px;
+	margin-left: 42px;
+}
+
+nav li:hover {
+	background-color : blue;
+}
+
+nav a {
+	color : white;
+	text-decoration : none;
+	font-family : arial;
+	font-size : 1.5em;
+}
+
+#block_page
+{
+	width : 900px;
+	margin : auto;
+	background-color: #c0c0c0;
+	opacity : 0.85;
+	padding : 15px;
+	border-radius : 20px;
+}
+
+p
+{
+    color: red;
+	font-size: 1em; /* Paragraphes de 14 pixels */
+	font-family: "Comic Sans MS", Impact, Arial;
+	font-style: normal;
+	text-align : justify;
+}
+
+h1
+{
+    font-size: 3.5em; /* Titres 1 : 4,5 fois la taille "normale" */
+	font-style: italic;
+	text-align: justify;
+	color: #F6D152;
+	border: 4px dashed #F6D152 ;
+	border-radius:30px;
+}
+
+h2
+{
+    font-size: 2em; /* Titres de 40 pixels */
+	font-style: normal;
+	font-weight: bold;
+	color: rgb(212,99,225);
+}
+
+h2:hover /* Apparence au survol des liens */
+{
+   text-decoration: underline;
+   font-size:3em;
+   color: green;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    opacity : 0.75;
+    top : 150px;
+    left : 100px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/*
+nav li ul
+{
+	position : absolute;
+	left: -999em;
+	z-index:1000;
+	padding:15px;		/* annule le décalage par defaut de ul 
+}
+
+nav li ul li
+{
+    margin-bottom : 5px;
+}
+
+nav li:hover , nav li ul:hover
+{
+	left:auto;
+    padding-left : 5px;
+    margin-bottom : 5px;
+}
+
+*/
+
+
+
+

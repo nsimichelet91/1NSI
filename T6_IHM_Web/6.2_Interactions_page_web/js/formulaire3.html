@@ -1,0 +1,36 @@
+    <html>                                  
+        <head>                              
+            <meta charset="utf-8" />                        
+            <title>Les formulaires en Javascript</title>    
+        </head>                             
+        <body onload="auLancement()">   
+            <form id="formulaire" action="https://pgdg.frama.io/1nsi" target="_blank" method="POST">
+                <table id="table">
+                    <tr><td id="0,0"> X </td> <td id="0,1"> O </td> <td id="0,2"> O </td> </tr>
+                    <tr><td id="1,0"> O </td> <td id="1,1"> X </td> <td id="1,2"> X </td> </tr>
+                    <tr><td id="2,0"> O </td> <td id="2,1"> X </td> <td id="2,2"> X </td> </tr>
+                </table>
+                <input id="hidden" type="hidden" name="case_cliquee" value=""/>
+            </form>
+            <script>
+                function auLancement() {
+                    let formElement = document.getElementById('formulaire');
+                    let table = document.getElementById("table");
+                    let trs = table.getElementsByTagName("tr");
+                    let tds = null;
+
+                    for (tr of trs)   {
+                        tds = tr.getElementsByTagName("td");
+                        for (td of tds)   {
+                            td.onclick=function() { 
+                                alert(this.id); 
+                                this.style.backgroundColor = 'red';
+                                document.getElementById('hidden').value = this.id;
+                                formElement.submit();
+                            }
+                        }
+                    }
+                }
+            </script>
+        </body>
+    </html>

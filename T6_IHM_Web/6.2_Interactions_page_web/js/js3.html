@@ -1,0 +1,21 @@
+			<html>									
+				<head>								
+					<meta charset="utf-8" />						
+					<title>Les formulaires en Javascript</title>	
+				</head>								
+				<body style="background-color:lightblue;">	
+				<h1 id="resultat"> Saisir un nombre puis valider</h1>
+				<input id='valeur' type="number" value="10"/>
+				<button id="validation" type="button">Validation</button>
+				<script>
+					var valeur, carre;
+					document.getElementById('validation').onclick = calculValeurAuCarre;
+					
+					function calculValeurAuCarre() {    
+						valeur = document.getElementById('valeur').value;
+						carre = (parseInt(valeur)*parseInt(valeur)).toString();
+						document.getElementById('resultat').innerHTML = window.valeur + " au carré = " + window.carre;
+					}
+				</script>
+				</body>
+			</html>
