@@ -4,12 +4,11 @@
 -->
 
 
-## Thèmes en cours d'étude :
+## Progression:  
+
 !!! note "*Thèmes en cours d'étude*"
     - [Fonctions](./T1_Demarrer_en_Python/1.5_Fonctions/cours)
     - [Listes](./T2_Representation_des_donnees/2.1_Listes/cours/)
-
-
 
 
 
