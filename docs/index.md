@@ -4,7 +4,7 @@
 -->
 
 
-## Progression:  
+## Progression :  
 
 !!! note "*Thèmes en cours d'étude*"
     - [Fonctions](./T1_Demarrer_en_Python/1.5_Fonctions/cours)
