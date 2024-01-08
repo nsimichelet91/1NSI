@@ -3681,7 +3681,7 @@ Petit problème si on essaie d'acheter un vêtement pour la 1ère fois</p>
 </div>
 <h2 id="4-mutabilite-et-copie-dun-dictionnaire">4. Mutabilité et copie d'un dictionnaire<a class="headerlink" href="#4-mutabilite-et-copie-dun-dictionnaire" title="Permanent link">⚓︎</a></h2>
 <p>Comme les tableaux et les matrices, les dictionnaires sont <strong>mutables</strong>. Il faut donc faire attention car passés en arguments à des fonctions, les muter à l'intérieur des fonctions provoque leur mutation également à l'extérieur des fonctions. </p>
-<p>Si on souhaite générer une copie d'un dictionnaire <code>dico</code> pour ensuite muter la copie sans toucher à l'original, il est impératif d'utiliser l'une des deux méthodes suivantes : 
+<p>Si on souhaite générer une copie d'un dictionnaire <code>dico</code> pour ensuite muter la copie sans toucher à l'original, il est impératif d'utiliser l'une des deux méthodes suivantes :<br />
 - la fonction <code>deepcopy</code> du module <code>copy</code> : <code>copie_dico = copy.deepcopy(dico)</code>.
 - la fonction <code>dict()</code> : <code>copie_dico = dict(dico)</code></p>
 <p>En effet, comme pour les tableaux, lorsqu'on utilise <code>copie_dico = dico</code> pour faire une copie, on risque de faire des erreurs : avec cette façon de copier les deux variables pointent vers le même objet en mémoire. Lorsqu'on mutera <code>copie_dico</code> on mutera donc à la fois <code>dico</code> sans s'en rendre compte, ce qui est dangereux ...</p>
