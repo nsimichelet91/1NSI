@@ -211,8 +211,8 @@ Nous allons résoudre ce problème grâce à :
 Comme les tableaux et les matrices, les dictionnaires sont **mutables**. Il faut donc faire attention car passés en arguments à des fonctions, les muter à l'intérieur des fonctions provoque leur mutation également à l'extérieur des fonctions. 
 
 Si on souhaite générer une copie d'un dictionnaire `dico` pour ensuite muter la copie sans toucher à l'original, il est impératif d'utiliser l'une des deux méthodes suivantes :  
-- la fonction `deepcopy` du module `copy` : `copie_dico = copy.deepcopy(dico)`.
-- la fonction `dict()` : `copie_dico = dict(dico)`
+- la fonction `deepcopy` du module `copy` : `copie_dico = copy.deepcopy(dico)`  
+- la fonction `dict()` : `copie_dico = dict(dico)`  
 
 En effet, comme pour les tableaux, lorsqu'on utilise `copie_dico = dico` pour faire une copie, on risque de faire des erreurs : avec cette façon de copier les deux variables pointent vers le même objet en mémoire. Lorsqu'on mutera `copie_dico` on mutera donc à la fois `dico` sans s'en rendre compte, ce qui est dangereux ...
 
