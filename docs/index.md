@@ -1,7 +1,6 @@
 <!--
 !!! abstract ":star: Actualités :star:"
-	- Bonne rentrée ! 
--->
+
 
 
 ## Progression :  
@@ -18,7 +17,8 @@
     - [Boucle While](./T1_Demarrer_en_Python/1.3_Boucle_while/cours/)
     - [Instruction conditionnelle If](./T1_Demarrer_en_Python/1.4_Instruction_conditionnelle_if/cours/)
     - [Fonctions](./T1_Demarrer_en_Python/1.5_Fonctions/cours)
-
+	- Bonne rentrée ! 
+-->
 ## Programme :
 !!! abstract "Programme"
     Nous traiterons les différentes entrées du programme dans les chapitres suivants :
@@ -76,7 +76,7 @@
     === "T6 IHM sur le web"
         **Thème 6 : IHM sur le web**
 		
-		- 6.1 [HTML-CSS](./T6_IHM_Web/6.1_HTML5_CSS3/cours/)
+	- 6.1 [HTML-CSS](./T6_IHM_Web/6.1_HTML5_CSS3/cours/)
         - 6.2 [Interactions sur une page web](./T6_IHM_Web/6.2_Interactions_page_web/cours/)
         - 6.3 [Protocole HTTP : étude du chargement d'une page web](./T6_IHM_Web/6.3_Protocole_HTTP/cours/)
         - 6.4 [Requêtes GET, POST et formulaires](./T6_IHM_Web/6.4_Get_Post_Formulaires/cours/)
