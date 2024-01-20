@@ -387,6 +387,7 @@ Pour comprendre ces résultats, il faut travailler en binaire. Voici les mêmes 
 !!! note "Voici le lien du notebook sur lequel vous devez faire les exercices"
 	[T2.5_Booléens](https://capytale2.ac-paris.fr/web/c/6aab-1078970){: target = "_blank"}  
 
+<!--
 ### Exercice 5 : préparation du pydéfi
 Objectif : chiffrer (= crypter) le mot "BONJOUR" avec la clé (de même taille) "LEMONDE".  
 
@@ -399,7 +400,7 @@ Protocole de chiffrage : XOR entre le code ASCII des lettres de même position.
 !!! capytale "À faire sur Capytale : [Lien](https://capytale2.ac-paris.fr/web/c/6aab-1078970)"
     Résolvez le pydéfi [la clé endommagée](https://callicode.fr/pydefis/MasqueJetable/txt){. target="_blank"}
             
-
+-->
 
 ### Complément : propriétés des opérateurs logiques
 
