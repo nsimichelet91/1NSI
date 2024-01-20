@@ -4,6 +4,9 @@
 
 Ce cours a pour but de présenter la constitution classique d'un réseau, et les équipements associés. La partie relative aux protocoles utilisés lors des échanges entre deux machines est détaillée dans le cours sur les protocoles de communication.
 
+!!! note "Téléchargez les fichiers Filius ici"
+	[Fichiers_Filius](https://nsimichelet91.github.io/1NSI/T3_Architecture_materielle/3.1_Architecture_reseau/data/fichiers_filius.zip)
+	
 ## 1. Premier réseau local
 
 
