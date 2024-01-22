@@ -24,7 +24,7 @@ Voici une deuxième liste de prénoms. Même mission !
 Vos deux temps sont-ils les mêmes ?  
 
 ### Visionnez cette vidéo :
-https://pixees.fr/un-algorithme-efficace-la-dichotomie/
+[vidéo](https://pixees.fr/un-algorithme-efficace-la-dichotomie/){: target = "_blank"}  
 
 
 !!! note "Voici le lien du notebook associé."
