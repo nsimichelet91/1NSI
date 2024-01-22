@@ -13,11 +13,13 @@
 Voici une première liste de prénoms. Votre mission est très simple : regardez la liste, et chronométrez le temps qu'il vous faut pour dire si votre prénom est dans la liste ou pas.  
 N'hésitez vraiment pas à jouer le jeu ! Trouvez un moyen de vous chronométrer, car il va servir à nouveau ensuite.  
 
-Vous avez mesuré votre temps ? Alors notez le quelque part et recommencez avec la liste suivante (cette fois, les prénoms sont triés par ordre alphabétique).
+Vous avez mesuré votre temps ? Alors notez le quelque part et recommencez avec la liste suivante (cette fois, les prénoms sont triés par ordre alphabétique).  
 
+![L1.png](data/L1.png){: .center}
 
-Voici une deuxième liste de prénoms. Même mission !
+Voici une deuxième liste de prénoms. Même mission !  
 
+![L1.png](data/L1.png){: .center}
 
 Vos deux temps sont-ils les mêmes ?  
 
