@@ -334,9 +334,9 @@ table_fusion = []
 Pour chaque dico_score de table_scores :
 	Pour chaque dico_connex de table_connexions :
 		Si dico_score['Id'] == dico_connex['Id']:
-			Faire une copie de dico_ado
-			Ajouter les champs 'LST_CNX' et 'MDP' à la copie de dico_ado
-			Ajouter la copie de dico_ado à table_fusion
+			Faire une copie de dico_score
+			Ajouter les champs 'LST_CNX' et 'MDP' à la copie de dico_score
+			Ajouter la copie de dico_score à table_fusion
 ```
 ce qui donne en python :
 
@@ -345,13 +345,13 @@ import copy
 
 table_fusion = []
 
-for ado in table_scores:
-    for connex in table_connexions:
-        if connex['Id'] == ado['Id']:
-            ado_copie = copy.deepcopy(ado)
-            ado_copie['LST_CNX'] = connex['LST_CNX']
-            ado_copie['MDP'] = connex['MDP']
-            table_fusion.append(ado_copie)
+for dico_score in table_scores:
+    for dico_connex in table_connexions:
+        if dico_connex['Id'] == dico_score['Id']:
+            dico_score_copie = copy.deepcopy(dico_score)
+            dico_score_copie['LST_CNX'] = dico_connex['LST_CNX']
+            dico_score_copie['MDP'] = dico_connex['MDP']
+            table_fusion.append(dico_score_copie)
             break
             
 afficher(table_fusion)
