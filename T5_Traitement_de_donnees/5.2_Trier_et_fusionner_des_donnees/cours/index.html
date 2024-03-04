@@ -3842,22 +3842,22 @@ $$ d = (p_1-p_2)^2 + (t_1-t_2)^2$$</p>
 <span class="n">Pour</span> <span class="n">chaque</span> <span class="n">dico_score</span> <span class="n">de</span> <span class="n">table_scores</span> <span class="p">:</span>
     <span class="n">Pour</span> <span class="n">chaque</span> <span class="n">dico_connex</span> <span class="n">de</span> <span class="n">table_connexions</span> <span class="p">:</span>
         <span class="n">Si</span> <span class="n">dico_score</span><span class="p">[</span><span class="s1">&#39;Id&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">dico_connex</span><span class="p">[</span><span class="s1">&#39;Id&#39;</span><span class="p">]:</span>
-            <span class="n">Faire</span> <span class="n">une</span> <span class="n">copie</span> <span class="n">de</span> <span class="n">dico_ado</span>
-            <span class="n">Ajouter</span> <span class="n">les</span> <span class="n">champs</span> <span class="s1">&#39;LST_CNX&#39;</span> <span class="n">et</span> <span class="s1">&#39;MDP&#39;</span> <span class="n">à</span> <span class="n">la</span> <span class="n">copie</span> <span class="n">de</span> <span class="n">dico_ado</span>
-            <span class="n">Ajouter</span> <span class="n">la</span> <span class="n">copie</span> <span class="n">de</span> <span class="n">dico_ado</span> <span class="n">à</span> <span class="n">table_fusion</span>
+            <span class="n">Faire</span> <span class="n">une</span> <span class="n">copie</span> <span class="n">de</span> <span class="n">dico_score</span>
+            <span class="n">Ajouter</span> <span class="n">les</span> <span class="n">champs</span> <span class="s1">&#39;LST_CNX&#39;</span> <span class="n">et</span> <span class="s1">&#39;MDP&#39;</span> <span class="n">à</span> <span class="n">la</span> <span class="n">copie</span> <span class="n">de</span> <span class="n">dico_score</span>
+            <span class="n">Ajouter</span> <span class="n">la</span> <span class="n">copie</span> <span class="n">de</span> <span class="n">dico_score</span> <span class="n">à</span> <span class="n">table_fusion</span>
 </code></pre></div>
 ce qui donne en python :</p>
 <p><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">copy</span>
 
 <span class="n">table_fusion</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="k">for</span> <span class="n">ado</span> <span class="ow">in</span> <span class="n">table_scores</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">connex</span> <span class="ow">in</span> <span class="n">table_connexions</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">connex</span><span class="p">[</span><span class="s1">&#39;Id&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">ado</span><span class="p">[</span><span class="s1">&#39;Id&#39;</span><span class="p">]:</span>
-            <span class="n">ado_copie</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">ado</span><span class="p">)</span>
-            <span class="n">ado_copie</span><span class="p">[</span><span class="s1">&#39;LST_CNX&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">connex</span><span class="p">[</span><span class="s1">&#39;LST_CNX&#39;</span><span class="p">]</span>
-            <span class="n">ado_copie</span><span class="p">[</span><span class="s1">&#39;MDP&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">connex</span><span class="p">[</span><span class="s1">&#39;MDP&#39;</span><span class="p">]</span>
-            <span class="n">table_fusion</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ado_copie</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">dico_score</span> <span class="ow">in</span> <span class="n">table_scores</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">dico_connex</span> <span class="ow">in</span> <span class="n">table_connexions</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">dico_connex</span><span class="p">[</span><span class="s1">&#39;Id&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">dico_score</span><span class="p">[</span><span class="s1">&#39;Id&#39;</span><span class="p">]:</span>
+            <span class="n">dico_score_copie</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">dico_score</span><span class="p">)</span>
+            <span class="n">dico_score_copie</span><span class="p">[</span><span class="s1">&#39;LST_CNX&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">dico_connex</span><span class="p">[</span><span class="s1">&#39;LST_CNX&#39;</span><span class="p">]</span>
+            <span class="n">dico_score_copie</span><span class="p">[</span><span class="s1">&#39;MDP&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">dico_connex</span><span class="p">[</span><span class="s1">&#39;MDP&#39;</span><span class="p">]</span>
+            <span class="n">table_fusion</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dico_score_copie</span><span class="p">)</span>
             <span class="k">break</span>
 
 <span class="n">afficher</span><span class="p">(</span><span class="n">table_fusion</span><span class="p">)</span>
@@ -3880,7 +3880,7 @@ ce qui donne en python :</p>
   <small>
     
       Dernière mise à jour:
-      2023-02-03
+      2024-03-04
     
   </small>
 </div>
