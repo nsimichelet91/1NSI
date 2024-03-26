@@ -369,3 +369,4 @@ Si la table des connexions contenait **toutes** les connexions des joueurs et **
 !!! note "Voici les liens des notebooks des exercices"
 	- [T5.2_csv_tri_fusion_achats](https://capytale2.ac-paris.fr/web/c/1389-1257970){: target = "_blank"}    
 	- [T5.2_csv_tri_fusion_animaux](https://capytale2.ac-paris.fr/web/c/6839-1258032){: target = "_blank"}   
+test

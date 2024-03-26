@@ -63,7 +63,7 @@ Vous pouvez télécharger le fichier [ping_switch.fls](data/ping_switch.fls).
  
 ![](data/K1.png){: .center} 
 
-- Observons la table SAT de notre switch : elle est vide, car aucune machine n'a encore cherché à communiquer.  
+- Observons la table SAT (Source Address Table) de notre switch : elle est vide, car aucune machine n'a encore cherché à communiquer.  
 
 ![](data/K2.png){: .center} 
 

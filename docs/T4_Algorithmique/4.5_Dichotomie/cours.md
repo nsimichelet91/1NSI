@@ -13,16 +13,17 @@
 Voici une première liste de prénoms. Votre mission est très simple : regardez la liste, et chronométrez le temps qu'il vous faut pour dire si votre prénom est dans la liste ou pas.  
 N'hésitez vraiment pas à jouer le jeu ! Trouvez un moyen de vous chronométrer, car il va servir à nouveau ensuite.  
 
+![L1.png](data/L1.png){: .center}
 Vous avez mesuré votre temps ? Alors notez le quelque part et recommencez avec la liste suivante (cette fois, les prénoms sont triés par ordre alphabétique).
-
 
 Voici une deuxième liste de prénoms. Même mission !
 
+![L2.png](data/L2.png){: .center}
 
 Vos deux temps sont-ils les mêmes ?  
 
 ### Visionnez cette vidéo :
-https://pixees.fr/un-algorithme-efficace-la-dichotomie/
+[vidéo](https://pixees.fr/un-algorithme-efficace-la-dichotomie/){: target = "_blank"}  
 
 
 !!! note "Voici le lien du notebook associé."
