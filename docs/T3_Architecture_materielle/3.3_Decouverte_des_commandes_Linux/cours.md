@@ -20,7 +20,7 @@ Laissez-vous guider par le jeu, mais **ATTENTION** !
 
 - Sur une (plusieurs) copies doubles en mode paysage ou à l'aide du modèle *drawio* donné, établir un plan du jeu **au fur et à mesure** que vous avancez dans votre quête. Par exemple :  
 
-[modèle téléchargable][data/Votre_Nom_Plan_Terminus.drawio]  
+[modèle téléchargable](data/Votre_Nom_Plan_Terminus.drawio)  
 [lien de l'application drawio](https://app.diagrams.net/?src=about)
 ![image](data/term_2.png){: .center}
 
