@@ -1,5 +1,5 @@
 # Initiation à Pygame
-![](data/logopygame.png){: .center width=60%}
+![](logopygame.png){: .center width=60%}
 
 {{initexo(0)}}
 
