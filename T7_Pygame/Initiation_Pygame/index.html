@@ -3734,7 +3734,7 @@
 <li>Initialisation du module <code>pygame</code>. </li>
 </ol>
 <p>Ce code devrait vous donner ceci :</p>
-<p><img alt="image" class="center" src="data/f1.png" width="30%" /></p>
+<p><img alt="image" class="center" src="../f1.png" width="30%" /></p>
 <p><strong>Remarques</strong></p>
 <ul>
 <li>La ligne <code>from pygame.locals import *</code> permettra d'utiliser des variables locales déjà définies par <code>pygame</code>, comme <code>MOUSEBUTTONDOWN</code>, par exemple.</li>
@@ -3752,8 +3752,8 @@
 <h2 id="2-apparition-dun-personnage">2. Apparition d'un personnage<a class="headerlink" href="#2-apparition-dun-personnage" title="Permanent link">⚓︎</a></h2>
 <h3 id="21-telechargement-de-limage">2.1. Téléchargement de l'image<a class="headerlink" href="#21-telechargement-de-limage" title="Permanent link">⚓︎</a></h3>
 <p>Nous allons travailler avec le sprite ci-dessous, nommé <code>perso.png</code>. Il est issu de <a href="https://openclassrooms.com/fr/courses/1399541-interface-graphique-pygame-pour-python/1399813-premieres-fenetres">https://openclassrooms.com/fr/courses/1399541-interface-graphique-pygame-pour-python/1399813-premieres-fenetres</a></p>
-<p><img alt="image" class="center" src="data/perso.png" /></p>
-<p><a href="data/perso.png">Téléchargez-le</a> pour le mettre dans le même dossier que votre code <code>pygame</code>.</p>
+<p><img alt="image" class="center" src="../perso.png" /></p>
+<p><a href="../perso.png">Téléchargez-le</a> pour le mettre dans le même dossier que votre code <code>pygame</code>.</p>
 <p>Vous pouvez trouver sur internet un grand nombre de sprites libres de droits, au format <code>png</code> (donc gérant la transparence), dans de multiples positions (ce qui permet de simuler des mouvements fluides). Ici nous travaillerons avec un sprite unique.</p>
 <h3 id="22-importation-de-limage-dans-la-fenetre">2.2. Importation de l'image dans la fenêtre<a class="headerlink" href="#22-importation-de-limage-dans-la-fenetre" title="Permanent link">⚓︎</a></h3>
 <p><div class="highlight"><pre><span></span><code><span class="n">perso</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;perso.png&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">convert_alpha</span><span class="p">()</span>
@@ -3811,7 +3811,7 @@ La fonction <code>convert_alpha()</code> est appelée pour que soit correctement
 <span class="n">pygame</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
 </code></pre></div></td></tr></table></div>
 <p><strong>Aperçu</strong></p>
-<p><img alt="image" class="center" src="data/f2.png" width="30%" /></p>
+<p><img alt="image" class="center" src="../f2.png" width="30%" /></p>
 <h2 id="3-gestion-des-evenements">3. Gestion des évènements<a class="headerlink" href="#3-gestion-des-evenements" title="Permanent link">⚓︎</a></h2>
 <p>Lorsqu'un programme <code>pygame</code> est lancé, la variable interne <code>pygame.event.get()</code> reçoit en continu les évènements des périphériques gérés par le système d'exploitation.<br />
 Nous allons nous intéresser aux évènements de type <code>KEYDOWN</code> (touche de clavier appuyée) ou de type <code>MOUSEBUTTONDOWN</code> (boutons de souris appuyé).</p>
@@ -4089,7 +4089,7 @@ Ce déplacement pourra être :  </p>
 <div class="admonition example">
 <p class="admonition-title">Exercice  4</p>
 <p>Réaliser un déplacement aléatoire, comme l'animation ci-dessous.</p>
-<p><img alt="image" class="center" src="data/exo1.gif" width="30%" /></p>
+<p><img alt="image" class="center" src="../exo1.gif" width="30%" /></p>
 <p>Vous pourrez utiliser les instructions :</p>
 <ul>
 <li><code>pygame.time.delay(1000)</code> afin de ne bouger le personnage que toutes les 1000 millisecondes.</li>
@@ -4163,7 +4163,7 @@ où <code>position_perso</code> est l'objet de type <code>rect</code>  contenant
 <div class="admonition example">
 <p class="admonition-title">Exercice  5</p>
 <p>Réaliser un contrôle au clavier du personnage, comme dans l'animation ci-dessous.
-<img alt="image" class="center" src="data/exo2.gif" /></p>
+<img alt="image" class="center" src="../exo2.gif" /></p>
 <details class="success">
 <summary>Correction</summary>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
@@ -4724,7 +4724,7 @@ où <code>position_perso</code> est l'objet de type <code>rect</code>  contenant
   <small>
     
       Dernière mise à jour:
-      2024-04-04
+      2024-05-30
     
   </small>
 </div>
