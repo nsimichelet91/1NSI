@@ -45,7 +45,7 @@ pygame.quit()
 
 Ce code devrait vous donner ceci :
 
-![image](data/f1.png){: .center width=30%}
+![image](f1.png){: .center width=30%}
 
 
 **Remarques**
@@ -67,10 +67,10 @@ Ce code devrait vous donner ceci :
 Nous allons travailler avec le sprite ci-dessous, nommé ```perso.png```. Il est issu de [https://openclassrooms.com/fr/courses/1399541-interface-graphique-pygame-pour-python/1399813-premieres-fenetres](https://openclassrooms.com/fr/courses/1399541-interface-graphique-pygame-pour-python/1399813-premieres-fenetres)
 
 
-![image](data/perso.png){: .center}
+![image](perso.png){: .center}
 
 
-[Téléchargez-le](data/perso.png) pour le mettre dans le même dossier que votre code ```pygame```.
+[Téléchargez-le](perso.png) pour le mettre dans le même dossier que votre code ```pygame```.
 
 Vous pouvez trouver sur internet un grand nombre de sprites libres de droits, au format ```png``` (donc gérant la transparence), dans de multiples positions (ce qui permet de simuler des mouvements fluides). Ici nous travaillerons avec un sprite unique.
 
@@ -130,7 +130,7 @@ pygame.quit()
 
 **Aperçu**
 
-![image](data/f2.png){: .center width=30%}
+![image](f2.png){: .center width=30%}
 
 ## 3. Gestion des évènements
 Lorsqu'un programme ```pygame``` est lancé, la variable interne ```pygame.event.get()``` reçoit en continu les évènements des périphériques gérés par le système d'exploitation.  
@@ -395,7 +395,7 @@ Au prochain ```fenetre.blit(perso, position_perso)```, le personnage sera positi
 
     Réaliser un déplacement aléatoire, comme l'animation ci-dessous.
 
-    ![image](data/exo1.gif){: .center width=30%}
+    ![image](exo1.gif){: .center width=30%}
 
     Vous pourrez utiliser les instructions :
 
@@ -456,7 +456,7 @@ où ```position_perso``` est l'objet de type ```rect```  contenant les coordonn�
 !!! example "{{ exercice() }}"
     
     Réaliser un contrôle au clavier du personnage, comme dans l'animation ci-dessous.
-    ![image](data/exo2.gif){: .center}
+    ![image](exo2.gif){: .center}
 
     {{
     correction(True,
@@ -812,7 +812,7 @@ Bien d'autres aides peuvent être trouvées dans les liens citées dans la parti
 
 **Exemple** de réalisation possible : un clicker avec un temps qui diminue à progressivement, et comptage des points.
 
-![image](data/exo3.gif){: .center width=30%}
+![image](exo3.gif){: .center width=30%}
 
 
 
