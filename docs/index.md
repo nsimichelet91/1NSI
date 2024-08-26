@@ -1,9 +1,9 @@
 
 
-<!--
-!!! abstract ":star: Actualités :star:"
-	-test
 
+!!! abstract ":star: Actualités :star:"
+	- Bonne rentrée ! 
+<!--
 ## Progression :  
 
 !!! note "*Thèmes en cours d'étude*"
