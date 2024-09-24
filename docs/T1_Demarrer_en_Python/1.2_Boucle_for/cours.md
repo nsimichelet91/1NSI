@@ -254,36 +254,13 @@ Il faut donc garder en tête que l'objet renvoyé par ```range()``` est un **it�
         On utilisera la syntaxe ```print(k, end = ' ')``` ) pour afficher les nombres horizontalement.
 
         A. ```0 1 2 3 4 5``` 
-		<!---<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>-->
-        ??? note "Correction"
-            ```python linenums='1'
-            for k in range(6):
-                print(k, end = ' ')
-            ```
+
         B. ```10 11 12 13 14 15 ``` 
-		<!---
-		<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-        ??? note "Correction"
-            ```python linenums='1'
-            for k in range(10,16):
-                print(k, end = ' ')
-            ``` -->
+
         C. ```3 6 9 12 ``` 
-		<!--
-		-<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-        ??? note "Correction"
-            ```python linenums='1'
-            for k in range(3,13,3):
-                print(k, end = ' ')
-            ``` -->
+
         D. ```10 9 8 7 6 5 4 3 2 1 0  ``` 
-		<!---
-		<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-        ??? note "Correction"
-            ```python linenums='1'
-            for k in range(10,-1,-1):
-                print(k, end = ' ')
-            ``` -->
+
     
 ## 5. Une situation classique : la double boucle
 
@@ -333,13 +310,7 @@ Il est très souvent utile d'imbriquer une boucle dans une autre, notamment lors
         Mamie dit : « et une cuillère pour Fifi ! »
         Mamie dit : « et une cuillère pour Loulou ! »
         ```
-		<!---<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-    === "Correction"
-        ```python linenums='1'
-        for perso1 in ["Papa", "Maman", "Mamie"]:
-            for perso2 in ["Riri", "Fifi", "Loulou"]:
-                print(perso1, "dit : « et une cuillère pour", perso2, "! »")
-        ```-->
+
 ## 6. Pour conclure
 
 !!! done "À retenir"
