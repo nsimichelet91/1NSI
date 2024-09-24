@@ -3932,37 +3932,13 @@ Si nécessaire, on peut le convertir en liste :
 
 On utilisera la syntaxe ```print(k, end = &#39; &#39;)``` ) pour afficher les nombres horizontalement.
 
-A. ```0 1 2 3 4 5``` 
-&lt;!---&lt;iframe src=&quot;https://trinket.io/embed/python3/7d4190497e?runMode=console&quot; width=&quot;100%&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;--&gt;
-??? note &quot;Correction&quot;
-    ```python linenums=&#39;1&#39;
-    for k in range(6):
-        print(k, end = &#39; &#39;)
-    ```
-B. ```10 11 12 13 14 15 ``` 
-&lt;!---
-&lt;iframe src=&quot;https://trinket.io/embed/python3/7d4190497e?runMode=console&quot; width=&quot;100%&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-??? note &quot;Correction&quot;
-    ```python linenums=&#39;1&#39;
-    for k in range(10,16):
-        print(k, end = &#39; &#39;)
-    ``` --&gt;
-C. ```3 6 9 12 ``` 
-&lt;!--
--&lt;iframe src=&quot;https://trinket.io/embed/python3/7d4190497e?runMode=console&quot; width=&quot;100%&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-??? note &quot;Correction&quot;
-    ```python linenums=&#39;1&#39;
-    for k in range(3,13,3):
-        print(k, end = &#39; &#39;)
-    ``` --&gt;
-D. ```10 9 8 7 6 5 4 3 2 1 0  ``` 
-&lt;!---
-&lt;iframe src=&quot;https://trinket.io/embed/python3/7d4190497e?runMode=console&quot; width=&quot;100%&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-??? note &quot;Correction&quot;
-    ```python linenums=&#39;1&#39;
-    for k in range(10,-1,-1):
-        print(k, end = &#39; &#39;)
-    ``` --&gt;
+A. ```0 1 2 3 4 5```
+
+B. ```10 11 12 13 14 15 ```
+
+C. ```3 6 9 12 ```
+
+D. ```10 9 8 7 6 5 4 3 2 1 0  ```
 </code></pre></div>
 </div>
 <h2 id="5-une-situation-classique-la-double-boucle">5. Une situation classique : la double boucle<a class="headerlink" href="#5-une-situation-classique-la-double-boucle" title="Permanent link">⚓︎</a></h2>
@@ -3999,7 +3975,7 @@ va donner ceci :
 </div>
 <div class="admonition example">
 <p class="admonition-title">Exercice 3</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Énoncé</label><label for="__tabbed_2_2">Correction</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Énoncé</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Écrire un programme qui affiche :
@@ -4012,14 +3988,7 @@ va donner ceci :
 <span class="n">Mamie</span> <span class="n">dit</span> <span class="p">:</span> <span class="err">«</span> <span class="n">et</span> <span class="n">une</span> <span class="n">cuillère</span> <span class="n">pour</span> <span class="n">Riri</span> <span class="err">!</span> <span class="err">»</span>
 <span class="n">Mamie</span> <span class="n">dit</span> <span class="p">:</span> <span class="err">«</span> <span class="n">et</span> <span class="n">une</span> <span class="n">cuillère</span> <span class="n">pour</span> <span class="n">Fifi</span> <span class="err">!</span> <span class="err">»</span>
 <span class="n">Mamie</span> <span class="n">dit</span> <span class="p">:</span> <span class="err">«</span> <span class="n">et</span> <span class="n">une</span> <span class="n">cuillère</span> <span class="n">pour</span> <span class="n">Loulou</span> <span class="err">!</span> <span class="err">»</span>
-</code></pre></div>
-&lt;!---<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></p>
-</div>
-<div class="tabbed-block">
-<p><code>python linenums='1'
-for perso1 in ["Papa", "Maman", "Mamie"]:
-    for perso2 in ["Riri", "Fifi", "Loulou"]:
-        print(perso1, "dit : « et une cuillère pour", perso2, "! »")</code>--&gt;</p>
+</code></pre></div></p>
 </div>
 </div>
 </div>
