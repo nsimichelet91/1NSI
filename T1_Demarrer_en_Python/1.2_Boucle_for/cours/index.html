@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../../xtra/fav1NSI.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.4.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.4.1">
     
     
       
@@ -2468,7 +2468,7 @@
         
   
   <span class="md-ellipsis">
-    Thème 4 :  Algorithmique
+    Thème 4 : Algorithmique
   </span>
   
 
@@ -3043,7 +3043,7 @@
         
   
   <span class="md-ellipsis">
-    Thème 5 :  Traitement de données
+    Thème 5 : Traitement de données
   </span>
   
 
@@ -3940,26 +3940,29 @@ A. ```0 1 2 3 4 5```
         print(k, end = &#39; &#39;)
     ```
 B. ```10 11 12 13 14 15 ``` 
-&lt;!---&lt;iframe src=&quot;https://trinket.io/embed/python3/7d4190497e?runMode=console&quot; width=&quot;100%&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;--&gt;
+&lt;!---
+&lt;iframe src=&quot;https://trinket.io/embed/python3/7d4190497e?runMode=console&quot; width=&quot;100%&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 ??? note &quot;Correction&quot;
     ```python linenums=&#39;1&#39;
     for k in range(10,16):
         print(k, end = &#39; &#39;)
-    ```
+    ``` --&gt;
 C. ```3 6 9 12 ``` 
-&lt;!---&lt;iframe src=&quot;https://trinket.io/embed/python3/7d4190497e?runMode=console&quot; width=&quot;100%&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;--&gt;
+&lt;!--
+-&lt;iframe src=&quot;https://trinket.io/embed/python3/7d4190497e?runMode=console&quot; width=&quot;100%&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 ??? note &quot;Correction&quot;
     ```python linenums=&#39;1&#39;
     for k in range(3,13,3):
         print(k, end = &#39; &#39;)
-    ```
+    ``` --&gt;
 D. ```10 9 8 7 6 5 4 3 2 1 0  ``` 
-&lt;!---&lt;iframe src=&quot;https://trinket.io/embed/python3/7d4190497e?runMode=console&quot; width=&quot;100%&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;--&gt;
+&lt;!---
+&lt;iframe src=&quot;https://trinket.io/embed/python3/7d4190497e?runMode=console&quot; width=&quot;100%&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 ??? note &quot;Correction&quot;
     ```python linenums=&#39;1&#39;
     for k in range(10,-1,-1):
         print(k, end = &#39; &#39;)
-    ```
+    ``` --&gt;
 </code></pre></div>
 </div>
 <h2 id="5-une-situation-classique-la-double-boucle">5. Une situation classique : la double boucle<a class="headerlink" href="#5-une-situation-classique-la-double-boucle" title="Permanent link">⚓︎</a></h2>
@@ -4010,15 +4013,13 @@ va donner ceci :
 <span class="n">Mamie</span> <span class="n">dit</span> <span class="p">:</span> <span class="err">«</span> <span class="n">et</span> <span class="n">une</span> <span class="n">cuillère</span> <span class="n">pour</span> <span class="n">Fifi</span> <span class="err">!</span> <span class="err">»</span>
 <span class="n">Mamie</span> <span class="n">dit</span> <span class="p">:</span> <span class="err">«</span> <span class="n">et</span> <span class="n">une</span> <span class="n">cuillère</span> <span class="n">pour</span> <span class="n">Loulou</span> <span class="err">!</span> <span class="err">»</span>
 </code></pre></div>
-<!---<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>--></p>
+&lt;!---<iframe src="https://trinket.io/embed/python3/7d4190497e?runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">for</span> <span class="n">perso1</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;Papa&quot;</span><span class="p">,</span> <span class="s2">&quot;Maman&quot;</span><span class="p">,</span> <span class="s2">&quot;Mamie&quot;</span><span class="p">]:</span>
-    <span class="k">for</span> <span class="n">perso2</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;Riri&quot;</span><span class="p">,</span> <span class="s2">&quot;Fifi&quot;</span><span class="p">,</span> <span class="s2">&quot;Loulou&quot;</span><span class="p">]:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">perso1</span><span class="p">,</span> <span class="s2">&quot;dit : « et une cuillère pour&quot;</span><span class="p">,</span> <span class="n">perso2</span><span class="p">,</span> <span class="s2">&quot;! »&quot;</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
+<p><code>python linenums='1'
+for perso1 in ["Papa", "Maman", "Mamie"]:
+    for perso2 in ["Riri", "Fifi", "Loulou"]:
+        print(perso1, "dit : « et une cuillère pour", perso2, "! »")</code>--&gt;</p>
 </div>
 </div>
 </div>
@@ -4047,7 +4048,7 @@ va donner ceci :
   <small>
     
       Dernière mise à jour:
-      2022-08-28
+      2024-09-24
     
   </small>
 </div>
