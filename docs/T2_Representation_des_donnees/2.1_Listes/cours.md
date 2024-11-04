@@ -2,6 +2,9 @@
 
 ![image](data/BO.png){: .center}
 
+{{ terminal() }}
+
+{{ macros_info() }}
 
 !!! note "Voici le lien du notebook sur lequel vous devez faire les exercices"
 	[T2.1_Les_listes-Cours](https://capytale2.ac-paris.fr/web/c/2b7b-704259/mln){: target = "_blank"}
