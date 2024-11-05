@@ -29,9 +29,6 @@ def define_env(env):
             return texte
 
 
-
-
-
 #---------------- </exo perso>-------------------- 
 
     @env.macro
