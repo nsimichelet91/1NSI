@@ -6,7 +6,7 @@ site_url: "https://nsimichelet91.github.io/1NSI/"
 theme:
   name: material
   site_url: ""
-  custom_dir: my_theme_customizations/
+  custom_dir: docs/my_theme_customizations/
   font: false
   language: fr
   icon:
