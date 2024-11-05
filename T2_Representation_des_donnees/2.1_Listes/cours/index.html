@@ -106,7 +106,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#macro-syntax-error" class="md-skip">
+        <a href="#macro-rendering-error" class="md-skip">
           Aller au contenu
         </a>
       
@@ -3607,11 +3607,20 @@
                   
 
 
-<h1 id="macro-syntax-error"><em>Macro Syntax Error</em><a class="headerlink" href="#macro-syntax-error" title="Permanent link">⚓︎</a></h1>
+<h1 id="macro-rendering-error"><em>Macro Rendering Error</em><a class="headerlink" href="#macro-rendering-error" title="Permanent link">⚓︎</a></h1>
 <p><em>File</em>: <code>T2_Representation_des_donnees/2.1_Listes/cours.md</code></p>
-<p><em>Line 152 in Markdown file:</em> <strong>unexpected ')'</strong>
-<div class="highlight"><pre><span></span><code>{{ IDE(&#39;T2.1_Listes/exo1.py&#39;, max=+) }}
-</code></pre></div></p>
+<p><em>TypeError</em>: define_env.<locals>.IDE() got an unexpected keyword argument 'max'</p>
+<div class="highlight"><pre><span></span><code>Traceback (most recent call last):
+  File &quot;/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/mkdocs_macros/plugin.py&quot;, line 688, in render
+    return md_template.render(**page_variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/jinja2/environment.py&quot;, line 1304, in render
+    self.environment.handle_exception()
+  File &quot;/opt/hostedtoolcache/Python/3.12.7/x64/lib/python3.12/site-packages/jinja2/environment.py&quot;, line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File &quot;&lt;template&gt;&quot;, line 152, in top-level template code
+TypeError: define_env.&lt;locals&gt;.IDE() got an unexpected keyword argument &#39;max&#39;
+</code></pre></div>
 
   <hr>
 <div class="md-source-file">
