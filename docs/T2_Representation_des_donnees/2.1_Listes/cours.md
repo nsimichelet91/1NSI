@@ -2,7 +2,6 @@
 
 ![image](data/BO.png){: .center}
 
-{{ IDE() }}
 
 !!! note "Voici le lien du notebook sur lequel vous devez faire les exercices"
 	[T2.1_Les_listes-Cours](https://capytale2.ac-paris.fr/web/c/2b7b-704259/mln){: target = "_blank"}
@@ -24,6 +23,8 @@ On peut observer le type de la variable ainsi créée :
 <class 'list'>
 ```
 
+{{ terminal() }}
+
 **Remarques :**
 
 - Même si cela n'a ici pas un grand intérêt, les éléments d'une liste peuvent donc être de types différents : ici, tous les éléments de ma liste sont des chaînes de caractères (`str`), mais la liste `["riri", 5, "fifi", "loulou"]` est aussi une liste valide.
@@ -34,7 +35,7 @@ On peut observer le type de la variable ainsi créée :
 ``` 
 Nous verrons plus tard qu'il est fréquent dans les exercices de partir d'une liste vide et d'ajouter progressivement des éléments.
 
-
+{{ terminal() }}
 
 
 ## 2. Accès aux éléments d'une liste
@@ -71,6 +72,8 @@ Nous verrons plus tard qu'il est fréquent dans les exercices de partir d'une li
 'Maggie'
 ```
 
+{{ terminal() }}
+
 ## 3. Longueur d'une liste
 
 !!! note "Exemple fondateur n°3 :heart:"
@@ -98,7 +101,7 @@ Nous verrons plus tard qu'il est fréquent dans les exercices de partir d'une li
 'Maggie'
 ```
 
-
+{{ terminal() }}
 
 ## 4. Parcours des éléments d'une liste :star: :star: :star:
 
@@ -131,6 +134,8 @@ for k in famille:
     print(k)
 ```
 En effet le nom de variable ```k``` est habituellement utilisé pour les nombres (les indices, les compteurs...).
+
+{{ terminal() }}
 
 {{ initexo(0)}}
 !!! example "{{ exercice() }}"
