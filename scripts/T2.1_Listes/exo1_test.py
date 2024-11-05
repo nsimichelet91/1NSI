@@ -1,0 +1,1 @@
+assert depouillement(urne) == "non"
