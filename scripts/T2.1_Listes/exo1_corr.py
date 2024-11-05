@@ -15,3 +15,4 @@ def depouillement(urne):
     else:
         return "non"
 
+assert depouillement(urne) == "non"
