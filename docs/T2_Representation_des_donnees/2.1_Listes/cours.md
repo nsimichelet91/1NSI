@@ -619,8 +619,8 @@ La liste `a` est composée de 3 éléments qui sont eux-même des listes de 3 é
 
     - Parcours par indice :
     ```python linenums='1'
-    for i in range(3):
-        for j in range(3):
+    for i in range(len(tab)):
+        for j in range(len(tab[i]):
             print(tab[i][j])
     ```
 
