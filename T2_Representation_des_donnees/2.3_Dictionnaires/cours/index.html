@@ -3766,7 +3766,7 @@ Petit problème si on essaie d'acheter un vêtement pour la 1ère fois</p>
 
 
     <span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">27</span><span class="o">-</span><span class="n">feb173444189</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="n">achat</span><span class="p">(</span><span class="n">habit</span><span class="p">)</span>
-          <span class="mi">1</span> <span class="k">def</span> <span class="nf">achat</span><span class="p">(</span><span class="n">habit</span><span class="p">):</span>
+          <span class="mi">1</span> <span class="k">def</span><span class="w"> </span><span class="nf">achat</span><span class="p">(</span><span class="n">habit</span><span class="p">):</span>
     <span class="o">----&gt;</span> <span class="mi">2</span>     <span class="n">dressing</span><span class="p">[</span><span class="n">habit</span><span class="p">]</span> <span class="o">=</span> <span class="n">dressing</span><span class="p">[</span><span class="n">habit</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
 
 
@@ -3826,7 +3826,7 @@ Petit problème si on essaie d'acheter un vêtement pour la 1ère fois</p>
 <div class="admonition note">
 <p class="admonition-title">Exemple fondateur n°8 <img alt="❤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2764.svg" title=":heart:" /></p>
 <p>Vraie copie indépendante de l'original:
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">copy</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">copy</span>
 
 <span class="n">dico</span> <span class="o">=</span> <span class="p">{</span><span class="mi">32</span><span class="p">:</span><span class="s1">&#39;Gers&#39;</span><span class="p">,</span> <span class="mi">59</span><span class="p">:</span><span class="s1">&#39;Nord&#39;</span><span class="p">,</span> <span class="mi">93</span><span class="p">:</span><span class="s1">&#39;Seine-Saint-Denis&#39;</span><span class="p">,</span> <span class="mi">39</span><span class="p">:</span><span class="s1">&#39;Jurrât&#39;</span><span class="p">}</span>
 <span class="n">copie</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">dico</span><span class="p">)</span> <span class="c1"># ou copie = dict(dico)</span>

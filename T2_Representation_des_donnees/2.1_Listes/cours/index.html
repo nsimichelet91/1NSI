@@ -3831,7 +3831,7 @@ On les appelle <em>listes</em> en Python, ou bien <em>tableaux</em> de manière 
 </div>
 <p>On peut observer le type de la variable ainsi créée :
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">maliste</span><span class="p">)</span>
-<span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">list</span><span class="s1">&#39;&gt;</span>
+<span class="o">&lt;</span><span class="k">class</span><span class="w"> </span><span class="err">&#39;</span><span class="nc">list</span><span class="s1">&#39;&gt;</span>
 </code></pre></div></p>
 <div onclick='start_term("id1")' id="fake_id1" class="py_mk_terminal_f"><label class="terminal"><span>>>> </span></label></div>
 <div id="id1" class="py_mk_hide"></div>
@@ -4201,7 +4201,7 @@ Il est possible de faire comme ceci :</p>
 <p>Que fait le code ci-dessous ?
 <div class="highlight"><pre><span></span><code><span class="n">texte</span> <span class="o">=</span> <span class="s2">&quot;cet texte est prodigieusement ennuyeux&quot;</span>
 
-<span class="k">def</span> <span class="nf">rang</span><span class="p">(</span><span class="n">lettre</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">rang</span><span class="p">(</span><span class="n">lettre</span><span class="p">):</span>
     <span class="k">return</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">lettre</span><span class="p">)</span> <span class="o">-</span> <span class="mi">97</span><span class="p">)</span>
 
 <span class="n">compt</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">26</span>
@@ -4443,7 +4443,7 @@ Il est alors nécessaire d'utilser la fonction <code>deepcopy()</code> du module
 <p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">copy</span> <span class="kn">import</span> <span class="n">copy</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">copy</span><span class="w"> </span><span class="kn">import</span> <span class="n">copy</span>
 
 <span class="n">matrice</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]</span>
 <span class="n">copie_matrice</span> <span class="o">=</span> <span class="n">copy</span><span class="p">(</span><span class="n">matrice</span><span class="p">)</span>
@@ -4465,7 +4465,7 @@ Cependant les objets imbriqués ("les listes à l'intérieur") de la liste copi�
 <p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">copy</span> <span class="kn">import</span> <span class="n">deepcopy</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">copy</span><span class="w"> </span><span class="kn">import</span> <span class="n">deepcopy</span>
 
 <span class="n">matrice</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]</span>
 <span class="n">copie_matrice</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="n">matrice</span><span class="p">)</span>

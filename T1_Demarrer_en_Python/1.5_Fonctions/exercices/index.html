@@ -3620,7 +3620,7 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">test_maxi</span><span class="p">():</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_maxi</span><span class="p">():</span>
     <span class="k">assert</span> <span class="n">maxi</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span>
     <span class="k">assert</span> <span class="n">maxi</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span>
     <span class="k">assert</span> <span class="n">maxi</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span> <span class="o">==</span> <span class="mi">7</span>
@@ -3637,7 +3637,7 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">maxi</span><span class="p">(</span><span class="n">n1</span><span class="p">,</span> <span class="n">n2</span><span class="p">):</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">maxi</span><span class="p">(</span><span class="n">n1</span><span class="p">,</span> <span class="n">n2</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">n1</span> <span class="o">&lt;</span> <span class="n">n2</span> <span class="p">:</span>
         <span class="k">return</span> <span class="n">n2</span>
     <span class="k">else</span> <span class="p">:</span>
@@ -3665,7 +3665,7 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">test_decale</span><span class="p">():</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_decale</span><span class="p">():</span>
     <span class="k">assert</span> <span class="n">decale</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;D&#39;</span>
     <span class="k">assert</span> <span class="n">decale</span><span class="p">(</span><span class="s1">&#39;Z&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;C&#39;</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;tests ok !&#39;</span><span class="p">)</span>
@@ -3682,7 +3682,7 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">decale</span><span class="p">(</span><span class="n">lettre</span><span class="p">):</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">decale</span><span class="p">(</span><span class="n">lettre</span><span class="p">):</span>
     <span class="n">rang_ancienne_lettre</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">lettre</span><span class="p">)</span> <span class="o">-</span> <span class="mi">65</span>
     <span class="n">rang_nouvelle_lettre</span> <span class="o">=</span> <span class="p">(</span><span class="n">rang_ancienne_lettre</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">+</span> <span class="mi">65</span>  
 
@@ -3704,7 +3704,7 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">test_decale_n</span><span class="p">():</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_decale_n</span><span class="p">():</span>
     <span class="k">assert</span> <span class="n">decale</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;D&#39;</span>
     <span class="k">assert</span> <span class="n">decale</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span>
     <span class="k">assert</span> <span class="n">decale</span><span class="p">(</span><span class="s1">&#39;Z&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;A&#39;</span>
@@ -3723,7 +3723,7 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">decale</span><span class="p">(</span><span class="n">lettre</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">decale</span><span class="p">(</span><span class="n">lettre</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
     <span class="n">rang_ancienne_lettre</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">lettre</span><span class="p">)</span> <span class="o">-</span> <span class="mi">65</span>
     <span class="n">rang_nouvelle_lettre</span> <span class="o">=</span> <span class="p">(</span><span class="n">rang_ancienne_lettre</span> <span class="o">+</span> <span class="n">n</span><span class="p">)</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">+</span> <span class="mi">65</span>  
 
@@ -3752,7 +3752,7 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
 <span class="normal">6</span>
 <span class="normal">7</span>
 <span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">decale_phrase</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">decale_phrase</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
     <span class="n">phrase_decalee</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
     <span class="k">for</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="n">p</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">lettre</span> <span class="o">==</span> <span class="s1">&#39; &#39;</span><span class="p">:</span>
@@ -3816,13 +3816,13 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
 <span class="normal">37</span>
 <span class="normal">38</span>
 <span class="normal">39</span>
-<span class="normal">40</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">decale</span><span class="p">(</span><span class="n">lettre</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<span class="normal">40</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">decale</span><span class="p">(</span><span class="n">lettre</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
     <span class="n">rang_ancienne_lettre</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">lettre</span><span class="p">)</span> <span class="o">-</span> <span class="mi">65</span>
     <span class="n">rang_nouvelle_lettre</span> <span class="o">=</span> <span class="p">(</span><span class="n">rang_ancienne_lettre</span> <span class="o">+</span> <span class="n">n</span><span class="p">)</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">+</span> <span class="mi">65</span>  
 
     <span class="k">return</span> <span class="nb">chr</span><span class="p">(</span><span class="n">rang_nouvelle_lettre</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">decale_phrase</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">decale_phrase</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
     <span class="n">phrase_decalee</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
     <span class="k">for</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="n">p</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">lettre</span> <span class="o">==</span> <span class="s1">&#39; &#39;</span><span class="p">:</span>
@@ -3833,7 +3833,7 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
     <span class="k">return</span> <span class="n">phrase_decalee</span>
 
 
-<span class="k">def</span> <span class="nf">decrypt</span><span class="p">(</span><span class="n">msg_secret</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">decrypt</span><span class="p">(</span><span class="n">msg_secret</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">decalage</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">25</span><span class="p">):</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">decale_phrase</span><span class="p">(</span><span class="n">msg_secret</span><span class="p">,</span> <span class="n">decalage</span><span class="p">))</span>
 
@@ -3847,7 +3847,7 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
 <span class="c1"># le code peut devenir :</span>
 
 
-<span class="k">def</span> <span class="nf">decrypt2</span><span class="p">(</span><span class="n">msg_secret</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">decrypt2</span><span class="p">(</span><span class="n">msg_secret</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">decalage</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">25</span><span class="p">):</span>
         <span class="n">phrase_clair</span> <span class="o">=</span> <span class="n">decale_phrase</span><span class="p">(</span><span class="n">msg_secret</span><span class="p">,</span> <span class="n">decalage</span><span class="p">)</span>
         <span class="k">if</span> <span class="s1">&#39;MESSAGE&#39;</span> <span class="ow">in</span> <span class="n">phrase_clair</span><span class="p">:</span>
@@ -3882,7 +3882,7 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">suivant</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">suivant</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">n</span> <span class="o">//</span> <span class="mi">2</span>
     <span class="k">else</span><span class="p">:</span>
@@ -3893,7 +3893,7 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">syracuse</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">syracuse</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
     <span class="k">while</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
         <span class="n">n</span> <span class="o">=</span> <span class="n">suivant</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
@@ -3924,7 +3924,7 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">temps_de_vol</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">temps_de_vol</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="n">compteur</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="k">while</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
         <span class="n">compteur</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -3938,7 +3938,7 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">temps_max</span><span class="p">(</span><span class="n">nmax</span><span class="p">):</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">temps_max</span><span class="p">(</span><span class="n">nmax</span><span class="p">):</span>
     <span class="n">maximum</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">nmax</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
         <span class="n">duree</span> <span class="o">=</span> <span class="n">temps_de_vol</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>

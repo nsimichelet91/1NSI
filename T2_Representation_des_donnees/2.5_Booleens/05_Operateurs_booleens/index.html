@@ -4002,7 +4002,7 @@ Voir <a href="https://fr.wikipedia.org/wiki/Fonction_NON-ET">Wikipedia</a></p>
 <div class="highlight"><pre><span></span><code><span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;BONJOUR&quot;</span>
 <span class="n">cle</span> <span class="o">=</span> <span class="s2">&quot;MAURIAC&quot;</span>
 
-<span class="k">def</span> <span class="nf">crypte_lettre</span><span class="p">(</span><span class="n">lm</span><span class="p">,</span> <span class="n">lc</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">crypte_lettre</span><span class="p">(</span><span class="n">lm</span><span class="p">,</span> <span class="n">lc</span><span class="p">):</span>
     <span class="n">a</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">lm</span><span class="p">)</span>
     <span class="n">b</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">lc</span><span class="p">)</span>
     <span class="n">c</span> <span class="o">=</span> <span class="n">a</span><span class="o">^</span><span class="n">b</span>
@@ -4010,7 +4010,7 @@ Voir <a href="https://fr.wikipedia.org/wiki/Fonction_NON-ET">Wikipedia</a></p>
 
     <span class="k">return</span> <span class="n">lettre</span>
 
-<span class="k">def</span> <span class="nf">crypte_mot</span><span class="p">(</span><span class="n">mot1</span><span class="p">,</span> <span class="n">mot2</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">crypte_mot</span><span class="p">(</span><span class="n">mot1</span><span class="p">,</span> <span class="n">mot2</span><span class="p">):</span>
     <span class="n">mot3</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mot1</span><span class="p">)):</span>
         <span class="n">car</span> <span class="o">=</span> <span class="n">crypte_lettre</span><span class="p">(</span><span class="n">mot1</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">mot2</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>

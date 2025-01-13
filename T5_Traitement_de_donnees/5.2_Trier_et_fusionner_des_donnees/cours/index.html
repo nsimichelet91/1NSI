@@ -3726,7 +3726,7 @@
 <p><a href="https://capytale2.ac-paris.fr/web/c/e3f8-1259933" target="target">T5.2_csv_tri_fusion_cours</a>  </p>
 </div>
 <p>Nous reprenons notre fichier de joueurs de rugby du Top14. </p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">csv</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">csv</span>
 <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;top14.csv&#39;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
 <span class="n">donnees</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 <span class="n">joueurs</span> <span class="o">=</span> <span class="p">[]</span>
@@ -3741,7 +3741,7 @@ Le paramètre <code>equipe</code> sera donnée sous forme de chaîne de caractè
 La valeur renvoyée sera de type liste.</p>
 <details class="tip">
 <summary>réponse</summary>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">joueurs_equipe</span><span class="p">(</span><span class="n">equipe</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">joueurs_equipe</span><span class="p">(</span><span class="n">equipe</span><span class="p">):</span>
     <span class="n">lst_joueurs</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">joueur</span> <span class="ow">in</span> <span class="n">joueurs</span> <span class="p">:</span>
         <span class="k">if</span> <span class="n">joueur</span><span class="p">[</span><span class="s1">&#39;Equipe&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">equipe</span> <span class="p">:</span>
@@ -3755,7 +3755,7 @@ La valeur renvoyée sera de type liste.</p>
     <span class="mi">37</span>
 </code></pre></div>
 <p>Définir de la même manière une fonction <code>joueurs_poste(poste)</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">joueurs_poste</span><span class="p">(</span><span class="n">equipe</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">joueurs_poste</span><span class="p">(</span><span class="n">equipe</span><span class="p">):</span>
     <span class="n">lst_joueurs</span> <span class="o">=</span> <span class="p">[]</span>
 
     <span class="k">for</span> <span class="n">joueur</span> <span class="ow">in</span> <span class="n">joueurs</span> <span class="p">:</span>
@@ -3795,7 +3795,7 @@ Ici, plusieurs clés peuvent être des critères de tri : la taille, le poids.</
                <span class="p">{</span><span class="s2">&quot;Prenom&quot;</span> <span class="p">:</span> <span class="s2">&quot;Homer&quot;</span><span class="p">,</span> <span class="s2">&quot;age estimé&quot;</span><span class="p">:</span> <span class="s2">&quot;38&quot;</span><span class="p">},</span>
                <span class="p">{</span><span class="s2">&quot;Prenom&quot;</span> <span class="p">:</span> <span class="s2">&quot;Marge&quot;</span><span class="p">,</span> <span class="s2">&quot;age estimé&quot;</span><span class="p">:</span> <span class="s2">&quot;37&quot;</span><span class="p">}]</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">age</span><span class="p">(</span><span class="n">personnage</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">age</span><span class="p">(</span><span class="n">personnage</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">personnage</span><span class="p">[</span><span class="s2">&quot;age estimé&quot;</span><span class="p">])</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">age</span><span class="p">(</span><span class="n">Simpsons</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
@@ -3831,7 +3831,7 @@ Ici, plusieurs clés peuvent être des critères de tri : la taille, le poids.</
 <p>Trier les joueurs du top14 par taille.</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">taille_joueur</span><span class="p">(</span><span class="n">joueur</span><span class="p">)</span> <span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">taille_joueur</span><span class="p">(</span><span class="n">joueur</span><span class="p">)</span> <span class="p">:</span>
     <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">joueur</span><span class="p">[</span><span class="s1">&#39;Taille&#39;</span><span class="p">])</span>
 
 <span class="o">&gt;&gt;&gt;</span> <span class="n">joueurs_taille_croissant</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">joueurs</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="n">taille_joueur</span><span class="p">)</span>
@@ -3848,7 +3848,7 @@ Ici, plusieurs clés peuvent être des critères de tri : la taille, le poids.</
 <p>Trier les joueurs du top14 par poids.</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">poids_joueur</span><span class="p">(</span><span class="n">joueur</span><span class="p">)</span> <span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">poids_joueur</span><span class="p">(</span><span class="n">joueur</span><span class="p">)</span> <span class="p">:</span>
     <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">joueur</span><span class="p">[</span><span class="s1">&#39;Poids&#39;</span><span class="p">])</span>
 
 <span class="o">&gt;&gt;&gt;</span> <span class="n">joueurs_poids_croissant</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">joueurs</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="n">poids_joueur</span><span class="p">)</span>
@@ -3865,7 +3865,7 @@ Ici, plusieurs clés peuvent être des critères de tri : la taille, le poids.</
 <p>Trier les joueurs de Bordeaux suivant leur Indice de Masse Corporelle (<a href="https://fr.wikipedia.org/wiki/Indice_de_masse_corporelle">IMC</a> )</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">IMC</span><span class="p">(</span><span class="n">joueur</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">IMC</span><span class="p">(</span><span class="n">joueur</span><span class="p">):</span>
     <span class="n">masse</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">joueur</span><span class="p">[</span><span class="s1">&#39;Poids&#39;</span><span class="p">])</span>
     <span class="n">taille_m</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">joueur</span><span class="p">[</span><span class="s1">&#39;Taille&#39;</span><span class="p">])</span> <span class="o">/</span> <span class="mi">100</span>
     <span class="k">return</span> <span class="n">masse</span> <span class="o">/</span> <span class="n">taille_m</span><span class="o">**</span><span class="mi">2</span>
@@ -3922,7 +3922,7 @@ Ici, plusieurs clés peuvent être des critères de tri : la taille, le poids.</
 $$ d = (p_1-p_2)^2 + (t_1-t_2)^2$$</p>
 <details class="tip">
 <summary>réponse</summary>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="n">joueur1</span><span class="p">,</span><span class="n">joueur2</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">distance</span><span class="p">(</span><span class="n">joueur1</span><span class="p">,</span><span class="n">joueur2</span><span class="p">):</span>
     <span class="n">p1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">joueur1</span><span class="p">[</span><span class="s1">&#39;Poids&#39;</span><span class="p">])</span>
     <span class="n">p2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">joueur2</span><span class="p">[</span><span class="s1">&#39;Poids&#39;</span><span class="p">])</span>
     <span class="n">t1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">joueur1</span><span class="p">[</span><span class="s1">&#39;Taille&#39;</span><span class="p">])</span>
@@ -3946,7 +3946,7 @@ $$ d = (p_1-p_2)^2 + (t_1-t_2)^2$$</p>
      <span class="s1">&#39;Poids&#39;</span><span class="p">:</span> <span class="s1">&#39;79&#39;</span><span class="p">}</span> 
 </code></pre></div>
 <p>Nous pouvons maintenant classer les joueurs suivant leur distance morphologique à Baptiste  SERIN :</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">distance_Serin</span><span class="p">(</span><span class="n">joueur2</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span><span class="w"> </span><span class="nf">distance_Serin</span><span class="p">(</span><span class="n">joueur2</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">distance</span><span class="p">(</span><span class="n">joueurs</span><span class="p">[</span><span class="mi">530</span><span class="p">],</span> <span class="n">joueur2</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">distance_Serin</span><span class="p">(</span><span class="n">joueurs</span><span class="p">[</span><span class="mi">530</span><span class="p">])</span>
@@ -3985,7 +3985,7 @@ $$ d = (p_1-p_2)^2 + (t_1-t_2)^2$$</p>
             <span class="n">Ajouter</span> <span class="n">la</span> <span class="n">copie</span> <span class="n">de</span> <span class="n">dico_score</span> <span class="n">à</span> <span class="n">table_fusion</span>
 </code></pre></div>
 ce qui donne en python :</p>
-<p><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">copy</span>
+<p><div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">copy</span>
 
 <span class="n">table_fusion</span> <span class="o">=</span> <span class="p">[]</span>
 
