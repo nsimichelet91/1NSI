@@ -31,7 +31,7 @@ Voici le fonctionnement de l'algorithme :
             for j in range(i + 1, len(liste)) :
                 if liste[j] < liste[indice_min]:
                     indice_min = j
-            liste[j], liste[indice_min] = liste[indice_min], liste[j]
+            liste[i], liste[indice_min] = liste[indice_min], liste[i]
     ```
 
 *Application :*
