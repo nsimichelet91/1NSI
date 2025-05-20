@@ -48,23 +48,8 @@ Comme indiqué précédemment, le JavaScript est un langage essentiellement util
 
 # Le code HTML:
 
-```html
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Titre onglet</title>
-    </head>
-    <body>
-        <!--
-            tout le
-            code HTML
-            ici
-        -->
-        <script src="script.js"></script> <!-- pour exécuter le fichier `script.js` -->
-    </body>
-</html>
-```
+
+
 
 ## Le code JS écrit dans script.js :
 
