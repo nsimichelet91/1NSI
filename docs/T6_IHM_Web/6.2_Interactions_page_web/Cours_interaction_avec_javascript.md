@@ -24,7 +24,7 @@ JavaScript peut également être utilisé comme langage de programmation sur un 
 
 Comme indiqué précédemment, le JavaScript est un langage essentiellement utilisé avec le HTML, vous allez donc apprendre dans ce chapitre comment intégrer ce langage à vos pages Web pour les rendre dynamiques. Il y a deux façons d'écrire le code JS d'une page Web :
 
-- soit directement dans le HTML en utilisant la balise <script> dans laquelle on écrit en langage JavaScript :
+- soit directement dans le HTML en utilisant la balise `<script>` dans laquelle on écrit en langage JavaScript :
 
 ```html
 <!DOCTYPE html>
@@ -48,8 +48,23 @@ Comme indiqué précédemment, le JavaScript est un langage essentiellement util
 
 # Le code HTML:
 
-
-
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Titre onglet</title>
+    </head>
+    <body>
+        <!--
+            tout le
+            code HTML
+            ici
+        -->
+        <script src="script.js"></script> <!-- pour exécuter le fichier `script.js` -->
+    </body>
+</html>
+```
 
 ## Le code JS écrit dans script.js :
 
