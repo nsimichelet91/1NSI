@@ -8,7 +8,7 @@ Ces attributs sont utilisés pour appliquer des styles CSS ou pour interagir ave
 Dans cette activité, nous allons nous concentrer sur leur **utilisation avec le langage CSS**.
 
 !!! note "Voici le lien de l'activité sur Capytale"
-	[T6.2_Introduction aux attributs "class" et "id"](https://capytale2.ac-paris.fr/web/c/70d7-6702855){: target = "_blank"}
+	[T6.2_Introduction aux attributs "class" et "id"](https://capytale2.ac-paris.fr/web/c/a552-6703543){: target = "_blank"}
 	
 La page `index.html` contient le début de code suivant :
 
@@ -152,5 +152,5 @@ Quand les balises deviennent nombreuses et imbriquées, il est plus difficile de
 ---
 
 *Germain Becker, Lycée Emmanuel Mounier, Angers*  
-![image](data/88x31.png){: .center width=10%}
+![image](data/88x31.png){width=10%}
 
