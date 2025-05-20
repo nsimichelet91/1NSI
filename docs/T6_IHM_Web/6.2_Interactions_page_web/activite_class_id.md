@@ -36,7 +36,7 @@ La page `index.html` contient le début de code suivant :
 ```
 La page s'affiche de cette manière dans le navigateur :  
 
-![image](data/act_intro_page_web.png){: .center width=30%}
+![image](data/act_intro_page_web.png){: .center}
 
 ## Application de style avec `class`
 Si on écrit le code CSS suivant dans le fichier style.css (associé à notre fichier HTML)
@@ -50,7 +50,7 @@ p {
 ```
 
 Tous les paragraphes sont affichés en bleu.
-![image](data/act_intro_page_web_2.png){: .center width=30%}
+![image](data/act_intro_page_web_2.png){: .center}
 
 Les attributs `class` et `id` vont permettre de cibler uniquement certains éléments d'une page pour les styliser ou les manipuler : par exemple, on va pouvoir cibler un ou plusieurs paragraphes précis pour leur appliquer un style, qui ne s'appliquera pas aux autres.  
 
@@ -77,7 +77,7 @@ On peut alors appliquer un style CSS à cette classe. Il faut faire précéder l
 }
 ```
 On obtient alors la page suivante :
-![image](data/act_intro_page_web_3.png){: .center width=30%}
+![image](data/act_intro_page_web_3.png){: .center}
 
 ## L'attribut `id`
 
@@ -104,7 +104,7 @@ On peut alors appliquer un style à ce titre grâce à son attribut `id`. Il fau
 ```  
 
 On obtient alors la page suivante :
-![image](data/act_intro_page_web_4.png){: .center width=30%}
+![image](data/act_intro_page_web_4.png){: .center}
 
 ## 🎯 Défis à réaliser
 
@@ -152,5 +152,5 @@ Quand les balises deviennent nombreuses et imbriquées, il est plus difficile de
 ---
 
 *Germain Becker, Lycée Emmanuel Mounier, Angers*  
-![image](data/88x31.png){: .center width=30%}
+![image](data/88x31.png){: .center width=10%}
 
