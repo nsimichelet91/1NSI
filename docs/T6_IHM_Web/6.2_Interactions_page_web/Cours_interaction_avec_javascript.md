@@ -1,4 +1,3 @@
-
 # Interaction dans une page Web grâce à JavaScript
 
 ## Introduction
