@@ -72,7 +72,7 @@ Comme indiqué précédemment, le JavaScript est un langage essentiellement util
 alert("Hello World!");
 ```
 
-Dans le HTML, on donne à la balise <script> un attribut src (pour source) dont la valeur est le chemin vers le fichier JS à exécuter. Vous remarquerez que la ligne a été écrite juste avant la fermeture du <body> et après le contenu HTML du corps de la page.
+Dans le HTML, on donne à la balise `<script>` un attribut src (pour source) dont la valeur est le chemin vers le fichier JS à exécuter. Vous remarquerez que la ligne a été écrite juste avant la fermeture du <body> et après le contenu HTML du corps de la page.
 (1) Même si cela impose d'utiliser deux fichiers distincts, cette pratique est recommandée notamment car le code est plus facilement maintenable car cela a l'avantage de bien séparer les choses : le JS reste dans un fichier js et le fichier .html ne contient que du HTML.
 Par ailleurs, un fichier .js peut dans ce cas être appliqué à plusieurs documents HTML.
 
