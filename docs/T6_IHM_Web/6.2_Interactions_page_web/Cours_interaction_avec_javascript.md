@@ -321,6 +321,5 @@ Pour voir et exécuter le code sur CodePen : https://codepen.io/#pecker/pen/vLCL
 - Cours de Pierre Giraud sur La gestion d'événements en JavaScript et la méthode addEventListener
 - Cours Créez des pages web dynamiques avec JavaScript d'OpenClassrooms.
 
-Germain Becker & Sébastien Point, Lycée Emmanuel Mounier, Angers
-
-## Voir en ligne : info-mounier.fr/premiere_nsi/web/interaction-avec-javascript
+*Germain Becker & Sébastien Point, Lycée Emmanuel Mounier, Angers*  
+![image](data/88x31.png){width=10%}
