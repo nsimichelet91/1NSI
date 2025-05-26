@@ -99,7 +99,7 @@ En JavaScript, un événement est une action qui se produit et qui possède deux
 - C'est une action qu'on peut « écouter », c'est-à-dire une action qu'on peut détecter car le système va nous informer qu'elle se produit ;
 - C'est une action à laquelle on peut « répondre », c'est-à-dire qu'on va pouvoir attacher un code à cette action qui va s'exécuter dès qu'elle va se produire.
 
-Un événement peut être associé à n'importe quel élément HTML (un bouton <button>, un paragraphe <p>, un titre <h.>., un bloc <div> etc.). Il existe beaucoup d'événements (plus d'une centaine), en voici quelques-uns parmi les plus importants :
+Un événement peut être associé à n'importe quel élément HTML (un bouton <button>, un paragraphe `<p>`, un titre `<h.>`., un bloc `<div>` etc.). Il existe beaucoup d'événements (plus d'une centaine), en voici quelques-uns parmi les plus importants :
 
 | Événement | Description |
 | :-- | :-- |
