@@ -3695,8 +3695,12 @@
 <h1 id="interaction-dans-une-page-web-grace-a-javascript">Interaction dans une page Web grâce à JavaScript<a class="headerlink" href="#interaction-dans-une-page-web-grace-a-javascript" title="Permanent link">⚓︎</a></h1>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">⚓︎</a></h2>
 <h2 id="quest-ce-que-javascript">Qu'est-ce que JavaScript?<a class="headerlink" href="#quest-ce-que-javascript" title="Permanent link">⚓︎</a></h2>
-<p>JavaScript a été créé en 1995 par Brendan Eich. C'est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs avec l'utilisation (par exemple) de Node.js.</p>
+<p><img alt="image" class="center" src="../data/js.png" /></p>
+<p>JavaScript a été créé en 1995 par Brendan Eich. C'est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs avec l'utilisation (par exemple) de Node.js.  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>On abrège souvent JavaScript par JS, ce qui sera parfois fait par la suite.</p>
+</div>
 <p>Avec les technologies HTML et CSS, JavaScript est parfois considéré comme l'une des technologies cœur du World Wide Web. Le langage JavaScript permet des pages web interactives, et à ce titre est une partie essentielle des applications web. Une grande majorité des sites web l'utilisent, et la majorité des navigateurs web disposent d'un moteur JavaScript dédié pour l'interpréter (indépendamment des considérations de sécurité qui peuvent se poser le cas échéant).</p>
 <p>Du code JavaScript peut être intégré directement au sein des pages web, pour y être exécuté sur le poste client. C'est alors le navigateur web qui prend en charge l'exécution de ces programmes appelés scripts et qui permet l'interaction avec l'utilisateur.</p>
 <h2 id="dans-une-page-web-programme-de-1ere-nsi">Dans une page Web (programme de 1ère NSI)<a class="headerlink" href="#dans-une-page-web-programme-de-1ere-nsi" title="Permanent link">⚓︎</a></h2>
@@ -3706,7 +3710,7 @@
 <h2 id="premiers-pas-avec-javascript">Premiers pas avec JavaScript<a class="headerlink" href="#premiers-pas-avec-javascript" title="Permanent link">⚓︎</a></h2>
 <p>Comme indiqué précédemment, le JavaScript est un langage essentiellement utilisé avec le HTML, vous allez donc apprendre dans ce chapitre comment intégrer ce langage à vos pages Web pour les rendre dynamiques. Il y a deux façons d'écrire le code JS d'une page Web :</p>
 <ul>
-<li>soit directement dans le HTML en utilisant la balise <code>&lt;script&gt;</code> dans laquelle on écrit en langage JavaScript :</li>
+<li>👎 soit directement dans le HTML en utilisant la balise <code>&lt;script&gt;</code> dans laquelle on écrit en langage JavaScript :</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
@@ -3722,14 +3726,15 @@
     <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
-<ol>
-<li>
+<p>Pour voir et exécuter le code sur CodePen : 
+<a href="https://codepen.io/gbecker/pen/jOJPgWe" target="target"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>Cette façon de faire est obsolète, mais encore présente dans beaucoup de pages Web anciennes. On peut s'autoriser à l'utiliser pour des petits essais dans un soucis de simplifications mais c'est à</p>
-</li>
-<li>
-<p>2 soit dans un fichier séparé au format .js : on écrit le code JS dans un fichier appelé (par exemple) script.js et on indique dans le fichier HTML d'exécuter ce fichier JS:</p>
-</li>
-</ol>
+</div>
+<ul>
+<li>👍 soit dans un fichier séparé au format .js : on écrit le code JS dans un fichier appelé (par exemple) script.js et on indique dans le fichier HTML d'exécuter ce fichier JS:</li>
+</ul>
 <h1 id="le-code-html">Le code HTML:<a class="headerlink" href="#le-code-html" title="Permanent link">⚓︎</a></h1>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
@@ -3750,11 +3755,16 @@
 <h2 id="le-code-js-ecrit-dans-scriptjs">Le code JS écrit dans script.js :<a class="headerlink" href="#le-code-js-ecrit-dans-scriptjs" title="Permanent link">⚓︎</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">);</span>
 </code></pre></div>
-<p>Dans le HTML, on donne à la balise <code>&lt;script&gt;</code> un attribut src (pour source) dont la valeur est le chemin vers le fichier JS à exécuter. Vous remarquerez que la ligne a été écrite juste avant la fermeture du <body> et après le contenu HTML du corps de la page.
-(1) Même si cela impose d'utiliser deux fichiers distincts, cette pratique est recommandée notamment car le code est plus facilement maintenable car cela a l'avantage de bien séparer les choses : le JS reste dans un fichier js et le fichier .html ne contient que du HTML.
+<p>Dans le HTML, on donne à la balise <code>&lt;script&gt;</code> un attribut <code>src</code> (pour source) dont la valeur est le chemin vers le fichier JS à exécuter. Vous remarquerez que la ligne a été écrite juste avant la fermeture du <code>&lt;body&gt;</code> et après le contenu HTML du corps de la page.</p>
+<p>Pour voir et exécuter le code sur CodePen : 
+<a href="https://codepen.io/gbecker/pen/mdoJNVw" target="target"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Même si cela impose d'utiliser deux fichiers distincts, cette pratique est recommandée notamment car le code est plus facilement maintenable car cela a l'avantage de bien séparer les choses : le JS reste dans un fichier js et le fichier .html ne contient que du HTML.
 Par ailleurs, un fichier .js peut dans ce cas être appliqué à plusieurs documents HTML.</p>
-<p>Dans les deux cas, l'instruction alert("Hello World!") est exécutée. Comme la fonction alert permet d'afficher un message à l'écran dans une fenêtre popup, on obtient dans les deux situations l'écran suivant lorsque l'on ouvre la page HTML dans le navigateur :</p>
-<p><img alt="Hello World Popup" src="image_url" /></p>
+</div>
+<p>Dans les deux cas, l'instruction <code>alert("Hello World!")</code> est exécutée. Comme la fonction <code>alert</code> permet d'afficher un message à l'écran dans une fenêtre popup, on obtient dans les deux situations l'écran suivant lorsque l'on ouvre la page HTML dans le navigateur :</p>
+<p><img alt="Hello World Popup" src="../data/alert_popup.png" /></p>
 <h2 id="-interaction-avec-lutilisateur-dans-une-page-web">- Interaction avec l'utilisateur dans une page Web<a class="headerlink" href="#-interaction-avec-lutilisateur-dans-une-page-web" title="Permanent link">⚓︎</a></h2>
 <h2 id="a-faire">A faire<a class="headerlink" href="#a-faire" title="Permanent link">⚓︎</a></h2>
 <p>Faites les défis JS accessibles en cliquant sur ce lien.</p>
