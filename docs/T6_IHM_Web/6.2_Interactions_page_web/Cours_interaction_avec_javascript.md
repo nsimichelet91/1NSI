@@ -163,17 +163,7 @@ Voici un lien vers les corrections des défis 7 et 8 :
 - Défi 7 : https://replit.com/@beckerg/Defi7#index.html
 - Défi 8 : https://replit.com/@beckerg/Defi8#index.html
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 La suite de ce cours constitue un résumé de ce qui est abordé dans les défis et leurs vidéos associées. Il est donc important de le lire et l'apprendre une fois les défis terminés.
 
 2 Dans ce qui suit, comme dans les vidéos, on s'attache à écrire un code JavaScript simple et qui fonctionne dans la majorité des cas afin de ne pas entrer dans des considérations trop techniques du langage.
