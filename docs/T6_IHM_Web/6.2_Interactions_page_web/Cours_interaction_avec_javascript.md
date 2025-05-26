@@ -111,7 +111,7 @@ Pour réaliser ce défi, regardez cette vidéo :
 !!! note
 	L'instruction `console.log` ne fonction pas sur Capytale, ce n'est donc pas à tester.
 
-<iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/8m6dRXQHOr4?si=_glJlVFAcgE98_gU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/8m6dRXQHOr4?si=bclKUVz78zprIawh&amp;start=195" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 !!! Corrigé
 	Essayez vous même avant de regarder le corrigé.
