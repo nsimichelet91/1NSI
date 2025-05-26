@@ -115,7 +115,7 @@ Pour réaliser ce défi, regardez cette vidéo :
 
 !!! Corrigé
 	Essayez vous même avant de regarder le corrigé.
-	[Corrigé] https://capytale2.ac-paris.fr/web/c/70c3-6666609
+	[Corrigé](https://capytale2.ac-paris.fr/web/c/70c3-6666609){: target = "_blank"}
 	
 ## Changer le texte d'une balise
 Commencer par regarder cette vidéo :
