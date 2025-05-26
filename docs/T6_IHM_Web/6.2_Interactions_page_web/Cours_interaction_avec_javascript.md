@@ -323,3 +323,4 @@ Pour voir et exécuter le code sur CodePen : https://codepen.io/#pecker/pen/vLCL
 
 *Germain Becker & Sébastien Point, Lycée Emmanuel Mounier, Angers*  
 ![image](data/88x31.png){width=10%}
+
