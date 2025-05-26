@@ -50,7 +50,7 @@ Pour voir et exécuter le code sur CodePen :
 [exemple_1](https://codepen.io/gbecker/pen/jOJPgWe){: target = "_blank"}
 
 !!! note
-	Cette façon de faire est obsolète, mais encore présente dans beaucoup de pages Web anciennes. On peut s'autoriser à l'utiliser pour des petits essais dans un soucis de simplifications mais c'est à
+	Cette façon de faire est obsolète, mais encore présente dans beaucoup de pages Web anciennes. On peut s'autoriser à l'utiliser pour des petits essais dans un soucis de simplifications mais c'est à proscrire pour des applications plus conséquentes.
 
 - 👍 soit dans un fichier séparé au format .js : on écrit le code JS dans un fichier appelé (par exemple) script.js et on indique dans le fichier HTML d'exécuter ce fichier JS:
 
@@ -100,14 +100,20 @@ Dans les deux cas, l'instruction `alert("Hello World!")` est exécutée. Comme l
 Dans cette activité vous allez apprendre à utiliser JavaScript pour créer des pages Web interactives. On y verra principalement comment gérer certains événements lors de clics sur des boutons. Cette activité est divisée en 4 parties. Dans chacune d’elles, une vidéo est à visionner puis plusieurs défis sont proposés. Votre objectif est de trouver une solution à ces défis !
 
 ## Modifier les styles d'une balise
-Commencer par regarder cette vidéo :
-
-<iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/8m6dRXQHOr4?si=gll_dFr_nAL9Qwfy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 !!! Défi_1
 	Créez une page avec 3 boutons qui permettent de choisir la couleur de fond de la page parmi 3 couleurs.
 
-	Vous ferez ce défi sur Capytale avec ce [lien](https://codepen.io/jcdelage/pen/raVaxeV){: target = "_blank"}
+	Vous ferez ce défi sur Capytale avec ce [lien](https://capytale2.ac-paris.fr/web/c/2d50-6771831){: target = "_blank"}
+	
+Pour réaliser ce défi, regardez cette vidéo :
+
+!!! note
+	L'instruction `console.log` ne fonction pas sur Capytale, ce n'est donc pas à tester.
+
+<iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/8m6dRXQHOr4?si=_glJlVFAcgE98_gU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 
 ## Changer le texte d'une balise
 Commencer par regarder cette vidéo :
