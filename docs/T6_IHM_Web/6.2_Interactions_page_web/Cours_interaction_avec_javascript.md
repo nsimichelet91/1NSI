@@ -47,7 +47,7 @@ Comme indiqué précédemment, le JavaScript est un langage essentiellement util
 ```  
 
 Pour voir et exécuter le code sur CodePen : 
-[](https://codepen.io/gbecker/pen/jOJPgWe){: target = "_blank"}
+[exemple_1](https://codepen.io/gbecker/pen/jOJPgWe){: target = "_blank"}
 
 !!! note
 	Cette façon de faire est obsolète, mais encore présente dans beaucoup de pages Web anciennes. On peut s'autoriser à l'utiliser pour des petits essais dans un soucis de simplifications mais c'est à
@@ -83,7 +83,7 @@ alert("Hello World!");
 Dans le HTML, on donne à la balise `<script>` un attribut `src` (pour source) dont la valeur est le chemin vers le fichier JS à exécuter. Vous remarquerez que la ligne a été écrite juste avant la fermeture du `<body>` et après le contenu HTML du corps de la page.
 
 Pour voir et exécuter le code sur CodePen : 
-[](https://codepen.io/gbecker/pen/mdoJNVw){: target = "_blank"}
+[exemple_2](https://codepen.io/gbecker/pen/mdoJNVw){: target = "_blank"}
 
 !!! note
 	Même si cela impose d'utiliser deux fichiers distincts, cette pratique est recommandée notamment car le code est plus facilement maintenable car cela a l'avantage de bien séparer les choses : le JS reste dans un fichier js et le fichier .html ne contient que du HTML.
@@ -102,10 +102,14 @@ Dans cette activité vous allez apprendre à utiliser JavaScript pour créer des
 ## Modifier les styles d'une balise
 Commencer par regarder cette vidéo :
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8m6dRXQHOr4?si=gll_dFr_nAL9Qwfy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="800" src="https://www.youtube-nocookie.com/embed/8m6dRXQHOr4?si=gll_dFr_nAL9Qwfy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Faites les défis JS accessibles en cliquant sur ce lien: [](https://codepen.io/gbecker/pen/mdoJNVw){: target = "_blank"}
+!!! A faire
+	Créez une page avec 3 boutons qui permettent de choisir la couleur de fond de la page parmi 3 couleurs.
 
+	Vous ferez ce défi sur Capytale avec ce lien
+	
+	
 La suite de ce cours constitue un résumé de ce qui est abordé dans les défis et leurs vidéos associées. Il est donc important de le lire et l'apprendre une fois les défis terminés.
 
 2 Dans ce qui suit, comme dans les vidéos, on s'attache à écrire un code JavaScript simple et qui fonctionne dans la majorité des cas afin de ne pas entrer dans des considérations trop techniques du langage.
