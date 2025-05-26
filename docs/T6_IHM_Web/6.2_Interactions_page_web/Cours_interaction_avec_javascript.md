@@ -102,12 +102,31 @@ Dans cette activité vous allez apprendre à utiliser JavaScript pour créer des
 ## Modifier les styles d'une balise
 Commencer par regarder cette vidéo :
 
-<iframe width="800" src="https://www.youtube-nocookie.com/embed/8m6dRXQHOr4?si=gll_dFr_nAL9Qwfy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/8m6dRXQHOr4?si=gll_dFr_nAL9Qwfy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 !!! A faire
 	Créez une page avec 3 boutons qui permettent de choisir la couleur de fond de la page parmi 3 couleurs.
 
-	Vous ferez ce défi sur Capytale avec ce lien
+	Vous ferez ce défi sur Capytale avec ce [lien](https://capytale2.ac-paris.fr/web/c/70c3-6666609){: target = "_blank"}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 La suite de ce cours constitue un résumé de ce qui est abordé dans les défis et leurs vidéos associées. Il est donc important de le lire et l'apprendre une fois les défis terminés.
