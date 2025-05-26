@@ -113,8 +113,10 @@ Pour réaliser ce défi, regardez cette vidéo :
 
 <iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/8m6dRXQHOr4?si=_glJlVFAcgE98_gU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
-
+!!! Corrigé
+	Essayez vous même avant de regarder le corrigé.
+	[Corrigé] https://capytale2.ac-paris.fr/web/c/70c3-6666609
+	
 ## Changer le texte d'une balise
 Commencer par regarder cette vidéo :
 
