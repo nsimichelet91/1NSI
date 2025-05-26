@@ -93,11 +93,18 @@ Dans les deux cas, l'instruction `alert("Hello World!")` est exécutée. Comme l
 
 ![Hello World Popup](data/alert_popup.png)
 
-## - Interaction avec l'utilisateur dans une page Web
+## Interaction avec l'utilisateur dans une page Web
 
 ## A faire
 
-Faites les défis JS accessibles en cliquant sur ce lien.
+Dans cette activité vous allez apprendre à utiliser JavaScript pour créer des pages Web interactives. On y verra principalement comment gérer certains événements lors de clics sur des boutons. Cette activité est divisée en 4 parties. Dans chacune d’elles, une vidéo est à visionner puis plusieurs défis sont proposés. Votre objectif est de trouver une solution à ces défis !
+
+## Modifier les styles d'une balise
+Commencer par regarder cette vidéo :
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8m6dRXQHOr4?si=gll_dFr_nAL9Qwfy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Faites les défis JS accessibles en cliquant sur ce lien: [](https://codepen.io/gbecker/pen/mdoJNVw){: target = "_blank"}
 
 La suite de ce cours constitue un résumé de ce qui est abordé dans les défis et leurs vidéos associées. Il est donc important de le lire et l'apprendre une fois les défis terminés.
 
