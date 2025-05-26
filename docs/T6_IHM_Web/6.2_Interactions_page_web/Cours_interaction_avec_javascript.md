@@ -107,7 +107,7 @@ Commencer par regarder cette vidéo :
 !!! Défi_1
 	Créez une page avec 3 boutons qui permettent de choisir la couleur de fond de la page parmi 3 couleurs.
 
-	Vous ferez ce défi sur Capytale avec ce [lien](https://capytale2.ac-paris.fr/web/c/70c3-6666609){: target = "_blank"}
+	Vous ferez ce défi sur Capytale avec ce [lien](https://codepen.io/jcdelage/pen/raVaxeV){: target = "_blank"}
 
 ## Changer le texte d'une balise
 Commencer par regarder cette vidéo :
