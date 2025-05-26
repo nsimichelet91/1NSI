@@ -108,16 +108,61 @@ Commencer par regarder cette vidéo :
 	Créez une page avec 3 boutons qui permettent de choisir la couleur de fond de la page parmi 3 couleurs.
 
 	Vous ferez ce défi sur Capytale avec ce [lien](https://capytale2.ac-paris.fr/web/c/70c3-6666609){: target = "_blank"}
+
+## Changer le texte d'une balise
+Commencer par regarder cette vidéo :
+
+<iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/6WUJdEfftK8?si=rRydrp9yRbp8JqOR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+!!! Défi_2
+	Créez une page avec 2 boutons qui permettent d’afficher deux textes différents dans un paragraphe (le 1er bouton affiche un texte et le 2ème bouton en affiche un autre).
+
+	Vous ferez ce défi sur Capytale avec ce [lien](https://capytale2.ac-paris.fr/web/c/70c3-6666609){: target = "_blank"}
+
+## Utiliser des variable simples
+Commencer par regarder cette vidéo :
+
+<iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/VgEgzbM4Oho?si=LXBmGFP-eDDqdBbX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+!!! Défi_3
+	Créez un "Compteur de clic", c'est à dire une page avec 1 bouton et une zone d'affichage dont la valeur initiale est 0 et qui augmente de 1 à chaque clic. (Bonus : ajoutez un deuxième bouton de remise à zéro)
+
+	Vous ferez ce défi sur Capytale avec ce [lien](https://capytale2.ac-paris.fr/web/c/70c3-6666609){: target = "_blank"}	
+## Utiliser les données d'un champ de saisie
+Commencer par regarder cette vidéo :
+
+<iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/LE4SHWN2FWk?si=Dj4GPRW9mWoAMttQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+!!! Défi_4
+	Créez une page contenant un champ de saisie et un bouton. L’utilisateur entre son année de naissance et le bouton permet d’afficher son âge dans une zone d’affichage (un paragraphe par exemple).
+	
+	Vous ferez ce défi sur Capytale avec ce [lien](https://capytale2.ac-paris.fr/web/c/70c3-6666609){: target = "_blank"}
+	
+## Défis supplémentaires
+	
+!!! Défi_5
+	Créez une page avec un paragraphe dont la couleur du texte est modifiée à son survol.
+	Bonus : le paragraphe doit revenir à son état initial à la fin du survol.
+	En lien avec la vidéo "Modifier les styles d'une balise".
+	
+!!! Défi_6
+	Créez une page avec un bouton permettant d’échanger le contenu de deux paragraphes.
+	En lien avec la vidéo "Changer le texte d’une balise".
+	
+!!! Défi_7
+	Créez une page avec un bouton et deux champs de saisie. Au clic sur le bouton, la somme des deux entiers entrés par l’utilisateur doit s’afficher dans une zone d’affichage (un paragraphe par exemple).
+	En lien avec la vidéo "Utiliser les données d'un champ de saisie".
+	
+!!! Défi_8
+	Créez une page avec un bouton et trois champs de saisie. Au clic sur le bouton, la couleur de fond de la page doit prendre la couleur RVB dont les composantes R, V et B ont été entrées par l’utilisateur. Exemple : si l’utilisateur entre 5, 121 et 143 dans les 3 zones de saisie, alors le fond de la page doit prendre la couleur `rgb(5,121,143)`.
+	En lien avec la vidéo "Utiliser les données d'un champ de saisie".
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
+Voici un lien vers les corrections des défis 7 et 8 :
+
+- Défi 7 : https://replit.com/@beckerg/Defi7#index.html
+- Défi 8 : https://replit.com/@beckerg/Defi8#index.html
+
 	
 	
 	
