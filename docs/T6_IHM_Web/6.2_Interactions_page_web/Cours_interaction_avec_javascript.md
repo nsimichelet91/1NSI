@@ -104,7 +104,7 @@ Commencer par regarder cette vidéo :
 
 <iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/8m6dRXQHOr4?si=gll_dFr_nAL9Qwfy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-!!! A faire
+!!! Défi_1
 	Créez une page avec 3 boutons qui permettent de choisir la couleur de fond de la page parmi 3 couleurs.
 
 	Vous ferez ce défi sur Capytale avec ce [lien](https://capytale2.ac-paris.fr/web/c/70c3-6666609){: target = "_blank"}
