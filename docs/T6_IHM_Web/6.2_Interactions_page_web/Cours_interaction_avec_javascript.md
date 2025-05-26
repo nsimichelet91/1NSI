@@ -49,10 +49,10 @@ Comme indiqué précédemment, le JavaScript est un langage essentiellement util
 Pour voir et exécuter le code sur CodePen : 
 [](https://codepen.io/gbecker/pen/jOJPgWe){: target = "_blank"}
 
+!!! note
+	Cette façon de faire est obsolète, mais encore présente dans beaucoup de pages Web anciennes. On peut s'autoriser à l'utiliser pour des petits essais dans un soucis de simplifications mais c'est à
 
-1. Cette façon de faire est obsolète, mais encore présente dans beaucoup de pages Web anciennes. On peut s'autoriser à l'utiliser pour des petits essais dans un soucis de simplifications mais c'est à
-
-- 2 soit dans un fichier séparé au format .js : on écrit le code JS dans un fichier appelé (par exemple) script.js et on indique dans le fichier HTML d'exécuter ce fichier JS:
+- 👍 soit dans un fichier séparé au format .js : on écrit le code JS dans un fichier appelé (par exemple) script.js et on indique dans le fichier HTML d'exécuter ce fichier JS:
 
 # Le code HTML:
 
@@ -80,13 +80,18 @@ Pour voir et exécuter le code sur CodePen :
 alert("Hello World!");
 ```
 
-Dans le HTML, on donne à la balise `<script>` un attribut src (pour source) dont la valeur est le chemin vers le fichier JS à exécuter. Vous remarquerez que la ligne a été écrite juste avant la fermeture du <body> et après le contenu HTML du corps de la page.
-(1) Même si cela impose d'utiliser deux fichiers distincts, cette pratique est recommandée notamment car le code est plus facilement maintenable car cela a l'avantage de bien séparer les choses : le JS reste dans un fichier js et le fichier .html ne contient que du HTML.
-Par ailleurs, un fichier .js peut dans ce cas être appliqué à plusieurs documents HTML.
+Dans le HTML, on donne à la balise `<script>` un attribut `src` (pour source) dont la valeur est le chemin vers le fichier JS à exécuter. Vous remarquerez que la ligne a été écrite juste avant la fermeture du `<body>` et après le contenu HTML du corps de la page.
 
-Dans les deux cas, l'instruction alert("Hello World!") est exécutée. Comme la fonction alert permet d'afficher un message à l'écran dans une fenêtre popup, on obtient dans les deux situations l'écran suivant lorsque l'on ouvre la page HTML dans le navigateur :
+Pour voir et exécuter le code sur CodePen : 
+[](https://codepen.io/gbecker/pen/mdoJNVw){: target = "_blank"}
 
-![Hello World Popup](image_url)
+!!! note
+	Même si cela impose d'utiliser deux fichiers distincts, cette pratique est recommandée notamment car le code est plus facilement maintenable car cela a l'avantage de bien séparer les choses : le JS reste dans un fichier js et le fichier .html ne contient que du HTML.
+	Par ailleurs, un fichier .js peut dans ce cas être appliqué à plusieurs documents HTML.
+
+Dans les deux cas, l'instruction `alert("Hello World!")` est exécutée. Comme la fonction `alert` permet d'afficher un message à l'écran dans une fenêtre popup, on obtient dans les deux situations l'écran suivant lorsque l'on ouvre la page HTML dans le navigateur :
+
+![Hello World Popup](data/alert_popup.png)
 
 ## - Interaction avec l'utilisateur dans une page Web
 
