@@ -4,9 +4,13 @@
 
 ## Qu'est-ce que JavaScript?
 
-JavaScript a été créé en 1995 par Brendan Eich. C'est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs avec l'utilisation (par exemple) de Node.js.
+![image](data/js.png){: .center}
 
-On abrège souvent JavaScript par JS, ce qui sera parfois fait par la suite.
+
+JavaScript a été créé en 1995 par Brendan Eich. C'est un langage de programmation de scripts principalement employé dans les pages web interactives mais aussi pour les serveurs avec l'utilisation (par exemple) de Node.js.  
+
+!!! note
+	On abrège souvent JavaScript par JS, ce qui sera parfois fait par la suite.
 
 Avec les technologies HTML et CSS, JavaScript est parfois considéré comme l'une des technologies cœur du World Wide Web. Le langage JavaScript permet des pages web interactives, et à ce titre est une partie essentielle des applications web. Une grande majorité des sites web l'utilisent, et la majorité des navigateurs web disposent d'un moteur JavaScript dédié pour l'interpréter (indépendamment des considérations de sécurité qui peuvent se poser le cas échéant).
 
@@ -24,7 +28,7 @@ JavaScript peut également être utilisé comme langage de programmation sur un 
 
 Comme indiqué précédemment, le JavaScript est un langage essentiellement utilisé avec le HTML, vous allez donc apprendre dans ce chapitre comment intégrer ce langage à vos pages Web pour les rendre dynamiques. Il y a deux façons d'écrire le code JS d'une page Web :
 
-- soit directement dans le HTML en utilisant la balise `<script>` dans laquelle on écrit en langage JavaScript :
+- 👎 soit directement dans le HTML en utilisant la balise `<script>` dans laquelle on écrit en langage JavaScript :
 
 ```html
 <!DOCTYPE html>
@@ -40,7 +44,11 @@ Comme indiqué précédemment, le JavaScript est un langage essentiellement util
         </script>
     </body>
 </html>
-```
+```  
+
+Pour voir et exécuter le code sur CodePen : 
+[](https://codepen.io/gbecker/pen/jOJPgWe){: target = "_blank"}
+
 
 1. Cette façon de faire est obsolète, mais encore présente dans beaucoup de pages Web anciennes. On peut s'autoriser à l'utiliser pour des petits essais dans un soucis de simplifications mais c'est à
 
