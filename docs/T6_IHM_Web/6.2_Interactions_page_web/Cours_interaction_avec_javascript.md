@@ -191,7 +191,9 @@ Pour réaliser ce défi, regarder cette vidéo :
 	
 !!! Corrigé
 	Essayez vous même avant de regarder le corrigé.
-	[Corrigé défis 5-6-7-8](https://capytale2.ac-paris.fr/web/c/cd2d-6782799){: target = "_blank"}
+	[Corrigé défis 5-6-7-8](https://capytale2.ac-paris.fr/web/c/cd2d-6782799){: target = "_blank"}  
+
+
 
 # Retour sur le cours
 La suite de ce cours constitue un résumé de ce qui est abordé dans les défis et leurs vidéos associées. Il est donc important de le lire et l'apprendre une fois les défis terminés.
