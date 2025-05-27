@@ -109,7 +109,7 @@ Dans cette activité vous allez apprendre à utiliser JavaScript pour créer des
 Pour réaliser ce défi, regardez cette vidéo (Vous pouvez avancer à 3'15''):
 
 !!! note
-	1. L'instruction `console.log` ne fonction pas sur Capytale, vous pouvez remplacer `console.log(...)` par `alerte(...)`.  
+	1. L'instruction `console.log` ne fonction pas sur Capytale, vous pouvez remplacer `console.log(...)` par `alert(...)`.  
 	2. Dans Capytale l'instruction `<script src="script.js"></script>` doit être placé en fin de `body` et non pas dans `head`.
 
 <iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/8m6dRXQHOr4?si=bclKUVz78zprIawh&amp;start=195" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -144,7 +144,7 @@ Pour réaliser ce défi, regarder cette vidéo :
 Pour réaliser ce défi, regarder cette vidéo :  
 
 !!! note
-	Vous pouvez remplacer `console.log(...)` par `alerte(...)`.
+	Vous pouvez remplacer `console.log(...)` par `alert(...)`.
 	
 <iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/VgEgzbM4Oho?si=LXBmGFP-eDDqdBbX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -165,7 +165,7 @@ Pour réaliser ce défi, regarder cette vidéo :
 
 !!! Corrigé
 	Essayez vous même avant de regarder le corrigé.
-	[Corrigé](){: target = "_blank"}	
+	[Corrigé](https://capytale2.ac-paris.fr/web/c/fed9-6781457){: target = "_blank"}	
 	
 ## Défis supplémentaires
 	
