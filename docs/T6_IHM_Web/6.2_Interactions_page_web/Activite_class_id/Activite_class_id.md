@@ -68,7 +68,8 @@ Pour cela, on commence par définir une classe pour ces deux premiers paragraphe
 <p class="para-bleu">Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
 ```  
 
-On peut alors appliquer un style CSS à cette classe. Il faut faire précéder le nom de la classe par un `.` en CSS :
+On peut alors appliquer un style CSS à cette classe. Il faut faire précéder le nom de la classe par un `.` en CSS :  
+
 **CSS :**
 
 ```css
@@ -86,7 +87,8 @@ On obtient alors la page suivante :
 	
 **Exemple** :On veut centrer uniquement le **premier titre de niveau h1**.
 
-Pour cela, on commence par définir un attribuer un identifiant à ce titre :
+Pour cela, on commence par définir un attribuer un identifiant à ce titre :  
+
 **HTML :**
 
 ```html
