@@ -3866,9 +3866,13 @@ En lien avec la vidéo "Utiliser les données d'un champ de saisie".</p>
 <p>Essayez vous même avant de regarder le corrigé.
 <a href="https://capytale2.ac-paris.fr/web/c/cd2d-6782799" target="target">Corrigé défis 5-6-7-8</a></p>
 </div>
+<h1 id="retour-sur-le-cours">Retour sur le cours<a class="headerlink" href="#retour-sur-le-cours" title="Permanent link">⚓︎</a></h1>
 <p>La suite de ce cours constitue un résumé de ce qui est abordé dans les défis et leurs vidéos associées. Il est donc important de le lire et l'apprendre une fois les défis terminés.</p>
-<p>2 Dans ce qui suit, comme dans les vidéos, on s'attache à écrire un code JavaScript simple et qui fonctionne dans la majorité des cas afin de ne pas entrer dans des considérations trop techniques du langage.</p>
-<p>En particulier, on utilise var pour déclarer toutes les variables, quelles que soient leur nature ; on utilise querySelector pour sélectionner un élément HTML, quel qu'il soit, etc.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Dans ce qui suit, comme dans les vidéos, on s'attache à écrire un code JavaScript simple et qui fonctionne dans la majorité des cas afin de ne pas entrer dans des considérations trop techniques du langage.
+En particulier, on utilise <code>var</code> pour déclarer toutes les variables, quelles que soient leur nature ; on utilise <code>querySelector</code> pour sélectionner un élément HTML, quel qu'il soit, etc.</p>
+</div>
 <h1 id="les-evenements">Les événements<a class="headerlink" href="#les-evenements" title="Permanent link">⚓︎</a></h1>
 <p>En JavaScript, un événement est une action qui se produit et qui possède deux caractéristiques essentielles:</p>
 <ul>
@@ -3885,31 +3889,31 @@ En lien avec la vidéo "Utiliser les données d'un champ de saisie".</p>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">click</td>
+<td style="text-align: left;"><code>click</code></td>
 <td style="text-align: left;">Cliquer sur l'élément</td>
 </tr>
 <tr>
-<td style="text-align: left;">dbiclick</td>
+<td style="text-align: left;"><code>dbiclick</code></td>
 <td style="text-align: left;">Double-cliquer sur l'élément</td>
 </tr>
 <tr>
-<td style="text-align: left;">mouseover</td>
+<td style="text-align: left;"><code>mouseover</code></td>
 <td style="text-align: left;">Faire entrer le curseur sur l'élément</td>
 </tr>
 <tr>
-<td style="text-align: left;">mouseout</td>
+<td style="text-align: left;"><code>mouseout</code></td>
 <td style="text-align: left;">Faire sortir le curseur de l'élément</td>
 </tr>
 <tr>
-<td style="text-align: left;">keydown</td>
+<td style="text-align: left;"><code>keydown</code></td>
 <td style="text-align: left;">Appuyer (sans relâcher) sur une touche de clavier sur l'élément</td>
 </tr>
 <tr>
-<td style="text-align: left;">keyup</td>
+<td style="text-align: left;"><code>keyup</code></td>
 <td style="text-align: left;">Relâcher une touche du clavier</td>
 </tr>
 <tr>
-<td style="text-align: left;">change</td>
+<td style="text-align: left;"><code>hange</code></td>
 <td style="text-align: left;">Changer la valeur d'un champ de formulaire</td>
 </tr>
 </tbody>
@@ -3918,48 +3922,47 @@ En lien avec la vidéo "Utiliser les données d'un champ de saisie".</p>
 <p>Pour écouter et répondre à un événement, on définit ce qu'on appelle des gestionnaires d'événements chargés à la fois d'écouter le déclenchement d'un événement et d'exécuter le code associé dès que l'événement se produit.</p>
 <p>Aujourd'hui, en JavaScript, il existe trois grandes façons de définir un gestionnaire d'événements:</p>
 <ul>
-<li>On peut utiliser des attributs HTML de type événement (obsolète donc à ne plus utiliser) ;</li>
+<li>On peut utiliser des attributs HTML de type événement (<strong>obsolète</strong> donc à ne plus utiliser) ;</li>
 <li>On peut utiliser des propriétés JavaScript liées aux événements;</li>
-<li>
-<p>On peut utiliser la méthode addEventListener() (recommandé : c'est celle présentée dans les vidéos).</p>
-</li>
-<li>
-<p>Commes les deux premières méthodes sont encore largement répandues (y compris dans des exercices de BAC récents...), on les présente également ci-après. C'est pour que vous ne soyez pas perturbés si vous rencontrez ces pratiques un jour dans votre vie (ne sait-on jamais :).</p>
-</li>
+<li>On peut utiliser la méthode <code>addEventListener()</code> (<strong>recommandé</strong> : c'est celle présentée dans les vidéos).</li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Commes les deux premières méthodes sont encore largement répandues (y compris dans des exercices de BAC récents...), on les présente également ci-après. C'est pour que vous ne soyez pas perturbés si vous rencontrez ces pratiques un jour dans votre vie (ne sait-on jamais :).</p>
+</div>
 <p>Voici les trois méthodes présentées sur un exemple où un clic sur un bouton d'une page Web déclenche l'ouverture d'une fenêtre popup.</p>
-<h2 id="methode-1-utiliser-un-attribut-html-du-gestionnaire-evenement">Méthode 1 : Utiliser un attribut HTML du gestionnaire événement<a class="headerlink" href="#methode-1-utiliser-un-attribut-html-du-gestionnaire-evenement" title="Permanent link">⚓︎</a></h2>
+<h2 id="methode-1-utiliser-un-attribut-html-du-gestionnaire-evenement">Méthode 1 👎 : Utiliser un attribut HTML du gestionnaire événement<a class="headerlink" href="#methode-1-utiliser-un-attribut-html-du-gestionnaire-evenement" title="Permanent link">⚓︎</a></h2>
 <h2 id="le-code-html-extrait">Le code HTML (extrait) :<a class="headerlink" href="#le-code-html-extrait" title="Permanent link">⚓︎</a></h2>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;afficheMsg()&quot;</span><span class="p">&gt;</span>Clic<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;script.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 </code></pre></div>
-<p>Le code JS dans script.js:</p>
+<p>Le code JS dans <code>script.js</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">afficheMsg</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Hello World !&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Un attribut onclick est ajouté au bouton et sa valeur est la fonction JavaScript contenant le code à exécuter dès que l'événement survient. Souvent, les attributs possèdent le nom de l'événement qu'ils doivent écouter et gérer précédé par « on » (par exemple : onclick, onmouseover, onmouseout, etc.).</p>
+<p>Un attribut <code>onclick</code> est ajouté au bouton et sa valeur est la fonction JavaScript contenant le code à exécuter dès que l'événement survient. Souvent, les attributs possèdent le nom de l'événement qu'ils doivent écouter et gérer précédé par « on » (par exemple : <code>onclick</code>, <code>onmouseover</code>, <code>onmouseout</code>, etc.).</p>
 <p>Comme dit précédemment, il n'est plus recommandé de procéder ainsi car cela revient à mélanger du code JS au code HTML : on conseille de garder tout le JS (donc la logique de programmation) dans un unique fichier.</p>
-<h2 id="methode-2-utiliser-les-proprietes-js-liees-aux-evenements">Méthode 2 : Utiliser les propriétés JS liées aux événements<a class="headerlink" href="#methode-2-utiliser-les-proprietes-js-liees-aux-evenements" title="Permanent link">⚓︎</a></h2>
+<h2 id="methode-2-utiliser-les-proprietes-js-liees-aux-evenements">Méthode 2 👍 : Utiliser les propriétés JS liées aux événements<a class="headerlink" href="#methode-2-utiliser-les-proprietes-js-liees-aux-evenements" title="Permanent link">⚓︎</a></h2>
 <h1 id="le-code-html-extrait_1">Le code HTML (extrait)<a class="headerlink" href="#le-code-html-extrait_1" title="Permanent link">⚓︎</a></h1>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;btn&quot;</span><span class="p">&gt;</span>Clic<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;script.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 </code></pre></div>
-<h2 id="le-code-js-dans-scriptjs">Le code JS dans script.js:<a class="headerlink" href="#le-code-js-dans-scriptjs" title="Permanent link">⚓︎</a></h2>
+<h2 id="le-code-js-dans-scriptjs">Le code JS dans <code>script.js</code>:<a class="headerlink" href="#le-code-js-dans-scriptjs" title="Permanent link">⚓︎</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">bouton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#btn&#39;</span><span class="p">);</span>
 <span class="kd">function</span><span class="w"> </span><span class="nx">afficheMsg</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Hello World !&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="nx">bouton</span><span class="p">.</span><span class="nx">onclick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">afficheMsg</span><span class="p">;</span>
 </code></pre></div>
-<p>Dans le JS, la première ligne permet de sélectionner le bouton (via son id), on définit ensuite la fonction qui sera appelée, et enfin, la dernière ligne permet d'indiquer que lors du clic sur le bouton, c'est la fonction afficheMsg qui doit être appelée.</p>
-<h2 id="methode-3-a-utiliser-la-methode-addeventlistener">Méthode 3 A : Utiliser la méthode addEventListener()<a class="headerlink" href="#methode-3-a-utiliser-la-methode-addeventlistener" title="Permanent link">⚓︎</a></h2>
-<p>C'est le mécanisme d'événement le plus récent, le plus flexible et le plus performant (on ne rentrera pas dans les détails ici, mais si vous souhaitez en savoir plus, lisez cet excellent article de la MDN : Introduction aux événements).</p>
-<p>C'est celui qui a été présenté dans les vidéos de l'activité et celui à privilégier aujourd'hui. Il fournit aux navigateurs une nouvelle fonction appelée addEventListener( <span class="arithmatex">\()\)</span> qui fonctionne de la même manière que les propriétés du gestionnaire d'événements, mais la syntaxe est légèrement différente.</p>
+<p>Dans le JS, la première ligne permet de sélectionner le bouton (via son <code>id</code>), on définit ensuite la fonction qui sera appelée, et enfin, la dernière ligne permet d'indiquer que lors du clic sur le bouton, c'est la fonction <code>afficheMsg</code> qui doit être appelée.</p>
+<h2 id="methode-3-utiliser-la-methode-addeventlistener">Méthode 3 👍 : Utiliser la méthode addEventListener()<a class="headerlink" href="#methode-3-utiliser-la-methode-addeventlistener" title="Permanent link">⚓︎</a></h2>
+<p>C'est le mécanisme d'événement le plus récent, le plus flexible et le plus performant (on ne rentrera pas dans les détails ici, mais si vous souhaitez en savoir plus, lisez cet excellent article de la MDN : <a href="https://developer.mozilla.org/fr/docs/Learn/JavaScript/Building_blocks/Events" target="target">Introduction aux événements</a>.</p>
+<p>C'est celui qui a été présenté dans les vidéos de l'activité et celui à privilégier aujourd'hui. Il fournit aux navigateurs une nouvelle fonction appelée <code>addEventListener()</code> qui fonctionne de la même manière que les propriétés du gestionnaire d'événements, mais la syntaxe est légèrement différente.</p>
 <h2 id="le-code-html-extrait_2">Le code HTML (extrait)<a class="headerlink" href="#le-code-html-extrait_2" title="Permanent link">⚓︎</a></h2>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;btn&quot;</span><span class="p">&gt;</span>Clic<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
@@ -3973,7 +3976,20 @@ En lien avec la vidéo "Utiliser les données d'un champ de saisie".</p>
 <span class="p">}</span>
 <span class="nx">bouton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">afficheMsg</span><span class="p">);</span>
 </code></pre></div>
-<p>Dans la fonction addEventListener, il faut spécifier deux paramètres : le nom de l'événement (ici click mais on peut remplacer par mouseover ou un autre) et le nom de la fonction à exécuter en réponse à cet événement.</p>
+<p>Dans la fonction <code>addEventListener</code>, il faut spécifier deux paramètres : le nom de l'événement (ici <code>click</code> mais on peut remplacer par <code>mouseover</code> ou un autre) et le nom de la fonction à exécuter en réponse à cet événement.  </p>
+<p>Versions équivalentes :<br />
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">afficheMsg</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Hello World !&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#btn&#39;</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">afficheMsg</span><span class="p">);</span>
+</code></pre></div></p>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">bouton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#btn&#39;</span><span class="p">);</span>
+
+<span class="nx">bouton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Hello World !&quot;</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
 <h2 id="modifier-les-elements-de-la-page">Modifier les éléments de la page<a class="headerlink" href="#modifier-les-elements-de-la-page" title="Permanent link">⚓︎</a></h2>
 <p>On considérera la page HTML ci-dessous pour les exemples qui suivent.</p>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
@@ -3983,10 +3999,8 @@ En lien avec la vidéo "Utiliser les données d'un champ de saisie".</p>
     <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;script.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 </code></pre></div>
-<h2 id="generalites-sur-js">Généralités sur JS<a class="headerlink" href="#generalites-sur-js" title="Permanent link">⚓︎</a></h2>
-<p>Voici une page Web interactive grâce à JavaScript.
-Cliquez ici</p>
-<p>Fig. 1 - Rendu de la page dans le navigateur.</p>
+<p><img alt="image" class="center" src="../data/exemple_interaction_js.png" />
+Fig. 1 - Rendu de la page dans le navigateur.</p>
 <p>Voici quelques exemples de fonctions permettant de modifier les propriétés des éléments de la page Web. On suppose que ces fonctions sont appelées lors du clic sur le bouton de la page comme on l'a vu dans le paragraphe précédent.</p>
 <h1 id="modifier-le-style-dun-element">Modifier le style d'un élément<a class="headerlink" href="#modifier-le-style-dun-element" title="Permanent link">⚓︎</a></h1>
 <p>On peut modifier le style d'un élément HTML en utilisant la propriété style de cet élément. Par exemple, cette fonction Javascript</p>
@@ -3999,31 +4013,28 @@ Cliquez ici</p>
 <span class="p">}</span>
 </code></pre></div>
 <p>permet de modifier le style du paragraphe : le texte passe en rouge et en gras ; le style du corps de la page : la couleur de fond passe en jaune.</p>
-<h2 id="generalites-sur-js_1">Généralités sur JS<a class="headerlink" href="#generalites-sur-js_1" title="Permanent link">⚓︎</a></h2>
-<p>Voici une page Web interactive grâce à JavaScript.</p>
-<h2 id="changer-le">Changer le<a class="headerlink" href="#changer-le" title="Permanent link">⚓︎</a></h2>
-<p>Fig. 2 - Modification du style après le clic sur le bouton.</p>
-<p>Pour voir et exécuter le code sur CodePen : https://codepen.io/jpbecker/pen/ExCxERm.</p>
-<h2 id="cdepen">C@DEPEN<a class="headerlink" href="#cdepen" title="Permanent link">⚓︎</a></h2>
-<h2 id="changer-le-texte-dune-balise-la-propriete-innerhtml">Changer le texte d'une balise : la propriété innerHTML<a class="headerlink" href="#changer-le-texte-dune-balise-la-propriete-innerhtml" title="Permanent link">⚓︎</a></h2>
-<p>On peut changer le texte d'un élément HTML en utilisant la propriété innerHTML de cet élément. Par exemple, cette fonction Javascript</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">changeTexte</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<p><img alt="image" class="center" src="../data/modifier_style.png" />
+Fig. 2 - Modification du style après le clic sur le bouton.</p>
+<p>Pour voir et exécuter le code sur CodePen :
+<a href="https://codepen.io/jpbecker/pen/ExCxERm" target="target">code</a></p>
+<h2 id="changer-le-texte-dune-balise-la-propriete-innerhtml">Changer le texte d'une balise : la propriété <code>innerHTML</code><a class="headerlink" href="#changer-le-texte-dune-balise-la-propriete-innerhtml" title="Permanent link">⚓︎</a></h2>
+<p>On peut changer le texte d'un élément HTML en utilisant la propriété <code>innerHTML</code> de cet élément. Par exemple, cette fonction Javascript</p>
+<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">changeTexte</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">para</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#monPara&quot;</span><span class="p">);</span>
 <span class="w">    </span><span class="nx">para</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Bonjour tout le monde !&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>permet de modifier le texte du paragraphe.</p>
-<h2 id="generalites-sur-js_2">Généralités sur JS<a class="headerlink" href="#generalites-sur-js_2" title="Permanent link">⚓︎</a></h2>
-<p>Bonjour tout le monde!
-Changer le!</p>
-<p>Fig. 3 - Modification du texte après le clic sur le bouton.</p>
-<p>Pour voir et exécuter le code sur CodePen : https://codepen.io/jpbecker/pen/HoNrZj.</p>
-<h2 id="cdepen_1">C@DEPEN<a class="headerlink" href="#cdepen_1" title="Permanent link">⚓︎</a></h2>
-<h2 id="utiliser-des-champs-de-saisie-la-propriete-value">Utiliser des champs de saisie : la propriété value<a class="headerlink" href="#utiliser-des-champs-de-saisie-la-propriete-value" title="Permanent link">⚓︎</a></h2>
+permet de modifier le texte du paragraphe.</p>
+<p><img alt="image" class="center" src="../data/changer_texte.png" />
+Fig. 3 - Modification du texte après le clic sur le bouton.</p>
+<p>Pour voir et exécuter le code sur CodePen :
+<a href="https://codepen.io/jpbecker/pen/HoNrZj" target="target">code</a></p>
+<h2 id="utiliser-des-champs-de-saisie-la-propriete-value">Utiliser des champs de saisie : la propriété <code>value</code><a class="headerlink" href="#utiliser-des-champs-de-saisie-la-propriete-value" title="Permanent link">⚓︎</a></h2>
 <p>On ajoute dans le code HTML un élément <code>&lt;input&gt;</code> (= champ de saisie), avant le bouton, avec la ligne
-<code>&lt;input type="text" id="zoneDeSaisie"/&gt;</code>
+<div class="highlight"><pre><span></span><code><span class="sb">`&lt;input type=&quot;text&quot; id=&quot;zoneDeSaisie&quot;/&gt;`</span>
+</code></pre></div>
 dans lequel on demande à l'utilisateur d'écrire son prénom.</p>
-<p>Il est alors possible de récupérer le prénom saisi en utilisant la propriété value de cet élément. Par exemple, si l'utilisateur a saisi le prénom «Brendan » alors cette fonction Javascript</p>
+<p>Il est alors possible de récupérer le prénom saisi en utilisant la propriété <code>value</code> de cet élément. Par exemple, si l'utilisateur a saisi le prénom «Brendan» alors cette fonction Javascript</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">disBonjour</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">saisie</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#zoneDeSaisie&quot;</span><span class="p">);</span>
 <span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">para</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#monPara&quot;</span><span class="p">);</span>
@@ -4032,22 +4043,19 @@ dans lequel on demande à l'utilisateur d'écrire son prénom.</p>
 <span class="w">    </span><span class="nx">para</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">texte</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>permet de récupérer le texte saisi grâce à la propriété value de l'élément (input) puis de construire la chaîne de caractères «Bonjour Brendan » et de l'écrire dans la paragraphe.</p>
-<h1 id="generalites-sur-js_3">Généralités sur JS<a class="headerlink" href="#generalites-sur-js_3" title="Permanent link">⚓︎</a></h1>
-<p>Bonjour Brendan</p>
-<p>Brendan
-Cliquez ici</p>
-<p>Fig. 4 - Récupération d'une valeur saisie par l'utilisateur.</p>
-<p>Pour voir et exécuter le code sur CodePen : https://codepen.io/#pecker/pen/vLCLuZ/.</p>
-<h2 id="c-oplus-depen">C <span class="arithmatex">\(\oplus\)</span> DEPEN<a class="headerlink" href="#c-oplus-depen" title="Permanent link">⚓︎</a></h2>
+<p>permet de récupérer le texte saisi grâce à la propriété <code>value</code> de l'élément <code>&lt;input&gt;</code> puis de construire la chaîne de caractères «Bonjour Brendan » et de l'écrire dans la paragraphe.</p>
+<p><img alt="image" class="center" src="../data/recuperer_input.png" />
+Fig. 4 - Récupération d'une valeur saisie par l'utilisateur.</p>
+<p>Pour voir et exécuter le code sur CodePen :
+<a href="https://codepen.io/#pecker/pen/vLCLuZ/" target="target">code</a></p>
 <h2 id="bilan">Bilan<a class="headerlink" href="#bilan" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>Lors de la navigation sur le Web, les internautes interagissent avec leur machine par le biais des pages Web.</li>
 <li>L'Interface Homme-Machine (IHM) repose sur la gestion d'événements associés à des éléments graphiques munis de méthodes algorithmiques.</li>
-<li>Un événement est une action qui se produit, comme un clic sur un bouton (click), le survol d'un élément avec la souris (mouseover). etc.</li>
+<li>Un <strong>événement</strong> est une <strong>action qui se produit</strong>, comme un clic sur un bouton (click), le survol d'un élément avec la souris (<code>mouseover</code>). etc.</li>
 <li>On peut « écouter» un événement pour détecter lorsqu'il se produit et on peut lui « répondre » en lui associant un code qui va s'exécuter dès qu'il se produit.</li>
-<li>Le langage JavaScript, associé au HTML, permet d'implémenter la gestion de ces événements en utilisant ce qu'on appelle un gestionnaire d'événement.</li>
-<li>Aujourd'hui, on recommande d'utiliser la méthode addEventListener pour gérer les événements.</li>
+<li>Le <strong>langage JavaScript</strong>, associé au HTML, permet d'implémenter la gestion de ces événements en utilisant ce qu'on appelle un gestionnaire d'événement.</li>
+<li>Aujourd'hui, on recommande d'utiliser la méthode <code>addEventListener</code> pour gérer les événements.</li>
 </ul>
 <h2 id="references">Références :<a class="headerlink" href="#references" title="Permanent link">⚓︎</a></h2>
 <ul>
