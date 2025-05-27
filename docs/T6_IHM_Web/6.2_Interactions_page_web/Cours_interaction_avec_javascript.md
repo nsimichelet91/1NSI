@@ -193,12 +193,12 @@ Pour réaliser ce défi, regarder cette vidéo :
 	Essayez vous même avant de regarder le corrigé.
 	[Corrigé défis 5-6-7-8](https://capytale2.ac-paris.fr/web/c/cd2d-6782799){: target = "_blank"}
 
-
+# Retour sur le cours
 La suite de ce cours constitue un résumé de ce qui est abordé dans les défis et leurs vidéos associées. Il est donc important de le lire et l'apprendre une fois les défis terminés.
 
-2 Dans ce qui suit, comme dans les vidéos, on s'attache à écrire un code JavaScript simple et qui fonctionne dans la majorité des cas afin de ne pas entrer dans des considérations trop techniques du langage.
-
-En particulier, on utilise var pour déclarer toutes les variables, quelles que soient leur nature ; on utilise querySelector pour sélectionner un élément HTML, quel qu'il soit, etc.
+!!! note
+	Dans ce qui suit, comme dans les vidéos, on s'attache à écrire un code JavaScript simple et qui fonctionne dans la majorité des cas afin de ne pas entrer dans des considérations trop techniques du langage.
+	En particulier, on utilise `var` pour déclarer toutes les variables, quelles que soient leur nature ; on utilise `querySelector` pour sélectionner un élément HTML, quel qu'il soit, etc.
 
 # Les événements 
 
@@ -211,13 +211,13 @@ Un événement peut être associé à n'importe quel élément HTML (un bouton `
 
 | Événement | Description |
 | :-- | :-- |
-| click | Cliquer sur l'élément |
-| dbiclick | Double-cliquer sur l'élément |
-| mouseover | Faire entrer le curseur sur l'élément |
-| mouseout | Faire sortir le curseur de l'élément |
-| keydown | Appuyer (sans relâcher) sur une touche de clavier sur l'élément |
-| keyup | Relâcher une touche du clavier |
-| change | Changer la valeur d'un champ de formulaire |
+| `click` | Cliquer sur l'élément |
+| `dbiclick` | Double-cliquer sur l'élément |
+| `mouseover` | Faire entrer le curseur sur l'élément |
+| `mouseout` | Faire sortir le curseur de l'élément |
+| `keydown` | Appuyer (sans relâcher) sur une touche de clavier sur l'élément |
+| `keyup` | Relâcher une touche du clavier |
+| `hange` | Changer la valeur d'un champ de formulaire |
 
 ## Définir des gestionnaires d'événements
 
@@ -225,15 +225,16 @@ Pour écouter et répondre à un événement, on définit ce qu'on appelle des g
 
 Aujourd'hui, en JavaScript, il existe trois grandes façons de définir un gestionnaire d'événements:
 
-- On peut utiliser des attributs HTML de type événement (obsolète donc à ne plus utiliser) ;
+- On peut utiliser des attributs HTML de type événement (**obsolète** donc à ne plus utiliser) ;
 - On peut utiliser des propriétés JavaScript liées aux événements;
-- On peut utiliser la méthode addEventListener() (recommandé : c'est celle présentée dans les vidéos).
+- On peut utiliser la méthode `addEventListener()` (**recommandé** : c'est celle présentée dans les vidéos).
 
-1. Commes les deux premières méthodes sont encore largement répandues (y compris dans des exercices de BAC récents...), on les présente également ci-après. C'est pour que vous ne soyez pas perturbés si vous rencontrez ces pratiques un jour dans votre vie (ne sait-on jamais :).
+!!! note
+	Commes les deux premières méthodes sont encore largement répandues (y compris dans des exercices de BAC récents...), on les présente également ci-après. C'est pour que vous ne soyez pas perturbés si vous rencontrez ces pratiques un jour dans votre vie (ne sait-on jamais :).
 
 Voici les trois méthodes présentées sur un exemple où un clic sur un bouton d'une page Web déclenche l'ouverture d'une fenêtre popup.
 
-## Méthode 1 : Utiliser un attribut HTML du gestionnaire événement
+## Méthode 1 👎 : Utiliser un attribut HTML du gestionnaire événement
 
 ## Le code HTML (extrait) :
 
@@ -244,7 +245,7 @@ Voici les trois méthodes présentées sur un exemple où un clic sur un bouton 
 </body>
 ```
 
-Le code JS dans script.js:
+Le code JS dans `script.js`:
 
 ```javascript
 function afficheMsg() {
@@ -252,11 +253,11 @@ function afficheMsg() {
 }
 ```
 
-Un attribut onclick est ajouté au bouton et sa valeur est la fonction JavaScript contenant le code à exécuter dès que l'événement survient. Souvent, les attributs possèdent le nom de l'événement qu'ils doivent écouter et gérer précédé par « on » (par exemple : onclick, onmouseover, onmouseout, etc.).
+Un attribut `onclick` est ajouté au bouton et sa valeur est la fonction JavaScript contenant le code à exécuter dès que l'événement survient. Souvent, les attributs possèdent le nom de l'événement qu'ils doivent écouter et gérer précédé par « on » (par exemple : `onclick`, `onmouseover`, `onmouseout`, etc.).
 
 Comme dit précédemment, il n'est plus recommandé de procéder ainsi car cela revient à mélanger du code JS au code HTML : on conseille de garder tout le JS (donc la logique de programmation) dans un unique fichier.
 
-## Méthode 2 : Utiliser les propriétés JS liées aux événements
+## Méthode 2 👍 : Utiliser les propriétés JS liées aux événements
 
 # Le code HTML (extrait) 
 
@@ -267,7 +268,7 @@ Comme dit précédemment, il n'est plus recommandé de procéder ainsi car cela 
 </body>
 ```
 
-## Le code JS dans script.js:
+## Le code JS dans `script.js`:
 
 ```javascript
 var bouton = document.querySelector('#btn');
@@ -277,13 +278,13 @@ function afficheMsg() {
 bouton.onclick = afficheMsg;
 ```
 
-Dans le JS, la première ligne permet de sélectionner le bouton (via son id), on définit ensuite la fonction qui sera appelée, et enfin, la dernière ligne permet d'indiquer que lors du clic sur le bouton, c'est la fonction afficheMsg qui doit être appelée.
+Dans le JS, la première ligne permet de sélectionner le bouton (via son `id`), on définit ensuite la fonction qui sera appelée, et enfin, la dernière ligne permet d'indiquer que lors du clic sur le bouton, c'est la fonction `afficheMsg` qui doit être appelée.
 
-## Méthode 3 A : Utiliser la méthode addEventListener()
+## Méthode 3 👍 : Utiliser la méthode addEventListener()
 
-C'est le mécanisme d'événement le plus récent, le plus flexible et le plus performant (on ne rentrera pas dans les détails ici, mais si vous souhaitez en savoir plus, lisez cet excellent article de la MDN : Introduction aux événements).
+C'est le mécanisme d'événement le plus récent, le plus flexible et le plus performant (on ne rentrera pas dans les détails ici, mais si vous souhaitez en savoir plus, lisez cet excellent article de la MDN : [Introduction aux événements](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Building_blocks/Events){: target = "_blank"}.
 
-C'est celui qui a été présenté dans les vidéos de l'activité et celui à privilégier aujourd'hui. Il fournit aux navigateurs une nouvelle fonction appelée addEventListener( $)$ qui fonctionne de la même manière que les propriétés du gestionnaire d'événements, mais la syntaxe est légèrement différente.
+C'est celui qui a été présenté dans les vidéos de l'activité et celui à privilégier aujourd'hui. Il fournit aux navigateurs une nouvelle fonction appelée `addEventListener()` qui fonctionne de la même manière que les propriétés du gestionnaire d'événements, mais la syntaxe est légèrement différente.
 
 ## Le code HTML (extrait)
 
@@ -304,7 +305,24 @@ function afficheMsg() {
 bouton.addEventListener('click', afficheMsg);
 ```
 
-Dans la fonction addEventListener, il faut spécifier deux paramètres : le nom de l'événement (ici click mais on peut remplacer par mouseover ou un autre) et le nom de la fonction à exécuter en réponse à cet événement.
+Dans la fonction `addEventListener`, il faut spécifier deux paramètres : le nom de l'événement (ici `click` mais on peut remplacer par `mouseover` ou un autre) et le nom de la fonction à exécuter en réponse à cet événement.  
+
+Versions équivalentes :  
+```javascript
+function afficheMsg() {
+  alert("Hello World !");
+}
+
+document.querySelector('#btn').addEventListener('click', afficheMsg);
+```
+
+```javascript
+var bouton = document.querySelector('#btn');
+
+bouton.addEventListener('click', function() {
+  alert("Hello World !");
+});
+```
 
 ## Modifier les éléments de la page
 
@@ -319,11 +337,7 @@ On considérera la page HTML ci-dessous pour les exemples qui suivent.
 </body>
 ```
 
-## Généralités sur JS
-
-Voici une page Web interactive grâce à JavaScript.
-Cliquez ici
-
+![image](data/exemple_interaction_js.png){: .center}
 Fig. 1 - Rendu de la page dans le navigateur.
 
 Voici quelques exemples de fonctions permettant de modifier les propriétés des éléments de la page Web. On suppose que ces fonctions sont appelées lors du clic sur le bouton de la page comme on l'a vu dans le paragraphe précédent.
@@ -344,21 +358,16 @@ function changeStyles() {
 
 permet de modifier le style du paragraphe : le texte passe en rouge et en gras ; le style du corps de la page : la couleur de fond passe en jaune.
 
-## Généralités sur JS
-
-Voici une page Web interactive grâce à JavaScript.
-
-## Changer le
-
+![image](data/modifier_style.png){: .center}
 Fig. 2 - Modification du style après le clic sur le bouton.
 
-Pour voir et exécuter le code sur CodePen : https://codepen.io/jpbecker/pen/ExCxERm.
+Pour voir et exécuter le code sur CodePen :
+[code](https://codepen.io/jpbecker/pen/ExCxERm){: target = "_blank"}
 
-## C@DEPEN
 
-## Changer le texte d'une balise : la propriété innerHTML
+## Changer le texte d'une balise : la propriété `innerHTML`
 
-On peut changer le texte d'un élément HTML en utilisant la propriété innerHTML de cet élément. Par exemple, cette fonction Javascript
+On peut changer le texte d'un élément HTML en utilisant la propriété `innerHTML` de cet élément. Par exemple, cette fonction Javascript
 
 ```javascript
 function changeTexte() {
@@ -366,27 +375,23 @@ function changeTexte() {
     para.innerHTML = "Bonjour tout le monde !";
 }
 ```
-
 permet de modifier le texte du paragraphe.
 
-## Généralités sur JS
-
-Bonjour tout le monde!
-Changer le!
-
+![image](data/changer_texte.png){: .center}
 Fig. 3 - Modification du texte après le clic sur le bouton.
 
-Pour voir et exécuter le code sur CodePen : https://codepen.io/jpbecker/pen/HoNrZj.
+Pour voir et exécuter le code sur CodePen :
+[code](https://codepen.io/jpbecker/pen/HoNrZj){: target = "_blank"}
 
-## C@DEPEN
-
-## Utiliser des champs de saisie : la propriété value
+## Utiliser des champs de saisie : la propriété `value`
 
 On ajoute dans le code HTML un élément `<input>` (= champ de saisie), avant le bouton, avec la ligne
+```javascript
 `<input type="text" id="zoneDeSaisie"/>`
+```
 dans lequel on demande à l'utilisateur d'écrire son prénom.
 
-Il est alors possible de récupérer le prénom saisi en utilisant la propriété value de cet élément. Par exemple, si l'utilisateur a saisi le prénom «Brendan » alors cette fonction Javascript
+Il est alors possible de récupérer le prénom saisi en utilisant la propriété `value` de cet élément. Par exemple, si l'utilisateur a saisi le prénom «Brendan» alors cette fonction Javascript
 
 ```javascript
 function disBonjour() {
@@ -398,29 +403,22 @@ function disBonjour() {
 }
 ```
 
-permet de récupérer le texte saisi grâce à la propriété value de l'élément (input) puis de construire la chaîne de caractères «Bonjour Brendan » et de l'écrire dans la paragraphe.
+permet de récupérer le texte saisi grâce à la propriété `value` de l'élément `<input>` puis de construire la chaîne de caractères «Bonjour Brendan » et de l'écrire dans la paragraphe.
 
-# Généralités sur JS 
-
-Bonjour Brendan
-
-Brendan
-Cliquez ici
-
+![image](data/recuperer_input.png){: .center}
 Fig. 4 - Récupération d'une valeur saisie par l'utilisateur.
 
-Pour voir et exécuter le code sur CodePen : https://codepen.io/#pecker/pen/vLCLuZ/.
-
-## C $\oplus$ DEPEN
+Pour voir et exécuter le code sur CodePen :
+[code](https://codepen.io/#pecker/pen/vLCLuZ/){: target = "_blank"}
 
 ## Bilan
 
 - Lors de la navigation sur le Web, les internautes interagissent avec leur machine par le biais des pages Web.
 - L'Interface Homme-Machine (IHM) repose sur la gestion d'événements associés à des éléments graphiques munis de méthodes algorithmiques.
-- Un événement est une action qui se produit, comme un clic sur un bouton (click), le survol d'un élément avec la souris (mouseover). etc.
+- Un **événement** est une **action qui se produit**, comme un clic sur un bouton (click), le survol d'un élément avec la souris (`mouseover`). etc.
 - On peut « écouter» un événement pour détecter lorsqu'il se produit et on peut lui « répondre » en lui associant un code qui va s'exécuter dès qu'il se produit.
-- Le langage JavaScript, associé au HTML, permet d'implémenter la gestion de ces événements en utilisant ce qu'on appelle un gestionnaire d'événement.
-- Aujourd'hui, on recommande d'utiliser la méthode addEventListener pour gérer les événements.
+- Le **langage JavaScript**, associé au HTML, permet d'implémenter la gestion de ces événements en utilisant ce qu'on appelle un gestionnaire d'événement.
+- Aujourd'hui, on recommande d'utiliser la méthode `addEventListener` pour gérer les événements.
 
 ## Références :
 
