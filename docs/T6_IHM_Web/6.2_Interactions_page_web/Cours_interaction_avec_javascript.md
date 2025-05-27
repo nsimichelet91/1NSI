@@ -106,12 +106,11 @@ Dans cette activité vous allez apprendre à utiliser JavaScript pour créer des
 
 	Vous ferez ce défi sur Capytale avec ce [lien](https://capytale2.ac-paris.fr/web/c/2d50-6771831){: target = "_blank"}
 	
-
+Pour réaliser ce défi, regardez cette vidéo (Vous pouvez avancer à 3'15''):
 
 !!! note
-	1 Pour réaliser ce défi, regardez cette vidéo (Vous pouvez avancer à 3'15''):
-	2 L'instruction `console.log` ne fonction pas sur Capytale, vous pouvez remplacer `console.log(...)` par `alerte(...)`.
-	3 Dans Capytale l'instruction `<script src="script.js"></script>` doit être placé en fin de `body` et non pas dans `head`.
+	1. L'instruction `console.log` ne fonction pas sur Capytale, vous pouvez remplacer `console.log(...)` par `alerte(...)`.  
+	2. Dans Capytale l'instruction `<script src="script.js"></script>` doit être placé en fin de `body` et non pas dans `head`.
 
 <iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/8m6dRXQHOr4?si=bclKUVz78zprIawh&amp;start=195" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -120,56 +119,54 @@ Dans cette activité vous allez apprendre à utiliser JavaScript pour créer des
 	[Corrigé](https://capytale2.ac-paris.fr/web/c/70c3-6666609){: target = "_blank"}
 	
 ## Changer le texte d'une balise
-Commencer par regarder cette vidéo :
-
-<iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/6WUJdEfftK8?si=rRydrp9yRbp8JqOR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 !!! Défi_2
 	Créez une page avec 2 boutons qui permettent d’afficher deux textes différents dans un paragraphe (le 1er bouton affiche un texte et le 2ème bouton en affiche un autre).
 
 	Vous ferez ce défi sur Capytale avec ce [lien](https://capytale2.ac-paris.fr/web/c/a963-6772614){: target = "_blank"}
 
+
+Pour réaliser ce défi, regarder cette vidéo :
+
+<iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/6WUJdEfftK8?si=rRydrp9yRbp8JqOR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 !!! Corrigé
 	Essayez vous même avant de regarder le corrigé.
 	[Corrigé](https://capytale2.ac-paris.fr/web/c/48e6-6772813){: target = "_blank"}
 	
 ## Utiliser des variable simples
-Commencer par regarder cette vidéo :
-
-<iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/VgEgzbM4Oho?si=LXBmGFP-eDDqdBbX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-!!! note
-	Vous pouvez remplacer `console.log(...)` par `alerte(...)`.
-
 
 !!! Défi_3
 	Créez un "Compteur de clic", c'est à dire une page avec 1 bouton et une zone d'affichage dont la valeur initiale est 0 et qui augmente de 1 à chaque clic. (Bonus : ajoutez un deuxième bouton de remise à zéro)
 
-	Vous ferez ce défi sur Capytale avec ce [lien](https://capytale2.ac-paris.fr/web/c/6d19-6772616){: target = "_blank"}	
+	Vous ferez ce défi sur Capytale avec ce [lien](https://capytale2.ac-paris.fr/web/c/6d19-6772616){: target = "_blank"}
+
+Pour réaliser ce défi, regarder cette vidéo :  
+
+!!! note
+	Vous pouvez remplacer `console.log(...)` par `alerte(...)`.
 	
+<iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/VgEgzbM4Oho?si=LXBmGFP-eDDqdBbX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 !!! Corrigé
 	Essayez vous même avant de regarder le corrigé.
 	[Corrigé](https://capytale2.ac-paris.fr/web/c/9751-6778626){: target = "_blank"}	
 
-	
-	
-	
-	
 ## Utiliser les données d'un champ de saisie
-Commencer par regarder cette vidéo :
-
-<iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/LE4SHWN2FWk?si=Dj4GPRW9mWoAMttQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 !!! Défi_4
 	Créez une page contenant un champ de saisie et un bouton. L’utilisateur entre son année de naissance et le bouton permet d’afficher son âge dans une zone d’affichage (un paragraphe par exemple).
 	
 	Vous ferez ce défi sur Capytale avec ce [lien](https://capytale2.ac-paris.fr/web/c/a330-6772619){: target = "_blank"}
-	
+
+Pour réaliser ce défi, regarder cette vidéo :  
+
+<iframe width="1200" height="600" src="https://www.youtube-nocookie.com/embed/LE4SHWN2FWk?si=Dj4GPRW9mWoAMttQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 !!! Corrigé
 	Essayez vous même avant de regarder le corrigé.
 	[Corrigé](){: target = "_blank"}	
 	
-
 ## Défis supplémentaires
 	
 !!! Défi_5
