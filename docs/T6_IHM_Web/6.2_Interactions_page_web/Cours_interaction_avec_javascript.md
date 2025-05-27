@@ -232,7 +232,7 @@ Aujourd'hui, en JavaScript, il existe trois grandes façons de définir un gesti
 - On peut utiliser la méthode `addEventListener()` (**recommandé** : c'est celle présentée dans les vidéos).
 
 !!! note
-	Commes les deux premières méthodes sont encore largement répandues (y compris dans des exercices de BAC récents...), on les présente également ci-après. C'est pour que vous ne soyez pas perturbés si vous rencontrez ces pratiques un jour dans votre vie (ne sait-on jamais :).
+	Comme les deux premières méthodes sont encore largement répandues (y compris dans des exercices de BAC récents...), on les présente également ci-après. C'est pour que vous ne soyez pas perturbés si vous rencontrez ces pratiques un jour dans votre vie (ne sait-on jamais :).
 
 Voici les trois méthodes présentées sur un exemple où un clic sur un bouton d'une page Web déclenche l'ouverture d'une fenêtre popup.
 
@@ -310,6 +310,7 @@ bouton.addEventListener('click', afficheMsg);
 Dans la fonction `addEventListener`, il faut spécifier deux paramètres : le nom de l'événement (ici `click` mais on peut remplacer par `mouseover` ou un autre) et le nom de la fonction à exécuter en réponse à cet événement.  
 
 Versions équivalentes :  
+
 ```javascript
 function afficheMsg() {
   alert("Hello World !");
@@ -317,6 +318,7 @@ function afficheMsg() {
 
 document.querySelector('#btn').addEventListener('click', afficheMsg);
 ```
+ou   
 
 ```javascript
 var bouton = document.querySelector('#btn');
@@ -340,7 +342,8 @@ On considérera la page HTML ci-dessous pour les exemples qui suivent.
 ```
 
 ![image](data/exemple_interaction_js.png){: .center}
-Fig. 1 - Rendu de la page dans le navigateur.
+<p style="text-align: center;">Fig. 1 - Rendu de la page dans le navigateur.</p>
+
 
 Voici quelques exemples de fonctions permettant de modifier les propriétés des éléments de la page Web. On suppose que ces fonctions sont appelées lors du clic sur le bouton de la page comme on l'a vu dans le paragraphe précédent.
 
@@ -361,7 +364,8 @@ function changeStyles() {
 permet de modifier le style du paragraphe : le texte passe en rouge et en gras ; le style du corps de la page : la couleur de fond passe en jaune.
 
 ![image](data/modifier_style.png){: .center}
-Fig. 2 - Modification du style après le clic sur le bouton.
+<p style="text-align: center;">Fig. 2 - Modification du style après le clic sur le bouton.</p>
+
 
 Pour voir et exécuter le code sur CodePen :
 [code](https://codepen.io/jpbecker/pen/ExCxERm){: target = "_blank"}
@@ -380,7 +384,8 @@ function changeTexte() {
 permet de modifier le texte du paragraphe.
 
 ![image](data/changer_texte.png){: .center}
-Fig. 3 - Modification du texte après le clic sur le bouton.
+<p style="text-align: center;">Fig. 3 - Modification du texte après le clic sur le bouton.</p>
+
 
 Pour voir et exécuter le code sur CodePen :
 [code](https://codepen.io/jpbecker/pen/HoNrZj){: target = "_blank"}
@@ -408,7 +413,8 @@ function disBonjour() {
 permet de récupérer le texte saisi grâce à la propriété `value` de l'élément `<input>` puis de construire la chaîne de caractères «Bonjour Brendan » et de l'écrire dans la paragraphe.
 
 ![image](data/recuperer_input.png){: .center}
-Fig. 4 - Récupération d'une valeur saisie par l'utilisateur.
+<p style="text-align: center;">Fig. 4 - Récupération d'une valeur saisie par l'utilisateur.</p>
+
 
 Pour voir et exécuter le code sur CodePen :
 [code](https://codepen.io/#pecker/pen/vLCLuZ/){: target = "_blank"}
