@@ -168,7 +168,10 @@ Pour réaliser ce défi, regarder cette vidéo :
 	[Corrigé](https://capytale2.ac-paris.fr/web/c/fed9-6781457){: target = "_blank"}	
 	
 ## Défis supplémentaires
-	
+
+!!! Défi_5-6-7-8	
+	Vous ferez ce défi sur Capytale avec ce [lien](https://capytale2.ac-paris.fr/web/c/53e2-6784385){: target = "_blank"}
+
 !!! Défi_5
 	Créez une page avec un paragraphe dont la couleur du texte est modifiée à son survol.
 	Bonus : le paragraphe doit revenir à son état initial à la fin du survol.
@@ -186,11 +189,9 @@ Pour réaliser ce défi, regarder cette vidéo :
 	Créez une page avec un bouton et trois champs de saisie. Au clic sur le bouton, la couleur de fond de la page doit prendre la couleur RVB dont les composantes R, V et B ont été entrées par l’utilisateur. Exemple : si l’utilisateur entre 5, 121 et 143 dans les 3 zones de saisie, alors le fond de la page doit prendre la couleur `rgb(5,121,143)`.
 	En lien avec la vidéo "Utiliser les données d'un champ de saisie".
 	
-	
-Voici un lien vers les corrections des défis 7 et 8 :
-
-- Défi 7 : https://replit.com/@beckerg/Defi7#index.html
-- Défi 8 : https://replit.com/@beckerg/Defi8#index.html
+!!! Corrigé
+	Essayez vous même avant de regarder le corrigé.
+	[Corrigé défis 5-6-7-8](https://capytale2.ac-paris.fr/web/c/cd2d-6782799){: target = "_blank"}
 
 
 La suite de ce cours constitue un résumé de ce qui est abordé dans les défis et leurs vidéos associées. Il est donc important de le lire et l'apprendre une fois les défis terminés.
