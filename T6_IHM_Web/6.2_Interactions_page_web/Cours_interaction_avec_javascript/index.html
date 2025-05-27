@@ -3928,7 +3928,7 @@ En particulier, on utilise <code>var</code> pour déclarer toutes les variables,
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Commes les deux premières méthodes sont encore largement répandues (y compris dans des exercices de BAC récents...), on les présente également ci-après. C'est pour que vous ne soyez pas perturbés si vous rencontrez ces pratiques un jour dans votre vie (ne sait-on jamais :).</p>
+<p>Comme les deux premières méthodes sont encore largement répandues (y compris dans des exercices de BAC récents...), on les présente également ci-après. C'est pour que vous ne soyez pas perturbés si vous rencontrez ces pratiques un jour dans votre vie (ne sait-on jamais :).</p>
 </div>
 <p>Voici les trois méthodes présentées sur un exemple où un clic sur un bouton d'une page Web déclenche l'ouverture d'une fenêtre popup.</p>
 <h2 id="methode-1-utiliser-un-attribut-html-du-gestionnaire-evenement">Méthode 1 👎 : Utiliser un attribut HTML du gestionnaire événement<a class="headerlink" href="#methode-1-utiliser-un-attribut-html-du-gestionnaire-evenement" title="Permanent link">⚓︎</a></h2>
@@ -3977,13 +3977,14 @@ En particulier, on utilise <code>var</code> pour déclarer toutes les variables,
 <span class="nx">bouton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">afficheMsg</span><span class="p">);</span>
 </code></pre></div>
 <p>Dans la fonction <code>addEventListener</code>, il faut spécifier deux paramètres : le nom de l'événement (ici <code>click</code> mais on peut remplacer par <code>mouseover</code> ou un autre) et le nom de la fonction à exécuter en réponse à cet événement.  </p>
-<p>Versions équivalentes :<br />
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">afficheMsg</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<p>Versions équivalentes :  </p>
+<p><div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">afficheMsg</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Hello World !&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#btn&#39;</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">afficheMsg</span><span class="p">);</span>
-</code></pre></div></p>
+</code></pre></div>
+ou   </p>
 <div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">bouton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#btn&#39;</span><span class="p">);</span>
 
 <span class="nx">bouton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -3999,8 +4000,9 @@ En particulier, on utilise <code>var</code> pour déclarer toutes les variables,
     <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;script.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 </code></pre></div>
-<p><img alt="image" class="center" src="../data/exemple_interaction_js.png" />
-Fig. 1 - Rendu de la page dans le navigateur.</p>
+<p><img alt="image" class="center" src="../data/exemple_interaction_js.png" /></p>
+<p style="text-align: center;">Fig. 1 - Rendu de la page dans le navigateur.</p>
+
 <p>Voici quelques exemples de fonctions permettant de modifier les propriétés des éléments de la page Web. On suppose que ces fonctions sont appelées lors du clic sur le bouton de la page comme on l'a vu dans le paragraphe précédent.</p>
 <h1 id="modifier-le-style-dun-element">Modifier le style d'un élément<a class="headerlink" href="#modifier-le-style-dun-element" title="Permanent link">⚓︎</a></h1>
 <p>On peut modifier le style d'un élément HTML en utilisant la propriété style de cet élément. Par exemple, cette fonction Javascript</p>
@@ -4013,8 +4015,9 @@ Fig. 1 - Rendu de la page dans le navigateur.</p>
 <span class="p">}</span>
 </code></pre></div>
 <p>permet de modifier le style du paragraphe : le texte passe en rouge et en gras ; le style du corps de la page : la couleur de fond passe en jaune.</p>
-<p><img alt="image" class="center" src="../data/modifier_style.png" />
-Fig. 2 - Modification du style après le clic sur le bouton.</p>
+<p><img alt="image" class="center" src="../data/modifier_style.png" /></p>
+<p style="text-align: center;">Fig. 2 - Modification du style après le clic sur le bouton.</p>
+
 <p>Pour voir et exécuter le code sur CodePen :
 <a href="https://codepen.io/jpbecker/pen/ExCxERm" target="target">code</a></p>
 <h2 id="changer-le-texte-dune-balise-la-propriete-innerhtml">Changer le texte d'une balise : la propriété <code>innerHTML</code><a class="headerlink" href="#changer-le-texte-dune-balise-la-propriete-innerhtml" title="Permanent link">⚓︎</a></h2>
@@ -4025,8 +4028,9 @@ Fig. 2 - Modification du style après le clic sur le bouton.</p>
 <span class="p">}</span>
 </code></pre></div>
 permet de modifier le texte du paragraphe.</p>
-<p><img alt="image" class="center" src="../data/changer_texte.png" />
-Fig. 3 - Modification du texte après le clic sur le bouton.</p>
+<p><img alt="image" class="center" src="../data/changer_texte.png" /></p>
+<p style="text-align: center;">Fig. 3 - Modification du texte après le clic sur le bouton.</p>
+
 <p>Pour voir et exécuter le code sur CodePen :
 <a href="https://codepen.io/jpbecker/pen/HoNrZj" target="target">code</a></p>
 <h2 id="utiliser-des-champs-de-saisie-la-propriete-value">Utiliser des champs de saisie : la propriété <code>value</code><a class="headerlink" href="#utiliser-des-champs-de-saisie-la-propriete-value" title="Permanent link">⚓︎</a></h2>
@@ -4044,8 +4048,9 @@ dans lequel on demande à l'utilisateur d'écrire son prénom.</p>
 <span class="p">}</span>
 </code></pre></div>
 <p>permet de récupérer le texte saisi grâce à la propriété <code>value</code> de l'élément <code>&lt;input&gt;</code> puis de construire la chaîne de caractères «Bonjour Brendan » et de l'écrire dans la paragraphe.</p>
-<p><img alt="image" class="center" src="../data/recuperer_input.png" />
-Fig. 4 - Récupération d'une valeur saisie par l'utilisateur.</p>
+<p><img alt="image" class="center" src="../data/recuperer_input.png" /></p>
+<p style="text-align: center;">Fig. 4 - Récupération d'une valeur saisie par l'utilisateur.</p>
+
 <p>Pour voir et exécuter le code sur CodePen :
 <a href="https://codepen.io/#pecker/pen/vLCLuZ/" target="target">code</a></p>
 <h2 id="bilan">Bilan<a class="headerlink" href="#bilan" title="Permanent link">⚓︎</a></h2>
