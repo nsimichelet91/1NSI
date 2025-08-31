@@ -6,7 +6,7 @@ Pour la NSI, nous conseillons **Thonny** :
 
 ## Installer Thonny
 
-![image](data/thonny.png){: .center}
+![image](data/install_thonny.png){: .center}
 
 1. Rendez vous sur la page [https://thonny.org/](https://thonny.org/)
 
