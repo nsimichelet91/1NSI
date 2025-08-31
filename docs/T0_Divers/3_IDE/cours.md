@@ -2,16 +2,15 @@
 
 Comme pour tous les langages de programmation, il n'existe pas **un** logiciel permettant de coder en Python, mais un très (très) grand nombre de logiciels différents, qu'on regroupe sous le nom d'IDE (interfaces de développement)
 
-Pour la NSI, nous conseillons ... :
+Pour la NSI, nous conseillons **Thonny** :
 
-## Installer ...
-<!---
-![image](data/...){: .center}
--->
+## Installer Thonny
 
-1. ...
+![image](data/thonny.png){: .center}
 
-2. ...
+1. Rendez vous sur la page [https://thonny.org/](https://thonny.org/)
+
+2. Téléchargez et installez la version qui correspond à votre système d'exploitation (Windows, Mac, Linux).
 
 ## Alternatives
 
