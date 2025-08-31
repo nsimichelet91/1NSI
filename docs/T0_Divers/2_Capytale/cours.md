@@ -8,10 +8,7 @@ En tant qu'enseignant j'ai accès à vos notebooks (ceux que je vous ai partagé
 
 ## Activité-test : 
 
-1. Suivez [ce lien](https://capytale2.ac-paris.fr/web/c/d1e1-631434/mln){:target="_blank"} 
+1. Suivez [ce lien](https://capytale2.ac-paris.fr/web/c/d1e1-631434/){:target="_blank"} 
 2. Cliquez sur ```Monlycée.net (Île-de-France)```
 3. Identifiez vous grâce à vos identifiants ENT
 4. C'est parti !
-
-Vous pouvez créer et partager vos propres notebooks.
-Suivre les informations [ici.](https://capytale2.ac-paris.fr/wiki/doku.php?id=eleves_en_autonomie){:target="_blank"}
