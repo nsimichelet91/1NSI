@@ -11,7 +11,6 @@ Quelques sites de challenges/énigmes/défis de programmation:
 - [PyDéfis](https://pydefis.callicode.fr/){:target="_blank"} 
 - [Hackinscience](https://www.hackinscience.org/){:target="_blank"}
 - [Advent of Code](https://adventofcode.com/){:target="_blank"} 
-- [MicroContest](http://www.microcontest.com/){:target="_blank"} 
 
 
 ## À propos de la culture des sciences de l'informatique
@@ -24,7 +23,7 @@ Quelques sites de challenges/énigmes/défis de programmation:
 ## Pour se former en autonomie
 
 Au cas où vous vous ennuieriez...
-
+- [codex](https://codex.forge.apps.education.fr/){:target="_blank"} 
 - [France-IOI](http://www.france-ioi.org/){:target="_blank"} 
 - [CheckIO](https://checkio.org/){:target="_blank"} 
 - [CodinGame](https://www.codingame.com/start){:target="_blank"}  
@@ -41,3 +40,4 @@ Vidéos de cours :
 	- site de [G.Lassus](https://glassus.github.io/premiere_nsi/)
     - site de [Cédric Gouygou](https://cgouygou.github.io/1NSI/)
 	- et bien d'autres ...
+
