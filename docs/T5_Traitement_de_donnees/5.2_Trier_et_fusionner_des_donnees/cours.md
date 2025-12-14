@@ -360,7 +360,7 @@ afficher(table_fusion)
 
 ***Point de vigilance :***
 
-Si la table des connexions contenait **toutes** les connexions des joueurs et **pas seulement leur dernière** connexion, un même `'Id'` pourrait être présent plusieurs fois dans la table des connexions. Dans ce cas l'algorithme fonctionne encore à condition de supprimer la ligne `break` : on se force ainsi - pour chaque identifiant - à parcourir toute la table des connexions au lieu de s'arrêter dès qu'on trouve la première connexion correspondant à l'identifiant.
+Si la table des connexions contenait **toutes** les connexions des joueurs et **pas seulement leur dernière** connexion, un même `'Id'` pourrait être présent plusieurs fois dans la table des connexions. Dans ce cas l'algorithme fonctionne encore à condition de supprimer la ligne `break` : on se force ainsi, pour chaque identifiant, à parcourir toute la table des connexions au lieu de s'arrêter dès qu'on trouve la première connexion correspondant à l'identifiant.
 
 *Remarque :* Ici chaque 'Id' de la table des scores est présent dans la table des connexions (ce qui est logique car il faut s'être connecté pour jouer et obtenir un score). Néanmoins, si certains scores n'avaient pas été présents dans la table des connexions, l'algorithme aurait tout de même fonctionné.
 
@@ -369,4 +369,4 @@ Si la table des connexions contenait **toutes** les connexions des joueurs et **
 !!! note "Voici les liens des notebooks des exercices"
 	- [T5.2_csv_tri_fusion_achats](https://capytale2.ac-paris.fr/web/c/1389-1257970){: target = "_blank"}    
 	- [T5.2_csv_tri_fusion_animaux](https://capytale2.ac-paris.fr/web/c/6839-1258032){: target = "_blank"}   
-test
+
