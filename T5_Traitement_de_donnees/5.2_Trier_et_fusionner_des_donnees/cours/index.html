@@ -3971,7 +3971,7 @@ Ici, plusieurs clés peuvent être des critères de tri : la taille, le poids.</
 </code></pre></div>
 <p>La création de cette fonction <code>age()</code> va nous permettre de spécifier une clé de tri, par le paramètre <code>key</code> :</p>
 <div class="admonition note">
-<p class="admonition-title">Tri d'un dictionnaire <img alt="❤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2764.svg" title=":heart:" /></p>
+<p class="admonition-title">Tri d'un dictionnaire <img alt="❤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2764.svg" title=":heart:" /></p>
 <div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">triSimpsons</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">Simpsons</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="n">age</span><span class="p">)</span>
 </code></pre></div>
 </div>
@@ -4170,7 +4170,7 @@ ce qui donne en python :</p>
 </code></pre></div>
 <img alt="image" class="center" src="../data/fusion.png" /></p>
 <p><strong><em>Point de vigilance :</em></strong></p>
-<p>Si la table des connexions contenait <strong>toutes</strong> les connexions des joueurs et <strong>pas seulement leur dernière</strong> connexion, un même <code>'Id'</code> pourrait être présent plusieurs fois dans la table des connexions. Dans ce cas l'algorithme fonctionne encore à condition de supprimer la ligne <code>break</code> : on se force ainsi - pour chaque identifiant - à parcourir toute la table des connexions au lieu de s'arrêter dès qu'on trouve la première connexion correspondant à l'identifiant.</p>
+<p>Si la table des connexions contenait <strong>toutes</strong> les connexions des joueurs et <strong>pas seulement leur dernière</strong> connexion, un même <code>'Id'</code> pourrait être présent plusieurs fois dans la table des connexions. Dans ce cas l'algorithme fonctionne encore à condition de supprimer la ligne <code>break</code> : on se force ainsi, pour chaque identifiant, à parcourir toute la table des connexions au lieu de s'arrêter dès qu'on trouve la première connexion correspondant à l'identifiant.</p>
 <p><em>Remarque :</em> Ici chaque 'Id' de la table des scores est présent dans la table des connexions (ce qui est logique car il faut s'être connecté pour jouer et obtenir un score). Néanmoins, si certains scores n'avaient pas été présents dans la table des connexions, l'algorithme aurait tout de même fonctionné.</p>
 <h2 id="6-exercices">6. Exercices<a class="headerlink" href="#6-exercices" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
@@ -4180,14 +4180,13 @@ ce qui donne en python :</p>
 <li><a href="https://capytale2.ac-paris.fr/web/c/6839-1258032" target="target">T5.2_csv_tri_fusion_animaux</a>   </li>
 </ul>
 </div>
-<p>test</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Dernière mise à jour:
-      2024-03-04
+      2025-12-14
     
   </small>
 </div>
