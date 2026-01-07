@@ -113,13 +113,16 @@ Il ne reste donc plus qu'à ajouter `1` à ce nombre `11111100` pour faire le co
 
 
 ## 3. Travail inverse : passage du binaire signé au nombre relatif
-Considérons le nombre `11101101`, codé en binaire signé. À quel nombre relatif correspond-il ?
+Considérons le nombre `1110 1101`, codé en binaire signé. À quel nombre relatif correspond-il ?
 
 1. On observe son bit de poids fort : ici 1, donc ce nombre est négatif. Si ce bit est égal à 0, le nombre codé est positif, il suffit d'opérer une conversion binaire classique.
-2. Comme ce nombre est négatif, il va falloir inverser le protocole précédent. On commence donc par **enlever 1** au nombre proposé. On trouve `11101100`.
-3. On prend ensuite le complément à 1 de chaque bit. On trouve `00010011`.
-4. On convertit en base 10 le nombre obtenu, qui était donc 19.
-5. Le nombre initial était donc $-19$.
+2. Comme ce nombre est négatif, il va falloir inverser le protocole précédent:
+- Conserver le mot binaire d’origine -> `1110 1101`
+- Calculer son complément à deux :
+    - inversion des bits -> `0001 0010`
+    - ajout de 1 -> `0001 0011`
+- Convertir le résultat obtenu en décimal non signé -> `0001 0011 = 19`
+- Prendre l’opposé du résultat -> `1110 1101 = -19`
 
 !!! abstract "Exercice"
     === "Énoncé"
