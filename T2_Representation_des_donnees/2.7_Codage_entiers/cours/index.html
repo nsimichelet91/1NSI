@@ -3989,13 +3989,18 @@ Pour notre exemple sur une représentation à 8 bits : <span class="arithmatex">
 </div>
 </div>
 <h2 id="3-travail-inverse-passage-du-binaire-signe-au-nombre-relatif">3. Travail inverse : passage du binaire signé au nombre relatif<a class="headerlink" href="#3-travail-inverse-passage-du-binaire-signe-au-nombre-relatif" title="Permanent link">⚓︎</a></h2>
-<p>Considérons le nombre <code>11101101</code>, codé en binaire signé. À quel nombre relatif correspond-il ?</p>
+<p>Considérons le nombre <code>1110 1101</code>, codé en binaire signé. À quel nombre relatif correspond-il ?</p>
 <ol>
 <li>On observe son bit de poids fort : ici 1, donc ce nombre est négatif. Si ce bit est égal à 0, le nombre codé est positif, il suffit d'opérer une conversion binaire classique.</li>
-<li>Comme ce nombre est négatif, il va falloir inverser le protocole précédent. On commence donc par <strong>enlever 1</strong> au nombre proposé. On trouve <code>11101100</code>.</li>
-<li>On prend ensuite le complément à 1 de chaque bit. On trouve <code>00010011</code>.</li>
-<li>On convertit en base 10 le nombre obtenu, qui était donc 19.</li>
-<li>Le nombre initial était donc <span class="arithmatex">\(-19\)</span>.</li>
+<li>Comme ce nombre est négatif, il va falloir inverser le protocole précédent:</li>
+<li>Conserver le mot binaire d’origine -&gt; <code>1110 1101</code></li>
+<li>Calculer son complément à deux :<ul>
+<li>inversion des bits -&gt; <code>0001 0010</code></li>
+<li>ajout de 1 -&gt; <code>0001 0011</code></li>
+</ul>
+</li>
+<li>Convertir le résultat obtenu en décimal non signé -&gt; <code>0001 0011 = 19</code></li>
+<li>Prendre l’opposé du résultat -&gt; <code>1110 1101 = -19</code></li>
 </ol>
 <div class="admonition abstract">
 <p class="admonition-title">Exercice</p>
@@ -4058,7 +4063,7 @@ Le nombre maximum de secondes qui peut être représenté est donc <code>0111111
   <small>
     
       Dernière mise à jour:
-      2023-01-19
+      2026-01-07
     
   </small>
 </div>
