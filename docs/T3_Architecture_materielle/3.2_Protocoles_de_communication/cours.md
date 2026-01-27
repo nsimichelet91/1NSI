@@ -46,12 +46,10 @@ Les éléments échangés avec la couche inférieure sont des **trames**.
 - **couche 1 — couche physique :**  
 C'est la couche où le message est transmis physiquement d'un point à un autre. Par signal lumineux (fibre optique), par ondes (wifi), par courant électrique (Ethernet)... Les éléments transmis sont les **bits**. 
 
- 
-
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/26jazyc7VNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Lors de son parcours, une trame peut être partiellement décapsulée et remonter à la couche 3, avant de redescendre et de continuer son chemin. C'est le cas notamment lors du passage dans un routeur. Mais jamais, lors de son acheminement, le contenu réel du message n'est ouvert : les paquets transmis sont acheminés de manière identique, qu'ils contiennent les éléments constitutifs d'une vidéo YouTube ou d'un email à votre cousin.  
 Ce principe fondateur, actuellement menacé par certains acteurs politiques et industriels, est connu sous l'expression **«la neutralité du net»**.
-
 
 
 ## II. Observation des trames avec Filius
@@ -278,10 +276,6 @@ Le protocole a bien détecté le doublon du sous-message M1... mais que se passe
 Le protocole du bit alterné a longtemps été utilisé au sein de la couche 2 du modèle OSI (distribution des trames Ethernet). Simple et léger, il peut toutefois être facilement mis en défaut, ce qui explique qu'il ait été remplacé par des protocoles plus performants.
 
 #### Des vidéos pour vous aider à comprendre
-
-- Comprendre les modèles OSI et TCP/IP  
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/26jazyc7VNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - Comprendre le NAT / PAT en 7 minutes  
 
