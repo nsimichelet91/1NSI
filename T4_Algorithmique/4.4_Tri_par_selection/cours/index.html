@@ -3918,20 +3918,6 @@ Voici le fonctionnement de l'algorithme :<br />
 </ul>
 </div>
 <h2 id="3-implementation-de-lalgorithme">3. Implémentation de l'algorithme<a class="headerlink" href="#3-implementation-de-lalgorithme" title="Permanent link">⚓︎</a></h2>
-<div class="admonition abstract">
-<p class="admonition-title">Tri par sélection <img alt="❤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2764.svg" title=":heart:" /> </p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">tri_selection</span><span class="p">(</span><span class="n">liste</span><span class="p">)</span> <span class="p">:</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">liste</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
-        <span class="n">indice_min</span> <span class="o">=</span> <span class="n">i</span>
-        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">liste</span><span class="p">))</span> <span class="p">:</span>
-            <span class="k">if</span> <span class="n">liste</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">liste</span><span class="p">[</span><span class="n">indice_min</span><span class="p">]:</span>
-                <span class="n">indice_min</span> <span class="o">=</span> <span class="n">j</span>
-        <span class="n">liste</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">liste</span><span class="p">[</span><span class="n">indice_min</span><span class="p">]</span> <span class="o">=</span> <span class="n">liste</span><span class="p">[</span><span class="n">indice_min</span><span class="p">],</span> <span class="n">liste</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-</code></pre></div>
-</div>
-<p><em>Application :</em></p>
-<iframe width="1200" height="600" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=def%20tri_selection%28liste%29%20%3A%0A%20%20%20%20for%20i%20in%20range%28len%28liste%29%20-%201%29%3A%0A%20%20%20%20%20%20%20%20indice_min%20%3D%20i%0A%20%20%20%20%20%20%20%20for%20j%20in%20range%28i%20%2B%201,%20len%28liste%29%29%20%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20if%20liste%5Bj%5D%20%3C%20liste%5Bindice_min%5D%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20indice_min%20%3D%20j%0A%20%20%20%20%20%20%20%20liste%5Bi%5D,%20liste%5Bindice_min%5D%20%3D%20liste%5Bindice_min%5D,%20liste%5Bi%5D%0A%20%20%20%20%0Ama_liste%20%3D%20%5B7,%205,%202,%208,%201,%204%5D%0Atri_selection%28ma_liste%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
-
 <h2 id="4-complexite-de-lalgorithme">4. Complexité de l'algorithme<a class="headerlink" href="#4-complexite-de-lalgorithme" title="Permanent link">⚓︎</a></h2>
 <h3 id="41-etude-experimentale">4.1  Étude expérimentale<a class="headerlink" href="#41-etude-experimentale" title="Permanent link">⚓︎</a></h3>
 <p>A l'aide du <a href="../../4.2_Complexite/cours/">cours sur la complexité</a> proposer sur le notebook associé, des mesures expérimentales pour déterminer la complexité du tri par insertion.</p>
@@ -3973,7 +3959,7 @@ D'après nos calculs sur la complexité, ce nombre de tours de boucles est égal
   <small>
     
       Dernière mise à jour:
-      2025-03-21
+      2026-02-16
     
   </small>
 </div>
