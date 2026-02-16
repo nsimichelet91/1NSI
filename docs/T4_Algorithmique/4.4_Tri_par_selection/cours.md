@@ -22,7 +22,7 @@ Voici le fonctionnement de l'algorithme :
  
 
 ## 3. Implémentation de l'algorithme
-
+{#
 !!! abstract "Tri par sélection :heart: "
     ```python
     def tri_selection(liste) :
@@ -37,7 +37,7 @@ Voici le fonctionnement de l'algorithme :
 *Application :*
 
 <iframe width="1200" height="600" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=def%20tri_selection%28liste%29%20%3A%0A%20%20%20%20for%20i%20in%20range%28len%28liste%29%20-%201%29%3A%0A%20%20%20%20%20%20%20%20indice_min%20%3D%20i%0A%20%20%20%20%20%20%20%20for%20j%20in%20range%28i%20%2B%201,%20len%28liste%29%29%20%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20if%20liste%5Bj%5D%20%3C%20liste%5Bindice_min%5D%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20indice_min%20%3D%20j%0A%20%20%20%20%20%20%20%20liste%5Bi%5D,%20liste%5Bindice_min%5D%20%3D%20liste%5Bindice_min%5D,%20liste%5Bi%5D%0A%20%20%20%20%0Ama_liste%20%3D%20%5B7,%205,%202,%208,%201,%204%5D%0Atri_selection%28ma_liste%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
-
+#}
  
 ## 4. Complexité de l'algorithme
 
