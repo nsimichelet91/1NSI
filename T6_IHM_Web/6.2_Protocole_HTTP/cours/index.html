@@ -22,7 +22,7 @@
     
     
       
-        <title>6.3 Protocole HTTP : étude du chargement d'une page web - Première NSI - Lycée Edmond Michelet - Arpajon</title>
+        <title>6.2 Protocole HTTP : étude du chargement d'une page web - Première NSI - Lycée Edmond Michelet - Arpajon</title>
       
     
     
@@ -106,7 +106,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#63-protocole-http-etude-du-chargement-dune-page-web" class="md-skip">
+        <a href="#62-protocole-http-etude-du-chargement-dune-page-web" class="md-skip">
           Aller au contenu
         </a>
       
@@ -140,7 +140,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              6.3 Protocole HTTP : étude du chargement d'une page web
+              6.2 Protocole HTTP : étude du chargement d'une page web
             
           </span>
         </div>
@@ -3415,7 +3415,7 @@
           
   
   <span class="md-ellipsis">
-    6.3 Protocole HTTP : étude du chargement d'une page web
+    6.2 Protocole HTTP : étude du chargement d'une page web
   </span>
   
 
@@ -3426,7 +3426,7 @@
         
   
   <span class="md-ellipsis">
-    6.3 Protocole HTTP : étude du chargement d'une page web
+    6.2 Protocole HTTP : étude du chargement d'une page web
   </span>
   
 
@@ -3537,7 +3537,7 @@
         
   
   <span class="md-ellipsis">
-    6.4 Requêtes GET, POST et formulaires
+    6.3 Requêtes GET, POST et formulaires
   </span>
   
 
@@ -3704,7 +3704,7 @@
                   
 
 
-<h1 id="63-protocole-http-etude-du-chargement-dune-page-web">6.3 Protocole HTTP : étude du chargement d'une page web<a class="headerlink" href="#63-protocole-http-etude-du-chargement-dune-page-web" title="Permanent link">⚓︎</a></h1>
+<h1 id="62-protocole-http-etude-du-chargement-dune-page-web">6.2 Protocole HTTP : étude du chargement d'une page web<a class="headerlink" href="#62-protocole-http-etude-du-chargement-dune-page-web" title="Permanent link">⚓︎</a></h1>
 <p><img alt="image" class="center" src="../data/BO.png" /></p>
 <h2 id="le-protocole-http-des-requetes-et-des-reponses">Le protocole HTTP : des requêtes et des réponses<a class="headerlink" href="#le-protocole-http-des-requetes-et-des-reponses" title="Permanent link">⚓︎</a></h2>
 <p>HTTP (HyperText Transfer Protocol) est le protocole qui régit la communication entre :  </p>
@@ -3714,21 +3714,21 @@
 </ul>
 <p><img alt="image" class="center" src="../data/requete2.png" /></p>
 <h3 id="deroule-dune-requete">Déroulé d'une requête<a class="headerlink" href="#deroule-dune-requete" title="Permanent link">⚓︎</a></h3>
-<p>Prenons pour exemple la requête d'un navigateur vers la page <code>http://glassus1.free.fr/interesting.html</code> </p>
+<p>Prenons pour exemple la requête d'un navigateur vers la page <code>http://free.delage.free.fr/interesting.html</code> </p>
 <ul>
-<li>le navigateur analyse l'url : la demande concerne la page <code>interesting.html</code>, stockée sur le serveur <code>glassus1.free.fr</code>.  </li>
-<li>une demande est préalablement effectuée auprès pour obtenir l'adresse IP du serveur <code>glassus1.free.fr</code> (qui est en fait un sous-domaine du serveur des pages personnelles de l'opérateur Free). Ici, l'adresse IP sera <code>212.27.63.111</code> (on la retrouvera dans la capture de la fenêtre d'Outils de devéloppement).</li>
-<li>la requête est effectuée sur le port 80 de l'adresse <code>212.27.63.111</code>.</li>
+<li>le navigateur analyse l'url : la demande concerne la page <code>interesting.html</code>, stockée sur le serveur <code>free.delage.free.fr</code>.  </li>
+<li>une demande est préalablement effectuée auprès pour obtenir l'adresse IP du serveur <code>free.delage.free.fr</code> (qui est en fait un sous-domaine du serveur des pages personnelles de l'opérateur Free). Ici, l'adresse IPv6 sera <code>[2a01:e0c:1:1597::114]:80</code> (on la retrouvera dans la capture de la fenêtre d'Outils de devéloppement).</li>
+<li>la requête est effectuée sur le port 80 de l'adresse <code>2a01:e0c:1:1597::114</code>.</li>
 <li>la réponse est envoyée au navigateur, qui en extrait la charge utile et procède à l'affichage de la page.</li>
 </ul>
 <h3 id="analyse-a-laide-dun-navigateur">Analyse à l'aide d'un navigateur<a class="headerlink" href="#analyse-a-laide-dun-navigateur" title="Permanent link">⚓︎</a></h3>
 <p>Observons à partir de l'Inspecteur d'élément d'un navigateur (ici Firefox) les informations qui transitent lors de la requête et de la réponse.</p>
 <p><img alt="" class="center" src="../data/insp1.png" /></p>
 <ul>
-<li>Point <strong>1</strong> : La requête de type GET vers l'url <code>http://glassus1.free.fr/interesting.html</code> a généré un code de réponse <strong>200 OK</strong>, ce qui signifie que la requête a été traitée et que la réponse contenant la page a été envoyée.<br />
+<li>Point <strong>1</strong> : La requête de type GET vers l'url <code>http://free.delage.free.fr/interesting.html</code> a généré un code de réponse <strong>200 OK</strong>, ce qui signifie que la requête a été traitée et que la réponse contenant la page a été envoyée.<br />
 Vous pouvez trouver à l'adresse <a class="" href="https://developer.mozilla.org/fr/docs/Web/HTTP/Status" target="_blank">https://developer.mozilla.org/fr/docs/Web/HTTP/Status</a> la totalité des codes de réponse possibles. 
 Citons par exemple : <ul>
-<li><strong>304 Not Modified</strong> : la page n'a pas eu besoin d'être renvoyée, elle indique au navigateur d'aller la rechercher dans son cache. On peut obtenir ce code de réponse en actualisant la page actuelle <code>http://glassus1.free.fr/interesting.fr</code> (qui est une page ultra-basique, et n'évolue pas). Pour ré-obtenir un code 200, il faut faire un hard-refresh en appuyant sur Maj pendant l'actualisation.</li>
+<li><strong>304 Not Modified</strong> : la page n'a pas eu besoin d'être renvoyée, elle indique au navigateur d'aller la rechercher dans son cache. On peut obtenir ce code de réponse en actualisant la page actuelle <code>http://free.delage.free.fr/interesting.fr</code> (qui est une page ultra-basique, et n'évolue pas). Pour ré-obtenir un code 200, il faut faire un hard-refresh en appuyant sur Maj pendant l'actualisation.</li>
 <li><strong>403 Forbidden</strong> : le client n'a pas le droit d'accès à la page.</li>
 <li><strong>404 Not Found</strong> : la page demandée est introuvable</li>
 <li><strong>500 Internal Server Error</strong> : le serveur a rencontré une erreur qu'il ne sait pas traiter.</li>
@@ -3737,16 +3737,19 @@ Citons par exemple : <ul>
 </ul>
 <p><br></p>
 <ul>
-<li>Point <strong>2</strong> : en observant la taille totale des données transférées (388 octets), on peut comprendre que la réponse faite par le serveur est constituée :<ul>
-<li>d'un <strong>En-tête</strong> (264 octets) qui contient :
+<li>Point <strong>2</strong> : en observant la taille totale des données transférées (438 octets), on peut comprendre que la réponse faite par le serveur est constituée :<ul>
+<li>d'un <strong>En-tête</strong> (320 octets) qui contient :
 <div class="highlight"><pre><span></span><code>HTTP/1.1 200 OK
-Date: Wed, 22 Apr 2020 08:02:01 GMT
-Server: Apache/ProXad [Jan 23 2019 19:58:42]
-Last-Modified: Sun, 12 Apr 2020 16:39:55 GMT
-ETag: &quot;15d7c75-7c-5e93445b&quot;
-Connection: close
+Date: Tue, 17 Feb 2026 16:57:20 GMT
+Server: Apache
+Last-Modified: Tue, 17 Feb 2026 13:41:44 GMT
+ETag: &quot;85-64b053b7325ee-gzip&quot;
 Accept-Ranges: bytes
-Content-Length: 124
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 118
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
 Content-Type: text/html
 </code></pre></div></li>
 <li>du corps de la <strong>Réponse</strong> (dont on sait d'après l'en-tête qu'il pèse 124 octets). Ce corps de la réponse est la charge utile de la réponse. Elle contient ici le code html de la page :
@@ -3765,7 +3768,8 @@ Ceci est vraiment une jolie page web.
 </ul>
 <p><strong>Remarque :</strong> on peut observer que le navigateur a aussi effectué (de sa propre initiative) une requête vers un fichier <code>favicon.ico</code> qui est l'icone de la page web dans les onglets du navigateur ou la barre de favoris. Ce fichier était bien présent sur le serveur (ce n'est pas toujours le cas), il a donc été envoyé dans la réponse du serveur. </p>
 <p>De manière générale, une requête vers un site web moins élémentaire va occasionner une multitude de réponses.</p>
-<p>Par exemple, l'appel au site <code>https://developer.mozilla.org/fr/docs/Web</code> génère une vingtaine requêtes/réponses différentes, composées de fichiers html, css, js, de fichiers de fontes woff2, d'images jpg, png...</p>
+<p>Par exemple, l'appel au site <code>https://nsimichelet91.github.io/1NSI/</code> génère 38 requêtes/réponses différentes, composées de fichiers html, css, js, des images jpg, png...</p>
+<p><img alt="" class="center" src="data/insp_michelet.png" /></p>
 <p>Faites l'essai !</p>
 
   <hr>
