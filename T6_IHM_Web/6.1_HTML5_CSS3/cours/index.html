@@ -3931,10 +3931,10 @@
 
 
 <h1 id="61-pages-web-et-interactions">6.1 Pages web et interactions<a class="headerlink" href="#61-pages-web-et-interactions" title="Permanent link">⚓︎</a></h1>
-<p><img alt="image" class="center" src="data/BO.png" /></p>
-<p><img alt="image" class="center" src="data/meme.jpg" /></p>
+<p><img alt="image" class="center" src="../data/BO.png" /></p>
+<p><img alt="image" class="center" src="../data/meme.jpg" /></p>
 <h2 id="1-le-cas-le-plus-simple-la-meme-page-pour-tout-le-monde">1. Le cas le plus simple : la même page pour tout le monde<a class="headerlink" href="#1-le-cas-le-plus-simple-la-meme-page-pour-tout-le-monde" title="Permanent link">⚓︎</a></h2>
-<p><img alt="" class="center" src="data/stat.png" /></p>
+<p><img alt="" class="center" src="../data/stat.png" /></p>
 <p>Nous allons tout d'abord considérer le cas où le serveur renvoie une page unique, identique pour tous les utilisateurs. De plus, l'utilisateur ne pourra pas agir sur sa page : il n'y a aucune interactivité.</p>
 <p>Exemple de page statique côté serveur et côté utilisateur :</p>
 <ul>
@@ -4044,7 +4044,7 @@ De manière très simplifiée, on peut dire que le fichier <code>html</code> s'o
 </ul>
 </div>
 <h2 id="2-quand-le-client-peut-agir-sur-sa-page-exemple-avec-javascript">2. Quand le client peut agir sur sa page : exemple avec JavaScript<a class="headerlink" href="#2-quand-le-client-peut-agir-sur-sa-page-exemple-avec-javascript" title="Permanent link">⚓︎</a></h2>
-<p><img alt="" class="center" src="data/dynclient.png" /></p>
+<p><img alt="" class="center" src="../data/dynclient.png" /></p>
 <p>Jusqu'à présent, la page web envoyée par le serveur est :</p>
 <ol>
 <li>identique quel que soit le client.</li>
@@ -4122,7 +4122,7 @@ De manière très simplifiée, on peut dire que le fichier <code>html</code> s'o
 <p>Vous pouvez commencer par lui demander des choses simples (comment faire un message d'alerte, par exemple), puis aller vers des choses plus complexes (comment faire une calculatrice). N'oubliez pas, le but est de <strong>comprendre</strong> le code donné par l'IA. Vous pouvez d'ailleurs lui demander de vous l'expliquer ! N'exagérez pas, les requêtes aux IA consomment beaucoup de ressources <a href="https://drane-versailles.region-academique-idf.fr/spip.php?article1167" target="_blank">Quel est l’impact environnemental d’une IA générative ?</a></p>
 </div>
 <h2 id="3-quand-la-page-est-fabriquee-a-la-demande-pour-le-client-exemple-avec-php">3. Quand la page est fabriquée à la demande pour le client : exemple avec PHP<a class="headerlink" href="#3-quand-la-page-est-fabriquee-a-la-demande-pour-le-client-exemple-avec-php" title="Permanent link">⚓︎</a></h2>
-<p><img alt="" class="center" src="data/dynserveur.png" /></p>
+<p><img alt="" class="center" src="../data/dynserveur.png" /></p>
 <p>Rappelons que toutes les pages que nous avons créées jusqu'à présent sont uniformément envoyées par le serveur au client. Aucune «préparation» de la page en amont n'a lieu sur le serveur, aucun dialogue n'a lieu avec le serveur une fois que la page a été livrée. 
 Évidemment, si le web était comme ceci, il ne serait qu'une gigantesque bibliothèque en consultation seule (ce fut le cas pendant longtemps, et ce qui n'était déjà pas si mal).</p>
 <p>Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs), Python (via le framework Django), Java, Ruby, C#, permettent de rajouter de l'interactivité côté serveur.</p>
@@ -4130,17 +4130,17 @@ De manière très simplifiée, on peut dire que le fichier <code>html</code> s'o
 <h3 id="31-page-statique-cote-serveur">3.1 Page statique (côté serveur) :<a class="headerlink" href="#31-page-statique-cote-serveur" title="Permanent link">⚓︎</a></h3>
 <p>Lors d'une requête d'un client vers un serveur, si le client demande la page <code>index.html</code>, une <strong>copie exacte</strong> du fichier <code>index.html</code> est transmise au client sur sa machine.  </p>
 <p><strong>Exemple :</strong> la page <a href="http://free.delage.free.fr/interesting.html" target="_blank">http://free.delage.free.fr/interesting.html</a> que vous avez déjà consultée se trouve <strong>telle quelle</strong> sur le serveur mis à disposition par Free pour l'hébergement des pages personnelles :</p>
-<p><img alt="" class="center" src="data/extraitfree1.png" /></p>
+<p><img alt="" class="center" src="../data/extraitfree1.png" /></p>
 <p>Depuis votre navigateur, l'affichage du code-source (par Ctrl-U) vous donnera le fichier html tel qu'il était stocké sur le serveur.</p>
 <h3 id="32-page-dynamique-cote-serveur">3.2  Page dynamique (côté serveur) :<a class="headerlink" href="#32-page-dynamique-cote-serveur" title="Permanent link">⚓︎</a></h3>
 <p>Lors d'une requête d'un client vers un serveur, si le client demande la page <code>test.php</code>, un code html est généré à partir  du fichier <code>test.php</code>  puis est transmise au client sur sa machine. Le fichier transmis ne contient plus de balises <code>php</code>, il ne comporte que des balises <code>html</code> classiques.  </p>
 <p><strong>Exemple :</strong> la consultation de la page <a href="http://free.delage.free.fr/test.php" target="_blank">http://free.delage.free.fr/test.php</a> va renvoyer la page suivante :</p>
-<p><img alt="" class="center" src="data/php1.png" /></p>
+<p><img alt="" class="center" src="../data/php1.png" /></p>
 <p>dont le code-source est :</p>
-<p><img alt="" class="center" src="data/php2.png" /></p>
+<p><img alt="" class="center" src="../data/php2.png" /></p>
 <p>Notez bien que ce code-source ne contient que du <code>html</code>.</p>
 <p>Allons regarder cette page <strong>du côté du serveur</strong> :</p>
-<p><img alt="" class="center" src="data/php3.png" /></p>
+<p><img alt="" class="center" src="../data/php3.png" /></p>
 <p>Le contenu de cette page est :</p>
 <div class="highlight"><pre><span></span><code><span class="x">&lt;!DOCTYPE html&gt;</span>
 <span class="x">&lt;html&gt;</span>
