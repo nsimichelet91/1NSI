@@ -22,7 +22,7 @@
     
     
       
-        <title>6.1 Les langages HTML5 et CCS3 - Première NSI - Lycée Edmond Michelet - Arpajon</title>
+        <title>6.1 Pages web et interactions - Première NSI - Lycée Edmond Michelet - Arpajon</title>
       
     
     
@@ -106,7 +106,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#61-les-langages-html5-et-ccs3" class="md-skip">
+        <a href="#61-pages-web-et-interactions" class="md-skip">
           Aller au contenu
         </a>
       
@@ -140,7 +140,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              6.1 Les langages HTML5 et CCS3
+              6.1 Pages web et interactions
             
           </span>
         </div>
@@ -3287,7 +3287,7 @@
           
   
   <span class="md-ellipsis">
-    6.1 Les langages HTML5 et CCS3
+    6.1 Pages web et interactions
   </span>
   
 
@@ -3298,7 +3298,7 @@
         
   
   <span class="md-ellipsis">
-    6.1 Les langages HTML5 et CCS3
+    6.1 Pages web et interactions
   </span>
   
 
@@ -3320,30 +3320,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#presentation" class="md-nav__link">
-    Présentation
+  <a href="#1-le-cas-le-plus-simple-la-meme-page-pour-tout-le-monde" class="md-nav__link">
+    1. Le cas le plus simple : la même page pour tout le monde
   </a>
   
-    <nav class="md-nav" aria-label="Présentation">
+    <nav class="md-nav" aria-label="1. Le cas le plus simple : la même page pour tout le monde">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#interet-des-pages-html" class="md-nav__link">
-    Intérêt des pages HTML
+  <a href="#11-html-pur" class="md-nav__link">
+    1.1 html pur
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#les-editeurs-de-texte" class="md-nav__link">
-    Les éditeurs de texte
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#organisation-des-fichiers-dans-le-repertoire-racine" class="md-nav__link">
-    Organisation des fichiers dans le répertoire racine
+  <a href="#12-html-css" class="md-nav__link">
+    1.2 html + css
   </a>
   
 </li>
@@ -3354,63 +3347,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#html-le-contenu" class="md-nav__link">
-    HTML : le contenu
+  <a href="#2-quand-le-client-peut-agir-sur-sa-page-exemple-avec-javascript" class="md-nav__link">
+    2. Quand le client peut agir sur sa page : exemple avec JavaScript
   </a>
   
-    <nav class="md-nav" aria-label="HTML : le contenu">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-quand-la-page-est-fabriquee-a-la-demande-pour-le-client-exemple-avec-php" class="md-nav__link">
+    3. Quand la page est fabriquée à la demande pour le client : exemple avec PHP
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Quand la page est fabriquée à la demande pour le client : exemple avec PHP">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#structure-dun-fichier-html" class="md-nav__link">
-    Structure d'un fichier HTML
+  <a href="#31-page-statique-cote-serveur" class="md-nav__link">
+    3.1 Page statique (côté serveur) :
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#liste-de-balises-html" class="md-nav__link">
-    Liste de balises HTML
+  <a href="#32-page-dynamique-cote-serveur" class="md-nav__link">
+    3.2 Page dynamique (côté serveur) :
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#css-lapparence" class="md-nav__link">
-    CSS : l'apparence
-  </a>
-  
-    <nav class="md-nav" aria-label="CSS : l'apparence">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#css-les-selecteurs" class="md-nav__link">
-    CSS : les sélecteurs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#liste-de-proprietes-css" class="md-nav__link">
-    Liste de propriétés CSS
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#les-liens-utiles" class="md-nav__link">
-    Les liens utiles
-  </a>
   
 </li>
       
@@ -3900,610 +3866,253 @@
                   
 
 
-<h1 id="61-les-langages-html5-et-ccs3">6.1 Les langages HTML5 et CCS3<a class="headerlink" href="#61-les-langages-html5-et-ccs3" title="Permanent link">⚓︎</a></h1>
-<h2 id="presentation">Présentation<a class="headerlink" href="#presentation" title="Permanent link">⚓︎</a></h2>
-<p>Les langages HTML et CSS sont des <strong>langages syntaxiques de description</strong>, par opposition aux langages de programmation que sont Python, Java, C ,... <br />
-Ils sont interprétés par les navigateurs des ordinateurs, tablettes ou autres smartphones.  </p>
-<p><img alt="image de présentation" src="../img/presentation_html.png" style="width:60%; margin-left:20%;" /></p>
-<p>En HTML, les discriptions sont définies par des balises (tag en anglais). <br />
-Chaque balise a une signification précise.<br />
-On peut associer des attibuts aux balises.</p>
-<div class="admonition example">
-<p class="admonition-title">Exemple </p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span> Mon super site <span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-</code></pre></div>
+<h1 id="61-pages-web-et-interactions">6.1 Pages web et interactions<a class="headerlink" href="#61-pages-web-et-interactions" title="Permanent link">⚓︎</a></h1>
+<p><img alt="image" class="center" src="data/BO.png" /></p>
+<p><img alt="image" class="center" src="data/meme.jpg" /></p>
+<h2 id="1-le-cas-le-plus-simple-la-meme-page-pour-tout-le-monde">1. Le cas le plus simple : la même page pour tout le monde<a class="headerlink" href="#1-le-cas-le-plus-simple-la-meme-page-pour-tout-le-monde" title="Permanent link">⚓︎</a></h2>
+<p><img alt="" class="center" src="data/stat.png" /></p>
+<p>Nous allons tout d'abord considérer le cas où le serveur renvoie une page unique, identique pour tous les utilisateurs. De plus, l'utilisateur ne pourra pas agir sur sa page : il n'y a aucune interactivité.</p>
+<p>Exemple de page statique côté serveur et côté utilisateur :</p>
 <ul>
-<li>Le <strong>bloc</strong> <code>h1</code> est défini par la balise ouvrante <code>&lt;h1&gt;</code> et la balise fermante <code>&lt;/h1&gt;</code>.  </li>
-<li>Toutes les balises doivent être fermées, afin de définir la fin du bloc.   </li>
-<li>La balise <code>&lt;h1&gt;</code> (header en anglais) définit un titre de niveau 1.   </li>
-<li>Le contenu du bloc <code>h1</code> est donc un titre de niveau 1 et sera afficher comme tel.   </li>
-<li>Il existe 6 niveaux de titre, depuis <code>h1</code> jusqu'à <code>h6</code>.  </li>
+<li>cette <a href="http://delage.free.fr/interesting.html" target="_blank">merveille</a> de page web.</li>
+<li>plus complète, mais tout aussi statique : cette page <a href="https://fr.wikipedia.org/wiki/John_Horton_Conway" target="_blank">Wikipedia</a> consacrée à John Conway.</li>
 </ul>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Autre exemple </p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">img</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;image_centree&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;./images/logo_html.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;logo HTML&quot;</span> <span class="p">/&gt;</span>
-</code></pre></div>
-<ul>
-<li>La balise <code>&lt;img&gt;</code> est une balise auto-fermante : pas de balise <code>&lt;/img&gt;</code> mais <code>/&gt;</code> à la fin de la balise pour la fermer.</li>
-<li>
-<p>La balise <code>&lt;img&gt;</code> permet d'afficher une image dans le navigateur.  </p>
-</li>
-<li>
-<p><code>class</code>, <code>src</code> et <code>alt</code> sont des attributs de la balise.   </p>
-<ul>
-<li>L'attribut <code>class</code> permet d'associer des propriétés d'affichage au sein de la feuille de style,  </li>
-<li>L'attribut <code>src</code> (source) définit le chemin d'accès au fichier image,  </li>
-<li>L'attribut <code>alt</code> définit le texte à afficher si l'image n'est pas trouvée.  </li>
-</ul>
-</li>
-</ul>
-</div>
-<h3 id="interet-des-pages-html">Intérêt des pages HTML<a class="headerlink" href="#interet-des-pages-html" title="Permanent link">⚓︎</a></h3>
-<p>Les pages HTML sont interprétées par des navigateurs.<br />
-Ce qui en fait un format universel.<br />
-Afin de s'adapter à toutes les tailles d'écran les pages web doivent-être <strong>Responsive Web Design</strong>.  </p>
-<h3 id="les-editeurs-de-texte">Les éditeurs de texte<a class="headerlink" href="#les-editeurs-de-texte" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Quelques éditeurs gratuits : </p>
-<ul>
-<li>Notepad++,  </li>
-<li>SublimText,</li>
-<li>Capytale,</li>
-<li>Geany,</li>
-<li>VSCodium, </li>
-<li>et beaucoup d'autres.  </li>
-</ul>
-</div>
-<h3 id="organisation-des-fichiers-dans-le-repertoire-racine">Organisation des fichiers dans le répertoire racine<a class="headerlink" href="#organisation-des-fichiers-dans-le-repertoire-racine" title="Permanent link">⚓︎</a></h3>
-<p><img alt="Arborescence des fichiers" src="../img/arborescence.png" style="width:20%; float:right;" /><br />
-Le nombre de fichiers augmentant rapidement, il est nécessaire de classer les fichiers utilisés par type.<br />
-On utilisera au minimum cette arborescence.</p>
-<h2 id="html-le-contenu">HTML : le contenu<a class="headerlink" href="#html-le-contenu" title="Permanent link">⚓︎</a></h2>
-<h3 id="structure-dun-fichier-html">Structure d'un fichier HTML<a class="headerlink" href="#structure-dun-fichier-html" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Tous les fichiers HTML doivent respecter cette structure :</p>
-<div class="highlight"><pre><span></span><code><span class="cm">&lt;!-- Ceci est un commentaire --&gt;</span>
+<h3 id="11-html-pur">1.1 <code>html</code>  pur<a class="headerlink" href="#11-html-pur" title="Permanent link">⚓︎</a></h3>
+<p>Lorsque le client demande au serveur le contenu d'une page web, celui-ci lui renvoie, dans le cas le plus simple, une simple page <code>html</code>.<br />
+<code>html</code> est un langage dit « à balises ».  Ce n'est pas à proprement parler un langage de programmation, mais plutôt un langage de description de contenu. 
+Il a été inventé en 1992 par <a href="https://fr.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Tim Berners-Lee</a>. La version actuellement utilisée est le <code>html5</code>.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Exemple de page web minimale</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#39;fr&#39;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Un titre très original<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 
-<span class="cp">&lt;!DOCTYPE html&gt;</span>     <span class="cm">&lt;!-- définit le type de langage utilisé : ici le HTML5 --&gt;</span>                  
-
-<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>    <span class="cm">&lt;!-- ouverture du bloc &quot;html&quot; - Langue : français --&gt;</span>                               
-    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>                                  
-                    <span class="cm">&lt;!-- contenu du bloc &quot;head&quot; --&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>                                 
-    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>  
-                    <span class="cm">&lt;!-- contenu du bloc &quot;body&quot; --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ceci est le texte introductif de ma page.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>  Ceci est un titre de niveau 1 <span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+          Mais sans rien d&#39;intéressant.
+          <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>  Ceci est un titre de niveau 2 <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> le début d&#39;une liste indentée <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> la suite ... <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>  
+        Pour apprendre le fonctionnement des balises, voir <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://developer.mozilla.org/fr/docs/Apprendre/HTML/Introduction_%C3%A0_HTML/Getting_started&quot;</span><span class="p">&gt;</span> ici<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> par exemple !
+        <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>             <span class="cm">&lt;!-- fermeture du bloc &quot;html&quot; --&gt;</span>
-</code></pre></div>
-<ul>
-<li><strong><code>&lt;!DOCTYPE HTML&gt;</code></strong> précise que le ficher contient du HTML5</li>
-<li><strong><code>&lt;html lang="fr"&gt;</code></strong> ouverture du bloc <code>html</code> qui englobe tout</li>
-<li><strong>Bloc <code>&lt;head&gt;</code></strong> : entête. Contient la configuration de la page html, des metadonnées et autres informations utiles aux navigateur et moteurs de recherche. </li>
-<li><strong>Bloc <code>&lt;body&gt;</code></strong> : corps de la page. Contient toutes les informations à afficher.  </li>
-</ul>
-</div>
-<h3 id="liste-de-balises-html">Liste de balises HTML<a class="headerlink" href="#liste-de-balises-html" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p class="admonition-title"><strong>Le bloc <code>head</code></strong> - Les balises d'entête</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Spécialité NSI<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">/&gt;</span>
-    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/style.css&quot;</span><span class="p">/&gt;</span>
-    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;icon&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;image/png&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;images/favicon.png&quot;</span><span class="p">/&gt;</span>
-    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/script.js&quot;</span><span class="p">&gt;</span><span class="w"> </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</code></pre></div>
-<ul>
-<li><strong><code>&lt;meta charset="utf-8"/&gt;</code></strong> définit l’encodage des caractères (affichage correct des lettres accentuées).</li>
-<li><strong><code>&lt;title&gt;Spécialité NSI&lt;/title&gt;</code></strong> définit le nom de la page dans l’onglet du navigateur.</li>
-<li><strong><code>&lt;link rel="stylesheet" href="css/style.css"/&gt;</code></strong>  indique l’utilisation d’une feuille de style et son chemin d'accès.</li>
-<li><strong><code>&lt;link rel="icon" type="image/png" href="images/favicon.png"/&gt;</code></strong> affiche une icone à gauche de l'onglet.</li>
-<li><strong><code>&lt;script src="js/script.js"&gt;&lt;/script&gt;</code></strong> indique l’utilisation d’un script de type JavaScript et son chemin d'accès.</li>
-</ul>
-</div>
-<p><br></p>
-<div class="admonition note">
-<p class="admonition-title"><strong>Le bloc <code>body</code></strong> - les balises de structure</p>
-<p><img alt="Balises de structure de body" src="../img/structure_body.png" style="width:30%; float:right;" /> </p>
-<ul>
-<li><strong><code>&lt;nav&gt;</code></strong> contient la navigation dans le site.</li>
-<li><strong><code>&lt;header&gt;</code></strong> et <strong><code>&lt;footer&gt;</code></strong> définit l’entête et le pied de page.</li>
-<li><strong><code>&lt;section&gt;</code></strong>, <strong><code>&lt;article&gt;</code></strong> et <strong><code>&lt;aside&gt;</code></strong> organisent les différentes parties spécifiques à la page.</li>
-<li><strong><code>&lt;div&gt;</code></strong> balise générique qui définit un bloc sans lui donner de sens particulier. En général on lui donne un attribut 
-d’identifiant <code>id</code> ou de classe <code>class</code> auquel on associe des propriétés d'affichage dans la feuille de style.</li>
-</ul>
-</div>
-<p><br></p>
-<div class="admonition note">
-<p class="admonition-title"><strong>Le bloc <code>body</code></strong> - les balises de texte</p>
-<p>Il existe deux catégories de balise:</p>
-<ul>
-<li>les balises de type <code>bloc</code> qui force le passage à la ligne avant et après le bloc.  </li>
-<li>les balises <code>inline</code> qui autorise le positionnement sur la même ligne.</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Exemple de balises HTML de texte</p>
-<ul>
-<li><strong><code>&lt;h1&gt;</code></strong>, <strong><code>&lt;h2&gt;</code></strong>, <strong><code>&lt;h3&gt;</code></strong>,<strong><code>&lt;h4&gt;</code></strong>, <strong><code>&lt;h5&gt;</code></strong> et <strong><code>&lt;h6&gt;</code></strong> : balises <code>bloc</code> pour les titres du texte.  </li>
-<li><strong><code>&lt;p&gt;</code></strong> balise <code>bloc</code> qui définit un paragraphe (espace avant et après le texte).  </li>
-<li>Les balises <code>inline</code> de mise en forme :   <ul>
-<li><strong><code>&lt;em&gt;</code></strong>, (emphasis) pour mettre en valeur (italique),  </li>
-<li><strong><code>&lt;strong&gt;</code></strong>, pour mettre en valeur (gras),  </li>
-<li><strong><code>&lt;code&gt;</code></strong>, pour afficher du code informatique,  </li>
-<li><strong><code>&lt;sup&gt;</code></strong>, pour mettre du texte en exposant,  </li>
-<li><strong><code>&lt;sub&gt;</code></strong>, pour mettre du texte en indice,  </li>
-<li><strong><code>&lt;span&gt;</code></strong>, balise générique, comme la balise <strong><code>div</code></strong> mais de type <code>inline</code>. Les propriétès associées sont à définir dans la feuille de style.</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Rendu de balises de texte</p>
-<p><img alt="Balises de texte" src="../img/balises_texte.png" style="width:45%; float:right;" /> 
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Titre de niveau 1<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>      
-    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Titre de niveau 2<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Titre de niveau 3<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>Titre de niveau 4<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h5</span><span class="p">&gt;</span>Titre de niveau 5<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h6</span><span class="p">&gt;</span>Titre de niveau 6<span class="p">&lt;/</span><span class="nt">h6</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span> 
-        Ceci est un  paragraphe. Il force le passage à la ligne et 
-        met en place des espacements avec les éléments au dessus et 
-        au dessous (margin et padding). 
-    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span> 
-        Mise en place des balises in-line : 
-        <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>emphasis<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>, <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>strong<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>, <span class="p">&lt;</span><span class="nt">code</span><span class="p">&gt;</span>code<span class="p">&lt;/</span><span class="nt">code</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">sup</span><span class="p">&gt;</span>sup<span class="p">&lt;/</span><span class="nt">sup</span><span class="p">&gt;</span>, <span class="p">&lt;</span><span class="nt">sub</span><span class="p">&gt;</span>sub<span class="p">&lt;/</span><span class="nt">sub</span><span class="p">&gt;</span> et 
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color:red&quot;</span><span class="p">&gt;</span> span : balise générique - pas de 
-        propriétés pas défaut) <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</code></pre></div></p>
-</div>
-</div>
-<p><br></p>
-<div class="admonition note">
-<p class="admonition-title"><strong>Le bloc <code>body</code></strong> - les listes : 2 types de liste</p>
-<ul>
-<li>les listes non numérotées , introduites par <strong><code>&lt;ul&gt;</code></strong>,   </li>
-<li>les listes numérotées , introduites par <strong><code>&lt;ol&gt;</code></strong>,  </li>
-<li>Chaque item d'une liste sont introduit par <strong><code>&lt;li&gt;</code></strong>.  </li>
-</ul>
-<div class="admonition example">
-<p class="admonition-title">Exemple de listes</p>
-<p><img alt="Rendu du code HTML pate à crêpe" src="../img/pate_a_crepe.png" style="width:30%; float:right;" /> </p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span> 
-    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span> Faire une pâte à crêpe <span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span> Liste des ingrédients <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> 500g de farine <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> 2 oeufs <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> 0,5l de lait <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> une pincée de sel <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span> préparation <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> Mélanger les ingrédients <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> Laisser reposer <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span> Faire chauffer la poêle <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</code></pre></div>
-</div>
-</div>
-<p><br></p>
-<div class="admonition note">
-<p class="admonition-title"><strong>Le bloc <code>body</code></strong> - Les tableaux avec entête</p>
-<ul>
-<li><strong><code>&lt;table&gt;</code></strong> déclare le tableau,   </li>
-<li><strong><code>&lt;tr&gt;</code></strong> (table row) définit une ligne du tableau,  </li>
-<li><strong><code>&lt;th&gt;</code></strong> (table header) définit une cellule d'entête du tableau. </li>
-<li><strong><code>&lt;td&gt;</code></strong> (table data) définit une cellule de donnée du tableau.  </li>
-</ul>
-<div class="admonition example">
-<p class="admonition-title">Exemple de tableau</p>
-<p><img alt="Rendu du code HTML d'un tableau" src="../img/tableau.png" style="width:40%; float:right;" /> </p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span> 
-    <span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span> Prénom <span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span> Nom <span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span> Age <span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span> Alain <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span> Térieur <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span> 50 <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span> Paul <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span> Auchon <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span> 94 <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span> Jean <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span> Raffole <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span> 80 <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</code></pre></div>
-</div>
-</div>
-<p><br>            </p>
-<div class="admonition note">
-<p class="admonition-title"><strong>Le bloc <code>body</code></strong> - Les liens hypertextes</p>
-<p>La balise <strong><code>&lt;a&gt;</code></strong> définit un lien hypertexte.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Exemples de syntaxes de liens hypertextes</label><label for="__tabbed_1_2">Rendu des exemples</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<ul>
-<li>
-<p>On peut définir une URL comme lien : description d'un chemin absolu.
-<div class="highlight"><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://nsimichelet91.github.io/1NSI&quot;</span><span class="p">&gt;</span> Site 1NSI du lycée<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</code></pre></div></p>
-</li>
-<li>
-<p>On peut définir un chemin relativement au répertoire courant : description d'un chemin relatif.
-<div class="highlight"><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;../page1.html&quot;</span><span class="p">&gt;</span> Aller vers la page1 <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</code></pre></div></p>
-</li>
-<li>
-<p>On peut valider le lien en cliquant sur une image.
-<div class="highlight"><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://nsimichelet91.github.io/1NSI&quot;</span><span class="p">&gt;&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../img/smiley.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Smiley&quot;</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</code></pre></div></p>
-</li>
-<li>
-<p>On peut faire apparaît un label lors du survol du lien.
-<div class="highlight"><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://nsimichelet91.github.io/1NSI&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Site 1NSI du lycée&quot;</span><span class="p">&gt;</span> 1NSI <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</code></pre></div></p>
-</li>
-</ul>
-</div>
-<div class="tabbed-block">
-<p><a href="https://nsimichelet91.github.io/1NSI"> Site 1NSI du lycée</a></p>
-<p><a href="../page1.html"> Aller vers la page1 </a></p>
-<p><a href="https://nsimichelet91.github.io/1NSI"><img alt="Smiley pour tuto HTML" src="../img/icon_smiley.png" /></a></p>
-<p><a href="https://nsimichelet91.github.io/1NSI" title="Site 1NSI du lycée"> 1NSI </a></p>
-</div>
-</div>
-</div>
-</div>
-<p><br></p>
-<h2 id="css-lapparence">CSS : l'apparence<a class="headerlink" href="#css-lapparence" title="Permanent link">⚓︎</a></h2>
-<p><img alt="Syntaxe CSS" src="../img/syntaxe_css.png" style="width:40%; float:right;" /> 
-Le HTML définit <strong>le contenu</strong> de la page,<br />
-Le CSS définit <strong>l’apparence</strong> (le style).<br />
-3 façons de d’appliquer un style à une balise :</p>
-<ul>
-<li>dans la balise elle-même en utilisant l’attribut style,  </li>
-<li>dans le bloc <code>&lt;head&gt;</code> du code html à l’aide d’une balise <code>&lt;style&gt;</code>,  </li>
-<li>à part, dans un fichier ayant une extension <code>*.css</code> <strong>&#x27A4; à privilégier</strong>.  </li>
-</ul>
-<h3 id="css-les-selecteurs">CSS : les sélecteurs<a class="headerlink" href="#css-les-selecteurs" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p class="admonition-title">CSS : les sélecteurs</p>
-<p>Les sélecteurs ciblent les éléments HTML auxquels on va attribuer des propriétés.<br />
-<br>
-<img alt="Sélecteur CSS" src="../img/selecteur_css.png" style="width:25%;" /> </p>
-<div class="admonition note">
-<p class="admonition-title">Syntaxe pour les sélecteurs </p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Type de sélecteur</th>
-<th style="text-align: center;">Exemple</th>
-<th style="text-align: center;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><code>balise</code></td>
-<td style="text-align: center;"><code>p</code></td>
-<td style="text-align: center;">Sélectionne toutes les balises <code>&lt;p&gt;</code></td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>.class</code></td>
-<td style="text-align: center;"><code>.intro</code></td>
-<td style="text-align: center;">Sélectionne toutes les balises contenant l’attribut <code>class="intro"</code></td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>#id</code></td>
-<td style="text-align: center;"><code>#date</code></td>
-<td style="text-align: center;">Sélectionne la balise contenant l’attribut <code>id=“date"</code></td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>sélecteur, sélecteur</code></td>
-<td style="text-align: center;"><code>div, p</code></td>
-<td style="text-align: center;">Sélectionne les 2 sélecteurs (balises <code>&lt;div&gt;</code> et <code>&lt;p&gt;</code>)</td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>balise balise</code></td>
-<td style="text-align: center;"><code>div p</code></td>
-<td style="text-align: center;">Sélectionne toutes les balises <code>&lt;p&gt;</code> contenues dans les balises <code>&lt;div&gt;</code></td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>balise.class</code></td>
-<td style="text-align: center;"><code>p.intro</code></td>
-<td style="text-align: center;">Sélectionne les balises <code>&lt;p&gt;</code> contenant l’attribut <code>class="intro”</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Exemple d'utilisation</p>
-<p><table>
-    <tr>
-        <td>
-        Fichier <code>index.html</code>
-        <div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>                             
-<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>                                        
-    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>                                  
-        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>            
-        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span> <span class="p">/&gt;</span>          
-    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>                                 
-    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>      
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;page&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span> ceci est le bloc div - balise p dans div <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;intro&quot;</span><span class="p">&gt;</span>
-                balise h1 classe intro
-            <span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span> balise h2 <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span> balise h3 <span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;intro&quot;</span><span class="p">&gt;</span>
-            balise p classe intro
-        <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>    
-    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>                                 
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
-        </td>
-        <td>
-        Fichier <code>style.css</code>
-        <div class="highlight"><pre><span></span><code><span class="nt">h2</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">em</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+</div>
+<p>Vous pouvez contempler <a href="http://delage.free.fr/page_test.html" target="_blank">ici</a> le rendu de cette magnifique page.</p>
+<div class="admonition example">
+<p class="admonition-title">Exercice  1</p>
+<ul>
+<li>Créez un dossier <code>VotreNom_PageWeb</code>  contenant un fichier <code>mapage.html</code>.</li>
+<li>Créez une page contenant une image et un lien vers le site du lycée.</li>
+<li>Vous pouvez utiliser le logiciel Notepad++, installé sur votre PC</li>
+<li>Vous pouvez aussi utiliser un éditeur en ligne avec rendu instantané, du type <a href="https://www.w3schools.com/tryit/" target="_blank">https://www.w3schools.com/tryit/</a></li>
+</ul>
+</div>
+<h3 id="12-html-css">1.2 <code>html</code> + <code>css</code><a class="headerlink" href="#12-html-css" title="Permanent link">⚓︎</a></h3>
+<p>L'acronyme <code>css</code>  signifie <em>Cascading Style Sheets</em>. L'idée est de regrouper dans un seul fichier toutes les informations relatives à la mise en forme des éléments de la page html. 
+De manière très simplifiée, on peut dire que le fichier <code>html</code> s'occupe <em>du fond</em> tandis que le fichier <code>css</code> s'occupe de la <em>forme</em>.</p>
+<p>Le fichier <code>css</code> (souvent nommé <code>style.css</code> et appelé <strong>feuille de style</strong>) doit être référencé au début du fichier <code>html</code> , au sein de la balise <code>&lt;head&gt;</code>.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Exemple de couple <code>html</code> / <code>css</code> minimal</p>
+<ul>
+<li>
+<p>fichier <code>index.html</code> : 
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>page test<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>  Ceci est un titre de niveau 1 <span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+          Mais sans rien d&#39;intéressant.
+          <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>  Ceci est un titre de niveau 2 <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>fichier <code>style.css</code> :</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nt">html</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">font-family</span><span class="p">:</span><span class="w">  </span><span class="kc">sans-serif</span><span class="p">;</span>
+<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">lightgray</span><span class="p">;</span><span class="w"> </span>
+<span class="w">  </span><span class="p">}</span>
 
-<span class="p">#</span><span class="nn">page</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="kc">blue</span><span class="p">;</span>
-<span class="w">    </span><span class="k">background-color</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="kc">lightblue</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="p">.</span><span class="nc">intro</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="nt">h2</span><span class="o">,</span><span class="w"> </span><span class="nt">h3</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">font-style</span><span class="p">:</span><span class="kc">italic</span><span class="p">;</span>
-<span class="w">    </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">arial</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="nt">div</span><span class="w"> </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">text-decoration</span><span class="p">:</span><span class="w"> </span><span class="kc">underline</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="nt">p</span><span class="p">.</span><span class="nc">intro</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">color</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="kc">maroon</span><span class="p">;</span>
-<span class="w">    </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="kc">bold</span><span class="p">;</span>
-<span class="w">    </span><span class="k">text-decoration</span><span class="p">:</span><span class="w"> </span><span class="kc">line-through</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
-        </td>
-    </tr>
-</table>
-<img alt="Propriétés dédiés aux bloc" src="../img/exemple_selecteur.png" style="width:40%; margin-left:30%" /></p>
 </div>
-</div>
-<h3 id="liste-de-proprietes-css">Liste de propriétés CSS<a class="headerlink" href="#liste-de-proprietes-css" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p class="admonition-title">CSS : les propriétés CSS dédiées au texte</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Nom de la propriété</th>
-<th style="text-align: center;">Valeurs possibles</th>
-<th style="text-align: center;">Remarque</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><code>color</code></td>
-<td style="text-align: center;">Code couleur</td>
-<td style="text-align: center;">Définit la couleur du texte</td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>background-color</code></td>
-<td style="text-align: center;">Code couleur</td>
-<td style="text-align: center;">Définit la couleur de fond de l'élément HTML</td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>font-family</code></td>
-<td style="text-align: center;">Nom de la police de caractère</td>
-<td style="text-align: center;">Définit la police à utiliser</td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>font-size</code></td>
-<td style="text-align: center;">Valeur numérique</td>
-<td style="text-align: center;">Définit la taille de la police</td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>font-style</code></td>
-<td style="text-align: center;"><code>normal</code>, <code>italic</code> ou <code>oblique</code></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>font-weight</code></td>
-<td style="text-align: center;"><code>normal</code> ou <code>bold</code></td>
-<td style="text-align: center;"><code>bold</code> affiche les caractères en <strong>gras</strong></td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>text-decoration</code></td>
-<td style="text-align: center;"><code>None</code>, <code>line-through</code> ou <code>underline</code></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>line-height</code></td>
-<td style="text-align: center;">Valeur numérique</td>
-<td style="text-align: center;">Définit la hauteur minimale de la ligne</td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>text-indent</code></td>
-<td style="text-align: center;">Valeur numérique</td>
-<td style="text-align: center;">Définit l'indentation (c'est à  dire le retrait de la 1ère ligne)</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><br></p>
-<div class="admonition note">
-<p class="admonition-title">CSS : les propriétés CSS dédiées au blocs</p>
-<p><img alt="Propriétés dédiés aux bloc" src="../img/proprietes_bloc2.png" style="width:40%; margin-left:30%;" />  </p>
-<div class="admonition note">
-<p class="admonition-title">Extrait de propriétés dédiés au bloc</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Propriété</th>
-<th style="text-align: center;">Valeurs possibles</th>
-<th style="text-align: center;">Remarque</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><code>margin</code></td>
-<td style="text-align: center;">Valeur numérique</td>
-<td style="text-align: center;">Définit l'épaisseur de la marge extérieure</td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>padding</code></td>
-<td style="text-align: center;">Valeur numérique de caractère</td>
-<td style="text-align: center;">Définit l'espace entre le contenu et la bordure (marge intérieure)</td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>border-width</code></td>
-<td style="text-align: center;">Valeur numérique (0 par défaut)</td>
-<td style="text-align: center;">Définit l'épaisseur de la bordure</td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>border-style</code></td>
-<td style="text-align: center;"><code>solid</code>, <code>dashed</code>, <code>dotted</code>, <code>groove</code> ou  <code>ridge</code>, par défaut <code>None</code></td>
-<td style="text-align: center;">Définit le style de la bordure</td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>border-color</code></td>
-<td style="text-align: center;">Code d'une couleur</td>
-<td style="text-align: center;">Définit la couleur de la bordure</td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>border-radius</code></td>
-<td style="text-align: center;">Valeur numérique</td>
-<td style="text-align: center;">Définit le rayon de l'arrondi des coins du cadre</td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>border</code></td>
-<td style="text-align: center;"><code>width</code> <code>style</code> <code>color</code></td>
-<td style="text-align: center;">Définit la largeur, le style et la couleur en une seule fois</td>
-</tr>
-</tbody>
-</table>
+<p>Vous pouvez contempler <a href="http://delage.free.fr/page_test2.html" target="_blank">ici</a> le nouveau rendu de cette encore plus magnifique page.</p>
+<p><strong>En savoir plus</strong> </p>
+<ul>
+<li>le cours d'OpenClassrooms : <a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3" target="_blank">https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3</a></li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Exercice  2</p>
+<p>Reprenez votre page de l'exercice 1 et rajoutez une feuille de style.</p>
 </div>
 <div class="admonition example">
-<p class="admonition-title">Exemple d'utilisation</p>
-<p><table>
-    <tr>
-        <td>
-        Fichier <code>index.html</code> <br />
-            <div class="highlight"><pre><span></span><code>    <span class="cp">&lt;!DOCTYPE html&gt;</span>                             
-    <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>                                        
-        <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>                                  
-            <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>            
-            <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span> <span class="p">/&gt;</span>          
-        <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span> 
-        <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-                    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>
-                        <span class="p">&lt;</span><span class="nt">img</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;photo1&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;./img/vacances1.jpg&quot;</span> 
-                            <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Vacances à la mer&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Vacances à la mer&quot;</span><span class="p">&gt;</span>
-                    <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-                    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>        
-                        <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;titre&quot;</span><span class="p">&gt;</span> Mes belles vacances <span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span> 
-                    <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-                    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>
-                        <span class="p">&lt;</span><span class="nt">img</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;photo2&quot;</span><span class="na">src</span><span class="o">=</span><span class="s">&quot;./img/vacances2.jpg&quot;</span> 
-                                <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Vacances à la montagne&quot;</span><span class="p">&gt;</span> 
-                    <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-                <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-            <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
-        </td>
-        <td>
-        Fichier <code>style.css</code> <br />
-        <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nt">td</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">dotted</span><span class="w"> </span><span class="kc">black</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="p">#</span><span class="nn">titre</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">lightblue</span><span class="p">;</span>
-<span class="w">        </span><span class="k">border-style</span><span class="p">:</span><span class="w"> </span><span class="kc">outset</span><span class="p">;</span>
-<span class="w">        </span><span class="k">padding</span><span class="p">:</span><span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">        </span><span class="k">margin</span><span class="p">:</span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="p">#</span><span class="nn">photo1</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">lightgrey</span><span class="p">;</span>
-<span class="w">        </span><span class="k">border-radius</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">        </span><span class="k">margin-left</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span><span class="w">   </span>
-
-<span class="w">    </span><span class="p">#</span><span class="nn">photo2</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="kt">px</span><span class="w"> </span><span class="kc">dashed</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span>
-<span class="w">        </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
-<span class="w">        </span><span class="k">padding</span><span class="p">:</span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">        </span><span class="k">margin-right</span><span class="p">:</span><span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-</code></pre></div>
-        </td>
-    </tr>
-</table>
-<img alt="Propriétés dédiés aux bloc" src="../img/vacances.png" style="width:60%; margin-left:20%;" /></p>
+<p class="admonition-title">Exercice  3</p>
+<ul>
+<li>Allez sur le site <a href="http://lemonde.fr" target="_blank">http://lemonde.fr</a>, et affichez l'inspecteur d'élement de votre navigateur (généralement accessible en appuyant sur <code>F12</code> )</li>
+<li>Modifiez le plus possible les attributs de style de la page.</li>
+</ul>
 </div>
+<div class="admonition example">
+<p class="admonition-title">Exercice  4</p>
+<ul>
+<li>Résoudre <a class="" href="https://www.challenges-kids.fr/categories/web/chall5/" target="_blank">ce challenge</a></li>
+</ul>
 </div>
-<p><br></p>
-<!---
+<h2 id="2-quand-le-client-peut-agir-sur-sa-page-exemple-avec-javascript">2. Quand le client peut agir sur sa page : exemple avec JavaScript<a class="headerlink" href="#2-quand-le-client-peut-agir-sur-sa-page-exemple-avec-javascript" title="Permanent link">⚓︎</a></h2>
+<p><img alt="" class="center" src="data/dynclient.png" /></p>
+<p>Jusqu'à présent, la page web envoyée par le serveur est :</p>
+<ol>
+<li>identique quel que soit le client.</li>
+<li>statique après réception sur l'ordinateur du client.</li>
+</ol>
+<p>Le JavaScript va venir régler le problème n°2 : il est possible de fabriquer une page sur laquelle le client va pouvoir agir <strong>localement</strong>, sans avoir à redemander une nouvelle page au serveur.</p>
+<p>Inventé en 1995 par <a href="https://fr.wikipedia.org/wiki/Brendan_Eich" target="_blank">Brendan Eich</a> pour le navigateur Netscape, le langage JavaScript s'est imposé comme la norme auprès de tous les navigateurs pour apporter de l'interactivité aux pages web.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Exemple de couple <code>html</code> / <code>javascript</code> minimal</p>
+<p>Notre fichier <code>index.html</code> fait référence, au sein d'une balise <code>&lt;script&gt;</code>, à un fichier externe <code>script.js</code> qui contiendra notre code JavaScript.   </p>
+<ul>
+<li>
+<p>fichier <code>index.html</code> : 
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>un peu d&#39;action<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;script.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Une page web extrêmement dynamique<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
 
-!!! Note "CSS : les pseudo-classes"  
-    Les pseudo-classes sont utilisées pour cibler un état particulier pour un élément.
+        <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>Changez la couleur d&#39;arrière-plan:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
 
-    | La pseudo-classe | Exemple | Description |
-    | :-------: | :-----: | :---------: |
-    | `:link` | `a:link { color:bleu; }` | Sélectionne le lien non visité | 
-    | `:visited` | `a:visited { color:red; }` | Sélectionne le lien visité |  
-    | `:hover` | `a:hover { color:hotpink; }` | Sélectionne le lien survolé par la souris |   
-    | `:active` | `a:active { color:green; }` | Sélectionne le lien actif | 
-    | `:focus` | `input:focus` | Sélectionne la balise `<input>` ayant le focus | 
-    | `:required` | `input:required` | Sélectionne les balises `<input>` à remplir obligatoirement |  
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;choix(&#39;yellow&#39;);&quot;</span><span class="p">&gt;</span>jaune<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 
-    Voir l'exemple d'utilisation sur le site de [W3schools.com](https://www.w3schools.com/css/css_pseudo_classes.asp).
--->
-<p><br></p>
-<h2 id="les-liens-utiles">Les liens utiles<a class="headerlink" href="#les-liens-utiles" title="Permanent link">⚓︎</a></h2>
-<p><a href="https://fr.khanacademy.org/computing/computer-programming/html-css">Khan-academy : un tuto pour les personnes qui débutent</a></p>
-<p><a href="http://numerique.ostralo.net/html_css">Ostralo.net : Une bonne synthèse</a></p>
-<p><a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3">OpenClassRoom : un tuto très complet</a></p>
-<p><a href="https://www.w3schools.com">W3school : pour retrouver une information ou tester un exemple.</a></p>
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;choix(&#39;green&#39;);&quot;</span><span class="p">&gt;</span>vert<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;choix(&#39;purple&#39;);&quot;</span><span class="p">&gt;</span>violet<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> 
+
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">onchange</span><span class="o">=</span><span class="s">&quot;choix(this.value)&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;color&quot;</span> <span class="p">/&gt;</span>
+
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+      En JavaScript, le nom de la couleur choisie est :
+      <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;resultat&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>fichier <code>script.js</code> :
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">choix</span><span class="p">(</span><span class="nx">color</span><span class="p">){</span>
+<span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">background</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">color</span><span class="p">;</span>
+<span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;resultat&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="o">=</span><span class="nx">color</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+</li>
+</ul>
+</div>
+<p>Le résultat de cette page peut être consulté <a href="http://delage.free.fr/page_test3.html" target="_blank">ici</a>.</p>
+<p><strong>Commentaires</strong></p>
+<ul>
+<li>Au sein du bouton déclaré par la balise <code>button</code>, l'attribut  <code>onclick</code> reçoit le nom d'une fonction déclarée à l'intérieur du fichier <code>script.js</code>, ici la fonction <code>choix()</code>.</li>
+<li>Cette fonction nous permet de modifier à la fois l'aspect esthétique de la page (changement de la couleur de background) mais aussi le contenu de cette page, en faisant afficher le nom de la couleur.</li>
+</ul>
+<p>La puissance du JavaScript permet de réaliser aujourd'hui des interfaces utilisateurs très complexes au sein d'un navigateur, équivalentes à celles produites par des logiciels externes (pensez à la version web de Discord ou aux Google Docs, par ex.). Bien sûr, dans ces cas complexes, le serveur est aussi sollicité pour modifier la page, comme nous le verrons en partie 3.</p>
+<p><strong>En savoir plus</strong></p>
+<ul>
+<li>le guide JavaScript de la fondation Mozilla : <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide" target="_blank">https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide</a></li>
+<li>le cours d'OpenClassrooms : <a href="https://openclassrooms.com/fr/courses/7696886-apprenez-a-programmer-avec-javascript" target="_blank">https://openclassrooms.com/fr/courses/7696886-apprenez-a-programmer-avec-javascript</a></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Exercice 5</p>
+<p>Reprenez votre page créée aux exercices précédents et rajoutez du JavaScript pour la rendre dynamique. Vous êtes libres !</p>
+<p>Vous pouvez vous aider d'une IA.</p>
+<p>Vous pouvez commencer par lui demander des choses simples (comment faire un message d'alerte, par exemple), puis aller vers des choses plus complexes (comment faire une calculatrice). N'oubliez pas, le but est de <strong>comprendre</strong> le code donné par l'IA. Vous pouvez d'ailleurs lui demander de vous l'expliquer ! N'exagérez pas, les requêtes aux IA consomment beaucoup de ressources <a href="https://drane-versailles.region-academique-idf.fr/spip.php?article1167" target="_blank">Quel est l’impact environnemental d’une IA générative ?</a></p>
+</div>
+<h2 id="3-quand-la-page-est-fabriquee-a-la-demande-pour-le-client-exemple-avec-php">3. Quand la page est fabriquée à la demande pour le client : exemple avec PHP<a class="headerlink" href="#3-quand-la-page-est-fabriquee-a-la-demande-pour-le-client-exemple-avec-php" title="Permanent link">⚓︎</a></h2>
+<p><img alt="" class="center" src="data/dynserveur.png" /></p>
+<p>Rappelons que toutes les pages que nous avons créées jusqu'à présent sont uniformément envoyées par le serveur au client. Aucune «préparation» de la page en amont n'a lieu sur le serveur, aucun dialogue n'a lieu avec le serveur une fois que la page a été livrée. 
+Évidemment, si le web était comme ceci, il ne serait qu'une gigantesque bibliothèque en consultation seule (ce fut le cas pendant longtemps, et ce qui n'était déjà pas si mal).</p>
+<p>Les langages serveurs, parmi lesquels PHP (présent sur environ 80% des serveurs), Python (via le framework Django), Java, Ruby, C#, permettent de rajouter de l'interactivité côté serveur.</p>
+<p><strong>Il convient de rappeler la différence fondamentale entre une page statique (côté serveur) et une page dynamique (côté serveur) :</strong></p>
+<h3 id="31-page-statique-cote-serveur">3.1 Page statique (côté serveur) :<a class="headerlink" href="#31-page-statique-cote-serveur" title="Permanent link">⚓︎</a></h3>
+<p>Lors d'une requête d'un client vers un serveur, si le client demande la page <code>index.html</code>, une <strong>copie exacte</strong> du fichier <code>index.html</code> est transmise au client sur sa machine.  </p>
+<p><strong>Exemple :</strong> la page <a href="http://delage.free.fr/interesting.html" target="_blank">http://delage.free.fr/interesting.html</a> que vous avez déjà consultée se trouve <strong>telle quelle</strong> sur le serveur mis à disposition par Free pour l'hébergement des pages personnelles :</p>
+<p><img alt="" class="center" src="data/extraitfree1.png" /></p>
+<p>Depuis votre navigateur, l'affichage du code-source (par Ctrl-U) vous donnera le fichier html tel qu'il était stocké sur le serveur.</p>
+<h3 id="32-page-dynamique-cote-serveur">3.2  Page dynamique (côté serveur) :<a class="headerlink" href="#32-page-dynamique-cote-serveur" title="Permanent link">⚓︎</a></h3>
+<p>Lors d'une requête d'un client vers un serveur, si le client demande la page <code>test.php</code>, un code html est généré à partir  du fichier <code>test.php</code>  puis est transmise au client sur sa machine. Le fichier transmis ne contient plus de balises <code>php</code>, il ne comporte que des balises <code>html</code> classiques.  </p>
+<p><strong>Exemple :</strong> la consultation de la page <a href="http://delage.free.fr/test.php" target="_blank">http://delage.free.fr/test.php</a> va renvoyer la page suivante :</p>
+<p><img alt="" class="center" src="data/php1.png" /></p>
+<p>dont le code-source est :</p>
+<p><img alt="" class="center" src="data/php2.png" /></p>
+<p>Notez bien que ce code-source ne contient que du <code>html</code>.</p>
+<p>Allons regarder cette page <strong>du côté du serveur</strong> :</p>
+<p><img alt="" class="center" src="data/php3.png" /></p>
+<p>Le contenu de cette page est :</p>
+<div class="highlight"><pre><span></span><code><span class="x">&lt;!DOCTYPE html&gt;</span>
+<span class="x">&lt;html&gt;</span>
+<span class="x">    &lt;head&gt;</span>
+<span class="x">        &lt;meta charset=&quot;utf-8&quot; /&gt;</span>
+<span class="x">        &lt;title&gt;Quel jour sommes-nous&lt;/title&gt;</span>
+<span class="x">    &lt;/head&gt;</span>
+<span class="x">    &lt;body&gt;</span>
+<span class="x">    &lt;p&gt;</span>
+<span class="x">    </span><span class="cp">&lt;?php</span>
+    <span class="nv">$date</span> <span class="o">=</span> <span class="nb">date</span><span class="p">(</span><span class="s2">&quot;d-m-Y&quot;</span><span class="p">);</span>
+    <span class="k">Print</span><span class="p">(</span><span class="s2">&quot;Nous sommes le </span><span class="si">$date</span><span class="s2">&quot;</span><span class="p">);</span>
+    <span class="cp">?&gt;</span>
+<span class="x">    &lt;/p&gt;</span>
+<span class="x">&lt;/body&gt;</span>
+<span class="x">&lt;/html&gt;</span>
+</code></pre></div>
+<p>On y repère la balise <code>&lt;?php&gt;</code> :
+<div class="highlight"><pre><span></span><code><span class="x">    </span><span class="cp">&lt;?php</span>
+    <span class="nv">$date</span> <span class="o">=</span> <span class="nb">date</span><span class="p">(</span><span class="s2">&quot;d-m-Y&quot;</span><span class="p">);</span>
+    <span class="k">Print</span><span class="p">(</span><span class="s2">&quot;Nous sommes le </span><span class="si">$date</span><span class="s2">&quot;</span><span class="p">);</span>
+    <span class="cp">?&gt;</span>
+</code></pre></div>
+Ce code <code>php</code> a donc généré, lors de l'appel au serveur, le code <code>html</code> :</p>
+<div class="highlight"><pre><span></span><code>Nous sommes le 13-04-2020
+</code></pre></div>
+<p>Vous pouvez tester du code PHP et la page générée par exemple sur <a class="" href="https://www.w3schools.com/php/phptryit.asp?filename=tryphp_compiler" target="_blank">ce site</a>.</p>
+<p>Voilà comment un serveur peut adapter la page qu'il renvoie, suivant l'utilisateur qui la demande. Nous verrons prochainement comment par des requêtes le client peut envoyer des paramètres au serveur, et comment celui-ci modifie sa réponse en conséquence.</p>
+<p><strong>En savoir plus :</strong> <a href="https://www.php.net/manual/fr/tutorial.firstpage.php" target="_blank">https://www.php.net/manual/fr/tutorial.firstpage.php</a></p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Dernière mise à jour:
-      2023-02-17
+      2026-02-17
     
   </small>
 </div>
