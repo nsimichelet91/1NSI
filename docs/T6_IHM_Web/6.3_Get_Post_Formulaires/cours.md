@@ -1,4 +1,4 @@
-# 6.4 Requêtes GET, POST et formulaires
+# 6.3 Requêtes GET, POST et formulaires
 
 ![image](data/BO.png){: .center}
 

@@ -1,4 +1,4 @@
-# 6.3 Protocole HTTP : étude du chargement d'une page web
+# 6.2 Protocole HTTP : étude du chargement d'une page web
 
 ![image](data/BO.png){: .center}
 

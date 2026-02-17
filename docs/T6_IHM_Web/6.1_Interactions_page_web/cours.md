@@ -122,7 +122,7 @@ Vous pouvez contempler [ici](http://free.delage.free.fr/page_test2.html){:target
     Reprenez votre page de l'exercice 1 et rajoutez une feuille de style.
 
 !!! example "{{ exercice() }}"
-    - Allez sur le site [http://lemonde.fr](http://lemonde.fr){:target="_blank"}, et affichez l'inspecteur d'élement de votre navigateur (généralement accessible en appuyant sur ```F12``` )
+    - Allez sur le site [https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade](https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade){:target="_blank"}, et affichez l'inspecteur d'élement de votre navigateur (généralement accessible en appuyant sur ```F12``` )
     - Modifiez le plus possible les attributs de style de la page.
 
 !!! example "{{ exercice() }}"
