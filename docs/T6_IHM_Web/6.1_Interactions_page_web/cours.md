@@ -62,9 +62,9 @@ Vous pouvez contempler [ici](http://free.delage.free.fr/page_test.html){:target=
     - Vous pouvez utiliser le logiciel Notepad++, installé sur votre PC
     - Vous pouvez aussi utiliser un éditeur en ligne avec rendu instantané, du type [https://www.w3schools.com/tryit/](https://www.w3schools.com/tryit/){:target="_blank"}
        
-:::tip 
-Vous trouverez toutes les réponses à vos questions sur le HTML [ici](https://www.w3schools.com/html/default.asp)){:target="_blank"}
-::::
+!!! tip 
+	Vous trouverez toutes les réponses à vos questions sur le HTML [ici](https://www.w3schools.com/html/default.asp)){:target="_blank"}
+
 
 
 ### 1.2 ```html``` + ```css``` 
