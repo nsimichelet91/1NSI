@@ -63,7 +63,7 @@ Vous pouvez contempler [ici](http://free.delage.free.fr/page_test.html){:target=
     - Vous pouvez aussi utiliser un éditeur en ligne avec rendu instantané, du type [https://www.w3schools.com/tryit/](https://www.w3schools.com/tryit/){:target="_blank"}
        
 !!! tip 
-	Vous trouverez toutes les réponses à vos questions sur le HTML [ici](https://www.w3schools.com/html/default.asp)){:target="_blank"}
+	Vous trouverez toutes les réponses à vos questions sur le HTML [ici](https://www.w3schools.com/html/default.asp){:target="_blank"}
 
 
 
@@ -122,10 +122,12 @@ Vous pouvez contempler [ici](http://free.delage.free.fr/page_test2.html){:target
 
 !!! example "{{ exercice() }}"
     - Allez sur le site [https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade](https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade){:target="_blank"}, et affichez l'inspecteur d'élement de votre navigateur (généralement accessible en appuyant sur ```F12``` )
-    - Modifiez le plus possible les attributs de style de la page.
+    - Modifier le plus possible les attributs de style de la page.
+	- Mettre un screenshot (image) de la page modifiée sur votre page web.
 
 !!! example "{{ exercice() }}"
     - Résoudre [ce challenge](https://www.challenges-kids.fr/categories/web/chall5/){. target="_blank"}
+	- Indiquez la solution et votre méthode sur votre page web.
 
 
 
