@@ -1,12 +1,11 @@
 
 !!! abstract ":star: Actualités :star:"
-	- Journée porte ouverte samedi 28 mars 2026 : Bienvenue en NSI ! 
+    - **Journée porte ouverte samedi 28 mars 2026 : Bienvenue en NSI !** 
 
 ## Progression :  
 
 !!! note "*Thèmes en cours d'étude*"
     - [Algorithmes gloutons](./T4_Algorithmique/4.6_Algorithmes_gloutons/cours/)
-
 
 
 !!! note "*Anciens thèmes traités*"
@@ -35,7 +34,8 @@
 	- Bonne rentrée ! 
 
 ## Programme :
-!!! abstract "Programme"
+
+!!! abstract "*Programme*"
     Nous traiterons les différentes entrées du programme dans les chapitres suivants :
 
 
