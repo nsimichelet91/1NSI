@@ -1,19 +1,23 @@
 
-
-<!--
 !!! abstract ":star: Actualités :star:"
 	- Journée porte ouverte samedi 28 mars 2026 : Bienvenue en NSI ! 
 
 ## Progression :  
 
 !!! note "*Thèmes en cours d'étude*"
-
+    - [Algorithmes gloutons](./T4_Algorithmique/4.6_Algorithmes_gloutons/cours/)
 
 
 
 !!! note "*Anciens thèmes traités*"
-
-
+    - [Recherche dichotomique](./T4_Algorithmique/4.5_Dichotomie/cours/)
+    - [Tri par sélection](./T4_Algorithmique/4.4_Tri_par_selection/cours/)
+    - [Tri par insertion](./T4_Algorithmique/4.3_Tri_par_insertion/cours/)
+    - [Complexité](./T4_Algorithmique/4.2_Complexite/cours/)
+    - [Extremums et moyennes](./T4_Algorithmique/4.1_Extremums_et_moyennes/cours/)
+    - [HTML-CSS](./T6_IHM_Web/6.1_HTML5_CSS3/cours/)
+    - [Protocoles de communication dans un réseau](./T3_Architecture_materielle/3.2_Protocoles_de_communication/cours/)
+    - [Architecture réseau](./T3_Architecture_materielle/3.1_Architecture_reseau/cours/)
 	- [Codage des entiers](./T2_Representation_des_donnees/2.7_Codage_entiers/cours/)
     - [Codage des non-entiers](./T2_Representation_des_donnees/2.8_Codage_non-entiers/cours/)
     - [Trier et fusionner des données](./T5_Traitement_de_donnees/5.2_Trier_et_fusionner_des_donnees/cours/)
@@ -29,7 +33,7 @@
 	- [Boucle For](./T1_Demarrer_en_Python/1.2_Boucle_for/cours/)
 	- [Variables](./T1_Demarrer_en_Python/1.1_Variables/cours/)
 	- Bonne rentrée ! 
--->
+
 ## Programme :
 !!! abstract "Programme"
     Nous traiterons les différentes entrées du programme dans les chapitres suivants :
