@@ -31,7 +31,7 @@
 	- [Boucle While](./T1_Demarrer_en_Python/1.3_Boucle_while/cours/)
 	- [Boucle For](./T1_Demarrer_en_Python/1.2_Boucle_for/cours/)
 	- [Variables](./T1_Demarrer_en_Python/1.1_Variables/cours/)
-	- Bonne rentrée ! 
+
 
 ## Programme :
 
