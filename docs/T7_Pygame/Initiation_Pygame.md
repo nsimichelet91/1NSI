@@ -150,7 +150,7 @@ for event in pygame.event.get():
     Intégrer le code ci-dessus au code précédent afin de pouvoir fermer proprement la fenêtre.
 
     {{
-    correction(True,
+    correction(False,
     """
     ??? success \"Correction\" 
         ```python linenums='1'
@@ -254,7 +254,7 @@ Le clic-gauche est associé à la valeur 1, le clic-droit à la valeur 3 (le cli
     Reprendre le code initial et y intégrer la capture d'évènements souris afin que s'affiche en console le bouton de souris appuyé.
 
     {{
-    correction(True,
+    correction(False,
     """
     ??? success \"Correction\" 
         ```python linenums='1'
@@ -309,7 +309,7 @@ Cette fonction n'a pas besoin d'être dans notre boucle d'écoute des évènemen
 
 
     {{
-    correction(True,
+    correction(False,
     """
     ??? success \"Correction\" 
         ```python linenums='1'
@@ -403,7 +403,7 @@ Au prochain ```fenetre.blit(perso, position_perso)```, le personnage sera positi
     - ```randint(a,b)``` du package ```random```, qui renvoie un entier pseudo-aléatoire entre ```a```  et ```b```.
 
     {{
-    correction(True,
+    correction(False,
     """
     ??? success \"Correction\" 
         ```python linenums='1'
@@ -459,7 +459,7 @@ où ```position_perso``` est l'objet de type ```rect```  contenant les coordonn�
     ![image](exo2.gif){: .center}
 
     {{
-    correction(True,
+    correction(False,
     """
     ??? success \"Correction\" 
         ```python linenums='1'
@@ -525,7 +525,7 @@ où ```position_perso``` est l'objet de type ```rect```  contenant les coordonn�
     - ```position_perso.right``` : abscisse de la droite du personnage
 
     {{
-    correction(True,
+    correction(False,
     """
     ??? success \"Correction\" 
         ```python linenums='1'
@@ -594,7 +594,7 @@ où ```position_perso``` est l'objet de type ```rect```  contenant les coordonn�
     Reprendre l'exercice précédent mais faire en sorte que le personnage réapparaisse à l'opposé de là où il est sorti.
 
     {{
-    correction(True,
+    correction(False,
     """
     ??? success \"Correction\" 
         ```python linenums='1'
@@ -722,7 +722,7 @@ En inclinant la carte, vous devriez voir bouger les valeurs dans la console de T
     À l'aide de l'exemple précédent, modifiez le code de l'exercice 5 afin de pouvoir bouger le personnage à l'aide de la micro:bit.
 
     {{
-    correction(True,
+    correction(False,
     """
     ??? success \"Correction\" 
         ```python linenums='1'
