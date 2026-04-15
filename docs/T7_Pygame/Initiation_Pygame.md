@@ -512,13 +512,11 @@ où ```position_perso``` est l'objet de type ```rect```  contenant les coordonn�
             pygame.display.flip() 
 
         pygame.quit()
+        ```  
     """
     )
     }}
-
-
-
-        ```
+   
 
 !!! example "{{ exercice() }}"
     Rajouter des instructions afin que le personnage ne puisse pas sortir de la fenêtre de jeu.
