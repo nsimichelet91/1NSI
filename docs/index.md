@@ -5,10 +5,11 @@
 ## *Progression*
 
 !!! note "*Thèmes en cours d'étude*"
-    - [Algorithmes gloutons](./T4_Algorithmique/4.6_Algorithmes_gloutons/cours/)
-
+	- [Algorithme KNN](./T4_Algorithmique/4.7_Algorithme_KNN/cours/)
+	- [Initiation Pygame](./T7_Pygame/Initiation_Pygame/Initiation_Pygame/)
 
 !!! note "*Anciens thèmes traités*"
+	- [Algorithmes gloutons](./T4_Algorithmique/4.6_Algorithmes_gloutons/cours/)
     - [Recherche dichotomique](./T4_Algorithmique/4.5_Dichotomie/cours/)
     - [Tri par sélection](./T4_Algorithmique/4.4_Tri_par_selection/cours/)
     - [Tri par insertion](./T4_Algorithmique/4.3_Tri_par_insertion/cours/)
