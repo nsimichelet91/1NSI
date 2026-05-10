@@ -22,7 +22,7 @@
     
     
       
-        <title>TP2 — Utilisation d’une console shell - Première NSI - Lycée Edmond Michelet - Arpajon</title>
+        <title>TP — Utilisation d’une console shell - Première NSI - Lycée Edmond Michelet - Arpajon</title>
       
     
     
@@ -106,7 +106,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tp2-utilisation-dune-console-shell" class="md-skip">
+        <a href="#tp-utilisation-dune-console-shell" class="md-skip">
           Aller au contenu
         </a>
       
@@ -140,7 +140,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TP2 — Utilisation d’une console shell
+              TP — Utilisation d’une console shell
             
           </span>
         </div>
@@ -2202,7 +2202,7 @@
           
   
   <span class="md-ellipsis">
-    TP2 — Utilisation d’une console shell
+    TP — Utilisation d’une console shell
   </span>
   
 
@@ -2213,7 +2213,7 @@
         
   
   <span class="md-ellipsis">
-    TP2 — Utilisation d’une console shell
+    TP — Utilisation d’une console shell
   </span>
   
 
@@ -3717,7 +3717,7 @@
                   
 
 
-<h1 id="tp2-utilisation-dune-console-shell">TP2 — Utilisation d’une console shell<a class="headerlink" href="#tp2-utilisation-dune-console-shell" title="Permanent link">⚓︎</a></h1>
+<h1 id="tp-utilisation-dune-console-shell">TP — Utilisation d’une console shell<a class="headerlink" href="#tp-utilisation-dune-console-shell" title="Permanent link">⚓︎</a></h1>
 <h2 id="1-mise-en-route">1. Mise en route<a class="headerlink" href="#1-mise-en-route" title="Permanent link">⚓︎</a></h2>
 <p>Avec le jeu <strong>TERMINUS</strong>, vous avez découvert un certain nombre de commandes UNIX/Linux de façon ludique.</p>
 <p>Ce second TP va vous permettre :</p>
@@ -3854,16 +3854,16 @@
 <p>Utilisez fréquemment <code>pwd</code> pour vérifier votre position dans l’arborescence.</p>
 </div>
 <h3 id="exercice-21">Exercice 2.1<a class="headerlink" href="#exercice-21" title="Permanent link">⚓︎</a></h3>
-<h4 id="1">1.<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h4>
+<h4 id="question-1">Question 1.<a class="headerlink" href="#question-1" title="Permanent link">⚓︎</a></h4>
 <p>Tapez :</p>
 <div class="highlight"><pre><span></span><code><span class="nb">pwd</span>
 </code></pre></div>
 <p>Vérifiez que la réponse est de la forme :</p>
 <div class="highlight"><pre><span></span><code>/home/votre_login
 </code></pre></div>
-<h4 id="2">2.<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h4>
+<h4 id="question-2">Question 2.<a class="headerlink" href="#question-2" title="Permanent link">⚓︎</a></h4>
 <p>À l’aide des commandes précédentes, recréez l’arborescence de l’exemple.</p>
-<h4 id="3">3.<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h4>
+<h4 id="question-3">Question 3.<a class="headerlink" href="#question-3" title="Permanent link">⚓︎</a></h4>
 <h5 id="a">a)<a class="headerlink" href="#a" title="Permanent link">⚓︎</a></h5>
 <p>Créez :</p>
 <ul>
@@ -3892,8 +3892,8 @@
 <p>Affiche également les fichiers cachés.</p>
 <h3 id="lecture-dun-affichage">Lecture d’un affichage<a class="headerlink" href="#lecture-dun-affichage" title="Permanent link">⚓︎</a></h3>
 <p>Exemple :</p>
-<p><img alt="alt text" src="../data/droit_linux.png" />
-Dans l’ordre cela donne de gauche `a droite :
+<p><img alt="alt text" src="../data/droit_linux.png" />  </p>
+<p>Dans l’ordre cela donne de gauche `a droite :
 <strong>droits - nombre de liens - nom du propriétaire - nom du groupe - taille en octet - date - heure - nom du fichier ou du répertoire</strong></p>
 <p>Les systèmes de type UNIX sont des systèmes multi-utilisateurs.   Plusieurs utilisateurs peuvent donc partager un même ordinateur.<br />
 Comme chaque utilisateur possède un environnement de travail qui lui est propre, chaque utilisateur possède certains droits lui permettant
@@ -3942,23 +3942,25 @@ d’effectuer certaines opérations et pas d’autres. Le système d’exploitat
 <li>enfin <code>r--</code> indique que tous les autres utilisateurs peuvent uniquement lire le fichier.</li>
 </ul>
 <h3 id="modifier-les-droits">Modifier les droits<a class="headerlink" href="#modifier-les-droits" title="Permanent link">⚓︎</a></h3>
-<p>Pour changer les droits d’un fichier ou dossier, on utilise la commande <code>chmod</code> suivi d’un nombre composé de 3 chiffres puis du nom du fichier concerné. Pour savoir quel nombre on choisit il suffit de savoir compter en binaire. Par exemple :
-- <code>rwx</code> correspondra au nombre binaire <code>111</code> donc au nombre entier 7;
-- <code>rw-</code> correspondra au nombre binaire <code>110</code> donc au nombre entier 6;
+<p>Pour changer les droits d’un fichier ou dossier, on utilise la commande <code>chmod</code> suivi d’un nombre composé de 3 chiffres puis du nom du fichier concerné.<br />
+Pour savoir quel nombre on choisit il suffit de savoir compter en binaire. <br />
+Par exemple :<br />
+- <code>rwx</code> correspondra au nombre binaire <code>111</code> donc au nombre entier 7
+- <code>rw-</code> correspondra au nombre binaire <code>110</code> donc au nombre entier 6
 - <code>r--</code> correspondra au nombre binaire <code>100</code> donc au nombre entier 4</p>
 <h3 id="exercice-22">Exercice 2.2<a class="headerlink" href="#exercice-22" title="Permanent link">⚓︎</a></h3>
-<h4 id="1_1">1<a class="headerlink" href="#1_1" title="Permanent link">⚓︎</a></h4>
+<h4 id="question-1_1">Question 1<a class="headerlink" href="#question-1_1" title="Permanent link">⚓︎</a></h4>
 <p>Quel nombre choisir pour qu’un fichier soit :</p>
 <ul>
 <li>lisible par propriétaire et groupe</li>
 <li>exécutable par tous</li>
 <li>modifiable uniquement par le propriétaire</li>
 </ul>
-<h4 id="2_1">2<a class="headerlink" href="#2_1" title="Permanent link">⚓︎</a></h4>
+<h4 id="question-2_1">Question 2<a class="headerlink" href="#question-2_1" title="Permanent link">⚓︎</a></h4>
 <p>Changez les droits de <code>dossier2</code> en :</p>
 <div class="highlight"><pre><span></span><code>rwxrw-r--
 </code></pre></div>
-<h4 id="3_1">3<a class="headerlink" href="#3_1" title="Permanent link">⚓︎</a></h4>
+<h4 id="question-3_1">Question 3<a class="headerlink" href="#question-3_1" title="Permanent link">⚓︎</a></h4>
 <p>Tapez :</p>
 <div class="highlight"><pre><span></span><code>chown<span class="w"> </span>--help
 </code></pre></div>
@@ -3992,11 +3994,11 @@ d’effectuer certaines opérations et pas d’autres. Le système d’exploitat
 <p>Le prompt affichant le nom de la machine disparaît ; vous avez à la place une page blanche où vous pouvez taper du texte. Le nom
 du fichier que vous éditez et le nom de l’éditeur sont affichés en haut. La liste des commandes disponibles est écrite en bas.  </p>
 <h3 id="exercice-23">Exercice 2.3<a class="headerlink" href="#exercice-23" title="Permanent link">⚓︎</a></h3>
-<h4 id="1_2">1<a class="headerlink" href="#1_2" title="Permanent link">⚓︎</a></h4>
+<h4 id="question-1_2">Question 1<a class="headerlink" href="#question-1_2" title="Permanent link">⚓︎</a></h4>
 <p>Ouvrez :</p>
 <div class="highlight"><pre><span></span><code>nano<span class="w"> </span>montexte.txt
 </code></pre></div>
-<h4 id="2_2">2<a class="headerlink" href="#2_2" title="Permanent link">⚓︎</a></h4>
+<h4 id="question-2_2">Question 2<a class="headerlink" href="#question-2_2" title="Permanent link">⚓︎</a></h4>
 <p>Écrivez un texte puis quittez en enregistrant.</p>
 <h2 id="24-commandes-de-fichiers">2.4 Commandes de fichiers<a class="headerlink" href="#24-commandes-de-fichiers" title="Permanent link">⚓︎</a></h2>
 <h3 id="commande-cat">Commande <code>cat</code><a class="headerlink" href="#commande-cat" title="Permanent link">⚓︎</a></h3>
@@ -4032,18 +4034,18 @@ du fichier que vous éditez et le nom de l’éditeur sont affichés en haut. La
 <p><code>kill -9</code> détruit immédiatement le processus ciblé.</p>
 </div>
 <h3 id="exercice-25">Exercice 2.5<a class="headerlink" href="#exercice-25" title="Permanent link">⚓︎</a></h3>
-<h4 id="1_3">1<a class="headerlink" href="#1_3" title="Permanent link">⚓︎</a></h4>
+<h4 id="question-1_3">Question 1<a class="headerlink" href="#question-1_3" title="Permanent link">⚓︎</a></h4>
 <p>Lancez :</p>
 <div class="highlight"><pre><span></span><code>top
 </code></pre></div>
-<h4 id="2_3">2<a class="headerlink" href="#2_3" title="Permanent link">⚓︎</a></h4>
+<h4 id="question-2_3">Question 2<a class="headerlink" href="#question-2_3" title="Permanent link">⚓︎</a></h4>
 <p>Créez le script suivant :</p>
 <div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </code></pre></div>
-<h4 id="3_2">3<a class="headerlink" href="#3_2" title="Permanent link">⚓︎</a></h4>
+<h4 id="question-3_2">Question 3<a class="headerlink" href="#question-3_2" title="Permanent link">⚓︎</a></h4>
 <p>Exécutez-le.</p>
-<h4 id="4">4<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h4>
+<h4 id="question-4">Question 4<a class="headerlink" href="#question-4" title="Permanent link">⚓︎</a></h4>
 <p>Relancez :</p>
 <div class="highlight"><pre><span></span><code>top
 </code></pre></div>
