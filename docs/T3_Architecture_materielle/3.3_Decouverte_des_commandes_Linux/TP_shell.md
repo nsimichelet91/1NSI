@@ -1,5 +1,5 @@
 
-# TP2 — Utilisation d’une console shell  
+# TP — Utilisation d’une console shell  
 
 ## 1. Mise en route
 
@@ -95,7 +95,7 @@ Dans cet exemple :
 
 ### Exercice 2.1
 
-#### 1.
+#### Question 1.
 Tapez :
 
 ```bash
@@ -108,10 +108,10 @@ Vérifiez que la réponse est de la forme :
 /home/votre_login
 ```
 
-#### 2.
+#### Question 2.
 À l’aide des commandes précédentes, recréez l’arborescence de l’exemple.
 
-#### 3.
+#### Question 3.
 
 ##### a)
 Créez :
@@ -156,7 +156,8 @@ Affiche également les fichiers cachés.
 
 Exemple :
 
-![alt text](data/droit_linux.png)
+![alt text](data/droit_linux.png)  
+
 Dans l’ordre cela donne de gauche `a droite :
 **droits - nombre de liens - nom du propriétaire - nom du groupe - taille en octet - date - heure - nom du fichier ou du répertoire**
 
@@ -196,28 +197,31 @@ Pour le fichier `montexte.txt` on a les droits `-rw-r--r--` :
 
 ### Modifier les droits
 
-Pour changer les droits d’un fichier ou dossier, on utilise la commande `chmod` suivi d’un nombre composé de 3 chiffres puis du nom du fichier concerné. Pour savoir quel nombre on choisit il suffit de savoir compter en binaire. Par exemple :
-- `rwx` correspondra au nombre binaire `111` donc au nombre entier 7;
-- `rw-` correspondra au nombre binaire `110` donc au nombre entier 6;
+Pour changer les droits d’un fichier ou dossier, on utilise la commande `chmod` suivi d’un nombre composé de 3 chiffres puis du nom du fichier concerné.  
+Pour savoir quel nombre on choisit il suffit de savoir compter en binaire.   
+Par exemple :  
+- `rwx` correspondra au nombre binaire `111` donc au nombre entier 7
+- `rw-` correspondra au nombre binaire `110` donc au nombre entier 6
 - `r--` correspondra au nombre binaire `100` donc au nombre entier 4
 
 ### Exercice 2.2
 
-#### 1
+#### Question 1
 Quel nombre choisir pour qu’un fichier soit :
 
 - lisible par propriétaire et groupe
 - exécutable par tous
 - modifiable uniquement par le propriétaire
 
-#### 2
+#### Question 2
+
 Changez les droits de `dossier2` en :
 
 ```text
 rwxrw-r--
 ```
 
-#### 3
+#### Question 3
 Tapez :
 
 ```bash
@@ -252,14 +256,14 @@ du fichier que vous éditez et le nom de l’éditeur sont affichés en haut. La
 
 ### Exercice 2.3
 
-#### 1
+#### Question 1
 Ouvrez :
 
 ```bash
 nano montexte.txt
 ```
 
-#### 2
+#### Question 2
 Écrivez un texte puis quittez en enregistrant.
 
 ## 2.4 Commandes de fichiers
@@ -326,14 +330,14 @@ kill -9 1234
 
 ### Exercice 2.5
 
-#### 1
+#### Question 1
 Lancez :
 
 ```bash
 top
 ```
 
-#### 2
+#### Question 2
 Créez le script suivant :
 
 ```python
@@ -341,11 +345,11 @@ for i in range(20):
     print(i)
 ```
 
-#### 3
+#### Question 3
 Exécutez-le.
 
 
-#### 4
+#### Question 4
 Relancez :
 
 ```bash
