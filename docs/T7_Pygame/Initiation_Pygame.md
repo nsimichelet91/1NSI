@@ -1,10 +1,16 @@
 # Initiation à Pygame
-![](logopygame.png){: .center width=60%}
+![](data/logopygame.png){: .center width=60%}
 
 {{initexo(0)}}
 
 
 {#
+------------------------------------------
+IMPORTANT
+-------------------------------------
+modifier le nom de la variable position_perso, c'est moche
+
+
 ## 0. Preambule
 
 - [Pygame](https://www.pygame.org/news){. target="_blank"} est un package de Python facilitant la création de jeux basés une interface graphique.
@@ -45,7 +51,7 @@ pygame.quit()
 
 Ce code devrait vous donner ceci :
 
-![image](f1.png){: .center width=30%}
+![image](data/f1.png){: .center width=30%}
 
 
 **Remarques**
@@ -67,10 +73,10 @@ Ce code devrait vous donner ceci :
 Nous allons travailler avec le sprite ci-dessous, nommé ```perso.png```. Il est issu de [https://openclassrooms.com/fr/courses/1399541-interface-graphique-pygame-pour-python/1399813-premieres-fenetres](https://openclassrooms.com/fr/courses/1399541-interface-graphique-pygame-pour-python/1399813-premieres-fenetres)
 
 
-![image](perso.png){: .center}
+![image](data/perso.png){: .center}
 
 
-[Téléchargez-le](perso.png) pour le mettre dans le même dossier que votre code ```pygame```.
+[Téléchargez-le](data/perso.png) pour le mettre dans le même dossier que votre code ```pygame```.
 
 Vous pouvez trouver sur internet un grand nombre de sprites libres de droits, au format ```png``` (donc gérant la transparence), dans de multiples positions (ce qui permet de simuler des mouvements fluides). Ici nous travaillerons avec un sprite unique.
 
@@ -130,7 +136,7 @@ pygame.quit()
 
 **Aperçu**
 
-![image](f2.png){: .center width=30%}
+![image](data/f2.png){: .center width=30%}
 
 ## 3. Gestion des évènements
 Lorsqu'un programme ```pygame``` est lancé, la variable interne ```pygame.event.get()``` reçoit en continu les évènements des périphériques gérés par le système d'exploitation.  
@@ -150,7 +156,7 @@ for event in pygame.event.get():
     Intégrer le code ci-dessus au code précédent afin de pouvoir fermer proprement la fenêtre.
 
     {{
-    correction(True,
+    correction(False,
     """
     ??? success \"Correction\" 
         ```python linenums='1'
@@ -254,7 +260,7 @@ Le clic-gauche est associé à la valeur 1, le clic-droit à la valeur 3 (le cli
     Reprendre le code initial et y intégrer la capture d'évènements souris afin que s'affiche en console le bouton de souris appuyé.
 
     {{
-    correction(True,
+    correction(False,
     """
     ??? success \"Correction\" 
         ```python linenums='1'
@@ -309,7 +315,7 @@ Cette fonction n'a pas besoin d'être dans notre boucle d'écoute des évènemen
 
 
     {{
-    correction(True,
+    correction(False,
     """
     ??? success \"Correction\" 
         ```python linenums='1'
@@ -395,7 +401,7 @@ Au prochain ```fenetre.blit(perso, position_perso)```, le personnage sera positi
 
     Réaliser un déplacement aléatoire, comme l'animation ci-dessous.
 
-    ![image](exo1.gif){: .center width=30%}
+    ![image](data/exo1.gif){: .center width=30%}
 
     Vous pourrez utiliser les instructions :
 
@@ -403,7 +409,7 @@ Au prochain ```fenetre.blit(perso, position_perso)```, le personnage sera positi
     - ```randint(a,b)``` du package ```random```, qui renvoie un entier pseudo-aléatoire entre ```a```  et ```b```.
 
     {{
-    correction(True,
+    correction(False,
     """
     ??? success \"Correction\" 
         ```python linenums='1'
@@ -456,10 +462,10 @@ où ```position_perso``` est l'objet de type ```rect```  contenant les coordonn�
 !!! example "{{ exercice() }}"
     
     Réaliser un contrôle au clavier du personnage, comme dans l'animation ci-dessous.
-    ![image](exo2.gif){: .center}
+    ![image](data/exo2.gif){: .center}
 
     {{
-    correction(True,
+    correction(False,
     """
     ??? success \"Correction\" 
         ```python linenums='1'
@@ -506,13 +512,11 @@ où ```position_perso``` est l'objet de type ```rect```  contenant les coordonn�
             pygame.display.flip() 
 
         pygame.quit()
+        ```  
     """
     )
     }}
-
-
-
-        ```
+   
 
 !!! example "{{ exercice() }}"
     Rajouter des instructions afin que le personnage ne puisse pas sortir de la fenêtre de jeu.
@@ -525,7 +529,7 @@ où ```position_perso``` est l'objet de type ```rect```  contenant les coordonn�
     - ```position_perso.right``` : abscisse de la droite du personnage
 
     {{
-    correction(True,
+    correction(False,
     """
     ??? success \"Correction\" 
         ```python linenums='1'
@@ -594,7 +598,7 @@ où ```position_perso``` est l'objet de type ```rect```  contenant les coordonn�
     Reprendre l'exercice précédent mais faire en sorte que le personnage réapparaisse à l'opposé de là où il est sorti.
 
     {{
-    correction(True,
+    correction(False,
     """
     ??? success \"Correction\" 
         ```python linenums='1'
@@ -660,7 +664,316 @@ où ```position_perso``` est l'objet de type ```rect```  contenant les coordonn�
     )
     }}    
 
-## 5. Contrôle avec la micro:bit
+
+## 5. Collisions avec d'autres éléments
+
+### 5.1 Création d'un objet ```Rect``` 
+
+La variable ```position_perso``` de notre personnage est de type ```Rect```.
+
+Nous pouvons en créer une autre avec la fonction ```pygame.Rect```, qui prend 4 arguments:
+
+- l'abscisse du point en haut à gauche
+- l'ordonnée du point en haut à gauche
+- la largeur du rectangle (sur l'axe des abscisses)
+- la hauteur du rectangle (sur l'axe des ordonnées)
+
+Par exemple, l'instruction
+
+```python
+barre = pygame.Rect(250, 50, 10, 200)
+```
+
+créera une variable ```barre``` de type ```Rect```, qui sera un rectangle dont les coordonnées du point en haut à gauche sont (250,50), de largeur 10 et de hauteur 200. 
+
+Attention, créer l'objet ne l'affiche pas !
+
+Il faut pour cela donner l'instruction
+
+```python
+pygame.draw.rect(fenetre, (74,55,242), barre)
+```
+
+où ```(74,55,242)``` est la couleur de remplissage du rectangle.
+
+!!! example "{{ exercice() }}"
+    Écrire les instructions précédentes pour faire apparaître la barre :
+
+    ![image](data/f3.png){: .center}
+
+    {{
+    correction(False,
+    """
+    ??? success \"Correction\" 
+        ```python linenums='1'
+        import pygame
+        from pygame.locals import *
+
+        pygame.init()
+        pygame.key.set_repeat(50)
+        clock = pygame.time.Clock()
+
+        fenetre = pygame.display.set_mode((640, 480))
+
+        perso = pygame.image.load('perso.png').convert_alpha()
+        position_perso = perso.get_rect()
+
+        pas = 15 
+
+        barre = pygame.Rect(250, 50, 10, 200)
+
+        bleu = (50,50,250)
+
+        running = True
+        while running:
+            clock.tick(30)
+            fenetre.fill((10, 186, 181))
+            fenetre.blit(perso, position_perso)
+
+            if position_perso.top < 0:
+                position_perso.top = 0
+
+            if position_perso.bottom > 480:
+                position_perso.bottom = 480
+
+            if position_perso.left < 0:
+                position_perso.left = 0
+
+            if position_perso.right > 640:
+                position_perso.right = 640
+
+            pygame.draw.rect(fenetre, (74,55,242), barre)
+
+            for event in pygame.event.get() :    
+                if event.type == KEYDOWN:
+
+                    if event.key == K_DOWN : 
+                        position_perso = position_perso.move(0, pas)
+
+                    if event.key == K_UP :
+                        position_perso = position_perso.move(0, -pas)
+
+                    if event.key == K_RIGHT : 
+                        position_perso = position_perso.move(pas, 0)
+
+                    if event.key == K_LEFT : 
+                        position_perso = position_perso.move(-pas, 0)   
+
+                if event.type == pygame.QUIT:
+                    running = False
+
+
+            pygame.display.flip() 
+
+        pygame.quit()
+
+        ```
+    """
+    )
+    }}
+
+
+
+### 5.2 Collision avec un seul élément
+
+Pygame possède une fonction ```colliderect``` qui renvoie un booléen attestant (ou pas) de la collision entre deux objets de type ```Rect```.
+
+Pour tester la collision entre deux objets  ```R1``` et ```R2```, on écrira 
+
+```python
+R1.colliderect(R2)
+```
+
+Cette instruction renvoie ```True``` si les deux objets se touchent, ```False``` sinon.
+
+!!! example "{{ exercice() }}"
+    Détecter la collision et faire reculer le personnage en cas de collision (par exemple, mais vous pouvez faire autre chose !).
+
+    ![image](data/collide1.gif){: .center}
+    
+
+    {{
+    correction(False,
+    """
+    ??? success \"Correction\" 
+        ```python linenums='1'
+        import pygame
+        from pygame.locals import *
+
+        pygame.init()
+        pygame.key.set_repeat(50)
+        clock = pygame.time.Clock()
+
+        fenetre = pygame.display.set_mode((640, 480))
+
+        perso = pygame.image.load('perso.png').convert_alpha()
+        position_perso = perso.get_rect()
+
+        pas = 15 
+
+        barre = pygame.Rect(250, 50, 10, 200)
+
+        bleu = (50,50,250)
+
+        running = True
+        while running:
+            clock.tick(30)
+            fenetre.fill((10, 186, 181))
+            fenetre.blit(perso, position_perso)
+
+            if position_perso.top < 0:
+                position_perso.top = 0
+
+            if position_perso.bottom > 480:
+                position_perso.bottom = 480
+
+            if position_perso.left < 0:
+                position_perso.left = 0
+
+            if position_perso.right > 640:
+                position_perso.right = 640
+
+            pygame.draw.rect(fenetre, (74,55,242), barre)
+
+
+
+            if position_perso.colliderect(barre):
+                position_perso = position_perso.move(-200,0)
+
+            for event in pygame.event.get() :    
+                if event.type == KEYDOWN:
+
+                    if event.key == K_DOWN : 
+                        position_perso = position_perso.move(0, pas)
+
+                    if event.key == K_UP :
+                        position_perso = position_perso.move(0, -pas)
+
+                    if event.key == K_RIGHT : 
+                        position_perso = position_perso.move(pas, 0)
+
+                    if event.key == K_LEFT : 
+                        position_perso = position_perso.move(-pas, 0)   
+
+                if event.type == pygame.QUIT:
+                    running = False
+
+
+            pygame.display.flip() 
+
+        pygame.quit()
+
+        ``` 
+    """
+    )
+    }}
+
+### 5.3 Collision avec plusieurs éléments
+
+Il est aussi possible d'utiliser la fonction ```collidelist``` qui prend en paramètre *une liste* d'objets de type ```Rect```.
+
+Attention, cette fonction ne renvoie pas un booléen mais un nombre, qui correspond à l'indice dans la liste de l'élément touché. Si aucun élément n'est touché, cette fonction renvoie -1.
+
+Par exemple, si nous avons un objet ```A``` et trois objets ```B```, ```C``` et ```D``` réunis dans une liste ```lst```, alors l'expression
+
+```python
+A.collidelist(lst)
+```
+
+renverra :
+
+- 0 si A touche B
+- 1 si A touche C
+- 2 si A touche D
+- -1 si A ne touche rien.
+
+
+!!! example "{{ exercice() }}"
+    Rajouter une barre (faire un début de labyrinthe) et faire en sorte que la fenêtre se ferme dès qu'on touche une barre.
+
+    ![image](data/collide2.gif){: .center}
+    
+    {{
+    correction(False,
+    """
+    ??? success \"Correction\" 
+        ```python linenums='1'
+        import pygame
+        from pygame.locals import *
+
+        pygame.init()
+        pygame.key.set_repeat(50)
+        clock = pygame.time.Clock()
+
+        fenetre = pygame.display.set_mode((640, 480))
+
+        perso = pygame.image.load('perso.png').convert_alpha()
+        position_perso = perso.get_rect()
+
+        pas = 15 
+
+        barriere1 = pygame.Rect(250, 50, 10, 200)
+        barriere2 = pygame.Rect(250, 250, 200, 10)
+
+        bleu = (50,50,250)
+
+        running = True
+        while running:
+            clock.tick(30)
+            fenetre.fill((10, 186, 181))
+            fenetre.blit(perso, position_perso)
+
+            if position_perso.top < 0:
+                position_perso.top = 0
+
+            if position_perso.bottom > 480:
+                position_perso.bottom = 480
+
+            if position_perso.left < 0:
+                position_perso.left = 0
+
+            if position_perso.right > 640:
+                position_perso.right = 640
+
+            pygame.draw.rect(fenetre, bleu, barriere1)
+            pygame.draw.rect(fenetre, bleu, barriere2)
+            lst_bar = [barriere1, barriere2]
+
+
+            if position_perso.collidelist(lst_bar) != -1:
+                running = False
+
+            for event in pygame.event.get() :    
+                if event.type == KEYDOWN:
+
+                    if event.key == K_DOWN : 
+                        position_perso = position_perso.move(0, pas)
+
+                    if event.key == K_UP :
+                        position_perso = position_perso.move(0, -pas)
+
+                    if event.key == K_RIGHT : 
+                        position_perso = position_perso.move(pas, 0)
+
+                    if event.key == K_LEFT : 
+                        position_perso = position_perso.move(-pas, 0)   
+
+                if event.type == pygame.QUIT:
+                    running = False
+
+
+            pygame.display.flip() 
+
+        pygame.quit()
+
+        ``` 
+    """
+    )
+    }}
+
+
+
+## 6. Contrôle avec la micro:bit
 
 Pour pouvoir contrôler notre personnage avec (par exemple) les boutons de la carte micro:bit, il va falloir :
 
@@ -668,7 +981,7 @@ Pour pouvoir contrôler notre personnage avec (par exemple) les boutons de la ca
 - mettre dans notre programme Pygame une instruction capable de recevoir les données envoyées par la carte.
 
 
-### 5.1 Programme à téléverser dans la micro:bit
+### 6.1 Programme à téléverser dans la micro:bit
 
 [Lien vers le simulateur](https://python.microbit.org/v/3){. target="_blank"}
 
@@ -688,7 +1001,7 @@ while True:
 Ce programme va envoyer, 20 fois par seconde, la valeur de l'inclinaison en X et la valeur de l'inclinaison en Y.
 
 
-### 5.2 Récupération des données dans Pygame
+### 6.2 Récupération des données dans Pygame
 
 Il faut connaître le port utilisé par le système d'exploitation pour communiquer avec la micro:bit. Sous Linux, ce port est de la forme ```ttyACM0```, sous Windows il sera de la forme ```COM2```.
 
@@ -722,7 +1035,7 @@ En inclinant la carte, vous devriez voir bouger les valeurs dans la console de T
     À l'aide de l'exemple précédent, modifiez le code de l'exercice 5 afin de pouvoir bouger le personnage à l'aide de la micro:bit.
 
     {{
-    correction(True,
+    correction(False,
     """
     ??? success \"Correction\" 
         ```python linenums='1'
@@ -812,7 +1125,7 @@ Bien d'autres aides peuvent être trouvées dans les liens citées dans la parti
 
 **Exemple** de réalisation possible : un clicker avec un temps qui diminue à progressivement, et comptage des points.
 
-![image](exo3.gif){: .center width=30%}
+![image](data/exo3.gif){: .center width=30%}
 
 
 
@@ -853,4 +1166,3 @@ while sortir == False :
 
 - Documentation officielle de Pygame, [https://www.pygame.org/docs/](https://www.pygame.org/docs/)
 - Cours d'OpenClassrooms, [https://openclassrooms.com/fr/courses/1399541-interface-graphique-pygame-pour-python/1399813-premieres-fenetres](https://openclassrooms.com/fr/courses/1399541-interface-graphique-pygame-pour-python/1399813-premieres-fenetres).
-
