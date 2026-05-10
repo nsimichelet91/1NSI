@@ -46,7 +46,7 @@ puis appuyez sur **Entrée**
 
 ![alt text](data/js_linux2.png)
 
-# 2. Prise en main des commandes UNIX/Linux de base
+## 2. Prise en main des commandes UNIX/Linux de base
 
 ## 2.1 Arborescence de fichiers
 
@@ -436,4 +436,4 @@ depuis `documents` ?
     - éditer des fichiers
     - exécuter des scripts
     - observer les processus
-````
+
