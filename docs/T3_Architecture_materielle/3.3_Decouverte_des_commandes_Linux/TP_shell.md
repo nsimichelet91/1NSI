@@ -1,5 +1,5 @@
 
-# TP — Utilisation d’une console shell  
+# TP - Utilisation d’une console shell  
 
 ## 1. Mise en route
 
@@ -15,13 +15,15 @@ Pour cela, nous allons utiliser un émulateur en ligne.
 ### Étapes
 
 1. Connectez-vous sur :  
-   [https://bellard.org/jslinux](https://bellard.org/jslinux){target = "_blank"}
+[https://bellard.org/jslinux](https://bellard.org/jslinux){target = "_blank"}
 
-2. Cliquez sur **"click here"** sur la première ligne (Alpine Linux 3.23.2).
+2. Cliquez sur **"click here"** sur la première ligne (Alpine Linux 3.23.2)  
+
 ![alt text](data/welcome_linux.png)
 
 3. Connectez-vous sur :  
-   [https://vfsync.org/signup](https://vfsync.org/signup){target = "_blank"}
+[https://vfsync.org/signup](https://vfsync.org/signup){target = "_blank"}  
+
 ![alt text](data/vfsync_log.png)
 
 4. Créez un compte en choisissant :
