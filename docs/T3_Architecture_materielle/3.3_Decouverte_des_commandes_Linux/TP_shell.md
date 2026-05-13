@@ -50,27 +50,32 @@ puis appuyez sur **Entrée**
 
 ## 2. Prise en main des commandes UNIX/Linux de base
 
-## 2.1 Arborescence de fichiers
+## 2.1 Arborescence de fichiers - Les chemins de fichiers sous Linux
 
-L’arborescence de fichiers représente l’organisation des dossiers et fichiers sur un ordinateur.
+L’arborescence de fichiers représente l’organisation des dossiers et fichiers sur un ordinateur.  
 
-Exemple :
+Un **chemin de fichier** (path) indique l’emplacement d’un fichier ou d’un dossier dans l’arborescence du système.  
+
+Exemple :  
+!!! note
+    Le repertoire NSI dans l'arboresence suivante correspond au répertoire du l'utilisateur NSI, 
 
 ```text
 /
 └── home
-    └── NSI
-        ├── dossier1
-        │   └── fichier1.txt
-        │   └── fichier2.txt        
-        ├── dossier2
-        └── montexte.txt
+    └── username
+        └── NSI
+            ├── dossier1
+            │   └── fichier1.txt
+            │   └── fichier2.txt        
+            ├── dossier2
+            └── montexte.txt
 ```
 
 Dans cet exemple :
 
-- `montexte.txt` est situé dans `/home/NSI`
-- `fichier1.txt` est situé dans `/home/NSI/dossier1`
+- `montexte.txt` est situé dans `/home/username/NSI`
+- `fichier1.txt` est situé dans `/home/username/NSI/dossier1`
 
 
 ### Commandes utiles
@@ -94,21 +99,200 @@ Dans cet exemple :
 !!! tip "Astuce"
     Utilisez fréquemment `pwd` pour vérifier votre position dans l’arborescence.
 
+### 2.1.1 Structure des dossiers sous Linux
 
-### Exercice 2.1
+Sous Linux, tous les fichiers et dossiers sont organisés sous forme d’arbre à partir de la racine :
 
-#### Question 1.
-Tapez :
+```bash
+/
+```
+
+Le symbole `/` représente le dossier racine du système.
+
+Exemple :
+
+```bash
+/home/etudiant/Documents/cours.txt
+```
+
+Ici :
+
+* `/` → racine ;
+* `home` → dossier ;
+* `etudiant` → sous-dossier ;
+* `Documents` → sous-dossier ;
+* `cours.txt` → fichier.
+
+---
+
+### 2.1.2 Chemin absolu
+
+Un **chemin absolu** commence toujours par `/`.
+
+Il indique l’emplacement complet du fichier depuis la racine.
+
+#### Exemple
+
+```bash
+/home/user/fichier.txt
+```
+
+Ce chemin fonctionne quel que soit le dossier courant.
+
+#### Exemple d’utilisation
+
+```bash
+cat /home/user/fichier.txt
+```
+
+### 2.1.3 Chemin relatif
+
+Un **chemin relatif** est défini par rapport au dossier actuel.
+
+Il ne commence pas par `/`.
+
+#### Exemple
+
+```bash
+Documents/cours.txt
+```
+
+Cela signifie :
+
+> “aller dans le dossier `Documents` situé dans le dossier courant”.
+
+#### Exemple
+
+Si vous êtes dans :
+
+```bash
+/home/user
+```
+
+alors :
+
+```bash
+cat Documents/cours.txt
+```
+
+équivaut à :
+
+```bash
+cat /home/user/Documents/cours.txt
+```
+
+---
+
+### 2.1.4 Le dossier courant : `.`
+
+Le point `.` représente le dossier actuel.
+
+#### Exemple
+
+```bash
+./script.sh
+```
+
+signifie :
+
+> exécuter `script.sh` situé dans le dossier courant.
+
+### 2.1.5 Le dossier parent : `..`
+
+Les deux points `..` représentent le dossier parent.
+
+#### Exemple
+
+```bash
+../fichier.txt
+```
+
+signifie :  
+
+> remonter d’un dossier puis accéder à `fichier.txt`.
+
+#### Exemple
+
+Si vous êtes dans :  
+
+```bash
+/home/user/Documents
+```
+
+alors :
+
+```bash
+cat ../notes.txt
+```
+
+lit :
+
+```bash
+/home/user/notes.txt
+```
+
+### 2.1.6 Le dossier personnel : `~`
+
+Le symbole `~` représente le dossier personnel de l’utilisateur.
+
+#### Exemple
+
+```bash
+~/Documents/test.txt
+```
+
+équivaut à :
+
+```bash
+/home/user/Documents/test.txt
+```
+
+### 2.1.7 Commandes utiles
+
+#### Afficher le dossier courant
 
 ```bash
 pwd
 ```
 
-Vérifiez que la réponse est de la forme :
+Exemple :
 
 ```bash
-/home/votre_login
+/home/user/Documents
 ```
+
+#### Changer de dossier
+
+```bash
+cd Documents
+```
+
+#### Revenir au dossier parent
+
+```bash
+cd ..
+```
+
+#### Aller dans le dossier personnel
+
+```bash
+cd ~
+```
+
+ou simplement :
+
+```bash
+cd
+```
+
+### 2.1.8 Résumé
+
+| Symbole | Signification     |
+| ------- | ----------------- |
+| `/`     | racine du système |
+| `.`     | dossier courant   |
+| `..`    | dossier parent    |
+| `~`     | dossier personnel |
 
 #### Question 2.
 À l’aide des commandes précédentes, recréez l’arborescence de l’exemple.
@@ -116,7 +300,7 @@ Vérifiez que la réponse est de la forme :
 #### Question 3.
 
 ##### a)
-Créez :
+Dans votre dossier personnel, créez :
 
 - un fichier `test.txt`
 - deux répertoires `livre1` et `livre2`
@@ -137,9 +321,9 @@ Vérifiez le contenu de chaque répertoire
 Effacez les deux répertoires `livre1` et `livre2`
 
 
-## 2.2 Gérer les droits
+### 2.2 Gérer les droits
 
-### Affichage détaillé
+#### Affichage détaillé
 
 ```bash
 ls -l
@@ -154,7 +338,7 @@ ls -al
 Affiche également les fichiers cachés.
 
 
-### Lecture d’un affichage
+#### Lecture d’un affichage
 
 Exemple :
 
@@ -188,7 +372,7 @@ Puis trois groupes de droits :
 | `x` | exécution |
 | `-` | droit absent |
 
-### Exemple
+#### Exemple
 
 Pour le fichier `montexte.txt` on a les droits `-rw-r--r--` :  
 
@@ -197,7 +381,7 @@ Pour le fichier `montexte.txt` on a les droits `-rw-r--r--` :
 - le deuxième `r--` indique que tous les utilisateurs du groupe peuvent lire sur ce fichier, mais ni écrire dessus, ni l’exécuter ;
 - enfin `r--` indique que tous les autres utilisateurs peuvent uniquement lire le fichier.
 
-### Modifier les droits
+#### Modifier les droits
 
 Pour changer les droits d’un fichier ou dossier, on utilise la commande `chmod` suivi d’un nombre composé de 3 chiffres puis du nom du fichier concerné.  
 Pour savoir quel nombre on choisit il suffit de savoir compter en binaire.   
@@ -270,31 +454,152 @@ nano montexte.txt
 
 ## 2.4 Commandes de fichiers
 
-### Commande `cat`
+### 2.4.1 Commande `cat`
 
-#### Saisie libre
+La commande `cat` (abréviation de **concatenate**) est utilisée sous Linux et Unix pour :
+
+* afficher le contenu d’un fichier ;
+* créer ou modifier un fichier ;
+* concaténer plusieurs fichiers ;
+* lire du texte directement depuis le terminal.
+
+
+#### Saisie libre dans le terminal
 
 ```bash
 cat
 ```
 
-Terminer avec :
+Lorsque la commande est exécutée sans argument, `cat` attend une saisie au clavier.
+Tout ce que vous tapez est immédiatement réaffiché dans le terminal.
+
+Pour arrêter la commande :
 
 ```bash
 Ctrl + D
 ```
 
-#### Lire un fichier
+`Ctrl + D` envoie un signal de fin de fichier (**EOF : End Of File**).
+
+#### Lire le contenu d’un fichier
 
 ```bash
 cat fichier.txt
 ```
+
+Cette commande affiche le contenu du fichier dans le terminal.
+
+#### Exemple
+
+Commande :
+
+```bash
+cat fichier.txt
+```
+
+Résultat :
+
+```txt
+Bonjour
+Bienvenue sur Linux
+```
+
+### Lire plusieurs fichiers
+
+```bash
+cat fichier1.txt fichier2.txt
+```
+
+Les contenus seront affichés l’un à la suite de l’autre.
 
 #### Écrire dans un fichier
 
 ```bash
 cat > fichier.txt
 ```
+
+Le symbole `>` redirige la sortie vers un fichier.  
+
+Après avoir lancé la commande, vous pouvez taper du texte :  
+
+```bash
+cat > fichier.txt
+Bonjour
+Cours Linux
+```
+
+Pour enregistrer et quitter :
+
+```bash
+Ctrl + D
+```
+
+Le fichier `fichier.txt` contiendra alors :
+
+```txt
+Bonjour
+Cours Linux
+```
+
+#### Attention
+
+Si le fichier existe déjà, son contenu sera écrasé et remplacé.
+
+
+#### Ajouter du texte à la fin d’un fichier
+
+Pour ajouter du contenu sans supprimer l’existant :
+
+```bash
+cat >> fichier.txt
+```
+
+Le symbole `>>` ajoute le texte à la fin du fichier.
+
+#### Exemple
+
+Fichier avant :
+
+```txt
+Bonjour
+```
+
+Commande :
+
+```bash
+cat >> fichier.txt
+Linux
+```
+
+Après `Ctrl + D`, le fichier devient :
+
+```txt
+Bonjour
+Linux
+```
+
+#### Fusionner plusieurs fichiers
+
+```bash
+cat fichier1.txt fichier2.txt > fusion.txt
+```
+
+Cette commande :
+
+1. lit `fichier1.txt` ;
+2. lit `fichier2.txt` ;
+3. écrit le tout dans `fusion.txt`.
+
+### Résumé rapide
+
+| Commande                 | Fonction                   |
+| ------------------------ | -------------------------- |
+| `cat`                    | Saisie libre               |
+| `cat fichier.txt`        | Lire un fichier            |
+| `cat > fichier.txt`      | Créer/remplacer un fichier |
+| `cat >> fichier.txt`     | Ajouter dans un fichier    |
+| `cat f1 f2 > fusion.txt` | Fusionner des fichiers     |
+
 
 ### Exercice 2.4
 
@@ -351,20 +656,13 @@ for i in range(20):
 Exécutez-le.
 
 
-#### Question 4
-Relancez :
-
-```bash
-top
-```
-
-# 3. Travail à rendre
+## 3. Travail à rendre
 
 Vous ne devez pas rendre tous les exercices précédents.
 
 Seul l’exercice suivant est à rendre.
 
-## Exercice 3.1 — À rendre
+### Exercice 3.1 — À rendre
 
 Arborescence :
 
@@ -395,26 +693,26 @@ Arborescence :
 
 1. Si je suis dans `documents`, qu’affiche `pwd` ?
 
-2. Depuis `images`, quelle commande permet d’aller dans `musique` ?
+2. Depuis `images`, quelle(s) commande(s) (vous pouvez donner plusieurs réponses) permet d’aller dans `musique` ?
 
 3. Différence entre :
 
-```bash
-cp test1.txt test2.txt
-```
-
-et
-
-```bash
-mv test1.txt test2.txt
-```
+    ```bash
+    cp test1.txt test2.txt
+    ```
+    
+    et
+    
+    ```bash
+    mv test1.txt test2.txt
+    ```
 
 4. Que se passe-t-il avec :
 
-```bash
-rm videos
-```
-depuis `documents` ?
+    ```bash
+    rm videos
+    ```
+    depuis `documents` ?
 
 5. Quelle commande pour supprimer `rock` ?
 
