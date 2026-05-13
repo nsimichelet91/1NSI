@@ -144,6 +144,9 @@ Ce chemin fonctionne quel que soit le dossier courant.
 ```bash
 cat /home/user/fichier.txt
 ```
+```bash
+cd /home/user/dossier3
+```
 
 ### 2.1.3 Chemin relatif
 
@@ -180,8 +183,6 @@ cat Documents/cours.txt
 ```bash
 cat /home/user/Documents/cours.txt
 ```
-
----
 
 ### 2.1.4 Le dossier courant : `.`
 
