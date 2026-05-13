@@ -75,7 +75,7 @@ Donc, la transmission du mot de passe est bien sécurisée par la méthode POST 
 
 **Exemple avec [Wireshark](https://www.wireshark.org/)** :
 
-![](data/wireshark.png){: .center}
+![](data/wireshark2.png){: .center}
 
 Le contenu de la variable ```"pass"``` est donc visible dans le contenu de la requête. 
 
