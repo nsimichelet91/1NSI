@@ -34,7 +34,7 @@ On aurait pu aussi avoir un type :
 - un bouton comportant le label «Valider» déclenchera l'envoi (grâce au type particulier ```submit```) des paramètres (ici un seul, la variable ```pass```) au serveur.
 
 #### Test :
-1. Rendez-vous sur la page [http://glassus1.free.fr/ex_get.html](http://glassus1.free.fr/ex_get.html){:target="_blank"} et testez un mot de passe.
+1. Rendez-vous sur la page [http://free.delage.free.fr/ex_get.html](http://free.delage.free.fr/ex_get.html){:target="_blank"} et testez un mot de passe.
 2. Observez attentivement l'url de la page sur laquelle vous êtes arrivés. Que remarquez-vous ?
 
 
@@ -61,7 +61,7 @@ Le mot de passe est :
 ```
 
 #### Test :
-1. Rendez-vous sur la page [http://glassus1.free.fr/ex_post.html](http://glassus1.free.fr/ex_post.html){:target="_blank"} et testez un mot de passe.
+1. Rendez-vous sur la page [http://free.delage.free.fr/ex_post.html](http://free.delage.free.fr/ex_post.html){:target="_blank"} et testez un mot de passe.
 2. Observez attentivement l'url de la page sur laquelle vous êtes arrivés. Que remarquez-vous ?
 
 #### La méthode POST et la confidentialité :
@@ -198,7 +198,7 @@ Testez le code ci-dessous :
 
 ```python linenums='1'
 import requests
-p = requests.get("http://glassus1.free.fr/interesting.html", verify = False)
+p = requests.get("http://free.delage.free.fr/interesting.html", verify = False)
 print(p.text)
 ```
 
@@ -232,16 +232,16 @@ mots = open("monfichiertexte.txt").read().splitlines()
 ```
 
 #### Exercice :
-Votre objectif est de trouver le mot de passe demandé sur la page [http://glassus1.free.fr/exoBF.html](http://glassus1.free.fr/exoBF.html){:target="_blank"}
+Votre objectif est de trouver le mot de passe demandé sur la page [http://free.delage.free.fr/exoBF.html](http://free.delage.free.fr/exoBF.html){:target="_blank"}
 
 Vous allez vous appuyer sur un leak (*fuite*) très célèbre de mots de passe , qui est le leak du site Rockyou. Dans la base de données de ce site, 32 millions de mots de passe étaient stockés en clair ```¯\_(ツ)_/¯```.
 
 Lorsque le site a été piraté (par une injection SQL, voir le cours de Terminale), ces 32 millions de mots de passe se sont retrouvés dans la nature. Ils sont aujourd'hui téléchargeables librement, et constituent un dictionnaire de 14 341 564 mots de passe différents (car parmi les 32 millions d'utilisateurs, beaucoup utilisaient des mots de passe identiques).
 Ce fichier est téléchargeable [ici](https://www.kaggle.com/wjburns/common-password-list-rockyoutxt){:target="_blank"}, mais attention il pèse 134 Mo.
 
-Nous allons utiliser un fichier beaucoup plus léger ne contenant que les 1000 premiers mots de passe : vous le trouverez à l'adresse [http://glassus1.free.fr/extraitrockyou.txt](http://glassus1.free.fr/extraitrockyou.txt){:target="_blank"} .
+Nous allons utiliser un fichier beaucoup plus léger ne contenant que les 1000 premiers mots de passe : vous le trouverez à l'adresse [http://free.delage.free.fr/extraitrockyou.txt](http://free.delage.free.fr/extraitrockyou.txt){:target="_blank"} .
 
-L'un de ces mots de passe est le mot de passe demandé à la page  [http://glassus1.free.fr/exoBF.html](http://glassus1.free.fr/exoBF.html){:target="_blank"} .
+L'un de ces mots de passe est le mot de passe demandé à la page  [http://free.delage.free.fr/exoBF.html](http://free.delage.free.fr/exoBF.html){:target="_blank"} .
 
 Lequel ?
 
