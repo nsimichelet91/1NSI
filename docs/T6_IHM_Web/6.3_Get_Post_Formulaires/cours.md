@@ -185,95 +185,336 @@ L'envoi de paramètre à un serveur distant est nécessaire pour aller interroge
 
 La vérification d'un mot de passe doit aussi se faire sur un serveur distant.
 
+## TP - Attaque par dictionnaire
+## Audit de sécurité d’un système d’authentification
 
-## Exercice : attaque par force brute et requête GET
+![image](data/hackerman.png){: .center width=40%}
 
-![image](data/hackerman.png){: .center width=50%}
+### Objectifs
+
+Dans cette activité, vous allez :
+
+* comprendre comment un formulaire web transmet des données ;
+* utiliser Python pour interagir avec une page web ;
+* réaliser une **attaque par dictionnaire** ;
+* analyser les faiblesses d’un système d’authentification ;
+* proposer des solutions pour améliorer sa sécurité.
+
+!!! warning "Cadre légal et éthique"
+
+    Cette activité est réalisée **uniquement dans un cadre pédagogique**, sur une page volontairement vulnérable mise à disposition pour l’exercice.
+
+    Toute tentative similaire sur un site réel sans autorisation explicite constitue une pratique 
+
+### Contexte
+
+Vous êtes chargé d’auditer un prototype de page de connexion développé pour une petite entreprise.
+
+Le développeur affirme que son système est sécurisé.
+
+Votre mission est de vérifier cette affirmation.
+
+La page à analyser est :
+
+[http://free.delage.free.fr/exo_BF.html](http://free.delage.free.fr/exo_BF.html){. target="_blank"}
 
 
-#### Pré-requis 1 : le module ```requests``` en python
+### Quelques rappels
 
-Le module ```requests``` permet d'aller chercher le contenu d'une page web, suivant la syntaxe ci-dessous.
-Testez le code ci-dessous :
+Il existe plusieurs façons de retrouver un mot de passe.
 
-```python linenums='1'
+### Force brute
+
+Tester **toutes les combinaisons possibles**
+
+Exemple :
+
+```text
+aaaa
+aaab
+aaac
+...
+```
+
+### Attaque par dictionnaire
+
+Tester une liste de mots de passe fréquemment utilisés.
+
+Exemple :
+
+```text
+password
+azerty
+birthday
+123456
+```
+
+Dans cette activité, vous allez réaliser une **attaque par dictionnaire**.
+
+### Le dictionnaire RockYou
+
+Nous allons nous appuyer sur une fuite célèbre : le leak de **RockYou**.
+
+En 2009, le site RockYou a été piraté, révélant plus de 32 millions de mots de passe stockés en clair.
+
+Cette fuite a montré deux problèmes majeurs :
+
+* de nombreux utilisateurs choisissent des mots de passe faibles ;
+* les mots de passe ne doivent jamais être stockés en clair.
+
+Nous utiliserons une version réduite contenant les **1000 mots de passe les plus fréquents** :
+
+`extraitrockyou.txt`
+
+## 1. Préparation de l’environnement
+
+!!! tip "Important"
+
+    Cette activité n’est pas réalisable sous Capytale, car le module `requests` n’y est pas disponible.
+
+    Utilisez par exemple :
+
+    - Thonny
+    - VS Code
+    - PyCharm
+
+Les réponses devront être déposées sur ce [notebook Capytale](https://capytale2.ac-paris.fr/web/c/eac1-10947611){. target="_blank"}.
+
+### 1.1 Téléchargement
+
+Téléchargez (clic droit : Enregister sous):
+
+[extraitrockyou.txt](data/extraitrockyou.txt){. target="_blank"}
+
+Placez-le dans le même dossier que votre futur script Python.
+
+### 1.2 Lecture du fichier
+
+Créez un fichier :
+
+`audit.py`
+
+Ajoutez :
+
+```python
+liste_mdp = open("extraitrockyou.txt").read().splitlines()
+```
+
+Cette instruction crée une liste contenant 1000 mots de passe.
+
+### Question 1
+
+Écrire un programme qui :
+
+* affiche les **10 premiers mots de passe**
+* affiche le nombre total de mots de passe
+
+## 2. Observer le fonctionnement du site
+
+Rendez-vous sur :
+
+[http://free.delage.free.fr/exo_BF.html](http://free.delage.free.fr/exo_BF.html){. target="_blank"}
+
+
+### Question 2
+
+Inspectez le code source de la page (Touche F12 du clavier). 
+
+Répondez :
+
+1. Quelle page traite le formulaire ?
+2. Quelle méthode HTTP est utilisée ?
+3. Quel est le nom du paramètre envoyé ?
+4. Pourquoi cette méthode n’est-elle pas adaptée pour transmettre un mot de passe ?
+
+## 3. Utilisation du module requests
+
+Le module `requests` permet d’interroger une page web.
+
+Le module `requests` n’est généralement **pas inclus** dans l’installation standard de Python.
+
+Si tu écris :
+
+```python
 import requests
-p = requests.get("http://free.delage.free.fr/interesting.html", verify = False)
+```
+
+tu risques d’avoir une erreur du style :
+
+```text
+ModuleNotFoundError: No module named 'requests'
+```
+
+Pour l’installer :   
+*solution 1 :* dans le terminal de Thonny (Outils/Ouvrir la console du sytème...) tapez et exécutez:
+
+```bash
+python -m pip install requests
+```
+*solution 2 :*  A l'aide du gestionnaire de paquets (Outils/Gérer les paquets...)  
+
+Ensuite vérifie :
+
+```python
+import requests
+
+r = requests.get("https://httpbin.org/get")
+print(r.status_code)
+```
+
+Si ça affiche `200`, c’est bon.
+
+Exécutez :
+
+```python
+import requests
+
+p = requests.get("http://free.delage.free.fr/interesting.html")
+
 print(p.text)
 ```
 
-La sortie en console est :
+### Question 3
 
-```
-<!DOCTYPE html>
-<html>
+Que représente :
 
-<head>
+* `p.url`
+* `p.status_code`
+* `p.text`
 
-<title>Waouh</title>
-</head>
+### Question 4
 
-<body>
-Ceci est vraiment une jolie page web.
-</body>
-
-</html>
-``` 
-
-Notre programme Python se comporte donc «comme un navigateur» : il se rend sur une page, effectue une requête et récupère la page renvoyée.
-
-
-#### Pré-requis 2 : l'extraction d'un fichier texte sous forme de liste
-
-Le code ci-dessous permet de collecter dans une liste ```mots``` l'ensemble des mots compris dans le fichier ```monfichiertexte.txt``` (si celui-ci comprend un mot par ligne) 
+Exécutez :
 
 ```python
-mots = open("monfichiertexte.txt").read().splitlines()
+import requests
+
+p = requests.get("http://free.delage.free.fr/exo_BF.html")
+
+print(p.text)
 ```
 
-#### Exercice :
-Votre objectif est de trouver le mot de passe demandé sur la page [http://free.delage.free.fr/exoBF.html](http://free.delage.free.fr/exoBF.html){:target="_blank"}
+Que contient la réponse ?
 
-Vous allez vous appuyer sur un leak (*fuite*) très célèbre de mots de passe , qui est le leak du site Rockyou. Dans la base de données de ce site, 32 millions de mots de passe étaient stockés en clair ```¯\_(ツ)_/¯```.
+## 4. Proposer un mot de passe
 
-Lorsque le site a été piraté (par une injection SQL, voir le cours de Terminale), ces 32 millions de mots de passe se sont retrouvés dans la nature. Ils sont aujourd'hui téléchargeables librement, et constituent un dictionnaire de 14 341 564 mots de passe différents (car parmi les 32 millions d'utilisateurs, beaucoup utilisaient des mots de passe identiques).
-Ce fichier est téléchargeable [ici](https://www.kaggle.com/wjburns/common-password-list-rockyoutxt){:target="_blank"}, mais attention il pèse 134 Mo.
+### Test manuel
 
-Nous allons utiliser un fichier beaucoup plus léger ne contenant que les 1000 premiers mots de passe : vous le trouverez à l'adresse [http://free.delage.free.fr/extraitrockyou.txt](http://free.delage.free.fr/extraitrockyou.txt){:target="_blank"} .
+Dans votre navigateur, sur la page web, entrez le mot de passe :
 
-L'un de ces mots de passe est le mot de passe demandé à la page  [http://free.delage.free.fr/exoBF.html](http://free.delage.free.fr/exoBF.html){:target="_blank"} .
+`michelet`
 
-Lequel ?
+### Question 5
 
-??? note "Aide"
-    ```python linenums='1'
-    import requests
-    
-    # récupération de la réponse à la requête en cas d'erreur de mot de pass 
-    page_error = requests.get("http://glassus1.free.fr/repBF.php?pass=")
-    
-    # création d'un liste contenant les mdp du fichier "extraitrockyou.txt"
-    liste_mdp = open("extraitrockyou.txt").read().splitlines()
-    
-    url = "http://glassus1.free.fr/repBF.php?pass="
+Quelle URL apparaît dans la barre d’adresse ?
 
-    # boucle pour tester les mdp de liste_mdp
-    ... :
-        new_url = ...  # création de l'url 
-        print(new_url)
-	
-	# récupération de la réponse à la requête avec new_url 
-        page_tentative = ...
-	
-	# comparaison du contenu de la réponse avec celui de page_error
-        ... :
-	    # on affiche le mdp trouvé
-            ...
-	    # on stoppe la boucle
-            ...
-    ```
+Expliquez comment le mot de passe est transmis au serveur.
+
+### Test automatisé
+
+Écrire un programme qui propose le mot de passe :
+
+`vacances`
+
+et affiche la réponse obtenue.
+
+## 5. Génération automatique des tentatives
+
+### Rappel : concaténation
+
+```python
+base = "bonjour "
+nom = "Alice"
+
+phrase = base + nom
+```
+
+### Question 6
+
+Écrire un programme qui affiche les **10 premières URLs de test** construites à partir de `liste_mdp`.
+
+Exemple attendu :
+
+```text
+http://free.delage.free.fr/rep_BF.php?pass=123456
+http://free.delage.free.fr/rep_BF.php?pass=12345
+...
+```
+
+## 6. Recherche automatisée du mot de passe
+
+Votre objectif :
+
+tester automatiquement les mots de passe du dictionnaire.
+
+Le programme devra :
+
+1. parcourir la liste ;
+2. envoyer chaque tentative ;
+3. analyser la réponse ;
+4. s’arrêter dès que le mot de passe est trouvé.
+
+### Question 7
+
+Écrire le programme complet.
+
+Afficher :
+
+```text
+Mot de passe trouvé : ...
+```
+
+## 7. Analyse de sécurité
+
+Vous venez de compromettre ce système.
+
+Il est donc vulnérable.
 
 
+### Question 8
 
+Expliquez **pourquoi** cette attaque a fonctionné.
+
+
+### Question 9
+
+Citez au moins **3 mesures** qui auraient permis de rendre cette attaque plus difficile.
+
+
+## 8. Réflexion finale
+
+### Question 10
+
+Pourquoi est-il dangereux d’utiliser un mot de passe présent dans une fuite publique comme RockYou ?
+
+## Pour aller plus loin
+
+Modifier votre programme pour :
+
+### Question 11
+
+Compter le nombre de tentatives nécessaires.
+
+### Question 12
+
+Mesurer le temps d’exécution.  
+voir [Time Module](https://www.w3schools.com/python/ref_module_time.asp){. target="_blank"}
+
+
+## Ce qu’il faut retenir
+
+Un système d’authentification sécurisé doit :
+
+* utiliser des mots de passe robustes ;
+* limiter le nombre de tentatives ;
+* utiliser POST plutôt que GET ;
+* stocker les mots de passe hachés ;
+* éventuellement ajouter une authentification à plusieurs facteurs.
+
+## Comment sécuriser un système d’authentification ?
+
+### Question 13
+
+Expliquez brièvement les 5 mesures précédentes.
 
 
