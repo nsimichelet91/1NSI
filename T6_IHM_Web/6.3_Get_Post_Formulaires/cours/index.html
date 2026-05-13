@@ -3767,7 +3767,7 @@ On aurait pu aussi avoir un type :<ul>
 </ul>
 <h4 id="test">Test :<a class="headerlink" href="#test" title="Permanent link">⚓︎</a></h4>
 <ol>
-<li>Rendez-vous sur la page <a href="http://glassus1.free.fr/ex_get.html" target="_blank">http://glassus1.free.fr/ex_get.html</a> et testez un mot de passe.</li>
+<li>Rendez-vous sur la page <a href="http://free.delage.free.fr/ex_get.html" target="_blank">http://free.delage.free.fr/ex_get.html</a> et testez un mot de passe.</li>
 <li>Observez attentivement l'url de la page sur laquelle vous êtes arrivés. Que remarquez-vous ?</li>
 </ol>
 <h4 id="la-methode-get-et-la-confidentialite">La méthode GET et la confidentialité :<a class="headerlink" href="#la-methode-get-et-la-confidentialite" title="Permanent link">⚓︎</a></h4>
@@ -3786,7 +3786,7 @@ On aurait pu aussi avoir un type :<ul>
 </code></pre></div>
 <h4 id="test_1">Test :<a class="headerlink" href="#test_1" title="Permanent link">⚓︎</a></h4>
 <ol>
-<li>Rendez-vous sur la page <a href="http://glassus1.free.fr/ex_post.html" target="_blank">http://glassus1.free.fr/ex_post.html</a> et testez un mot de passe.</li>
+<li>Rendez-vous sur la page <a href="http://free.delage.free.fr/ex_post.html" target="_blank">http://free.delage.free.fr/ex_post.html</a> et testez un mot de passe.</li>
 <li>Observez attentivement l'url de la page sur laquelle vous êtes arrivés. Que remarquez-vous ?</li>
 </ol>
 <h4 id="la-methode-post-et-la-confidentialite">La méthode POST et la confidentialité :<a class="headerlink" href="#la-methode-post-et-la-confidentialite" title="Permanent link">⚓︎</a></h4>
@@ -3901,7 +3901,7 @@ Testez le code ci-dessous :</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
-<span class="n">p</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://glassus1.free.fr/interesting.html&quot;</span><span class="p">,</span> <span class="n">verify</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://free.delage.free.fr/interesting.html&quot;</span><span class="p">,</span> <span class="n">verify</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <p>La sortie en console est :</p>
@@ -3925,12 +3925,12 @@ Ceci est vraiment une jolie page web.
 <div class="highlight"><pre><span></span><code><span class="n">mots</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;monfichiertexte.txt&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
 </code></pre></div>
 <h4 id="exercice">Exercice :<a class="headerlink" href="#exercice" title="Permanent link">⚓︎</a></h4>
-<p>Votre objectif est de trouver le mot de passe demandé sur la page <a href="http://glassus1.free.fr/exoBF.html" target="_blank">http://glassus1.free.fr/exoBF.html</a></p>
+<p>Votre objectif est de trouver le mot de passe demandé sur la page <a href="http://free.delage.free.fr/exoBF.html" target="_blank">http://free.delage.free.fr/exoBF.html</a></p>
 <p>Vous allez vous appuyer sur un leak (<em>fuite</em>) très célèbre de mots de passe , qui est le leak du site Rockyou. Dans la base de données de ce site, 32 millions de mots de passe étaient stockés en clair <code>¯\_(ツ)_/¯</code>.</p>
 <p>Lorsque le site a été piraté (par une injection SQL, voir le cours de Terminale), ces 32 millions de mots de passe se sont retrouvés dans la nature. Ils sont aujourd'hui téléchargeables librement, et constituent un dictionnaire de 14 341 564 mots de passe différents (car parmi les 32 millions d'utilisateurs, beaucoup utilisaient des mots de passe identiques).
 Ce fichier est téléchargeable <a href="https://www.kaggle.com/wjburns/common-password-list-rockyoutxt" target="_blank">ici</a>, mais attention il pèse 134 Mo.</p>
-<p>Nous allons utiliser un fichier beaucoup plus léger ne contenant que les 1000 premiers mots de passe : vous le trouverez à l'adresse <a href="http://glassus1.free.fr/extraitrockyou.txt" target="_blank">http://glassus1.free.fr/extraitrockyou.txt</a> .</p>
-<p>L'un de ces mots de passe est le mot de passe demandé à la page  <a href="http://glassus1.free.fr/exoBF.html" target="_blank">http://glassus1.free.fr/exoBF.html</a> .</p>
+<p>Nous allons utiliser un fichier beaucoup plus léger ne contenant que les 1000 premiers mots de passe : vous le trouverez à l'adresse <a href="http://free.delage.free.fr/extraitrockyou.txt" target="_blank">http://free.delage.free.fr/extraitrockyou.txt</a> .</p>
+<p>L'un de ces mots de passe est le mot de passe demandé à la page  <a href="http://free.delage.free.fr/exoBF.html" target="_blank">http://free.delage.free.fr/exoBF.html</a> .</p>
 <p>Lequel ?</p>
 <details class="note">
 <summary>Aide</summary>
@@ -3989,7 +3989,7 @@ Ce fichier est téléchargeable <a href="https://www.kaggle.com/wjburns/common-p
   <small>
     
       Dernière mise à jour:
-      2026-02-17
+      2026-05-13
     
   </small>
 </div>
