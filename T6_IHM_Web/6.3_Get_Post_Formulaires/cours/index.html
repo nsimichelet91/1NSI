@@ -4113,7 +4113,7 @@ On aurait pu aussi avoir un type :<ul>
 <p>Donc, la transmission du mot de passe est bien sécurisée par la méthode POST ? </p>
 <p><img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a0.svg" title=":warning:" /> Pas du tout ! Si le protocole de transmission est du <code>http</code>  et non pas du <code>https</code>, n'importe qui interceptant le trafic peut lire le contenu de la requête et y trouver le mot de passe en clair.</p>
 <p><strong>Exemple avec <a href="https://www.wireshark.org/">Wireshark</a></strong> :</p>
-<p><img alt="" class="center" src="../data/wireshark.png" /></p>
+<p><img alt="" class="center" src="../data/wireshark2.png" /></p>
 <p>Le contenu de la variable <code>"pass"</code> est donc visible dans le contenu de la requête. </p>
 <p>Le passage en <code>https</code> chiffre le contenu de la requête et empêche donc la simple lecture du mot de passe.</p>
 <h4 id="resume-quand-utiliser-get-ou-post">Résumé : quand utiliser GET ou POST ?<a class="headerlink" href="#resume-quand-utiliser-get-ou-post" title="Permanent link">⚓︎</a></h4>
