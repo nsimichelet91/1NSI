@@ -2262,11 +2262,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#21-arborescence-de-fichiers" class="md-nav__link">
-    2.1 Arborescence de fichiers
+  <a href="#21-arborescence-de-fichiers-les-chemins-de-fichiers-sous-linux" class="md-nav__link">
+    2.1 Arborescence de fichiers - Les chemins de fichiers sous Linux
   </a>
   
-    <nav class="md-nav" aria-label="2.1 Arborescence de fichiers">
+    <nav class="md-nav" aria-label="2.1 Arborescence de fichiers - Les chemins de fichiers sous Linux">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2277,49 +2277,64 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#exercice-21" class="md-nav__link">
-    Exercice 2.1
+  <a href="#211-structure-des-dossiers-sous-linux" class="md-nav__link">
+    2.1.1 Structure des dossiers sous Linux
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#212-chemin-absolu" class="md-nav__link">
+    2.1.2 Chemin absolu
+  </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#213-chemin-relatif" class="md-nav__link">
+    2.1.3 Chemin relatif
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#214-le-dossier-courant" class="md-nav__link">
+    2.1.4 Le dossier courant : .
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#215-le-dossier-parent" class="md-nav__link">
+    2.1.5 Le dossier parent : ..
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#216-le-dossier-personnel" class="md-nav__link">
+    2.1.6 Le dossier personnel : ~
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#217-commandes-utiles" class="md-nav__link">
+    2.1.7 Commandes utiles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#218-resume" class="md-nav__link">
+    2.1.8 Résumé
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#22-gerer-les-droits" class="md-nav__link">
     2.2 Gérer les droits
-  </a>
-  
-    <nav class="md-nav" aria-label="2.2 Gérer les droits">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#affichage-detaille" class="md-nav__link">
-    Affichage détaillé
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lecture-dun-affichage" class="md-nav__link">
-    Lecture d’un affichage
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exemple" class="md-nav__link">
-    Exemple
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modifier-les-droits" class="md-nav__link">
-    Modifier les droits
   </a>
   
 </li>
@@ -2379,8 +2394,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#commande-cat" class="md-nav__link">
-    Commande cat
+  <a href="#241-commande-cat" class="md-nav__link">
+    2.4.1 Commande cat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lire-plusieurs-fichiers" class="md-nav__link">
+    Lire plusieurs fichiers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resume-rapide" class="md-nav__link">
+    Résumé rapide
   </a>
   
 </li>
@@ -2429,6 +2458,33 @@
           <li class="md-nav__item">
   <a href="#exercice-25" class="md-nav__link">
     Exercice 2.5
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-travail-a-rendre" class="md-nav__link">
+    3. Travail à rendre
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Travail à rendre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercice-31-a-rendre" class="md-nav__link">
+    Exercice 3.1 — À rendre
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions" class="md-nav__link">
+    Questions
   </a>
   
 </li>
@@ -3955,22 +4011,28 @@
 </div>
 <p><img alt="alt text" src="../data/js_linux2.png" /></p>
 <h2 id="2-prise-en-main-des-commandes-unixlinux-de-base">2. Prise en main des commandes UNIX/Linux de base<a class="headerlink" href="#2-prise-en-main-des-commandes-unixlinux-de-base" title="Permanent link">⚓︎</a></h2>
-<h2 id="21-arborescence-de-fichiers">2.1 Arborescence de fichiers<a class="headerlink" href="#21-arborescence-de-fichiers" title="Permanent link">⚓︎</a></h2>
-<p>L’arborescence de fichiers représente l’organisation des dossiers et fichiers sur un ordinateur.</p>
-<p>Exemple :</p>
+<h2 id="21-arborescence-de-fichiers-les-chemins-de-fichiers-sous-linux">2.1 Arborescence de fichiers - Les chemins de fichiers sous Linux<a class="headerlink" href="#21-arborescence-de-fichiers-les-chemins-de-fichiers-sous-linux" title="Permanent link">⚓︎</a></h2>
+<p>L’arborescence de fichiers représente l’organisation des dossiers et fichiers sur un ordinateur.  </p>
+<p>Un <strong>chemin de fichier</strong> (path) indique l’emplacement d’un fichier ou d’un dossier dans l’arborescence du système.  </p>
+<p>Exemple :  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Le repertoire NSI dans l'arboresence suivante correspond au répertoire du l'utilisateur NSI, </p>
+</div>
 <div class="highlight"><pre><span></span><code>/
 └── home
-    └── NSI
-        ├── dossier1
-        │   └── fichier1.txt
-        │   └── fichier2.txt        
-        ├── dossier2
-        └── montexte.txt
+    └── username
+        └── NSI
+            ├── dossier1
+            │   └── fichier1.txt
+            │   └── fichier2.txt        
+            ├── dossier2
+            └── montexte.txt
 </code></pre></div>
 <p>Dans cet exemple :</p>
 <ul>
-<li><code>montexte.txt</code> est situé dans <code>/home/NSI</code></li>
-<li><code>fichier1.txt</code> est situé dans <code>/home/NSI/dossier1</code></li>
+<li><code>montexte.txt</code> est situé dans <code>/home/username/NSI</code></li>
+<li><code>fichier1.txt</code> est situé dans <code>/home/username/NSI/dossier1</code></li>
 </ul>
 <h3 id="commandes-utiles">Commandes utiles<a class="headerlink" href="#commandes-utiles" title="Permanent link">⚓︎</a></h3>
 <table>
@@ -4039,19 +4101,141 @@
 <p class="admonition-title">Astuce</p>
 <p>Utilisez fréquemment <code>pwd</code> pour vérifier votre position dans l’arborescence.</p>
 </div>
-<h3 id="exercice-21">Exercice 2.1<a class="headerlink" href="#exercice-21" title="Permanent link">⚓︎</a></h3>
-<h4 id="question-1">Question 1.<a class="headerlink" href="#question-1" title="Permanent link">⚓︎</a></h4>
-<p>Tapez :</p>
+<h3 id="211-structure-des-dossiers-sous-linux">2.1.1 Structure des dossiers sous Linux<a class="headerlink" href="#211-structure-des-dossiers-sous-linux" title="Permanent link">⚓︎</a></h3>
+<p>Sous Linux, tous les fichiers et dossiers sont organisés sous forme d’arbre à partir de la racine :</p>
+<div class="highlight"><pre><span></span><code>/
+</code></pre></div>
+<p>Le symbole <code>/</code> représente le dossier racine du système.</p>
+<p>Exemple :</p>
+<div class="highlight"><pre><span></span><code>/home/etudiant/Documents/cours.txt
+</code></pre></div>
+<p>Ici :</p>
+<ul>
+<li><code>/</code> → racine ;</li>
+<li><code>home</code> → dossier ;</li>
+<li><code>etudiant</code> → sous-dossier ;</li>
+<li><code>Documents</code> → sous-dossier ;</li>
+<li><code>cours.txt</code> → fichier.</li>
+</ul>
+<hr />
+<h3 id="212-chemin-absolu">2.1.2 Chemin absolu<a class="headerlink" href="#212-chemin-absolu" title="Permanent link">⚓︎</a></h3>
+<p>Un <strong>chemin absolu</strong> commence toujours par <code>/</code>.</p>
+<p>Il indique l’emplacement complet du fichier depuis la racine.</p>
+<h4 id="exemple">Exemple<a class="headerlink" href="#exemple" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>/home/user/fichier.txt
+</code></pre></div>
+<p>Ce chemin fonctionne quel que soit le dossier courant.</p>
+<h4 id="exemple-dutilisation">Exemple d’utilisation<a class="headerlink" href="#exemple-dutilisation" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/home/user/fichier.txt
+</code></pre></div>
+<h3 id="213-chemin-relatif">2.1.3 Chemin relatif<a class="headerlink" href="#213-chemin-relatif" title="Permanent link">⚓︎</a></h3>
+<p>Un <strong>chemin relatif</strong> est défini par rapport au dossier actuel.</p>
+<p>Il ne commence pas par <code>/</code>.</p>
+<h4 id="exemple_1">Exemple<a class="headerlink" href="#exemple_1" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>Documents/cours.txt
+</code></pre></div>
+<p>Cela signifie :</p>
+<blockquote>
+<p>“aller dans le dossier <code>Documents</code> situé dans le dossier courant”.</p>
+</blockquote>
+<h4 id="exemple_2">Exemple<a class="headerlink" href="#exemple_2" title="Permanent link">⚓︎</a></h4>
+<p>Si vous êtes dans :</p>
+<div class="highlight"><pre><span></span><code>/home/user
+</code></pre></div>
+<p>alors :</p>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>Documents/cours.txt
+</code></pre></div>
+<p>équivaut à :</p>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/home/user/Documents/cours.txt
+</code></pre></div>
+<hr />
+<h3 id="214-le-dossier-courant">2.1.4 Le dossier courant : <code>.</code><a class="headerlink" href="#214-le-dossier-courant" title="Permanent link">⚓︎</a></h3>
+<p>Le point <code>.</code> représente le dossier actuel.</p>
+<h4 id="exemple_3">Exemple<a class="headerlink" href="#exemple_3" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>./script.sh
+</code></pre></div>
+<p>signifie :</p>
+<blockquote>
+<p>exécuter <code>script.sh</code> situé dans le dossier courant.</p>
+</blockquote>
+<h3 id="215-le-dossier-parent">2.1.5 Le dossier parent : <code>..</code><a class="headerlink" href="#215-le-dossier-parent" title="Permanent link">⚓︎</a></h3>
+<p>Les deux points <code>..</code> représentent le dossier parent.</p>
+<h4 id="exemple_4">Exemple<a class="headerlink" href="#exemple_4" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>../fichier.txt
+</code></pre></div>
+<p>signifie :  </p>
+<blockquote>
+<p>remonter d’un dossier puis accéder à <code>fichier.txt</code>.</p>
+</blockquote>
+<h4 id="exemple_5">Exemple<a class="headerlink" href="#exemple_5" title="Permanent link">⚓︎</a></h4>
+<p>Si vous êtes dans :  </p>
+<div class="highlight"><pre><span></span><code>/home/user/Documents
+</code></pre></div>
+<p>alors :</p>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>../notes.txt
+</code></pre></div>
+<p>lit :</p>
+<div class="highlight"><pre><span></span><code>/home/user/notes.txt
+</code></pre></div>
+<h3 id="216-le-dossier-personnel">2.1.6 Le dossier personnel : <code>~</code><a class="headerlink" href="#216-le-dossier-personnel" title="Permanent link">⚓︎</a></h3>
+<p>Le symbole <code>~</code> représente le dossier personnel de l’utilisateur.</p>
+<h4 id="exemple_6">Exemple<a class="headerlink" href="#exemple_6" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>~/Documents/test.txt
+</code></pre></div>
+<p>équivaut à :</p>
+<div class="highlight"><pre><span></span><code>/home/user/Documents/test.txt
+</code></pre></div>
+<h3 id="217-commandes-utiles">2.1.7 Commandes utiles<a class="headerlink" href="#217-commandes-utiles" title="Permanent link">⚓︎</a></h3>
+<h4 id="afficher-le-dossier-courant">Afficher le dossier courant<a class="headerlink" href="#afficher-le-dossier-courant" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code><span class="nb">pwd</span>
 </code></pre></div>
-<p>Vérifiez que la réponse est de la forme :</p>
-<div class="highlight"><pre><span></span><code>/home/votre_login
+<p>Exemple :</p>
+<div class="highlight"><pre><span></span><code>/home/user/Documents
 </code></pre></div>
+<h4 id="changer-de-dossier">Changer de dossier<a class="headerlink" href="#changer-de-dossier" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>Documents
+</code></pre></div>
+<h4 id="revenir-au-dossier-parent">Revenir au dossier parent<a class="headerlink" href="#revenir-au-dossier-parent" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>..
+</code></pre></div>
+<h4 id="aller-dans-le-dossier-personnel">Aller dans le dossier personnel<a class="headerlink" href="#aller-dans-le-dossier-personnel" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~
+</code></pre></div>
+<p>ou simplement :</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span>
+</code></pre></div>
+<h3 id="218-resume">2.1.8 Résumé<a class="headerlink" href="#218-resume" title="Permanent link">⚓︎</a></h3>
+<table>
+<thead>
+<tr>
+<th>Symbole</th>
+<th>Signification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/</code></td>
+<td>racine du système</td>
+</tr>
+<tr>
+<td><code>.</code></td>
+<td>dossier courant</td>
+</tr>
+<tr>
+<td><code>..</code></td>
+<td>dossier parent</td>
+</tr>
+<tr>
+<td><code>~</code></td>
+<td>dossier personnel</td>
+</tr>
+</tbody>
+</table>
 <h4 id="question-2">Question 2.<a class="headerlink" href="#question-2" title="Permanent link">⚓︎</a></h4>
 <p>À l’aide des commandes précédentes, recréez l’arborescence de l’exemple.</p>
 <h4 id="question-3">Question 3.<a class="headerlink" href="#question-3" title="Permanent link">⚓︎</a></h4>
 <h5 id="a">a)<a class="headerlink" href="#a" title="Permanent link">⚓︎</a></h5>
-<p>Créez :</p>
+<p>Dans votre dossier personnel, créez :</p>
 <ul>
 <li>un fichier <code>test.txt</code></li>
 <li>deux répertoires <code>livre1</code> et <code>livre2</code></li>
@@ -4068,15 +4252,15 @@
 <p>Vérifiez le contenu de chaque répertoire</p>
 <h5 id="e">e)<a class="headerlink" href="#e" title="Permanent link">⚓︎</a></h5>
 <p>Effacez les deux répertoires <code>livre1</code> et <code>livre2</code></p>
-<h2 id="22-gerer-les-droits">2.2 Gérer les droits<a class="headerlink" href="#22-gerer-les-droits" title="Permanent link">⚓︎</a></h2>
-<h3 id="affichage-detaille">Affichage détaillé<a class="headerlink" href="#affichage-detaille" title="Permanent link">⚓︎</a></h3>
+<h3 id="22-gerer-les-droits">2.2 Gérer les droits<a class="headerlink" href="#22-gerer-les-droits" title="Permanent link">⚓︎</a></h3>
+<h4 id="affichage-detaille">Affichage détaillé<a class="headerlink" href="#affichage-detaille" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-l
 </code></pre></div>
 <p>Affiche le contenu du dossier de façon détaillée.</p>
 <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-al
 </code></pre></div>
 <p>Affiche également les fichiers cachés.</p>
-<h3 id="lecture-dun-affichage">Lecture d’un affichage<a class="headerlink" href="#lecture-dun-affichage" title="Permanent link">⚓︎</a></h3>
+<h4 id="lecture-dun-affichage">Lecture d’un affichage<a class="headerlink" href="#lecture-dun-affichage" title="Permanent link">⚓︎</a></h4>
 <p>Exemple :</p>
 <p><img alt="alt text" src="../data/droit_linux.png" />  </p>
 <p>Dans l’ordre cela donne de gauche `a droite :
@@ -4119,7 +4303,7 @@ d’effectuer certaines opérations et pas d’autres. Le système d’exploitat
 </tr>
 </tbody>
 </table>
-<h3 id="exemple">Exemple<a class="headerlink" href="#exemple" title="Permanent link">⚓︎</a></h3>
+<h4 id="exemple_7">Exemple<a class="headerlink" href="#exemple_7" title="Permanent link">⚓︎</a></h4>
 <p>Pour le fichier <code>montexte.txt</code> on a les droits <code>-rw-r--r--</code> :  </p>
 <ul>
 <li>le premier caractère <code>-</code> indique que c’est un fichier (pour un répertoire on aurait eu d) ;</li>
@@ -4127,7 +4311,7 @@ d’effectuer certaines opérations et pas d’autres. Le système d’exploitat
 <li>le deuxième <code>r--</code> indique que tous les utilisateurs du groupe peuvent lire sur ce fichier, mais ni écrire dessus, ni l’exécuter ;</li>
 <li>enfin <code>r--</code> indique que tous les autres utilisateurs peuvent uniquement lire le fichier.</li>
 </ul>
-<h3 id="modifier-les-droits">Modifier les droits<a class="headerlink" href="#modifier-les-droits" title="Permanent link">⚓︎</a></h3>
+<h4 id="modifier-les-droits">Modifier les droits<a class="headerlink" href="#modifier-les-droits" title="Permanent link">⚓︎</a></h4>
 <p>Pour changer les droits d’un fichier ou dossier, on utilise la commande <code>chmod</code> suivi d’un nombre composé de 3 chiffres puis du nom du fichier concerné.<br />
 Pour savoir quel nombre on choisit il suffit de savoir compter en binaire. <br />
 Par exemple :<br />
@@ -4135,7 +4319,7 @@ Par exemple :<br />
 - <code>rw-</code> correspondra au nombre binaire <code>110</code> donc au nombre entier 6
 - <code>r--</code> correspondra au nombre binaire <code>100</code> donc au nombre entier 4</p>
 <h3 id="exercice-22">Exercice 2.2<a class="headerlink" href="#exercice-22" title="Permanent link">⚓︎</a></h3>
-<h4 id="question-1_1">Question 1<a class="headerlink" href="#question-1_1" title="Permanent link">⚓︎</a></h4>
+<h4 id="question-1">Question 1<a class="headerlink" href="#question-1" title="Permanent link">⚓︎</a></h4>
 <p>Quel nombre choisir pour qu’un fichier soit :</p>
 <ul>
 <li>lisible par propriétaire et groupe</li>
@@ -4180,26 +4364,121 @@ Par exemple :<br />
 <p>Le prompt affichant le nom de la machine disparaît ; vous avez à la place une page blanche où vous pouvez taper du texte. Le nom
 du fichier que vous éditez et le nom de l’éditeur sont affichés en haut. La liste des commandes disponibles est écrite en bas.  </p>
 <h3 id="exercice-23">Exercice 2.3<a class="headerlink" href="#exercice-23" title="Permanent link">⚓︎</a></h3>
-<h4 id="question-1_2">Question 1<a class="headerlink" href="#question-1_2" title="Permanent link">⚓︎</a></h4>
+<h4 id="question-1_1">Question 1<a class="headerlink" href="#question-1_1" title="Permanent link">⚓︎</a></h4>
 <p>Ouvrez :</p>
 <div class="highlight"><pre><span></span><code>nano<span class="w"> </span>montexte.txt
 </code></pre></div>
 <h4 id="question-2_2">Question 2<a class="headerlink" href="#question-2_2" title="Permanent link">⚓︎</a></h4>
 <p>Écrivez un texte puis quittez en enregistrant.</p>
 <h2 id="24-commandes-de-fichiers">2.4 Commandes de fichiers<a class="headerlink" href="#24-commandes-de-fichiers" title="Permanent link">⚓︎</a></h2>
-<h3 id="commande-cat">Commande <code>cat</code><a class="headerlink" href="#commande-cat" title="Permanent link">⚓︎</a></h3>
-<h4 id="saisie-libre">Saisie libre<a class="headerlink" href="#saisie-libre" title="Permanent link">⚓︎</a></h4>
+<h3 id="241-commande-cat">2.4.1 Commande <code>cat</code><a class="headerlink" href="#241-commande-cat" title="Permanent link">⚓︎</a></h3>
+<p>La commande <code>cat</code> (abréviation de <strong>concatenate</strong>) est utilisée sous Linux et Unix pour :</p>
+<ul>
+<li>afficher le contenu d’un fichier ;</li>
+<li>créer ou modifier un fichier ;</li>
+<li>concaténer plusieurs fichiers ;</li>
+<li>lire du texte directement depuis le terminal.</li>
+</ul>
+<h4 id="saisie-libre-dans-le-terminal">Saisie libre dans le terminal<a class="headerlink" href="#saisie-libre-dans-le-terminal" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>cat
 </code></pre></div>
-<p>Terminer avec :</p>
+<p>Lorsque la commande est exécutée sans argument, <code>cat</code> attend une saisie au clavier.
+Tout ce que vous tapez est immédiatement réaffiché dans le terminal.</p>
+<p>Pour arrêter la commande :</p>
 <div class="highlight"><pre><span></span><code>Ctrl<span class="w"> </span>+<span class="w"> </span>D
 </code></pre></div>
-<h4 id="lire-un-fichier">Lire un fichier<a class="headerlink" href="#lire-un-fichier" title="Permanent link">⚓︎</a></h4>
+<p><code>Ctrl + D</code> envoie un signal de fin de fichier (<strong>EOF : End Of File</strong>).</p>
+<h4 id="lire-le-contenu-dun-fichier">Lire le contenu d’un fichier<a class="headerlink" href="#lire-le-contenu-dun-fichier" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>fichier.txt
 </code></pre></div>
+<p>Cette commande affiche le contenu du fichier dans le terminal.</p>
+<h4 id="exemple_8">Exemple<a class="headerlink" href="#exemple_8" title="Permanent link">⚓︎</a></h4>
+<p>Commande :</p>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>fichier.txt
+</code></pre></div>
+<p>Résultat :</p>
+<div class="highlight"><pre><span></span><code>Bonjour
+Bienvenue sur Linux
+</code></pre></div>
+<h3 id="lire-plusieurs-fichiers">Lire plusieurs fichiers<a class="headerlink" href="#lire-plusieurs-fichiers" title="Permanent link">⚓︎</a></h3>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>fichier1.txt<span class="w"> </span>fichier2.txt
+</code></pre></div>
+<p>Les contenus seront affichés l’un à la suite de l’autre.</p>
 <h4 id="ecrire-dans-un-fichier">Écrire dans un fichier<a class="headerlink" href="#ecrire-dans-un-fichier" title="Permanent link">⚓︎</a></h4>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>&gt;<span class="w"> </span>fichier.txt
 </code></pre></div>
+<p>Le symbole <code>&gt;</code> redirige la sortie vers un fichier.  </p>
+<p>Après avoir lancé la commande, vous pouvez taper du texte :  </p>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>&gt;<span class="w"> </span>fichier.txt
+Bonjour
+Cours<span class="w"> </span>Linux
+</code></pre></div>
+<p>Pour enregistrer et quitter :</p>
+<div class="highlight"><pre><span></span><code>Ctrl<span class="w"> </span>+<span class="w"> </span>D
+</code></pre></div>
+<p>Le fichier <code>fichier.txt</code> contiendra alors :</p>
+<div class="highlight"><pre><span></span><code>Bonjour
+Cours Linux
+</code></pre></div>
+<h4 id="attention">Attention<a class="headerlink" href="#attention" title="Permanent link">⚓︎</a></h4>
+<p>Si le fichier existe déjà, son contenu sera écrasé et remplacé.</p>
+<h4 id="ajouter-du-texte-a-la-fin-dun-fichier">Ajouter du texte à la fin d’un fichier<a class="headerlink" href="#ajouter-du-texte-a-la-fin-dun-fichier" title="Permanent link">⚓︎</a></h4>
+<p>Pour ajouter du contenu sans supprimer l’existant :</p>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>&gt;&gt;<span class="w"> </span>fichier.txt
+</code></pre></div>
+<p>Le symbole <code>&gt;&gt;</code> ajoute le texte à la fin du fichier.</p>
+<h4 id="exemple_9">Exemple<a class="headerlink" href="#exemple_9" title="Permanent link">⚓︎</a></h4>
+<p>Fichier avant :</p>
+<div class="highlight"><pre><span></span><code>Bonjour
+</code></pre></div>
+<p>Commande :</p>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>&gt;&gt;<span class="w"> </span>fichier.txt
+Linux
+</code></pre></div>
+<p>Après <code>Ctrl + D</code>, le fichier devient :</p>
+<div class="highlight"><pre><span></span><code>Bonjour
+Linux
+</code></pre></div>
+<h4 id="fusionner-plusieurs-fichiers">Fusionner plusieurs fichiers<a class="headerlink" href="#fusionner-plusieurs-fichiers" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>fichier1.txt<span class="w"> </span>fichier2.txt<span class="w"> </span>&gt;<span class="w"> </span>fusion.txt
+</code></pre></div>
+<p>Cette commande :</p>
+<ol>
+<li>lit <code>fichier1.txt</code> ;</li>
+<li>lit <code>fichier2.txt</code> ;</li>
+<li>écrit le tout dans <code>fusion.txt</code>.</li>
+</ol>
+<h3 id="resume-rapide">Résumé rapide<a class="headerlink" href="#resume-rapide" title="Permanent link">⚓︎</a></h3>
+<table>
+<thead>
+<tr>
+<th>Commande</th>
+<th>Fonction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cat</code></td>
+<td>Saisie libre</td>
+</tr>
+<tr>
+<td><code>cat fichier.txt</code></td>
+<td>Lire un fichier</td>
+</tr>
+<tr>
+<td><code>cat &gt; fichier.txt</code></td>
+<td>Créer/remplacer un fichier</td>
+</tr>
+<tr>
+<td><code>cat &gt;&gt; fichier.txt</code></td>
+<td>Ajouter dans un fichier</td>
+</tr>
+<tr>
+<td><code>cat f1 f2 &gt; fusion.txt</code></td>
+<td>Fusionner des fichiers</td>
+</tr>
+</tbody>
+</table>
 <h3 id="exercice-24">Exercice 2.4<a class="headerlink" href="#exercice-24" title="Permanent link">⚓︎</a></h3>
 <p>Tester chacune de ces commandes dans l’émulateur.</p>
 <h2 id="25-commandes-de-processus">2.5 Commandes de processus<a class="headerlink" href="#25-commandes-de-processus" title="Permanent link">⚓︎</a></h2>
@@ -4220,7 +4499,7 @@ du fichier que vous éditez et le nom de l’éditeur sont affichés en haut. La
 <p><code>kill -9</code> détruit immédiatement le processus ciblé.</p>
 </div>
 <h3 id="exercice-25">Exercice 2.5<a class="headerlink" href="#exercice-25" title="Permanent link">⚓︎</a></h3>
-<h4 id="question-1_3">Question 1<a class="headerlink" href="#question-1_3" title="Permanent link">⚓︎</a></h4>
+<h4 id="question-1_2">Question 1<a class="headerlink" href="#question-1_2" title="Permanent link">⚓︎</a></h4>
 <p>Lancez :</p>
 <div class="highlight"><pre><span></span><code>top
 </code></pre></div>
@@ -4231,14 +4510,10 @@ du fichier que vous éditez et le nom de l’éditeur sont affichés en haut. La
 </code></pre></div>
 <h4 id="question-3_2">Question 3<a class="headerlink" href="#question-3_2" title="Permanent link">⚓︎</a></h4>
 <p>Exécutez-le.</p>
-<h4 id="question-4">Question 4<a class="headerlink" href="#question-4" title="Permanent link">⚓︎</a></h4>
-<p>Relancez :</p>
-<div class="highlight"><pre><span></span><code>top
-</code></pre></div>
-<h1 id="3-travail-a-rendre">3. Travail à rendre<a class="headerlink" href="#3-travail-a-rendre" title="Permanent link">⚓︎</a></h1>
+<h2 id="3-travail-a-rendre">3. Travail à rendre<a class="headerlink" href="#3-travail-a-rendre" title="Permanent link">⚓︎</a></h2>
 <p>Vous ne devez pas rendre tous les exercices précédents.</p>
 <p>Seul l’exercice suivant est à rendre.</p>
-<h2 id="exercice-31-a-rendre">Exercice 3.1 — À rendre<a class="headerlink" href="#exercice-31-a-rendre" title="Permanent link">⚓︎</a></h2>
+<h3 id="exercice-31-a-rendre">Exercice 3.1 — À rendre<a class="headerlink" href="#exercice-31-a-rendre" title="Permanent link">⚓︎</a></h3>
 <p>Arborescence :</p>
 <div class="highlight"><pre><span></span><code>/
 ├── bin
@@ -4267,24 +4542,22 @@ du fichier que vous éditez et le nom de l’éditeur sont affichés en haut. La
 <p>Si je suis dans <code>documents</code>, qu’affiche <code>pwd</code> ?</p>
 </li>
 <li>
-<p>Depuis <code>images</code>, quelle commande permet d’aller dans <code>musique</code> ?</p>
+<p>Depuis <code>images</code>, quelle(s) commande(s) (vous pouvez donner plusieurs réponses) permet d’aller dans <code>musique</code> ?</p>
 </li>
 <li>
 <p>Différence entre :</p>
-</li>
-</ol>
 <div class="highlight"><pre><span></span><code>cp<span class="w"> </span>test1.txt<span class="w"> </span>test2.txt
 </code></pre></div>
 <p>et</p>
 <div class="highlight"><pre><span></span><code>mv<span class="w"> </span>test1.txt<span class="w"> </span>test2.txt
 </code></pre></div>
-<ol>
-<li>Que se passe-t-il avec :</li>
-</ol>
+</li>
+<li>
+<p>Que se passe-t-il avec :</p>
 <p><div class="highlight"><pre><span></span><code>rm<span class="w"> </span>videos
 </code></pre></div>
 depuis <code>documents</code> ?</p>
-<ol>
+</li>
 <li>
 <p>Quelle commande pour supprimer <code>rock</code> ?</p>
 </li>
@@ -4322,7 +4595,7 @@ depuis <code>documents</code> ?</p>
   <small>
     
       Dernière mise à jour:
-      2026-05-11
+      2026-05-13
     
   </small>
 </div>
