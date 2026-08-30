@@ -1,14 +1,19 @@
 
 !!! abstract ":star: Actualités :star:"
-    - **Journée porte ouverte samedi 28 mars 2026 : Bienvenue en NSI !** 
+    - **Bonne rentrée à tous - Bienvenue en NSI !** 
 
 ## *Progression*
 
 !!! note "*Thèmes en cours d'étude*"
-	- [Algorithme KNN](./T4_Algorithmique/4.7_Algorithme_KNN/cours/)
-	- [Initiation Pygame](./T7_Pygame/Initiation_Pygame/Initiation_Pygame/)
+	- [Variables](./T1_Demarrer_en_Python/1.1_Variables/cours/)
 
 !!! note "*Anciens thèmes traités*"
+
+
+{#
+!!! note "*Anciens thèmes traités*"
+	- [Algorithme KNN](./T4_Algorithmique/4.7_Algorithme_KNN/cours/)
+	- [Initiation Pygame](./T7_Pygame/Initiation_Pygame/Initiation_Pygame/)
 	- [Algorithmes gloutons](./T4_Algorithmique/4.6_Algorithmes_gloutons/cours/)
     - [Recherche dichotomique](./T4_Algorithmique/4.5_Dichotomie/cours/)
     - [Tri par sélection](./T4_Algorithmique/4.4_Tri_par_selection/cours/)
@@ -32,8 +37,7 @@
 	- [Boucle While](./T1_Demarrer_en_Python/1.3_Boucle_while/cours/)
 	- [Boucle For](./T1_Demarrer_en_Python/1.2_Boucle_for/cours/)
 	- [Variables](./T1_Demarrer_en_Python/1.1_Variables/cours/)
-
-
+#}
 ## *Programme*
 
 !!! abstract "*Programme*"
