@@ -3684,7 +3684,7 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
     <span class="k">assert</span> <span class="n">maxi</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span>
     <span class="k">assert</span> <span class="n">maxi</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span>
     <span class="k">assert</span> <span class="n">maxi</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span> <span class="o">==</span> <span class="mi">7</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;tests ok&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"tests ok"</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div></p>
 </div>
 </div>
@@ -3714,10 +3714,10 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
 <p>Définissez une <strong>fonction</strong> <code>decale(lettre)</code> qui décale de 3 rangs dans l'alphabet la lettre majuscule <code>lettre</code> passée en argument (après Z, on recommencera à A..)</p>
 <p>Testez votre fonction <code>decale(lettre)</code> à l'aide d'une fonction <code>test_decale()</code></p>
 <p>Aide : 
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">'A'</span><span class="p">)</span>
 <span class="mi">65</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">65</span><span class="p">)</span>
-<span class="s1">&#39;A&#39;</span>
+<span class="s1">'A'</span>
 </code></pre></div></p>
 </div>
 <div class="tabbed-block">
@@ -3726,9 +3726,9 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_decale</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">decale</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;D&#39;</span>
-    <span class="k">assert</span> <span class="n">decale</span><span class="p">(</span><span class="s1">&#39;Z&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;C&#39;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;tests ok !&#39;</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">decale</span><span class="p">(</span><span class="s1">'A'</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'D'</span>
+    <span class="k">assert</span> <span class="n">decale</span><span class="p">(</span><span class="s1">'Z'</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'C'</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'tests ok !'</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div></p>
 </div>
 </div>
@@ -3765,10 +3765,10 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">test_decale_n</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="n">decale</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;D&#39;</span>
-    <span class="k">assert</span> <span class="n">decale</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span>
-    <span class="k">assert</span> <span class="n">decale</span><span class="p">(</span><span class="s1">&#39;Z&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;A&#39;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;tests ok !&#39;</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">decale</span><span class="p">(</span><span class="s1">'A'</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'D'</span>
+    <span class="k">assert</span> <span class="n">decale</span><span class="p">(</span><span class="s1">'A'</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'F'</span>
+    <span class="k">assert</span> <span class="n">decale</span><span class="p">(</span><span class="s1">'Z'</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'A'</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'tests ok !'</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div></p>
 </div>
 </div>
@@ -3813,10 +3813,10 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
 <span class="normal">7</span>
 <span class="normal">8</span>
 <span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">decale_phrase</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-    <span class="n">phrase_decalee</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="n">phrase_decalee</span> <span class="o">=</span> <span class="s1">''</span>
     <span class="k">for</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="n">p</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">lettre</span> <span class="o">==</span> <span class="s1">&#39; &#39;</span><span class="p">:</span>
-            <span class="n">phrase_decalee</span> <span class="o">+=</span> <span class="s1">&#39; &#39;</span>
+        <span class="k">if</span> <span class="n">lettre</span> <span class="o">==</span> <span class="s1">' '</span><span class="p">:</span>
+            <span class="n">phrase_decalee</span> <span class="o">+=</span> <span class="s1">' '</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">nouvelle_lettre</span> <span class="o">=</span> <span class="n">decale</span><span class="p">(</span><span class="n">lettre</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
             <span class="n">phrase_decalee</span> <span class="o">+=</span> <span class="n">nouvelle_lettre</span>
@@ -3883,10 +3883,10 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
     <span class="k">return</span> <span class="nb">chr</span><span class="p">(</span><span class="n">rang_nouvelle_lettre</span><span class="p">)</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">decale_phrase</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-    <span class="n">phrase_decalee</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="n">phrase_decalee</span> <span class="o">=</span> <span class="s1">''</span>
     <span class="k">for</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="n">p</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">lettre</span> <span class="o">==</span> <span class="s1">&#39; &#39;</span><span class="p">:</span>
-            <span class="n">phrase_decalee</span> <span class="o">+=</span> <span class="s1">&#39; &#39;</span>
+        <span class="k">if</span> <span class="n">lettre</span> <span class="o">==</span> <span class="s1">' '</span><span class="p">:</span>
+            <span class="n">phrase_decalee</span> <span class="o">+=</span> <span class="s1">' '</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">nouvelle_lettre</span> <span class="o">=</span> <span class="n">decale</span><span class="p">(</span><span class="n">lettre</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
             <span class="n">phrase_decalee</span> <span class="o">+=</span> <span class="n">nouvelle_lettre</span>
@@ -3897,23 +3897,23 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
     <span class="k">for</span> <span class="n">decalage</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">25</span><span class="p">):</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">decale_phrase</span><span class="p">(</span><span class="n">msg_secret</span><span class="p">,</span> <span class="n">decalage</span><span class="p">))</span>
 
-<span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;RT BTHHPVT CT RDCIXTCI GXTC S XCITGTHHPCI&#39;</span>
+<span class="n">msg</span> <span class="o">=</span> <span class="s1">'RT BTHHPVT CT RDCIXTCI GXTC S XCITGTHHPCI'</span>
 
 <span class="n">decrypt</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
 <span class="c1"># cette méthode impose de tout lire pour y chercher une phrase ayant du sens.</span>
 <span class="c1"># Si on sait que la phrase sera en français, on peut chercher des mots du</span>
-<span class="c1"># dictionnaire. Si par exemple on sait que la phrase contiendra le mot &#39;MESSAGE&#39;,</span>
+<span class="c1"># dictionnaire. Si par exemple on sait que la phrase contiendra le mot 'MESSAGE',</span>
 <span class="c1"># le code peut devenir :</span>
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">decrypt2</span><span class="p">(</span><span class="n">msg_secret</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">decalage</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">25</span><span class="p">):</span>
         <span class="n">phrase_clair</span> <span class="o">=</span> <span class="n">decale_phrase</span><span class="p">(</span><span class="n">msg_secret</span><span class="p">,</span> <span class="n">decalage</span><span class="p">)</span>
-        <span class="k">if</span> <span class="s1">&#39;MESSAGE&#39;</span> <span class="ow">in</span> <span class="n">phrase_clair</span><span class="p">:</span>
+        <span class="k">if</span> <span class="s1">'MESSAGE'</span> <span class="ow">in</span> <span class="n">phrase_clair</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">phrase_clair</span><span class="p">)</span>
 
-<span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;RT BTHHPVT CT RDCIXTCI GXTC S XCITGTHHPCI&#39;</span>
+<span class="n">msg</span> <span class="o">=</span> <span class="s1">'RT BTHHPVT CT RDCIXTCI GXTC S XCITGTHHPCI'</span>
 
 <span class="n">decrypt2</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
@@ -4004,7 +4004,7 @@ Testez votre fonction <code>maxi(n1,n2)</code> à l'aide d'une fonction <code>te
         <span class="n">duree</span> <span class="o">=</span> <span class="n">temps_de_vol</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">duree</span> <span class="o">&gt;</span> <span class="n">maximum</span><span class="p">:</span>
             <span class="n">maximum</span> <span class="o">=</span> <span class="n">duree</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;le plus grand temps de vol vaut :&#39;</span><span class="p">,</span> <span class="n">maximum</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'le plus grand temps de vol vaut :'</span><span class="p">,</span> <span class="n">maximum</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
              -->
 

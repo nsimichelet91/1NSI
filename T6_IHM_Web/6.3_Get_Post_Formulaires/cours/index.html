@@ -4062,10 +4062,10 @@
 <h3 id="11-la-methode-get">1.1. La méthode GET<a class="headerlink" href="#11-la-methode-get" title="Permanent link">⚓︎</a></h3>
 <p>Considérons le formulaire suivant, inclus dans une page html ouverte dans le navigateur du client :</p>
 <div class="highlight"><pre><span></span><code>Le mot de passe est :
-<span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;cible2.php&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;get&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">"cible2.php"</span> <span class="na">method</span><span class="o">=</span><span class="s">"get"</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;pass&quot;</span> <span class="p">/&gt;</span> 
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Valider&quot;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"password"</span> <span class="na">name</span><span class="o">=</span><span class="s">"pass"</span> <span class="p">/&gt;</span> 
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"submit"</span> <span class="na">value</span><span class="o">=</span><span class="s">"Valider"</span> <span class="p">/&gt;</span>
 <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 </code></pre></div>
@@ -4095,10 +4095,10 @@ On aurait pu aussi avoir un type :<ul>
 <h3 id="12-la-methode-post">1.2. La méthode POST<a class="headerlink" href="#12-la-methode-post" title="Permanent link">⚓︎</a></h3>
 <p>Dans notre code de formulaire du 1.1, modifions l'attribut <code>method</code>, auparavant égal à <code>"get"</code>. Passons-le égal à <code>"post"</code>  :</p>
 <div class="highlight"><pre><span></span><code>Le mot de passe est :
-<span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;cible2.php&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">"cible2.php"</span> <span class="na">method</span><span class="o">=</span><span class="s">"post"</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;pass&quot;</span> <span class="p">/&gt;</span> 
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Valider&quot;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"password"</span> <span class="na">name</span><span class="o">=</span><span class="s">"pass"</span> <span class="p">/&gt;</span> 
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"submit"</span> <span class="na">value</span><span class="o">=</span><span class="s">"Valider"</span> <span class="p">/&gt;</span>
 <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 </code></pre></div>
@@ -4151,19 +4151,19 @@ Si vous vous demandez à quoi peuvent servir des url si longues, songez à ce ty
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>exemple<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
  Votre OS actuel est un : 
-<span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">page2.php</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;get&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">page2.php</span> <span class="na">method</span><span class="o">=</span><span class="s">"get"</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;OS&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Windows&quot;</span><span class="p">&gt;</span> Windows <span class="p">&lt;/</span><span class="nt">input</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;OS&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;MacOS&quot;</span><span class="p">&gt;</span> MacOS <span class="p">&lt;/</span><span class="nt">input</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;OS&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;GNU/Linux&quot;</span><span class="p">&gt;</span> GNU/Linux <span class="p">&lt;/</span><span class="nt">input</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="na">name</span><span class="o">=</span><span class="s">"OS"</span> <span class="na">value</span><span class="o">=</span><span class="s">"Windows"</span><span class="p">&gt;</span> Windows <span class="p">&lt;/</span><span class="nt">input</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="na">name</span><span class="o">=</span><span class="s">"OS"</span> <span class="na">value</span><span class="o">=</span><span class="s">"MacOS"</span><span class="p">&gt;</span> MacOS <span class="p">&lt;/</span><span class="nt">input</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="na">name</span><span class="o">=</span><span class="s">"OS"</span> <span class="na">value</span><span class="o">=</span><span class="s">"GNU/Linux"</span><span class="p">&gt;</span> GNU/Linux <span class="p">&lt;/</span><span class="nt">input</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span> 
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Valider&quot;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"submit"</span> <span class="na">value</span><span class="o">=</span><span class="s">"Valider"</span> <span class="p">/&gt;</span>
 <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
@@ -4173,17 +4173,17 @@ Si vous vous demandez à quoi peuvent servir des url si longues, songez à ce ty
 <div class="highlight"><pre><span></span><code><span class="x"> &lt;!DOCTYPE html&gt;</span>
 <span class="x">&lt;html&gt;</span>
 <span class="x">    &lt;head&gt;</span>
-<span class="x">        &lt;meta charset=&quot;utf-8&quot; /&gt;</span>
+<span class="x">        &lt;meta charset="utf-8" /&gt;</span>
 <span class="x">        &lt;title&gt;Le meilleur OS&lt;/title&gt;</span>
 <span class="x">    &lt;/head&gt;</span>
 <span class="x">    &lt;body&gt;</span>
 <span class="x"> &lt;p&gt;</span>
 <span class="x">    </span><span class="cp">&lt;?php</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;OS&#39;</span><span class="p">]))</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'OS'</span><span class="p">]))</span>
   <span class="p">{</span>
-    <span class="k">Print</span><span class="p">(</span><span class="s2">&quot;Vous avez raison, &quot;</span><span class="p">);</span>
-  <span class="k">echo</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;OS&#39;</span><span class="p">];</span>
-  <span class="k">Print</span><span class="p">(</span><span class="s2">&quot; est le meilleur des OS.&quot;</span><span class="p">);</span>
+    <span class="k">Print</span><span class="p">(</span><span class="s2">"Vous avez raison, "</span><span class="p">);</span>
+  <span class="k">echo</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'OS'</span><span class="p">];</span>
+  <span class="k">Print</span><span class="p">(</span><span class="s2">" est le meilleur des OS."</span><span class="p">);</span>
   <span class="p">}</span>
     <span class="cp">?&gt;</span>
 <span class="x">    &lt;/p&gt;</span>
@@ -4283,7 +4283,7 @@ birthday
 <p>Créez un fichier :</p>
 <p><code>audit.py</code></p>
 <p>Ajoutez :</p>
-<div class="highlight"><pre><span></span><code><span class="n">liste_mdp</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;extraitrockyou.txt&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="n">liste_mdp</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"extraitrockyou.txt"</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
 </code></pre></div>
 <p>Cette instruction crée une liste contenant 1000 mots de passe.</p>
 <h3 id="question-1">Question 1<a class="headerlink" href="#question-1" title="Permanent link">⚓︎</a></h3>
@@ -4311,7 +4311,7 @@ birthday
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
 </code></pre></div>
 <p>tu risques d’avoir une erreur du style :</p>
-<div class="highlight"><pre><span></span><code>ModuleNotFoundError: No module named &#39;requests&#39;
+<div class="highlight"><pre><span></span><code>ModuleNotFoundError: No module named 'requests'
 </code></pre></div>
 <p>Pour l’installer : <br />
 <em>solution 1 :</em> dans le terminal de Thonny (Outils/Ouvrir la console du sytème...) tapez et exécutez:</p>
@@ -4321,14 +4321,14 @@ birthday
 <p>Ensuite vérifie :</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
 
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://httpbin.org/get&quot;</span><span class="p">)</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"https://httpbin.org/get"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
 </code></pre></div>
 <p>Si ça affiche <code>200</code>, c’est bon.</p>
 <p>Exécutez :</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
 
-<span class="n">p</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://free.delage.free.fr/interesting.html&quot;</span><span class="p">)</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"http://free.delage.free.fr/interesting.html"</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 </code></pre></div>
@@ -4343,7 +4343,7 @@ birthday
 <p>Exécutez :</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
 
-<span class="n">p</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://free.delage.free.fr/exo_BF.html&quot;</span><span class="p">)</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"http://free.delage.free.fr/exo_BF.html"</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 </code></pre></div>
@@ -4361,8 +4361,8 @@ birthday
 <p>et affiche la réponse obtenue.</p>
 <h2 id="5-generation-automatique-des-tentatives">5. Génération automatique des tentatives<a class="headerlink" href="#5-generation-automatique-des-tentatives" title="Permanent link">⚓︎</a></h2>
 <h3 id="rappel-concatenation">Rappel : concaténation<a class="headerlink" href="#rappel-concatenation" title="Permanent link">⚓︎</a></h3>
-<div class="highlight"><pre><span></span><code><span class="n">base</span> <span class="o">=</span> <span class="s2">&quot;bonjour &quot;</span>
-<span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;Alice&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">base</span> <span class="o">=</span> <span class="s2">"bonjour "</span>
+<span class="n">nom</span> <span class="o">=</span> <span class="s2">"Alice"</span>
 
 <span class="n">phrase</span> <span class="o">=</span> <span class="n">base</span> <span class="o">+</span> <span class="n">nom</span>
 </code></pre></div>

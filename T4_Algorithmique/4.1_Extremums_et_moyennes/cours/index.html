@@ -3728,7 +3728,7 @@
 <div class="admonition note">
 <p class="admonition-title">Recherche de maximum <img alt="❤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2764.svg" title=":heart:" /></p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">recherche_max</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&#39;&#39;&#39;renvoie le maximum de la liste tab&#39;&#39;&#39;</span>
+<span class="w">    </span><span class="sd">'''renvoie le maximum de la liste tab'''</span>
     <span class="n">maxi</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>           <span class="c1"># (1)</span>
     <span class="k">for</span> <span class="n">elt</span> <span class="ow">in</span> <span class="n">tab</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">elt</span> <span class="o">&gt;</span> <span class="n">maxi</span><span class="p">:</span>
@@ -3747,7 +3747,7 @@
 <div class="admonition note">
 <p class="admonition-title">Calcul de moyenne <img alt="❤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2764.svg" title=":heart:" /></p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">moyenne</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&#39;&#39;&#39; renvoie la moyenne de tab&#39;&#39;&#39;</span>
+<span class="w">    </span><span class="sd">''' renvoie la moyenne de tab'''</span>
     <span class="n">somme</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">elt</span> <span class="ow">in</span> <span class="n">tab</span><span class="p">:</span>
         <span class="n">somme</span> <span class="o">+=</span> <span class="n">elt</span>
@@ -3762,8 +3762,8 @@
 <div class="admonition note">
 <p class="admonition-title">Recherche d'occurrence <img alt="❤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2764.svg" title=":heart:" /></p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">recherche_occurrence</span><span class="p">(</span><span class="n">elt</span><span class="p">,</span> <span class="n">tab</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&#39;&#39;&#39; renvoie la liste (éventuellement vide)</span>
-<span class="sd">    des indices de elt dans tab&#39;&#39;&#39;</span>
+<span class="w">    </span><span class="sd">''' renvoie la liste (éventuellement vide)</span>
+<span class="sd">    des indices de elt dans tab'''</span>
     <span class="n">liste_indice</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)):</span>
         <span class="k">if</span> <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">elt</span><span class="p">:</span>

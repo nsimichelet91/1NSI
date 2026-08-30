@@ -3855,7 +3855,7 @@ Vous avez mesuré votre temps ? Alors notez le quelque part et recommencez avec 
 <h2 id="1-introduction-recherche-dune-valeur-dans-une-liste">1. Introduction : recherche d'une valeur dans une liste<a class="headerlink" href="#1-introduction-recherche-dune-valeur-dans-une-liste" title="Permanent link">⚓︎</a></h2>
 <h3 id="11-preambule-liste-non-triee">1.1 Préambule : liste non triée<a class="headerlink" href="#11-preambule-liste-non-triee" title="Permanent link">⚓︎</a></h3>
 <p><strong>Exemple :</strong> pouvez-vous deviner la couleur à laquelle je pense ?</p>
-<div class="highlight"><pre><span></span><code><span class="n">coul</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;bleu&quot;</span><span class="p">,</span> <span class="s2">&quot;jaune&quot;</span><span class="p">,</span> <span class="s2">&quot;rouge&quot;</span><span class="p">,</span> <span class="s2">&quot;vert&quot;</span><span class="p">,</span> <span class="s2">&quot;violet&quot;</span><span class="p">,</span> <span class="s2">&quot;marron&quot;</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><span class="n">coul</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"bleu"</span><span class="p">,</span> <span class="s2">"jaune"</span><span class="p">,</span> <span class="s2">"rouge"</span><span class="p">,</span> <span class="s2">"vert"</span><span class="p">,</span> <span class="s2">"violet"</span><span class="p">,</span> <span class="s2">"marron"</span><span class="p">]</span>
 </code></pre></div>
 <p>Toutes les méthodes (proposition des valeurs dans l'ordre, au hasard, dans l'ordre inverse...) sont équivalentes car la liste n'est pas triée.</p>
 <p><img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2b50.svg" title=":star:" /> <img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2b50.svg" title=":star:" /> <img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2b50.svg" title=":star:" /> Dans toute la suite, nous rechercherons un élément dans une liste d'entiers <strong>triée</strong> dans l'ordre croissant. <img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2b50.svg" title=":star:" /> <img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2b50.svg" title=":star:" /> <img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2b50.svg" title=":star:" /> </p>
@@ -4074,12 +4074,12 @@ Il y a donc 3 étapes avant de trouver la valeur cherchée.</p>
 <p>Mesurons le temps nécessaire pour trouver l'indice de la dernière valeur de la liste (qui est 99999) avec la méthode de balayage (méthode 1) :</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">timeit</span><span class="w"> </span><span class="kn">import</span> <span class="n">timeit</span>
 
-<span class="n">timeit</span><span class="p">(</span><span class="s2">&quot;trouve(L,99999)&quot;</span><span class="p">,</span> <span class="nb">globals</span><span class="o">=</span><span class="nb">globals</span><span class="p">(),</span> <span class="n">number</span><span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">timeit</span><span class="p">(</span><span class="s2">"trouve(L,99999)"</span><span class="p">,</span> <span class="nb">globals</span><span class="o">=</span><span class="nb">globals</span><span class="p">(),</span> <span class="n">number</span><span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>1.7849999999998545
 </code></pre></div>
 <p>Mesurons le temps nécessaire pour trouver l'indice de la dernière valeur de la liste (qui est 99999) avec la méthode par dichotomie (méthode 2) :</p>
-<div class="highlight"><pre><span></span><code><span class="n">timeit</span><span class="p">(</span><span class="s2">&quot;recherche_dichotomique(L,99999)&quot;</span><span class="p">,</span> <span class="nb">globals</span><span class="o">=</span><span class="nb">globals</span><span class="p">(),</span> <span class="n">number</span><span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">timeit</span><span class="p">(</span><span class="s2">"recherche_dichotomique(L,99999)"</span><span class="p">,</span> <span class="nb">globals</span><span class="o">=</span><span class="nb">globals</span><span class="p">(),</span> <span class="n">number</span><span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>0.0010000000002037268
 </code></pre></div>
@@ -4088,12 +4088,12 @@ Il y a donc 3 étapes avant de trouver la valeur cherchée.</p>
 <div class="highlight"><pre><span></span><code><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000000</span><span class="p">)]</span>
 </code></pre></div>
 <p>Mesurons le temps nécessaire pour trouver l'indice de la dernière valeur de la liste (qui est 999999) avec la méthode de balayage (méthode 1) :</p>
-<div class="highlight"><pre><span></span><code><span class="n">timeit</span><span class="p">(</span><span class="s2">&quot;trouve(L,999999)&quot;</span><span class="p">,</span> <span class="nb">globals</span><span class="o">=</span><span class="nb">globals</span><span class="p">(),</span> <span class="n">number</span><span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">timeit</span><span class="p">(</span><span class="s2">"trouve(L,999999)"</span><span class="p">,</span> <span class="nb">globals</span><span class="o">=</span><span class="nb">globals</span><span class="p">(),</span> <span class="n">number</span><span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>15.88000000000011
 </code></pre></div>
 <p>Mesurons le temps nécessaire pour trouver l'indice de la dernière valeur de la liste (qui est 999999) avec la méthode par dichotomie (méthode 2) :</p>
-<div class="highlight"><pre><span></span><code><span class="n">timeit</span><span class="p">(</span><span class="s2">&quot;recherche_dichotomique(L,999999)&quot;</span><span class="p">,</span> <span class="nb">globals</span><span class="o">=</span><span class="nb">globals</span><span class="p">(),</span> <span class="n">number</span><span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">timeit</span><span class="p">(</span><span class="s2">"recherche_dichotomique(L,999999)"</span><span class="p">,</span> <span class="nb">globals</span><span class="o">=</span><span class="nb">globals</span><span class="p">(),</span> <span class="n">number</span><span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>0.001999999999497959
 </code></pre></div>

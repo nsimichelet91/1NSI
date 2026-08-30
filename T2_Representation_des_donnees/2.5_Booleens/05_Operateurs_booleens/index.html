@@ -4044,23 +4044,23 @@ Voir <a href="https://fr.wikipedia.org/wiki/Fonction_NON-ET">Wikipedia</a></p>
 <div class="highlight"><pre><span></span><code><span class="c1"># calcul A</span>
 <span class="nb">bin</span><span class="p">(</span><span class="mb">0b1100</span> <span class="o">&amp;</span> <span class="mb">0b111</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>&#39;0b100&#39;
+<div class="highlight"><pre><span></span><code>'0b100'
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="c1"># calcul B</span>
 <span class="nb">bin</span><span class="p">(</span><span class="mb">0b1100</span> <span class="o">|</span> <span class="mb">0b111</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>&#39;0b1111&#39;
+<div class="highlight"><pre><span></span><code>'0b1111'
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="c1"># calcul C</span>
 <span class="nb">bin</span><span class="p">(</span><span class="mb">0b1100</span> <span class="o">^</span> <span class="mb">0b111</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>&#39;0b1011&#39;
+<div class="highlight"><pre><span></span><code>'0b1011'
 </code></pre></div>
 <h3 id="exercice-5-preparation-du-pydefi">Exercice 5 : préparation du pydéfi<a class="headerlink" href="#exercice-5-preparation-du-pydefi" title="Permanent link">⚓︎</a></h3>
 <p>Objectif : chiffrer (= crypter) le mot "BONJOUR" avec la clé (de même taille) "MAURIAC".  </p>
 <p>Protocole de chiffrage : XOR entre le code ASCII des lettres de même position.</p>
-<div class="highlight"><pre><span></span><code><span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;BONJOUR&quot;</span>
-<span class="n">cle</span> <span class="o">=</span> <span class="s2">&quot;MAURIAC&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">msg</span> <span class="o">=</span> <span class="s2">"BONJOUR"</span>
+<span class="n">cle</span> <span class="o">=</span> <span class="s2">"MAURIAC"</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">crypte_lettre</span><span class="p">(</span><span class="n">lm</span><span class="p">,</span> <span class="n">lc</span><span class="p">):</span>
     <span class="n">a</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">lm</span><span class="p">)</span>
@@ -4071,7 +4071,7 @@ Voir <a href="https://fr.wikipedia.org/wiki/Fonction_NON-ET">Wikipedia</a></p>
     <span class="k">return</span> <span class="n">lettre</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">crypte_mot</span><span class="p">(</span><span class="n">mot1</span><span class="p">,</span> <span class="n">mot2</span><span class="p">):</span>
-    <span class="n">mot3</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="n">mot3</span> <span class="o">=</span> <span class="s2">""</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mot1</span><span class="p">)):</span>
         <span class="n">car</span> <span class="o">=</span> <span class="n">crypte_lettre</span><span class="p">(</span><span class="n">mot1</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">mot2</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
         <span class="n">mot3</span> <span class="o">=</span> <span class="n">mot3</span> <span class="o">+</span> <span class="n">car</span>
@@ -4079,7 +4079,7 @@ Voir <a href="https://fr.wikipedia.org/wiki/Fonction_NON-ET">Wikipedia</a></p>
 
 <span class="n">crypte_mot</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">cle</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>&#39;\x0f\x0e\x1b\x18\x06\x14\x11&#39;
+<div class="highlight"><pre><span></span><code>'\x0f\x0e\x1b\x18\x06\x14\x11'
 </code></pre></div>
 <h3 id="exercice-6">Exercice 6 :<a class="headerlink" href="#exercice-6" title="Permanent link">⚓︎</a></h3>
 <p>Résolvez le pydéfi <a href="https://callicode.fr/pydefis/MasqueJetable/txt">la clé endommagée</a></p>
