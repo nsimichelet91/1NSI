@@ -1,0 +1,17 @@
+Le dossier site/ contient le site HTML que génère MkDocs : c’est le résultat de mkdocs build ou de mkdocs serve, à partir des fichiers Markdown de docs/ et de mkdocs.yml. En pratique, il ne sert à rien pour ton site GitHub Pages.
+
+Voici pourquoi. Ton fichier .github/workflows/ci.yml lance mkdocs gh-deploy --force sur les serveurs de GitHub à chaque push sur main. Cette commande reconstruit le site à partir de docs/, puis le pousse sur la branche gh-pages, et c’est cette branche que GitHub Pages publie. Le dossier site/ de ta branche main n’est donc jamais utilisé.
+
+Deux constats sur ton dépôt :
+
+Il est périmé. Ses chemins ne correspondent plus à docs/ : par exemple site\T2_Representation_des_donnees\01_Listes\ d’un côté, docs\T2_Representation_des_donnees\2.1_Listes\ de l’autre.
+Il est suivi par git, avec 435 fichiers, parce que le dépôt n’a pas de .gitignore. Il alourdit donc chaque commit et le dossier OneDrive sans rien apporter.
+
+Ce que je te conseille : le retirer du suivi git sans toucher aux fichiers sur ton disque, et l’ignorer à l’avenir. Ça se fait en trois étapes :
+
+Créer un fichier .gitignore à la racine du dépôt contenant la ligne site/.
+Retirer le dossier du suivi git (les fichiers restent sur ton disque) :
+git rm -r --cached site
+Faire un commit puis un push.
+
+Ton site en ligne ne changera pas, puisqu’il vient de la branche gh-pages. Tu pourras ensuite supprimer le dossier site/ de ton disque si tu veux ; il sera recréé si tu relances mkdocs build en local.

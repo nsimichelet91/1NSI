@@ -1,14 +1,17 @@
-
+{#
 !!! abstract ":star: Actualités :star:"
     - **Bonne rentrée à tous - Bienvenue en NSI !** 
-
+#}
 ## *Progression*
 
 !!! note "*Thèmes en cours d'étude*"
-	- [Variables](./T1_Demarrer_en_Python/1.1_Variables/cours/)
-
+    - [Fonctions](./T1_Demarrer_en_Python/1.5_Fonctions/cours)
+	
 !!! note "*Anciens thèmes traités*"
-
+	- [Variables](./T1_Demarrer_en_Python/1.1_Variables/cours/)
+    - [Boucle For](./T1_Demarrer_en_Python/1.2_Boucle_for/cours/)
+    - [Boucle While](./T1_Demarrer_en_Python/1.3_Boucle_while/cours/)
+	- [Instruction conditionnelle If](./T1_Demarrer_en_Python/1.4_Instruction_conditionnelle_if/cours/)
 
 {#
 !!! note "*Anciens thèmes traités*"
