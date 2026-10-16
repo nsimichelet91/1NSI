@@ -6,6 +6,7 @@
 
 !!! note "*Thèmes en cours d'étude*"
     - [Fonctions](./T1_Demarrer_en_Python/1.5_Fonctions/cours)
+    - [Bases](./T2_Representation_des_donnees/2.4_Bases/cours/)
 	
 !!! note "*Anciens thèmes traités*"
 	- [Variables](./T1_Demarrer_en_Python/1.1_Variables/cours/)
