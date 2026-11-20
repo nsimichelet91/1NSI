@@ -7,9 +7,9 @@
 ![image](data/terminus.png){: .center}
 
 
-Rendez-vous à l'adresse : [Terminus](data/Terminus_version_corrigée.html)
+Rendez-vous à l'adresse : [Terminus](data/Terminus_version_corrigée.html){:target="_blank"}
 
-!!! warning "Sauvegarde"
+!!! warning "Sauvegarde"man ls
     Le jeu reprend automatiquement là où vous vous êtes arrêté, **sur le même navigateur**.
     Sur les ordinateurs du lycée, cette sauvegarde peut être effacée : **à la fin de chaque séance**,
     tapez `sauver` et recopiez le code obtenu (ex. `1YZZ-ZZ04-Y0KF3`) en haut de votre feuille.

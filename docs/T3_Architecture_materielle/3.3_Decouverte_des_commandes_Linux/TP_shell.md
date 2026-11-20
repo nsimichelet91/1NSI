@@ -1,740 +1,499 @@
+# TP - Utilisation d'une console shell
 
-# TP - Utilisation d’une console shell  
+{{ initexo(0) }}
+
+!!! success "Objectifs"
+    Avec le jeu **Terminus**, vous avez découvert des commandes UNIX/Linux de façon ludique.
+    Ce TP vous fait passer dans un **vrai terminal Linux**. À la fin, vous devez être autonome pour :
+
+    - naviguer dans l'arborescence avec des chemins absolus et relatifs ;
+    - créer, copier, déplacer et supprimer fichiers et dossiers ;
+    - chercher dans un fichier, rediriger et enchaîner des commandes ;
+    - lire et modifier les droits d'un fichier ;
+    - éditer un fichier texte ;
+    - exécuter un script et observer les processus.
 
 ## 1. Mise en route
 
-Avec le jeu **TERMINUS**, vous avez découvert un certain nombre de commandes UNIX/Linux de façon ludique.
+Nous utilisons **JSLinux**, un ordinateur Linux simulé dans le navigateur.
 
-Ce second TP va vous permettre :
-
-- de réutiliser ce que vous avez appris dans un contexte plus réaliste ;
-- de découvrir d’autres commandes et options.
-
-Pour cela, nous allons utiliser un émulateur en ligne.
-
-### Étapes
-
-1. Connectez-vous sur :  
-[https://bellard.org/jslinux](https://bellard.org/jslinux){target = "_blank"}
-
-2. Cliquez sur **"click here"** sur la première ligne (Alpine Linux 3.23.2)  
+1. Rendez-vous sur [https://bellard.org/jslinux](https://bellard.org/jslinux){:target="_blank"}
+2. Cliquez sur **click here** sur la ligne **Alpine Linux** (console).
 
 ![alt text](data/welcome_linux.png)
 
-3. Connectez-vous sur :  
-[https://vfsync.org/signup](https://vfsync.org/signup){target = "_blank"}  
-
-![alt text](data/vfsync_log.png)
-
-4. Créez un compte en choisissant :
-
-- un **User name**
-- un **Password**
-
-5. Revenez sur le terminal.
-
-6. Saisissez :
-
-```bash
-vflogin username
-```
-
-puis appuyez sur **Entrée**
-
-7. Saisissez votre mot de passe.
-
-!!! warning "Attention"
-    Le mot de passe n’apparaît pas à l’écran. C’est normal.
-
-![alt text](data/js_linux2.png)
-
-## 2. Prise en main des commandes UNIX/Linux de base
-
-## 2.1 Arborescence de fichiers - Les chemins de fichiers sous Linux
-
-L’arborescence de fichiers représente l’organisation des dossiers et fichiers sur un ordinateur.  
-
-Un **chemin de fichier** (path) indique l’emplacement d’un fichier ou d’un dossier dans l’arborescence du système.  
-
-Exemple :  
-!!! note
-    Le repertoire NSI dans l'arboresence suivante correspond au répertoire du l'utilisateur NSI, 
+Après quelques secondes, l'invite de commande apparaît :
 
 ```text
-/
-└── home
-    └── username
-        └── NSI
-            ├── dossier1
-            │   └── fichier1.txt
-            │   └── fichier2.txt        
-            ├── dossier2
-            └── montexte.txt
+localhost:~#
 ```
 
-Dans cet exemple :
+Le `#` indique que vous êtes **root**, l'administrateur : vous avez tous les droits.
+Sur un vrai ordinateur, on ne travaille jamais en root : on utilise un compte ordinaire. Nous allons donc nous connecter avec un compte personnel.
 
-- `montexte.txt` est situé dans `/home/username/NSI`
-- `fichier1.txt` est situé dans `/home/username/NSI/dossier1`
+3. Créez un compte sur [https://vfsync.org/signup](https://vfsync.org/signup){:target="_blank"} en choisissant un **nom d'utilisateur** et un **mot de passe**.
 
+    ![alt text](data/vfsync_log.png)
 
-### Commandes utiles
+4. Dans le terminal, tapez `vflogin` suivi de votre nom d'utilisateur, par exemple `vflogin alice`, puis votre mot de passe.
 
-| Commande | Description |
-|---------|-------------|
-| `pwd` | Affiche le répertoire courant |
-| `mkdir dossier` | Crée un dossier |
-| `touch fichier.txt` | Crée un fichier vide |
-| `mv fichier.txt dossier` | Déplace un fichier |
-| `mv fichier1 fichier2` | Renomme un fichier |
-| `cp fichier1 fichier2` | Copie un fichier |
-| `ls` | Liste le contenu du dossier |
-| `cd dossier` | Entre dans un dossier |
-| `cd ..` | Revient au dossier parent |
-| `cd ~` | Retourne au dossier personnel |
-| `rm fichier.txt` | Supprime un fichier |
-| `rmdir dossier` | Supprime un dossier vide |
-| `rm -r dossier` | Supprime un dossier non vide |
+    ![alt text](data/js_linux2.png)
+
+L'invite devient :
+
+```text
+localhost:~$
+```
+
+Le `$` indique que vous êtes maintenant un **utilisateur ordinaire**, comme sur votre ordinateur. Votre dossier personnel `~` est **sauvegardé sur le serveur** : vous retrouverez vos fichiers à la prochaine séance en refaisant `vflogin`.
+
+!!! warning "Mots de passe"
+    Dans un terminal, le mot de passe **ne s'affiche pas** quand on le tape. C'est normal.
+
+!!! warning "Ce qui n'est pas sauvegardé"
+    Seul votre dossier personnel est sauvegardé. Tout le reste (le dossier `/tmp`, les utilisateurs créés…) disparaît quand vous fermez ou rechargez la page.
+
+## 2. De Terminus à Linux
+
+Les sorts de Terminus sont de vraies commandes Linux.
+
+| Dans Terminus | Dans Linux | Remarque |
+|---------------|------------|----------|
+| `ls`, `cd`, `pwd` | `ls`, `cd`, `pwd` | identiques |
+| `less OBJET` | `less fichier`, `cat fichier` | `less` permet de défiler (on quitte avec `q`), `cat` affiche tout d'un coup |
+| `man SORT` | `man commande` | on quitte avec `q` |
+| `help` | `commande --help` | aide courte d'une commande |
+| `mv`, `cp`, `touch`, `rm`, `mkdir` | identiques | en plus : `rmdir` et `rm -r` pour les dossiers |
+| `unzip SAC.zip` | `unzip archive.zip` | |
+| `grep MOT OBJET` | `grep mot fichier` | |
+| `sudo COMMANDE` | `sudo commande` | `sudo` n'existe pas dans JSLinux : on redevient root autrement (voir §5) |
+| `whoami` | `whoami` | |
+
+Comme dans Terminus, la touche **Tab** complète les noms et les flèches **↑ ↓** rappellent les commandes précédentes.
+
+!!! example "{{ exercice() }}"
+    1. Tapez `whoami`, puis `pwd`. Qui êtes-vous ? Où se trouve votre dossier personnel ?
+    2. Tapez `ls /`. Retrouvez-vous des dossiers de Terminus ?
+    3. Tapez `man ls` et cherchez à quoi sert l'option `-a`. Quittez avec `q`.
+
+{{ correction(False,
+"""
+??? success \"Correction\"
+    1. `whoami` affiche votre nom d'utilisateur vfsync, par exemple `alice`. Le dossier personnel est `/home/alice` : `pwd` affiche le chemin absolu, alors que l'invite l'abrège en `~`.
+    2. On retrouve `bin`, `home`, `tmp`, `usr` et `var`, comme dans Terminus. Il y en a d'autres : `etc` (configuration), `dev` (périphériques), `proc`…
+    3. `ls -a` affiche aussi les fichiers cachés, dont le nom commence par un point.
+""") }}
+
+## 3. L'arborescence et les chemins
+
+### 3.1 La racine et les chemins
+
+Sous Linux, tous les fichiers et dossiers forment **un seul arbre** dont la racine s'appelle `/`.
+
+Un **chemin** indique l'emplacement d'un fichier ou d'un dossier dans cet arbre.
+
+- Un **chemin absolu** part de la racine : il commence toujours par `/`.
+  Il fonctionne quel que soit le dossier où l'on se trouve. Exemple : `/home/eleve/NSI/montexte.txt`
+- Un **chemin relatif** part du dossier courant : il ne commence pas par `/`.
+  Exemple : si l'on est dans `/home/eleve`, le chemin `NSI/montexte.txt` désigne le même fichier.
+
+Quatre symboles à connaître :
+
+| Symbole | Signification | Exemple |
+|---------|---------------|---------|
+| `/` | la racine (au début d'un chemin) ou le séparateur entre deux noms | `/home/eleve` |
+| `.` | le dossier courant | `./script.sh` |
+| `..` | le dossier parent | `cd ..`, `cat ../notes.txt` |
+| `~` | le dossier personnel | `cd ~`, `~/NSI` |
 
 !!! tip "Astuce"
-    Utilisez fréquemment `pwd` pour vérifier votre position dans l’arborescence.
+    Utilisez souvent `pwd` pour vérifier où vous êtes. `cd` tout seul ramène au dossier personnel.
 
-### 2.1.1 Structure des dossiers sous Linux
+### 3.2 Les commandes
 
-Sous Linux, tous les fichiers et dossiers sont organisés sous forme d’arbre à partir de la racine :
+| Commande | Description |
+|----------|-------------|
+| `pwd` | affiche le chemin absolu du dossier courant |
+| `ls` | liste le contenu du dossier |
+| `ls -l` | liste en détail (droits, propriétaire, taille, date) |
+| `ls -a` | affiche aussi les fichiers cachés |
+| `cd dossier` | entre dans un dossier |
+| `cd ..` | remonte au dossier parent |
+| `cd ~` ou `cd` | retourne au dossier personnel |
+| `mkdir dossier` | crée un dossier |
+| `touch fichier.txt` | crée un fichier vide |
+| `cp fichier1 fichier2` | copie un fichier |
+| `mv fichier dossier` | déplace un fichier |
+| `mv fichier1 fichier2` | renomme un fichier |
+| `rm fichier` | supprime un fichier (définitivement !) |
+| `rmdir dossier` | supprime un dossier **vide** |
+| `rm -r dossier` | supprime un dossier et tout son contenu |
 
-```bash
-/
-```
+!!! example "{{ exercice() }}"
+    1. Dans votre dossier personnel, créez l'arborescence suivante :
 
-Le symbole `/` représente le dossier racine du système.
+        ```text
+        ~
+        └── NSI
+            ├── dossier1
+            │   ├── fichier1.txt
+            │   └── fichier2.txt
+            ├── dossier2
+            └── montexte.txt
+        ```
 
-Exemple :
+    2. Donnez le chemin absolu de `fichier1.txt`.
+    3. En étant dans `dossier2`, quelle commande affiche le contenu de `dossier1` sans changer de dossier ?
 
-```bash
-/home/etudiant/Documents/cours.txt
-```
+{{ correction(False,
+"""
+??? success \"Correction\"
+    1. Une solution parmi d'autres :
 
-Ici :
+        ```bash
+        cd ~
+        mkdir NSI
+        cd NSI
+        mkdir dossier1 dossier2
+        touch montexte.txt dossier1/fichier1.txt dossier1/fichier2.txt
+        ls -R
+        ```
 
-* `/` → racine ;
-* `home` → dossier ;
-* `etudiant` → sous-dossier ;
-* `Documents` → sous-dossier ;
-* `cours.txt` → fichier.
+    2. `/home/alice/NSI/dossier1/fichier1.txt` si votre nom d'utilisateur est `alice` (vérifiez avec `pwd`).
+    3. `ls ../dossier1` (chemin relatif) ou `ls ~/NSI/dossier1`.
+""") }}
 
----
+!!! example "{{ exercice() }}"
+    1. Dans votre dossier personnel, créez un fichier `test.txt` et deux dossiers `livre1` et `livre2`.
+    2. Dupliquez `test.txt` en `test1.txt` et `test2.txt`.
+    3. Déplacez `test1.txt` dans `livre1`.
+    4. Vérifiez le contenu de chaque dossier.
+    5. Supprimez les deux dossiers `livre1` et `livre2`. Pourquoi `rmdir livre1` ne fonctionne-t-il pas ?
 
-### 2.1.2 Chemin absolu
+{{ correction(False,
+"""
+??? success \"Correction\"
+    ```bash
+    cd ~
+    touch test.txt
+    mkdir livre1 livre2
+    cp test.txt test1.txt
+    cp test.txt test2.txt
+    mv test1.txt livre1
+    ls
+    ls livre1 livre2
+    rmdir livre2        # livre2 est vide : ça marche
+    rm -r livre1        # livre1 contient test1.txt
+    ```
 
-Un **chemin absolu** commence toujours par `/`.
+    `rmdir` ne supprime que les dossiers vides. Or `livre1` contient `test1.txt` : il faut `rm -r`.
+""") }}
 
-Il indique l’emplacement complet du fichier depuis la racine.
+## 4. Chercher, rediriger, enchaîner
 
-#### Exemple
+### 4.1 Écrire dans un fichier : les redirections `>` et `>>`
 
-```bash
-/home/user/fichier.txt
-```
+Normalement, une commande affiche son résultat à l'écran. Le symbole `>` **redirige** ce résultat vers un fichier.
 
-Ce chemin fonctionne quel que soit le dossier courant.
+| Commande | Effet |
+|----------|-------|
+| `echo Bonjour` | affiche `Bonjour` à l'écran |
+| `echo Bonjour > f.txt` | écrit `Bonjour` dans `f.txt` (le contenu précédent est **écrasé**) |
+| `echo Salut >> f.txt` | **ajoute** `Salut` à la fin de `f.txt` |
+| `ls / > liste.txt` | enregistre le résultat de `ls /` dans `liste.txt` |
+| `cat f1.txt f2.txt > fusion.txt` | met bout à bout (concatène) deux fichiers dans un troisième |
+| `cat > f.txt` | écrit dans `f.txt` tout ce que vous tapez au clavier, jusqu'à **Ctrl + D** |
 
-#### Exemple d’utilisation
+!!! note "Ctrl + D"
+    `Ctrl + D` signifie « fin de fichier » (EOF, *End Of File*). C'est ainsi qu'on termine une saisie au clavier.
 
-```bash
-cat /home/user/fichier.txt
-```
-```bash
-cd /home/user/dossier3
-```
+### 4.2 Chercher avec `grep`
 
-### 2.1.3 Chemin relatif
+Comme dans la Bibliothèque de Terminus, `grep` affiche les lignes d'un fichier qui contiennent un mot.
 
-Un **chemin relatif** est défini par rapport au dossier actuel.
+| Commande | Effet |
+|----------|-------|
+| `grep mot fichier` | affiche les lignes contenant `mot` |
+| `grep -i mot fichier` | sans tenir compte des majuscules |
+| `grep -n mot fichier` | avec les numéros de ligne |
+| `grep -c mot fichier` | compte les lignes |
+| `grep mot *.txt` | cherche dans tous les fichiers `.txt` du dossier |
 
-Il ne commence pas par `/`.
+### 4.3 Enchaîner avec le tube `|`
 
-#### Exemple
-
-```bash
-Documents/cours.txt
-```
-
-Cela signifie :
-
-> “aller dans le dossier `Documents` situé dans le dossier courant”.
-
-#### Exemple
-
-Si vous êtes dans :
-
-```bash
-/home/user
-```
-
-alors :
-
-```bash
-cat Documents/cours.txt
-```
-
-équivaut à :
-
-```bash
-cat /home/user/Documents/cours.txt
-```
-
-### 2.1.4 Le dossier courant : `.`
-
-Le point `.` représente le dossier actuel.
-
-#### Exemple
-
-```bash
-./script.sh
-```
-
-signifie :
-
-> exécuter `script.sh` situé dans le dossier courant.
-
-### 2.1.5 Le dossier parent : `..`
-
-Les deux points `..` représentent le dossier parent.
-
-#### Exemple
-
-```bash
-../fichier.txt
-```
-
-signifie :  
-
-> remonter d’un dossier puis accéder à `fichier.txt`.
-
-#### Exemple
-
-Si vous êtes dans :  
+Le **tube** `|` envoie le résultat d'une commande à la commande suivante.
 
 ```bash
-/home/user/Documents
+ls -l /bin | grep sh        # parmi les programmes de /bin, ceux dont le nom contient sh
+ls /bin | grep -c ''        # compte les programmes de /bin
 ```
 
-alors :
+!!! example "{{ exercice() }}"
+    1. Créez le fichier `livre.txt` avec ces trois lignes, sans éditeur, avec `echo` et des redirections :
 
-```bash
-cat ../notes.txt
-```
+        ```text
+        Le magicien Magus menace Terminus.
+        Le village est paisible.
+        Magus a disparu.
+        ```
 
-lit :
+    2. Affichez les lignes qui contiennent `Magus`, avec leur numéro.
+    3. Combien de lignes contiennent `magus`, sans tenir compte des majuscules ?
+    4. Enregistrez dans `racine.txt` la liste des dossiers de `/`, puis affichez seulement ceux qui contiennent la lettre `r`, à l'aide d'un tube.
 
-```bash
-/home/user/notes.txt
-```
+{{ correction(False,
+"""
+??? success \"Correction\"
+    ```bash
+    echo Le magicien Magus menace Terminus. > livre.txt
+    echo Le village est paisible. >> livre.txt
+    echo Magus a disparu. >> livre.txt
+    grep -n Magus livre.txt          # lignes 1 et 3
+    grep -ic magus livre.txt         # 2
+    ls / > racine.txt
+    cat racine.txt | grep r          # ou directement : grep r racine.txt
+    ```
+
+    Attention : le premier `echo` utilise `>`, les suivants `>>`. Avec `>` à chaque fois, il ne resterait que la dernière ligne.
+""") }}
+
+## 5. Les utilisateurs et les droits
+
+### 5.1 Lire les droits
+
+Les systèmes UNIX sont **multi-utilisateurs** : chaque utilisateur a ses fichiers et ses droits.
+L'administrateur, **root**, a tous les droits. C'est le « mot de passe sudo » de Terminus.
+Pour simplifier la gestion, les utilisateurs sont réunis en **groupes**.
+
+La commande `ls -l` affiche les droits :
+
+![alt text](data/droit_linux.png)
 
-### 2.1.6 Le dossier personnel : `~`
-
-Le symbole `~` représente le dossier personnel de l’utilisateur.
-
-#### Exemple
-
-```bash
-~/Documents/test.txt
-```
-
-équivaut à :
-
-```bash
-/home/user/Documents/test.txt
-```
-
-### 2.1.7 Commandes utiles
-
-#### Afficher le dossier courant
-
-```bash
-pwd
-```
-
-Exemple :
-
-```bash
-/home/user/Documents
-```
-
-#### Changer de dossier
-
-```bash
-cd Documents
-```
-
-#### Revenir au dossier parent
-
-```bash
-cd ..
-```
-
-#### Aller dans le dossier personnel
-
-```bash
-cd ~
-```
-
-ou simplement :
-
-```bash
-cd
-```
-
-### 2.1.8 Résumé
-
-| Symbole | Signification     |
-| ------- | ----------------- |
-| `/`     | racine du système |
-| `.`     | dossier courant   |
-| `..`    | dossier parent    |
-| `~`     | dossier personnel |
-
-#### Question 2.
-À l’aide des commandes précédentes, recréez l’arborescence de l’exemple.
-
-#### Question 3.
-
-##### a)
-Dans votre dossier personnel, créez :
-
-- un fichier `test.txt`
-- deux répertoires `livre1` et `livre2`
-
-##### b)
-Dupliquez `test.txt` en :
-
-- `test1.txt`
-- `test2.txt`
-
-##### c)
-Déplacez `test1.txt` dans `livre1`
-
-##### d)
-Vérifiez le contenu de chaque répertoire
-
-##### e)
-Effacez les deux répertoires `livre1` et `livre2`
-
-
-### 2.2 Gérer les droits
-
-#### Affichage détaillé
-
-```bash
-ls -l
-```
-
-Affiche le contenu du dossier de façon détaillée.
-
-```bash
-ls -al
-```
-
-Affiche également les fichiers cachés.
-
-
-#### Lecture d’un affichage
-
-Exemple :
-
-![alt text](data/droit_linux.png)  
-
-Dans l’ordre cela donne de gauche `a droite :
-**droits - nombre de liens - nom du propriétaire - nom du groupe - taille en octet - date - heure - nom du fichier ou du répertoire**
-
-Les systèmes de type UNIX sont des systèmes multi-utilisateurs.   Plusieurs utilisateurs peuvent donc partager un même ordinateur.  
-Comme chaque utilisateur possède un environnement de travail qui lui est propre, chaque utilisateur possède certains droits lui permettant
-d’effectuer certaines opérations et pas d’autres. Le système d’exploitation permet de gérer ces droits trés finement.  
-
-Il faut cependant distinguer un utilisateur un peu particulier qui est autorisé à modifier tous les droits : ce "super utilisateur" est appelé "administrateur" ou "root".  
-
-Au lieu de gérer les utilisateurs un par un, il est possible de créer des groupes d’utilisateurs. L’administrateur peut alors attribuer des droits à un groupe au lieu d’attribuer des droits particuliers à chaque utilisateur.  
-
-Remarque : dans l’exemple donné ci-dessus, le nom du groupe est *user2* et celui du propriétaire *NSI*.  
-
-
-Signification des droits :
-
-- `-` → fichier
-- `d` → dossier
-
-Puis trois groupes de droits :
-
-| Droit | Signification |
-|------|---------------|
-| `r` | lecture |
-| `w` | écriture |
-| `x` | exécution |
-| `-` | droit absent |
-
-#### Exemple
-
-Pour le fichier `montexte.txt` on a les droits `-rw-r--r--` :  
-
-- le premier caractère `-` indique que c’est un fichier (pour un répertoire on aurait eu d) ;
-- le premier `rw-` indique que propriétaire peut lire et écrire sur ce fichier mais il ne peut pas l’exécuter ;
-- le deuxième `r--` indique que tous les utilisateurs du groupe peuvent lire sur ce fichier, mais ni écrire dessus, ni l’exécuter ;
-- enfin `r--` indique que tous les autres utilisateurs peuvent uniquement lire le fichier.
-
-#### Modifier les droits
-
-Pour changer les droits d’un fichier ou dossier, on utilise la commande `chmod` suivi d’un nombre composé de 3 chiffres puis du nom du fichier concerné.  
-Pour savoir quel nombre on choisit il suffit de savoir compter en binaire.   
-Par exemple :  
-- `rwx` correspondra au nombre binaire `111` donc au nombre entier 7
-- `rw-` correspondra au nombre binaire `110` donc au nombre entier 6
-- `r--` correspondra au nombre binaire `100` donc au nombre entier 4
-
-### Exercice 2.2
-
-#### Question 1
-Quel nombre choisir pour qu’un fichier soit :
-
-- lisible par propriétaire et groupe
-- exécutable par tous
-- modifiable uniquement par le propriétaire
-
-#### Question 2
-
-Changez les droits de `dossier2` en :
-
-```text
-rwxrw-r--
-```
-
-#### Question 3
-Tapez :
-
-```bash
-chown --help
-```
-
-À quoi sert cette commande ?
-
-## 2.3 Éditer et écrire dans des fichiers
-
-### Utilisation de `nano`
-
-Ouvrir un fichier :
-
-```bash
-nano montexte.txt
-```
-
-Vous obtenez un éditeur de texte dans le terminal.
-
-![alt text](data/edit_nano.png)
-
-### Raccourcis utiles
-
-| Raccourci | Action |
-|----------|--------|
-| `Ctrl + O` | Enregistrer |
-| `Ctrl + X` | Quitter |
-
-Le prompt affichant le nom de la machine disparaît ; vous avez à la place une page blanche où vous pouvez taper du texte. Le nom
-du fichier que vous éditez et le nom de l’éditeur sont affichés en haut. La liste des commandes disponibles est écrite en bas.  
-
-### Exercice 2.3
-
-#### Question 1
-Ouvrez :
-
-```bash
-nano montexte.txt
-```
-
-#### Question 2
-Écrivez un texte puis quittez en enregistrant.
-
-## 2.4 Commandes de fichiers
-
-### 2.4.1 Commande `cat`
-
-La commande `cat` (abréviation de **concatenate**) est utilisée sous Linux et Unix pour :
-
-* afficher le contenu d’un fichier ;
-* créer ou modifier un fichier ;
-* concaténer plusieurs fichiers ;
-* lire du texte directement depuis le terminal.
-
-
-#### Saisie libre dans le terminal
-
-```bash
-cat
-```
-
-Lorsque la commande est exécutée sans argument, `cat` attend une saisie au clavier.
-Tout ce que vous tapez est immédiatement réaffiché dans le terminal.
-
-Pour arrêter la commande :
-
-```bash
-Ctrl + D
-```
-
-`Ctrl + D` envoie un signal de fin de fichier (**EOF : End Of File**).
-
-#### Lire le contenu d’un fichier
-
-```bash
-cat fichier.txt
-```
-
-Cette commande affiche le contenu du fichier dans le terminal.
-
-#### Exemple
-
-Commande :
-
-```bash
-cat fichier.txt
-```
-
-Résultat :
-
-```txt
-Bonjour
-Bienvenue sur Linux
-```
-
-### Lire plusieurs fichiers
-
-```bash
-cat fichier1.txt fichier2.txt
-```
-
-Les contenus seront affichés l’un à la suite de l’autre.
-
-#### Écrire dans un fichier
-
-```bash
-cat > fichier.txt
-```
-
-Le symbole `>` redirige la sortie vers un fichier.  
-
-Après avoir lancé la commande, vous pouvez taper du texte :  
-
-```bash
-cat > fichier.txt
-Bonjour
-Cours Linux
-```
-
-Pour enregistrer et quitter :
-
-```bash
-Ctrl + D
-```
-
-Le fichier `fichier.txt` contiendra alors :
-
-```txt
-Bonjour
-Cours Linux
-```
-
-#### Attention
-
-Si le fichier existe déjà, son contenu sera écrasé et remplacé.
-
-
-#### Ajouter du texte à la fin d’un fichier
-
-Pour ajouter du contenu sans supprimer l’existant :
-
-```bash
-cat >> fichier.txt
-```
-
-Le symbole `>>` ajoute le texte à la fin du fichier.
-
-#### Exemple
-
-Fichier avant :
-
-```txt
-Bonjour
-```
-
-Commande :
-
-```bash
-cat >> fichier.txt
-Linux
-```
-
-Après `Ctrl + D`, le fichier devient :
-
-```txt
-Bonjour
-Linux
-```
-
-#### Fusionner plusieurs fichiers
-
-```bash
-cat fichier1.txt fichier2.txt > fusion.txt
-```
-
-Cette commande :
-
-1. lit `fichier1.txt` ;
-2. lit `fichier2.txt` ;
-3. écrit le tout dans `fusion.txt`.
-
-### Résumé rapide
-
-| Commande                 | Fonction                   |
-| ------------------------ | -------------------------- |
-| `cat`                    | Saisie libre               |
-| `cat fichier.txt`        | Lire un fichier            |
-| `cat > fichier.txt`      | Créer/remplacer un fichier |
-| `cat >> fichier.txt`     | Ajouter dans un fichier    |
-| `cat f1 f2 > fusion.txt` | Fusionner des fichiers     |
-
-
-### Exercice 2.4
-
-Tester chacune de ces commandes dans l’émulateur.
-
-## 2.5 Commandes de processus
-
-### Voir les processus actifs
-
-```bash
-top
-```
-
-Quitter avec :
-
-```bash
-q
-```
-
-### Exécuter un script Python
-
-```bash
-python essai.py
-```
-
-### Forcer l’arrêt d’un processus
-
-```bash
-kill -9 1234
-```
+De gauche à droite : **droits, nombre de liens, propriétaire, groupe, taille en octets, date, heure, nom**.
+Dans cet exemple, le propriétaire est *NSI* et le groupe *user2*.
+
+Les droits s'écrivent avec 10 caractères, par exemple `-rw-r--r--` :
+
+- le 1er caractère donne le type : `-` pour un fichier, `d` pour un dossier ;
+- puis trois groupes de trois lettres : les droits du **propriétaire**, du **groupe**, et des **autres**.
+
+| Lettre | Sur un fichier | Sur un dossier |
+|--------|----------------|----------------|
+| `r` | lire le contenu | lister le contenu (`ls`) |
+| `w` | modifier le contenu | créer ou supprimer des fichiers dedans |
+| `x` | exécuter (programme, script) | entrer dedans (`cd`) |
+| `-` | droit absent | droit absent |
+
+Pour `-rw-r--r--` : c'est un fichier ; le propriétaire peut le lire et le modifier ; le groupe et les autres peuvent seulement le lire.
+
+### 5.2 Modifier les droits avec `chmod`
+
+Chaque groupe de trois droits s'écrit en **binaire** : 1 si le droit est présent, 0 sinon.
+
+| Droits | Binaire | Chiffre |
+|--------|---------|---------|
+| `rwx` | `111` | 7 |
+| `rw-` | `110` | 6 |
+| `r-x` | `101` | 5 |
+| `r--` | `100` | 4 |
+| `---` | `000` | 0 |
+
+Ainsi `chmod 640 fichier` donne les droits `rw-r-----`.
+
+### 5.3 Passer en root pour administrer
+
+Certaines opérations sont réservées à root : créer un utilisateur, changer le propriétaire d'un fichier, modifier les fichiers des autres…
+
+Sur un vrai ordinateur, on tape `sudo` devant la commande, comme dans Terminus. Dans JSLinux, `sudo` n'est pas installé. Mais votre session a été ouverte **depuis** la session root du départ : il suffit de la quitter pour redevenir root.
+
+| Commande | Effet |
+|----------|-------|
+| `exit` | quitte votre session : vous redevenez root (l'invite passe de `$` à `#`) |
+| `adduser -D invite` | (root) crée l'utilisateur `invite`, sans mot de passe |
+| `su - invite` | (root) devient `invite` et va dans son dossier `/home/invite` |
+| `exit` | quitte la session d'`invite` : retour à root |
+| `vflogin nom` | retour à votre propre session |
+
+!!! warning "Pensez à revenir à votre session"
+    Tant que vous êtes root, votre dossier personnel n'est plus sauvegardé. Refaites `vflogin` dès que vous avez fini les opérations d'administration.
+
+!!! example "{{ exercice() }}"
+    1. Dans votre session (`$`), tapez :
+
+        ```bash
+        cd /tmp
+        echo Bonjour > note.txt
+        ls -l note.txt
+        adduser -D invite
+        ```
+
+        Quels sont les droits de `note.txt` ? Qui en est le propriétaire ? Pourquoi `adduser` échoue-t-il ?
+
+    2. Retirez au groupe et aux autres le droit de lire `note.txt`. Avez-vous eu besoin d'être root ? Pourquoi ?
+    3. Tapez `exit` pour redevenir root, vérifiez avec `whoami`, puis créez l'utilisateur `invite`.
+    4. Devenez `invite` (`su - invite`), puis essayez :
+
+        ```bash
+        cat /tmp/note.txt
+        ls /home
+        ls /home/alice          # remplacez alice par votre nom d'utilisateur
+        ```
+
+        Expliquez chaque résultat. Puis tapez `exit` pour revenir à root.
+
+    5. En root, faites d'`invite` le propriétaire de `note.txt` (`chown --help` vous aidera). Vérifiez qu'`invite` peut maintenant le lire. Pourquoi ne pouviez-vous pas faire cela dans votre session ?
+    6. En root, créez un dossier `/tmp/coffre` et donnez-lui les droits `rwxrw-r--`. `invite` peut-il y entrer avec `cd` ? Pourquoi ?
+    7. Quel chiffre faut-il pour que le propriétaire puisse tout faire, le groupe lire et exécuter, et les autres seulement exécuter ?
+    8. Revenez à votre session avec `vflogin`.
+
+{{ correction(False,
+"""
+??? success \"Correction\"
+    1. `-rw-r--r--` : vous êtes le propriétaire, vous pouvez lire et écrire ; le groupe et les autres peuvent seulement lire. `adduser` échoue car seul root peut créer un utilisateur.
+    2. `chmod 600 note.txt` donne `rw-------`. Pas besoin d'être root : **le propriétaire** d'un fichier peut toujours en changer les droits.
+    3. `exit`, puis `whoami` affiche `root`, puis `adduser -D invite`.
+    4. `cat /tmp/note.txt` donne **Permission denied** : depuis la question 2, les autres n'ont plus aucun droit sur ce fichier.
+    `ls /home` montre les dossiers personnels (le vôtre et celui d'`invite`).
+    `ls /home/alice` est sans doute refusé : un dossier personnel est en général fermé aux autres utilisateurs (vérifiez ses droits avec `ls -l /home`).
+    5. `chown invite /tmp/note.txt`. Les droits `rw-` du propriétaire s'appliquent maintenant à `invite`, qui peut lire le fichier. Seul root peut donner un fichier à quelqu'un d'autre : sinon, chacun pourrait attribuer ses fichiers aux autres.
+    6. `mkdir /tmp/coffre` puis `chmod 764 /tmp/coffre`. Pour les autres, les droits sont `r--` : pas de `x`, donc `invite` ne peut pas entrer dans le dossier avec `cd`.
+    7. `rwx r-x --x` donne `111 101 001`, soit **751**.
+    8. `vflogin alice`, puis le mot de passe.
+""") }}
+
+## 6. Éditer un fichier avec `vi`
+
+L'éditeur de texte présent sur tous les systèmes UNIX est `vi`. Il fonctionne avec **deux modes** :
+
+- le **mode commande** (au démarrage) : les touches donnent des ordres ;
+- le **mode insertion** : on tape du texte.
+
+| Touches | Action |
+|---------|--------|
+| `vi fichier.txt` | ouvre (ou crée) le fichier |
+| `i` | passe en mode insertion : on peut écrire |
+| `Échap` | revient au mode commande |
+| `:w` puis Entrée | enregistre |
+| `:wq` puis Entrée | enregistre et quitte |
+| `:q!` puis Entrée | quitte **sans** enregistrer |
+
+!!! tip "Perdu dans vi ?"
+    Appuyez sur `Échap`, puis tapez `:q!` et Entrée : vous sortez sans rien modifier.
+
+!!! example "{{ exercice() }}"
+    1. Ouvrez `montexte.txt` avec `vi`, écrivez deux lignes de texte, enregistrez et quittez.
+    2. Vérifiez le contenu du fichier avec `cat`.
+    3. Rouvrez-le, ajoutez une ligne, puis quittez **sans** enregistrer. Vérifiez avec `cat`.
+
+## 7. Scripts et processus
+
+Un **processus** est un programme en cours d'exécution. Chacun a un numéro, le **PID**.
+
+| Commande | Effet |
+|----------|-------|
+| `python3 essai.py` | exécute un script Python |
+| `python3` | ouvre l'interpréteur Python (on en sort avec `exit()` ou **Ctrl + D**) |
+| `commande &` | lance la commande **en arrière-plan** : le terminal reste disponible |
+| `ps` | liste les processus et leur PID |
+| `top` | affiche les processus en temps réel (on quitte avec `q`) |
+| `kill PID` | demande au processus de s'arrêter |
+| `kill -9 PID` | arrête le processus immédiatement, sans discussion |
+| **Ctrl + C** | interrompt la commande en cours |
 
 !!! danger "Attention"
-    `kill -9` détruit immédiatement le processus ciblé.
+    `kill -9` détruit le processus sans lui laisser le temps de s'arrêter proprement. On ne l'utilise qu'en dernier recours.
 
+!!! example "{{ exercice() }}"
+    1. Avec `vi` (ou `cat >`), créez le script `compte.py` :
 
-### Exercice 2.5
+        ```python
+        for i in range(20):
+            print(i)
+        ```
 
-#### Question 1
-Lancez :
+        Exécutez-le.
 
-```bash
-top
-```
+    2. Créez le script `boucle.py`, qui ne s'arrête jamais :
 
-#### Question 2
-Créez le script suivant :
+        ```python
+        import time
+        while True:
+            time.sleep(1)
+        ```
 
-```python
-for i in range(20):
-    print(i)
-```
+        Lancez-le avec `python3 boucle.py`. Le terminal ne répond plus : arrêtez le script avec **Ctrl + C**.
 
-#### Question 3
-Exécutez-le.
+    3. Relancez-le en arrière-plan avec `python3 boucle.py &`. Retrouvez son PID avec `ps`, puis arrêtez-le avec `kill`. Vérifiez avec `ps` qu'il a disparu.
+    4. Lancez `top`. Quel processus utilise le plus le processeur ? Quittez avec `q`.
 
-
-## 3. Travail à rendre
-
-Vous ne devez pas rendre tous les exercices précédents.
-
-Seul l’exercice suivant est à rendre.
-
-### Exercice 3.1 — À rendre
-
-Arborescence :
-
-```text
-/
-├── bin
-│   ├── bash
-│   └── cat
-├── home
-│   ├── alice
-│   └── bob
-│       ├── documents
-|       |   ├── images
-|       |   |   └── logo.png
-│       │   ├── musique
-│       │   |   ├── classique
-│       │   |   └── rock
-│       │   |       ├── track1.mp3
-│       │   |       └── track2.mp3
-│       │   ├── videos
-│       │   └── mon_roman.docx
-│       └── tmp
-├── etc
-└── usr
-```
-
-### Questions
-
-1. Si je suis dans `documents`, qu’affiche `pwd` ?
-
-2. Depuis `images`, quelle(s) commande(s) (vous pouvez donner plusieurs réponses) permet d’aller dans `musique` ?
-
-3. Différence entre :
-
+{{ correction(False,
+"""
+??? success \"Correction\"
     ```bash
-    cp test1.txt test2.txt
+    vi compte.py               # i, on tape le script, Échap, :wq
+    python3 compte.py          # affiche 0 à 19
+    vi boucle.py
+    python3 boucle.py          # Ctrl + C pour l'arrêter
+    python3 boucle.py &        # le terminal affiche un numéro de tâche et le PID
+    ps                         # repérer la ligne python3 boucle.py et son PID
+    kill 123                   # remplacer 123 par le PID trouvé
+    ps                         # la ligne a disparu
+    top                        # q pour quitter
     ```
-    
-    et
-    
-    ```bash
-    mv test1.txt test2.txt
+""") }}
+
+## 8. Travail à rendre
+
+Seul l'exercice suivant est à rendre.
+
+!!! example "{{ exercice() }} — À rendre"
+    On considère l'arborescence suivante :
+
+    ```text
+    /
+    ├── bin
+    │   ├── bash
+    │   └── cat
+    ├── home
+    │   ├── alice
+    │   └── bob
+    │       ├── documents
+    │       │   ├── images
+    │       │   │   └── logo.png
+    │       │   ├── musique
+    │       │   │   ├── classique
+    │       │   │   └── rock
+    │       │   │       ├── track1.mp3
+    │       │   │       └── track2.mp3
+    │       │   ├── videos
+    │       │   └── mon_roman.docx
+    │       └── tmp
+    ├── etc
+    └── usr
     ```
 
-4. Que se passe-t-il avec :
+    1. Si je suis dans `documents`, qu'affiche `pwd` ?
+    2. Depuis `images`, donnez deux commandes différentes qui permettent d'aller dans `musique`.
+    3. Quelle est la différence entre `cp test1.txt test2.txt` et `mv test1.txt test2.txt` ?
+    4. Depuis `documents`, que se passe-t-il avec `rm videos` ? Quelle commande faut-il utiliser ?
+    5. Depuis `documents`, quelle commande supprime le dossier `rock` et son contenu ?
+    6. Quelle commande affiche les droits de `mon_roman.docx` ?
+    7. Quelle commande permet que seul le propriétaire puisse lire et modifier `mon_roman.docx` (sans exécution) ?
+    8. Comment créer un fichier texte et écrire dedans ? Donnez deux méthodes.
+    9. Comment exécuter le script `prog.py` ?
+    10. Quelle commande affiche les processus en cours ?
 
-    ```bash
-    rm videos
-    ```
-    depuis `documents` ?
-
-5. Quelle commande pour supprimer `rock` ?
-
-6. Quelle commande affiche les droits de `mon_roman.docx` ?
-
-7. Quelle commande pour que seul le propriétaire puisse lire et modifier `mon_roman.docx` (sans exécution) ?
-
-8. Quelle(s) commande(s) permettent d’éditer un fichier texte ?
-
-9. Comment exécuter `prog.py` ?
-
-10. Quelle commande affiche les processus en cours ?
-
-
-!!! success "Objectif"
-    À la fin de ce TP, vous devez être autonome pour :
-
-    - naviguer dans l’arborescence
-    - créer/modifier/supprimer fichiers et dossiers
-    - gérer les droits
-    - éditer des fichiers
-    - exécuter des scripts
-    - observer les processus
-
+{{ correction(False,
+"""
+??? success \"Correction\"
+    1. `/home/bob/documents`
+    2. `cd ../musique` (chemin relatif) ou `cd /home/bob/documents/musique` (chemin absolu). Si l'on est connecté en tant que bob : `cd ~/documents/musique`.
+    3. `cp` crée une copie : les deux fichiers existent. `mv` renomme : `test1.txt` n'existe plus, il s'appelle désormais `test2.txt`.
+    4. `rm` refuse : `videos` est un dossier (message *Is a directory*). Il faut `rmdir videos` (le dossier est vide) ou `rm -r videos`.
+    5. `rm -r musique/rock`
+    6. `ls -l mon_roman.docx` (depuis `documents`)
+    7. `chmod 600 mon_roman.docx` (droits `rw-------`)
+    8. Avec l'éditeur : `vi fichier.txt`. Avec une redirection : `echo texte > fichier.txt` ou `cat > fichier.txt` (terminer par Ctrl + D).
+    9. `python3 prog.py`
+    10. `ps` (liste) ou `top` (en temps réel)
+""") }}
