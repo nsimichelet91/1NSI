@@ -2218,6 +2218,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    3.3 Découverte des commandes UNIX
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -2227,6 +2238,39 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#questions-de-cloture" class="md-nav__link">
+    Questions de clôture
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#corrige-du-jeu" class="md-nav__link">
+    Corrigé du jeu
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3669,10 +3713,16 @@
 
 <h1 id="33-decouverte-des-commandes-unix">3.3 Découverte des commandes UNIX<a class="headerlink" href="#33-decouverte-des-commandes-unix" title="Permanent link">⚓︎</a></h1>
 <p><img alt="image" class="center" src="../data/BO.png" /></p>
-<p>A partir du jeu Terminus</p>
+<p>À partir du jeu Terminus.</p>
 <p><img alt="image" class="center" src="../data/terminus.png" /></p>
-<p>Rendez-vous à l'adresse <a href="http://luffah.xyz/bidules/Terminus/">http://luffah.xyz/bidules/Terminus/</a></p>
-<p>Acceptez le cookie, il gardera l'historique du jeu et vous permettra donc de le faire en plusieurs sessions.</p>
+<p>Rendez-vous à l'adresse : <a href="../data/Terminus_version_corrig%C3%A9e.html">Terminus</a></p>
+<div class="admonition warning">
+<p class="admonition-title">Sauvegarde</p>
+<p>Le jeu reprend automatiquement là où vous vous êtes arrêté, <strong>sur le même navigateur</strong>.
+Sur les ordinateurs du lycée, cette sauvegarde peut être effacée : <strong>à la fin de chaque séance</strong>,
+tapez <code>sauver</code> et recopiez le code obtenu (ex. <code>1YZZ-ZZ04-Y0KF3</code>) en haut de votre feuille.
+Pour reprendre, tapez <code>charger</code> suivi de votre code.</p>
+</div>
 <p>Laissez-vous guider par le jeu, mais <strong>ATTENTION</strong> !  </p>
 <ul>
 <li>Vous devez noter sur feuille ou sur un document numérique chaque nouvelle commande que vous apprenez. Vous pouvez par exemple construire un tableau de ce type :</li>
@@ -3685,14 +3735,376 @@
 <p><a href="../data/VotreNom_Plan_Terminus.drawio">modèle téléchargeable</a><br />
 <a href="https://app.diagrams.net/?src=about">lien de l'application drawio</a>
 <img alt="image" class="center" src="../data/term_2.png" /></p>
+<div class="admonition success">
+<p class="admonition-title">Fin du jeu</p>
+<p>Le jeu est terminé lorsque vous lisez le <strong>Certificat</strong> du Paradis.
+Faites une capture d'écran du certificat et joignez-la à votre tableau et à votre plan.</p>
+</div>
+<h2 id="questions-de-cloture">Questions de clôture<a class="headerlink" href="#questions-de-cloture" title="Permanent link">⚓︎</a></h2>
+<p>Votre plan du jeu est en réalité une <strong>arborescence de fichiers</strong> Linux : les lieux sont des dossiers, les objets et les personnages sont des fichiers.</p>
+<div class="admonition question">
+<p class="admonition-title">Questions</p>
+<ol>
+<li>Donnez le chemin absolu de la Bibliothèque.</li>
+<li>Depuis la Clairière, quelle commande <code>cd</code> <strong>relative</strong> mène à la PlaceDuVillage ?</li>
+<li>Quel est le rôle des dossiers <code>/home</code>, <code>/var</code> et <code>/usr</code> dans le jeu ? Et dans un vrai système Linux ?</li>
+</ol>
+</div>
+<details class="success">
+<summary>Correction</summary>
+<p><strong>1.</strong> <code>/var/PlaceDuVillage/Bibliothèque</code></p>
+<p>Un chemin absolu part de la racine <code>/</code>. On peut le vérifier dans le jeu en tapant <code>pwd</code> dans la Bibliothèque.</p>
+<p><strong>2.</strong> <code>cd ../..</code></p>
+<p><code>..</code> désigne le dossier parent : depuis la Clairière, un premier <code>..</code> mène au PontCassé, un second à la PlaceDuVillage.
+La commande <code>cd /var/PlaceDuVillage</code> y mène aussi, mais c'est un chemin absolu, pas relatif.</p>
+<p><strong>3.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Dossier</th>
+<th>Dans le jeu</th>
+<th>Dans Linux</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/home</code></td>
+<td>Contient <code>Départ</code>, le point de départ du joueur. <code>~</code> est un raccourci pour <code>/home/Départ</code>.</td>
+<td>Contient les dossiers personnels des utilisateurs (ex. <code>/home/eleve</code>). <code>~</code> désigne le dossier personnel de l'utilisateur connecté.</td>
+</tr>
+<tr>
+<td><code>/var</code></td>
+<td>Contient le village (<code>PlaceDuVillage</code>), un lieu qui change sans cesse : on y crée, déplace et supprime des objets.</td>
+<td>Contient les données <strong>variables</strong>, qui changent pendant que le système tourne : journaux (<code>/var/log</code>), sites web (<code>/var/www</code>), files d'attente…</td>
+</tr>
+<tr>
+<td><code>/usr</code></td>
+<td>Contient <code>/usr/src/FichiersNoyau</code>, les « sources du monde », protégées en écriture : il faut <code>sudo</code> pour y lire le Certificat.</td>
+<td>Contient les programmes et bibliothèques installés, partagés par tous les utilisateurs et non modifiables sans droits d'administrateur. <code>/usr/src</code> contient les sources, notamment celles du noyau Linux.</td>
+</tr>
+</tbody>
+</table>
+<p>On retrouve aussi <code>/bin</code> (les commandes apprises, qui sont des programmes) et <code>/tmp</code> (un dossier temporaire où tout le monde peut écrire).</p>
+</details>
 <p><img alt="image" class="center" src="../data/item_trolls.png" /></p>
+<h2 id="corrige-du-jeu">Corrigé du jeu<a class="headerlink" href="#corrige-du-jeu" title="Permanent link">⚓︎</a></h2>
+<details class="success">
+<summary>Historique des commandes</summary>
+<p>Une partie complète, avec les 7 quêtes réussies. Le mot de passe sudo est <code>sesame</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># ===== Chapitre 1 : /home/Départ =====</span>
+ls
+less<span class="w"> </span>Noisette
+<span class="nb">cd</span><span class="w"> </span>Prairie
+less<span class="w"> </span>Poney<span class="w">                    </span><span class="c1"># le chemin Montagnes apparaît</span>
+<span class="nb">cd</span><span class="w"> </span>Montagnes
+less<span class="w"> </span>VieilHomme<span class="w">               </span><span class="c1"># il laisse un Manuscrit</span>
+less<span class="w"> </span>Manuscrit<span class="w">                </span><span class="c1"># apprend man</span>
+man<span class="w"> </span>ls
+<span class="nb">cd</span><span class="w"> </span>~
+<span class="nb">cd</span><span class="w"> </span>Bois
+less<span class="w"> </span>Panneau
+less<span class="w"> </span>RentreChezToi
+<span class="nb">cd</span><span class="w"> </span>AcadémieDesBots/Cours
+less<span class="w"> </span>Professeur<span class="w">               </span><span class="c1"># apprend mv</span>
+<span class="nb">cd</span><span class="w"> </span>../SalleDEntrainement
+less<span class="w"> </span>Note
+mv<span class="w"> </span>Pilier1<span class="w"> </span>Boîte
+mv<span class="w"> </span>Pilier2<span class="w"> </span>Boîte
+mv<span class="w"> </span>Pilier3<span class="w"> </span>Boîte<span class="w">              </span><span class="c1"># l'académie s'écroule</span>
+<span class="nb">cd</span><span class="w"> </span>~
+<span class="nb">cd</span><span class="w"> </span>Prairie/Montagnes/Cave/SombreCorridor/PièceHumide
+less<span class="w"> </span>Rocher
+mv<span class="w"> </span>Rocher<span class="w"> </span>PetiteCrevasse<span class="w">      </span><span class="c1"># QUÊTE 1 : le Tunnel apparaît</span>
+<span class="nb">cd</span><span class="w"> </span>Tunnel
+less<span class="w"> </span>TouffeDePoils<span class="w">            </span><span class="c1"># c'est un Rat</span>
+<span class="nb">cd</span><span class="w"> </span>ChambreDePierre/Portail
+<span class="nb">cd</span><span class="w"> </span>Terminus<span class="w">                   </span><span class="c1"># lien vers /var/PlaceDuVillage</span>
+<span class="nb">pwd</span>
+
+<span class="c1"># ===== Chapitre 2 : /var/PlaceDuVillage =====</span>
+ls
+less<span class="w"> </span>Villageois<span class="w">               </span><span class="c1"># il s'appelle Jasper</span>
+less<span class="w"> </span>VieuxLecteur
+less<span class="w"> </span>VillageoiseEnPleurs
+<span class="nb">cd</span><span class="w"> </span>BoutiqueArtisanale
+less<span class="w"> </span>Artisane<span class="w">                 </span><span class="c1"># apprend touch</span>
+touch<span class="w"> </span>rouage
+less<span class="w"> </span>Artisane<span class="w">                 </span><span class="c1"># apprend cp</span>
+cp<span class="w"> </span>rouage<span class="w"> </span>rouage1
+cp<span class="w"> </span>rouage<span class="w"> </span>rouage2
+cp<span class="w"> </span>rouage<span class="w"> </span>rouage3
+cp<span class="w"> </span>rouage<span class="w"> </span>rouage4
+cp<span class="w"> </span>rouage<span class="w"> </span>rouage5<span class="w">             </span><span class="c1"># QUÊTE 2</span>
+less<span class="w"> </span>Artisane
+<span class="nb">cd</span><span class="w"> </span>../PlaceDuMarché
+less<span class="w"> </span>SacADos<span class="w">                  </span><span class="c1"># apprend unzip, devient SacADos.zip</span>
+unzip<span class="w"> </span>SacADos.zip<span class="w">             </span><span class="c1"># Bourse10000 et Bourse5000</span>
+less<span class="w"> </span>Vendeur
+<span class="m">1</span><span class="w">                             </span><span class="c1"># achète mkdir (5000)</span>
+less<span class="w"> </span>Vendeur
+<span class="m">1</span><span class="w">                             </span><span class="c1"># achète rm (10000)</span>
+<span class="nb">cd</span><span class="w"> </span>../CheminEnPierres
+rm<span class="w"> </span>EnormeRocher<span class="w">               </span><span class="c1"># la Ferme apparaît</span>
+<span class="nb">cd</span><span class="w"> </span>Ferme
+less<span class="w"> </span>Fermier
+cp<span class="w"> </span>EpisDeMais<span class="w"> </span>AutreEpisDeMais<span class="w"> </span><span class="c1"># QUÊTE 3</span>
+<span class="nb">cd</span><span class="w"> </span>../../Bibliothèque
+less<span class="w"> </span>IntrigantPanneau<span class="w">         </span><span class="c1"># la PièceSecrète apparaît</span>
+<span class="nb">cd</span><span class="w"> </span>PièceSecrète
+less<span class="w"> </span>Bibliothécaire
+less<span class="w"> </span>Grep<span class="w">                     </span><span class="c1"># apprend grep</span>
+<span class="nb">cd</span><span class="w"> </span>..
+grep<span class="w"> </span>Magus<span class="w"> </span>HistoireDeTerminus<span class="w"> </span><span class="c1"># QUÊTE 5</span>
+<span class="nb">cd</span><span class="w"> </span>../PontCassé
+touch<span class="w"> </span>Planche<span class="w">                 </span><span class="c1"># le pont est réparé</span>
+<span class="nb">cd</span><span class="w"> </span>Clairière
+less<span class="w"> </span>HommeEnPleurs
+mkdir<span class="w"> </span>Maison<span class="w">                  </span><span class="c1"># QUÊTE 4</span>
+<span class="nb">cd</span><span class="w"> </span>CheminInquiétant
+rm<span class="w"> </span>RoncesTordues<span class="w">              </span><span class="c1"># la CaveDesTrolls apparaît</span>
+<span class="nb">cd</span><span class="w"> </span>CaveDesTrolls
+less<span class="w"> </span>TrollPlusMoche
+rm<span class="w"> </span>TrollMoche
+<span class="nb">cd</span><span class="w"> </span>Toboggan
+ls
+<span class="nb">cd</span><span class="w"> </span>FichiersNoyau<span class="w">              </span><span class="c1"># lien vers /usr/src/FichiersNoyau</span>
+<span class="nb">pwd</span>
+
+<span class="c1"># ===== Chapitre 3 : /usr/src/FichiersNoyau =====</span>
+less<span class="w"> </span>Instructions<span class="w">             </span><span class="c1"># apprend sudo</span>
+<span class="nb">cd</span><span class="w"> </span>PlusDeFichiersNoyau
+grep<span class="w"> </span><span class="nv">password</span><span class="o">=</span><span class="w"> </span>*<span class="w">              </span><span class="c1"># S.txt contient password=sesame</span>
+sudo<span class="w"> </span>ls<span class="w">                       </span><span class="c1"># mot de passe : sesame, le Paradis apparaît</span>
+<span class="nb">cd</span><span class="w"> </span>/var/PlaceDuVillage/PontCassé/Clairière/CheminInquiétant/CaveDesTrolls
+sudo<span class="w"> </span>rm<span class="w"> </span>TrollAbsolumentHideux<span class="w"> </span><span class="c1"># QUÊTE 6</span>
+mv<span class="w"> </span>Cage/EnfantKidnappé<span class="w"> </span>..<span class="w">     </span><span class="c1"># QUÊTE 7</span>
+<span class="nb">cd</span><span class="w"> </span>/usr/src/FichiersNoyau/Paradis
+sudo<span class="w"> </span>less<span class="w"> </span>Certificat<span class="w">          </span><span class="c1"># fin du jeu : 7 / 7</span>
+</code></pre></div>
+</details>
+<details class="success">
+<summary>Tableau des commandes</summary>
+<table>
+<thead>
+<tr>
+<th>Commande</th>
+<th>Où l'apprend-on ?</th>
+<th>Rôle</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ls</code></td>
+<td>dès le départ</td>
+<td>lister le contenu d'un dossier</td>
+<td><code>ls</code>, <code>ls Prairie</code>, <code>ls /</code></td>
+</tr>
+<tr>
+<td><code>cd</code></td>
+<td>dès le départ</td>
+<td>changer de dossier</td>
+<td><code>cd Bois</code>, <code>cd ..</code>, <code>cd ~</code>, <code>cd /</code>, <code>cd -</code></td>
+</tr>
+<tr>
+<td><code>pwd</code></td>
+<td>dès le départ</td>
+<td>afficher le chemin absolu du dossier courant</td>
+<td><code>pwd</code></td>
+</tr>
+<tr>
+<td><code>less</code> / <code>cat</code></td>
+<td>dès le départ</td>
+<td>afficher le contenu d'un fichier</td>
+<td><code>less Poney</code></td>
+</tr>
+<tr>
+<td><code>help</code></td>
+<td>dès le départ</td>
+<td>lister les commandes connues</td>
+<td><code>help</code></td>
+</tr>
+<tr>
+<td><code>clear</code></td>
+<td>dès le départ</td>
+<td>effacer l'écran</td>
+<td><code>clear</code></td>
+</tr>
+<tr>
+<td><code>man</code></td>
+<td>Montagnes (Manuscrit)</td>
+<td>afficher le manuel d'une commande</td>
+<td><code>man cd</code></td>
+</tr>
+<tr>
+<td><code>mv</code></td>
+<td>AcadémieDesBots/Cours (Professeur)</td>
+<td>déplacer ou renommer un fichier</td>
+<td><code>mv Rocher PetiteCrevasse</code></td>
+</tr>
+<tr>
+<td><code>touch</code></td>
+<td>BoutiqueArtisanale (Artisane)</td>
+<td>créer un fichier vide</td>
+<td><code>touch rouage</code></td>
+</tr>
+<tr>
+<td><code>cp</code></td>
+<td>BoutiqueArtisanale (Artisane)</td>
+<td>copier un fichier</td>
+<td><code>cp rouage rouage1</code></td>
+</tr>
+<tr>
+<td><code>unzip</code></td>
+<td>PlaceDuMarché (SacADos)</td>
+<td>décompresser une archive .zip</td>
+<td><code>unzip SacADos.zip</code></td>
+</tr>
+<tr>
+<td><code>mkdir</code></td>
+<td>PlaceDuMarché (Vendeur)</td>
+<td>créer un dossier</td>
+<td><code>mkdir Maison</code></td>
+</tr>
+<tr>
+<td><code>rm</code></td>
+<td>PlaceDuMarché (Vendeur)</td>
+<td>supprimer définitivement un fichier</td>
+<td><code>rm EnormeRocher</code></td>
+</tr>
+<tr>
+<td><code>grep</code></td>
+<td>Bibliothèque/PièceSecrète (Grep)</td>
+<td>chercher les lignes contenant un mot</td>
+<td><code>grep Magus HistoireDeTerminus</code>, <code>grep password= *</code></td>
+</tr>
+<tr>
+<td><code>sudo</code></td>
+<td>FichiersNoyau (Instructions)</td>
+<td>exécuter une commande en administrateur (root)</td>
+<td><code>sudo less Certificat</code></td>
+</tr>
+<tr>
+<td><code>whoami</code></td>
+<td>avec sudo</td>
+<td>afficher le nom de l'utilisateur</td>
+<td><code>whoami</code>, <code>sudo whoami</code></td>
+</tr>
+<tr>
+<td><code>history</code></td>
+<td>dès le départ</td>
+<td>afficher les commandes déjà tapées</td>
+<td><code>history</code></td>
+</tr>
+</tbody>
+</table>
+<p>À retenir aussi :</p>
+<ul>
+<li><code>..</code> désigne le dossier parent, <code>~</code> le dossier personnel, <code>/</code> la racine ;</li>
+<li><code>*</code> désigne tous les fichiers du dossier courant ;</li>
+<li>la touche Tab complète les noms, les flèches ↑ ↓ parcourent l'historique.</li>
+</ul>
+</details>
+<details class="success">
+<summary>Arbre du jeu</summary>
+<p>Les noms terminés par <code>/</code> sont des dossiers (lieux). Les autres sont des fichiers (objets et personnages).
+Les noms terminés par <code>@</code> sont des liens symboliques. Les noms entre crochets apparaissent ou sont créés pendant la partie.</p>
+<div class="highlight"><pre><span></span><code>/
+├── bin/                              (les commandes apprises)
+├── home/
+│   └── Départ/                       (~, point de départ)
+│       ├── Noisette
+│       ├── Poussière
+│       ├── Prairie/
+│       │   ├── Poney
+│       │   └── [Montagnes/]
+│       │       ├── VieilHomme  →  [Manuscrit]
+│       │       └── Cave/
+│       │           └── SombreCorridor/
+│       │               └── PièceHumide/
+│       │                   ├── Rocher
+│       │                   ├── PetiteCrevasse/
+│       │                   └── [Tunnel/]
+│       │                       ├── TouffeDePoils  (Rat)
+│       │                       └── ChambreDePierre/
+│       │                           └── Portail/
+│       │                               └── Terminus@  →  /var/PlaceDuVillage
+│       └── Bois/
+│           ├── Panneau
+│           ├── RentreChezToi
+│           ├── Gribouillis
+│           └── AcadémieDesBots/
+│               ├── Cours/
+│               │   └── Professeur
+│               └── SalleDEntrainement/
+│                   ├── Note
+│                   ├── Pilier1, Pilier2, Pilier3
+│                   └── Boîte/
+├── tmp/                              (dossier d'entraînement)
+├── usr/
+│   └── src/
+│       └── FichiersNoyau/
+│           ├── Instructions
+│           ├── PlusDeFichiersNoyau/
+│           │   └── L.txt  M.txt  P.txt  Q.txt  R.txt  S.txt  T.txt  U.txt  V.txt  W.txt
+│           └── [Paradis/]
+│               └── Certificat        (protégé : sudo)
+└── var/
+    └── PlaceDuVillage/
+        ├── Villageois  (Jasper)
+        ├── VieuxLecteur
+        ├── VillageoiseEnPleurs
+        ├── BoutiqueArtisanale/
+        │   ├── Dragon
+        │   ├── BabioleÉtrange
+        │   ├── Artisane
+        │   └── [rouage, rouage1 … rouage5]
+        ├── PontCassé/
+        │   ├── [Planche]
+        │   └── Clairière/
+        │       ├── HommeEnPleurs
+        │       ├── [Maison/]
+        │       ├── [Enfant]
+        │       └── CheminInquiétant/
+        │           ├── RoncesTordues
+        │           └── [CaveDesTrolls/]
+        │               ├── TrollMoche
+        │               ├── TrollPlusMoche
+        │               ├── TrollAbsolumentHideux
+        │               ├── Cage/
+        │               │   └── EnfantKidnappé
+        │               └── Toboggan/
+        │                   └── FichiersNoyau@  →  /usr/src/FichiersNoyau
+        ├── Bibliothèque/
+        │   ├── SuperLivreDesSortilèges
+        │   ├── RomanceDePoche
+        │   ├── HistoireDeTerminus
+        │   ├── NostalgieDuPays
+        │   ├── VIMproved
+        │   ├── IntrigantPanneau
+        │   └── [PièceSecrète/]
+        │       ├── Bibliothécaire
+        │       └── Grep
+        ├── PlaceDuMarché/
+        │   ├── Vendeur
+        │   ├── SacADos  →  [Bourse10000, Bourse5000]
+        │   ├── mkdir
+        │   └── rm
+        └── CheminEnPierres/
+            ├── EnormeRocher
+            └── [Ferme/]
+                ├── Fermier
+                ├── EpisDeMais
+                └── [AutreEpisDeMais]
+</code></pre></div>
+</details>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Dernière mise à jour:
-      2024-04-04
+      2026-11-20
     
   </small>
 </div>
